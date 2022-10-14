@@ -65,9 +65,9 @@ https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-linking
 
 https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-displaying-statement-completion?view=vs-2022&tabs=csharp
 
-Advanced Micro Devices Inc., 2017 – AMD64 Architecture Programmer's Manual
+[Advanced Micro Devices Inc., 2017 – AMD64 Architecture Programmer's Manual](https://www.amd.com/)
 
-Intel Corporation, 2019 – Intel 64 and IA-32 Architectures Software Developer's Manual
+[Intel Corporation, 2019 – Intel 64 and IA-32 Architectures Software Developer's Manual](https://intel.com)
 
 https://github.com/HJLebbink/asm-dude
 
