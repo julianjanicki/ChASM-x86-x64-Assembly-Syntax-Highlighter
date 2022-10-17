@@ -23,6 +23,17 @@ This is temporary solution which was created because [Henk-JanLebbink.AsmDude](h
 
 The idea of ChASM extension is to provide basic syntax coloring for x86/x64 Assembly Language (MASM) in Microsoft Visual Studio.
 
+# ChASM Features
+
+💥 Highlight General Purpose Registers (x86/x64)
+💥 Descriptions for Over 1000 Mnemonics
+💥 150+ General Purpose Registers with Description
+💥 Detect Common WinAPI Functions Calls
+💥 Syntax Help for Over 1500 Mostly Used WinAPI Functions
+💥 Colorize One Line Comments
+💥 Highlight System Calls (SYSCALL)
+💥 Signature Help for Mnemonics
+
 ![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/001.png)
 
 ![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/002.png)
@@ -37,23 +48,14 @@ The idea of ChASM extension is to provide basic syntax coloring for x86/x64 Asse
 
 ![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/007.png)
 
-
-# ChASM Features
-
-💥 Highlight General Purpose Registers (x86/x64)
-💥 Descriptions for Over 1000 Mnemonics
-💥 150+ General Purpose Registers with Description
-💥 Detect Common WinAPI Functions Calls
-💥 Syntax Help for Over 1500 Mostly Used WinAPI Functions
-💥 Colorize One Line Comments
-💥 Highlight System Calls (SYSCALL)
+![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/008.png)
 
 
 # Download ChASM from Visual Studio Marketplace
 
 https://marketplace.visualstudio.com/items?itemName=ethicalblue.chasm
 
-# Thanks to...
+# Credits
 
 https://learn.microsoft.com/en-us/visualstudio/extensibility/creating-an-extension-with-an-editor-item-template?view=vs-2022
 

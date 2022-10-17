@@ -1,4 +1,10 @@
-﻿using System.Windows;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-creating-a-margin-glyph?view=vs-2022&tabs=csharp
+ * 
+ */
+
+using System.Windows;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Formatting;
 using System.Windows.Media.Imaging;

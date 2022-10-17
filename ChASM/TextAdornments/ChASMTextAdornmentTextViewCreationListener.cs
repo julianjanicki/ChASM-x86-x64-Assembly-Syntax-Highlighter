@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.Text.Editor;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-highlighting-text?view=vs-2022&tabs=csharp
+ * 
+ */
+
+using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
 using System.ComponentModel.Composition;
 

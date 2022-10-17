@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.Language.Intellisense;
+﻿/*
+ * 
+ * © 2022 by ethical.blue Magazine
+ * 
+ */
+
+using Microsoft.VisualStudio.Language.Intellisense;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.Language.Intellisense;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-displaying-statement-completion?view=vs-2022&tabs=csharp
+ * 
+ */
+
+using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Operations;
 using Microsoft.VisualStudio.Utilities;

@@ -1,9 +1,10 @@
-﻿using Microsoft.VisualStudio.Language.Intellisense;
+﻿/*
+ * 
+ * © 2022 by ethical.blue Magazine
+ * 
+ */
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Interop;
 using System.Windows;
 using System.Windows.Media;

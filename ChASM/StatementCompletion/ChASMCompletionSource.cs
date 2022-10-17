@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-displaying-statement-completion?view=vs-2022&tabs=csharp
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * 
+ * © 2022 by ethical.blue Magazine
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

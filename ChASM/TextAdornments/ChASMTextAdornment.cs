@@ -1,4 +1,11 @@
-﻿using Microsoft.VisualStudio.Text;
+﻿/*
+ * 
+ * © 2022 by ethical.blue Magazine
+ * Based on https://learn.microsoft.com/en-us/visualstudio/extensibility/walkthrough-highlighting-text?view=vs-2022&tabs=csharp
+ * 
+ */
+
+using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Formatting;
 using System;

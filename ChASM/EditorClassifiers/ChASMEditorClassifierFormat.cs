@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.Text.Classification;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/visualstudio/extensibility/creating-an-extension-with-an-editor-item-template?view=vs-2022
+ * 
+ */
+
+using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 using System.ComponentModel.Composition;
 using System.Windows.Media;

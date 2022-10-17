@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.Language.Intellisense;
+﻿/*
+ * 
+ * © https://learn.microsoft.com/en-us/windows/win32/api/
+ * 
+ */
+
+using Microsoft.VisualStudio.Language.Intellisense;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +20,12 @@ namespace ChASM.Globalz
         
         internal static HashSet<Completion> ItemsForCodeCompletion = new HashSet<Completion>()
         {
-            new Completion("AbortDoc", "call AbortDoc", @"int AbortDoc(
+new Completion("AbortDoc", "call AbortDoc", @"int AbortDoc(
     HDC hdc
     // handle to device context
 );    
-", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+"
+, CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
 new Completion("AbortPath", "call AbortPath", @"BOOL AbortPath(
     HDC hdc
     // handle to device context
@@ -14557,13 +14564,12 @@ new Completion("wvsprintfW", "call wvsprintfW", @"int wvsprintf(
     va_list arglist
     // variable argument list of format-control arguments
 );    
-", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-
+", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null)
         };
         
         internal static HashSet<string> Items = new HashSet<string>()
         {
-            "AbortDoc",
+"AbortDoc",
 "AbortPath",
 "AbortPrinter",
 "AccessCheck",

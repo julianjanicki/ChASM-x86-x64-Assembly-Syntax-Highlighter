@@ -54,6 +54,7 @@
     <Compile Include="Globalz\CodeCompletion.cs" />
     <Compile Include="Globalz\Mnemonics.cs" />
     <Compile Include="Globalz\Registers.cs" />
+    <Compile Include="Globalz\Signatures.cs" />
     <Compile Include="Globalz\Specialz.cs" />
     <Compile Include="Globalz\WinAPIs.cs" />
     <Compile Include="MarginGlyphs\ChASMGlyphFactory.cs" />
@@ -67,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SignatureHelp\SignatureHelpSource.cs" />
+    <Compile Include="SignatureHelp\TestSignatureHelpCommandHandler.cs" />
+    <Compile Include="SignatureHelp\TestSignatureHelpCommandProvider.cs" />
+    <Compile Include="SignatureHelp\TestSignatureHelpSource.cs" />
+    <Compile Include="SignatureHelp\TestSignatureHelpSourceProvider.cs" />
     <Compile Include="StatementCompletion\ChASMCompletionCommandHandlerProvider.cs" />
     <Compile Include="StatementCompletion\ChASMCompletionSource.cs" />
     <Compile Include="StatementCompletion\ChASMCompletionSourceProvider.cs" />
