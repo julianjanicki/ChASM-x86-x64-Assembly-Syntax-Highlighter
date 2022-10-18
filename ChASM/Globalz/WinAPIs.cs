@@ -20,23 +20,23 @@ namespace ChASM.Globalz
         
         internal static HashSet<Completion> ItemsForCodeCompletion = new HashSet<Completion>()
         {
-new Completion("AbortDoc", "call AbortDoc", @"int AbortDoc(
+new Completion("AbortDoc", "AbortDoc", @"int AbortDoc(
     HDC hdc
     // handle to device context
 );    
 "
 , CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AbortPath", "call AbortPath", @"BOOL AbortPath(
+new Completion("AbortPath", "AbortPath", @"BOOL AbortPath(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AbortPrinter", "call AbortPrinter", @"BOOL AbortPrinter(
+new Completion("AbortPrinter", "AbortPrinter", @"BOOL AbortPrinter(
     HANDLE hPrinter
     // handle to printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AccessCheck", "call AccessCheck", @"BOOL AccessCheck(
+new Completion("AccessCheck", "AccessCheck", @"BOOL AccessCheck(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // pointer to security descriptor
     HANDLE ClientToken,
@@ -55,7 +55,7 @@ new Completion("AccessCheck", "call AccessCheck", @"BOOL AccessCheck(
     // address of flag indicating whether access granted
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAccessAllowedAce", "call AddAccessAllowedAce", @"BOOL AddAccessAllowedAce(
+new Completion("AddAccessAllowedAce", "AddAccessAllowedAce", @"BOOL AddAccessAllowedAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceRevision,
@@ -66,7 +66,7 @@ new Completion("AddAccessAllowedAce", "call AddAccessAllowedAce", @"BOOL AddAcce
     // pointer to security identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAccessDeniedAce", "call AddAccessDeniedAce", @"BOOL AddAccessDeniedAce(
+new Completion("AddAccessDeniedAce", "AddAccessDeniedAce", @"BOOL AddAccessDeniedAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceRevision,
@@ -77,7 +77,7 @@ new Completion("AddAccessDeniedAce", "call AddAccessDeniedAce", @"BOOL AddAccess
     // pointer to security identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAce", "call AddAce", @"BOOL AddAce(
+new Completion("AddAce", "AddAce", @"BOOL AddAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceRevision,
@@ -90,7 +90,7 @@ new Completion("AddAce", "call AddAce", @"BOOL AddAce(
     // size of buffer for ACEs
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAuditAccessAce", "call AddAuditAccessAce", @"BOOL AddAuditAccessAce(
+new Completion("AddAuditAccessAce", "AddAuditAccessAce", @"BOOL AddAuditAccessAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceRevision,
@@ -105,7 +105,7 @@ new Completion("AddAuditAccessAce", "call AddAuditAccessAce", @"BOOL AddAuditAcc
     // flag for auditing unsuccessful access attempts
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdjustTokenGroups", "call AdjustTokenGroups", @"BOOL AdjustTokenGroups(
+new Completion("AdjustTokenGroups", "AdjustTokenGroups", @"BOOL AdjustTokenGroups(
     HANDLE TokenHandle,
     // handle to token that contains groups
     BOOL ResetToDefault,
@@ -120,7 +120,7 @@ new Completion("AdjustTokenGroups", "call AdjustTokenGroups", @"BOOL AdjustToken
     // address of required buffer size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdjustTokenPrivileges", "call AdjustTokenPrivileges", @"BOOL AdjustTokenPrivileges(
+new Completion("AdjustTokenPrivileges", "AdjustTokenPrivileges", @"BOOL AdjustTokenPrivileges(
     HANDLE TokenHandle,
     // handle to token that contains privileges
     BOOL DisableAllPrivileges,
@@ -135,7 +135,7 @@ new Completion("AdjustTokenPrivileges", "call AdjustTokenPrivileges", @"BOOL Adj
     // receives required size of the PreviousState buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdjustWindowRect", "call AdjustWindowRect", @"BOOL AdjustWindowRect(
+new Completion("AdjustWindowRect", "AdjustWindowRect", @"BOOL AdjustWindowRect(
     LPRECT lpRect,
     // pointer to client-rectangle structure
     DWORD dwStyle,
@@ -144,7 +144,7 @@ new Completion("AdjustWindowRect", "call AdjustWindowRect", @"BOOL AdjustWindowR
     // menu-present flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdjustWindowRectEx", "call AdjustWindowRectEx", @"BOOL AdjustWindowRectEx(
+new Completion("AdjustWindowRectEx", "AdjustWindowRectEx", @"BOOL AdjustWindowRectEx(
     LPRECT lpRect,
     // pointer to client-rectangle structure
     DWORD dwStyle,
@@ -155,7 +155,7 @@ new Completion("AdjustWindowRectEx", "call AdjustWindowRectEx", @"BOOL AdjustWin
     // extended style
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AllocateAndInitializeSid", "call AllocateAndInitializeSid", @"BOOL AllocateAndInitializeSid(
+new Completion("AllocateAndInitializeSid", "AllocateAndInitializeSid", @"BOOL AllocateAndInitializeSid(
     PSID_IDENTIFIER_AUTHORITY pIdentifierAuthority,
     // pointer to identifier authority
     BYTE nSubAuthorityCount,
@@ -180,13 +180,13 @@ new Completion("AllocateAndInitializeSid", "call AllocateAndInitializeSid", @"BO
     // pointer to pointer to SID
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AllocateLocallyUniqueId", "call AllocateLocallyUniqueId", @"BOOL AllocateLocallyUniqueId(
+new Completion("AllocateLocallyUniqueId", "AllocateLocallyUniqueId", @"BOOL AllocateLocallyUniqueId(
     PLUID Luid
     // address of locally unique identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AllocConsole", "call AllocConsole", @"BOOL AllocConsole(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AngleArc", "call AngleArc", @"BOOL AngleArc(
+new Completion("AllocConsole", "AllocConsole", @"BOOL AllocConsole(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("AngleArc", "AngleArc", @"BOOL AngleArc(
     HDC hdc,
     // handle to device context
     int X,
@@ -201,7 +201,7 @@ new Completion("AngleArc", "call AngleArc", @"BOOL AngleArc(
     // arc's sweep angle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AnimatePalette", "call AnimatePalette", @"BOOL AnimatePalette(
+new Completion("AnimatePalette", "AnimatePalette", @"BOOL AnimatePalette(
     HPALETTE hpal,
     // handle to logical color palette
     UINT iStartIndex,
@@ -212,8 +212,8 @@ new Completion("AnimatePalette", "call AnimatePalette", @"BOOL AnimatePalette(
     // pointer to first replacement
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AnyPopup", "call AnyPopup", @"BOOL AnyPopup(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Arc", "call Arc", @"BOOL Arc(
+new Completion("AnyPopup", "AnyPopup", @"BOOL AnyPopup(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("Arc", "Arc", @"BOOL Arc(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -234,7 +234,7 @@ new Completion("Arc", "call Arc", @"BOOL Arc(
     // second radial ending point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ArcTo", "call ArcTo", @"BOOL ArcTo(
+new Completion("ArcTo", "ArcTo", @"BOOL ArcTo(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -255,26 +255,26 @@ new Completion("ArcTo", "call ArcTo", @"BOOL ArcTo(
     // y-coordinate of the second radial ending point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AreAllAccessesGranted", "call AreAllAccessesGranted", @"BOOL AreAllAccessesGranted(
+new Completion("AreAllAccessesGranted", "AreAllAccessesGranted", @"BOOL AreAllAccessesGranted(
     DWORD GrantedAccess,
     // access mask for granted access rights
     DWORD DesiredAccess
     // access mask for requested access rights
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AreAnyAccessesGranted", "call AreAnyAccessesGranted", @"BOOL AreAnyAccessesGranted(
+new Completion("AreAnyAccessesGranted", "AreAnyAccessesGranted", @"BOOL AreAnyAccessesGranted(
     DWORD GrantedAccess,
     // access mask for granted access rights
     DWORD DesiredAccess
     // access mask for access rights requested
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ArrangeIconicWindows", "call ArrangeIconicWindows", @"UINT ArrangeIconicWindows(
+new Completion("ArrangeIconicWindows", "ArrangeIconicWindows", @"UINT ArrangeIconicWindows(
     HWND hWnd
     // handle to parent window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AttachThreadInput", "call AttachThreadInput", @"BOOL AttachThreadInput(
+new Completion("AttachThreadInput", "AttachThreadInput", @"BOOL AttachThreadInput(
     DWORD idAttach,
     // thread to attach
     DWORD idAttachTo,
@@ -283,7 +283,7 @@ new Completion("AttachThreadInput", "call AttachThreadInput", @"BOOL AttachThrea
     // attach or detach
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BackupRead", "call BackupRead", @"BOOL BackupRead(
+new Completion("BackupRead", "BackupRead", @"BOOL BackupRead(
     HANDLE hFile,
     // handle to file or directory
     LPBYTE lpBuffer,
@@ -300,7 +300,7 @@ new Completion("BackupRead", "call BackupRead", @"BOOL BackupRead(
     // pointer to pointer to internal context information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BackupSeek", "call BackupSeek", @"BOOL BackupSeek(
+new Completion("BackupSeek", "BackupSeek", @"BOOL BackupSeek(
     HANDLE hFile,
     // handle to open file
     DWORD dwLowBytesToSeek,
@@ -315,7 +315,7 @@ new Completion("BackupSeek", "call BackupSeek", @"BOOL BackupSeek(
     //pointer to internal context information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BackupWrite", "call BackupWrite", @"BOOL BackupWrite(
+new Completion("BackupWrite", "BackupWrite", @"BOOL BackupWrite(
     HANDLE hFile,
     // handle to file or directory
     LPBYTE lpBuffer,
@@ -332,31 +332,31 @@ new Completion("BackupWrite", "call BackupWrite", @"BOOL BackupWrite(
     // pointer to pointer to internal context information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Beep", "call Beep", @"BOOL Beep(
+new Completion("Beep", "Beep", @"BOOL Beep(
     DWORD dwFreq,
     // sound frequency, in hertz
     DWORD dwDuration
     // sound duration, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BeginDeferWindowPos", "call BeginDeferWindowPos", @"HDWP BeginDeferWindowPos(
+new Completion("BeginDeferWindowPos", "BeginDeferWindowPos", @"HDWP BeginDeferWindowPos(
     int nNumWindows
     // number of windows
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BeginPaint", "call BeginPaint", @"HDC BeginPaint(
+new Completion("BeginPaint", "BeginPaint", @"HDC BeginPaint(
     HWND hwnd,
     // handle to window
     LPPAINTSTRUCT lpPaint
     // pointer to structure for paint information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BeginPath", "call BeginPath", @"BOOL BeginPath(
+new Completion("BeginPath", "BeginPath", @"BOOL BeginPath(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BitBlt", "call BitBlt", @"BOOL BitBlt(
+new Completion("BitBlt", "BitBlt", @"BOOL BitBlt(
     HDC hdcDest,
     // handle to destination device context
     int nXDest,
@@ -377,19 +377,19 @@ new Completion("BitBlt", "call BitBlt", @"BOOL BitBlt(
     // raster operation code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BringWindowToTop", "call BringWindowToTop", @"BOOL BringWindowToTop(
+new Completion("BringWindowToTop", "BringWindowToTop", @"BOOL BringWindowToTop(
     HWND hWnd
     // handle to window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallMsgFilter", "call CallMsgFilter", @"BOOL CallMsgFilter(
+new Completion("CallMsgFilter", "CallMsgFilter", @"BOOL CallMsgFilter(
     LPMSG lpMsg,
     // pointer to structure with message data
     int nCode
     // hook code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallNextHookEx", "call CallNextHookEx", @"LRESULT CallNextHookEx(
+new Completion("CallNextHookEx", "CallNextHookEx", @"LRESULT CallNextHookEx(
     HHOOK hhk,
     // handle to current hook
     int nCode,
@@ -400,19 +400,19 @@ new Completion("CallNextHookEx", "call CallNextHookEx", @"LRESULT CallNextHookEx
     // value passed to hook procedure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CancelDC", "call CancelDC", @"BOOL CancelDC(
+new Completion("CancelDC", "CancelDC", @"BOOL CancelDC(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChangeClipboardChain", "call ChangeClipboardChain", @"BOOL ChangeClipboardChain(
+new Completion("ChangeClipboardChain", "ChangeClipboardChain", @"BOOL ChangeClipboardChain(
     HWND hWndRemove,
     // handle to window to remove
     HWND hWndNewNext
     // handle to next window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CheckDlgButton", "call CheckDlgButton", @"BOOL CheckDlgButton(
+new Completion("CheckDlgButton", "CheckDlgButton", @"BOOL CheckDlgButton(
     HWND hDlg,
     // handle to dialog box
     int nIDButton,
@@ -421,7 +421,7 @@ new Completion("CheckDlgButton", "call CheckDlgButton", @"BOOL CheckDlgButton(
     // check state
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CheckMenuItem", "call CheckMenuItem", @"DWORD CheckMenuItem(
+new Completion("CheckMenuItem", "CheckMenuItem", @"DWORD CheckMenuItem(
     HMENU hmenu,
     // handle to menu
     UINT uIDCheckItem,
@@ -430,7 +430,7 @@ new Completion("CheckMenuItem", "call CheckMenuItem", @"DWORD CheckMenuItem(
     // menu item flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CheckRadioButton", "call CheckRadioButton", @"BOOL CheckRadioButton(
+new Completion("CheckRadioButton", "CheckRadioButton", @"BOOL CheckRadioButton(
     HWND hDlg,
     // handle to dialog box
     int nIDFirstButton,
@@ -441,14 +441,14 @@ new Completion("CheckRadioButton", "call CheckRadioButton", @"BOOL CheckRadioBut
     // identifier of radio button to select
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChildWindowFromPoint", "call ChildWindowFromPoint", @"HWND ChildWindowFromPoint(
+new Completion("ChildWindowFromPoint", "ChildWindowFromPoint", @"HWND ChildWindowFromPoint(
     HWND hWndParent,
     // handle to parent window
     POINT Point
     // structure with point coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Chord", "call Chord", @"BOOL Chord(
+new Completion("Chord", "Chord", @"BOOL Chord(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -469,12 +469,12 @@ new Completion("Chord", "call Chord", @"BOOL Chord(
     // y-coordinate of the second radial's endpoint
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClearCommBreak", "call ClearCommBreak", @"BOOL ClearCommBreak(
+new Completion("ClearCommBreak", "ClearCommBreak", @"BOOL ClearCommBreak(
     HANDLE hFile
     // handle to communications device
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClearCommError", "call ClearCommError", @"BOOL ClearCommError(
+new Completion("ClearCommError", "ClearCommError", @"BOOL ClearCommError(
     HANDLE hFile,
     // handle to communications device
     LPDWORD lpErrors,
@@ -483,70 +483,70 @@ new Completion("ClearCommError", "call ClearCommError", @"BOOL ClearCommError(
     // pointer to buffer for communications status
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClientToScreen", "call ClientToScreen", @"BOOL ClientToScreen(
+new Completion("ClientToScreen", "ClientToScreen", @"BOOL ClientToScreen(
     HWND hWnd,
     // window handle for source coordinates
     LPPOINT lpPoint
     // pointer to structure containing screen coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClipCursor", "call ClipCursor", @"BOOL ClipCursor(
+new Completion("ClipCursor", "ClipCursor", @"BOOL ClipCursor(
     CONST RECT *lpRect
     // pointer to structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseClipboard", "call CloseClipboard", @"BOOL CloseClipboard(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseDesktop", "call CloseDesktop", @"BOOL CloseDesktop(
+new Completion("CloseClipboard", "CloseClipboard", @"BOOL CloseClipboard(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("CloseDesktop", "CloseDesktop", @"BOOL CloseDesktop(
     HDESK hDesktop
     // handle to desktop to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseEnhMetaFile", "call CloseEnhMetaFile", @"HENHMETAFILE CloseEnhMetaFile(
+new Completion("CloseEnhMetaFile", "CloseEnhMetaFile", @"HENHMETAFILE CloseEnhMetaFile(
     HDC hdc
     // handle to an enhanced-metafile device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseEventLog", "call CloseEventLog", @"BOOL CloseEventLog(
+new Completion("CloseEventLog", "CloseEventLog", @"BOOL CloseEventLog(
     HANDLE hEventLog
     // handle to event log
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseFigure", "call CloseFigure", @"BOOL CloseFigure(
+new Completion("CloseFigure", "CloseFigure", @"BOOL CloseFigure(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseHandle", "call CloseHandle", @"BOOL CloseHandle(
+new Completion("CloseHandle", "CloseHandle", @"BOOL CloseHandle(
     HANDLE hObject
     // handle to object to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseMetaFile", "call CloseMetaFile", @"HMETAFILE CloseMetaFile(
+new Completion("CloseMetaFile", "CloseMetaFile", @"HMETAFILE CloseMetaFile(
     HDC hdc
     // handle to metafile device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClosePrinter", "call ClosePrinter", @"BOOL ClosePrinter(
+new Completion("ClosePrinter", "ClosePrinter", @"BOOL ClosePrinter(
     HANDLE hPrinter
     // handle to printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseServiceHandle", "call CloseServiceHandle", @"BOOL CloseServiceHandle(
+new Completion("CloseServiceHandle", "CloseServiceHandle", @"BOOL CloseServiceHandle(
     SC_HANDLE hSCObject
     // handle to service or service control manager database
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseWindow", "call CloseWindow", @"BOOL CloseWindow(
+new Completion("CloseWindow", "CloseWindow", @"BOOL CloseWindow(
     HWND hWnd
     // handle to window to minimize
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CloseWindowStation", "call CloseWindowStation", @"BOOL CloseWindowStation(
+new Completion("CloseWindowStation", "CloseWindowStation", @"BOOL CloseWindowStation(
     HWINSTA hWinSta
     // handle to window station to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CombineRgn", "call CombineRgn", @"int CombineRgn(
+new Completion("CombineRgn", "CombineRgn", @"int CombineRgn(
     HRGN hrgnDest,
     // handle to destination region
     HRGN hrgnSrc1,
@@ -557,7 +557,7 @@ new Completion("CombineRgn", "call CombineRgn", @"int CombineRgn(
     // region combining mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CombineTransform", "call CombineTransform", @"BOOL CombineTransform(
+new Completion("CombineTransform", "CombineTransform", @"BOOL CombineTransform(
     LPXFORM lpxformResult,
     // pointer to combined transformation
     CONST XFORM *lpxform1,
@@ -566,35 +566,35 @@ new Completion("CombineTransform", "call CombineTransform", @"BOOL CombineTransf
     // pointer to second transformation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CommandLineToArgvW", "call CommandLineToArgvW", @"LPWSTR * CommandLineToArgvW(
+new Completion("CommandLineToArgvW", "CommandLineToArgvW", @"LPWSTR * CommandLineToArgvW(
     LPCWSTR lpCmdLine,
     // pointer to a command-line string
     int *pNumArgs
     // pointer to a variable that receives the argument count
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CompareFileTime", "call CompareFileTime", @"LONG CompareFileTime(
+new Completion("CompareFileTime", "CompareFileTime", @"LONG CompareFileTime(
     CONST FILETIME *lpFileTime1,
     // pointer to first file time
     CONST FILETIME *lpFileTime2
     // pointer to second file time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConnectNamedPipe", "call ConnectNamedPipe", @"BOOL ConnectNamedPipe(
+new Completion("ConnectNamedPipe", "ConnectNamedPipe", @"BOOL ConnectNamedPipe(
     HANDLE hNamedPipe,
     // handle to named pipe to connect
     LPOVERLAPPED lpOverlapped
     // pointer to overlapped structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConnectToPrinterDlg", "call ConnectToPrinterDlg", @"HANDLE ConnectToPrinterDlg (
+new Completion("ConnectToPrinterDlg", "ConnectToPrinterDlg", @"HANDLE ConnectToPrinterDlg (
     HWND hwnd,
     // handle to parent window of dialog box
     DWORD Flags
     // reserved for future use, must be zero
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ContinueDebugEvent", "call ContinueDebugEvent", @"BOOL ContinueDebugEvent(
+new Completion("ContinueDebugEvent", "ContinueDebugEvent", @"BOOL ContinueDebugEvent(
     DWORD dwProcessId,
     // process to continue
     DWORD dwThreadId,
@@ -603,7 +603,7 @@ new Completion("ContinueDebugEvent", "call ContinueDebugEvent", @"BOOL ContinueD
     // continuation status
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ControlService", "call ControlService", @"BOOL ControlService(
+new Completion("ControlService", "ControlService", @"BOOL ControlService(
     SC_HANDLE hService,
     // handle to service
     DWORD dwControl,
@@ -612,22 +612,22 @@ new Completion("ControlService", "call ControlService", @"BOOL ControlService(
     // pointer to service status structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConvertDefaultLocale", "call ConvertDefaultLocale", @"LCID ConvertDefaultLocale(
+new Completion("ConvertDefaultLocale", "ConvertDefaultLocale", @"LCID ConvertDefaultLocale(
     LCID Locale
     // special default locale value to be converted
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConvertThreadToFiber", "call ConvertThreadToFiber", @"LPVOID ConvertThreadToFiber(
+new Completion("ConvertThreadToFiber", "ConvertThreadToFiber", @"LPVOID ConvertThreadToFiber(
     LPVOID lpParameter
     // fiber data for new fiber
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyIcon", "call CopyIcon", @"HICON CopyIcon(
+new Completion("CopyIcon", "CopyIcon", @"HICON CopyIcon(
     HICON hIcon
     // handle to icon to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyImage", "call CopyImage", @"HANDLE CopyImage(
+new Completion("CopyImage", "CopyImage", @"HANDLE CopyImage(
     HANDLE hImage,
     // handle to the image to copy
     UINT uType,
@@ -640,14 +640,14 @@ new Completion("CopyImage", "call CopyImage", @"HANDLE CopyImage(
     // copy flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyRect", "call CopyRect", @"BOOL CopyRect(
+new Completion("CopyRect", "CopyRect", @"BOOL CopyRect(
     LPRECT lprcDst,
     // pointer to structure for destination rectangle
     CONST RECT *lprcSrc
     // pointer to structure with source rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopySid", "call CopySid", @"BOOL CopySid(
+new Completion("CopySid", "CopySid", @"BOOL CopySid(
     DWORD nDestinationSidLength,
     // size of buffer for copied SID
     PSID pDestinationSid,
@@ -656,8 +656,8 @@ new Completion("CopySid", "call CopySid", @"BOOL CopySid(
     // pointer to source SID
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CountClipboardFormats", "call CountClipboardFormats", @"int CountClipboardFormats(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateBitmap", "call CreateBitmap", @"HBITMAP CreateBitmap(
+new Completion("CountClipboardFormats", "CountClipboardFormats", @"int CountClipboardFormats(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("CreateBitmap", "CreateBitmap", @"HBITMAP CreateBitmap(
     int nWidth,
     // bitmap width, in pixels
     int nHeight,
@@ -670,17 +670,17 @@ new Completion("CreateBitmap", "call CreateBitmap", @"HBITMAP CreateBitmap(
     // pointer to array containing color data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateBitmapIndirect", "call CreateBitmapIndirect", @"HBITMAP CreateBitmapIndirect(
+new Completion("CreateBitmapIndirect", "CreateBitmapIndirect", @"HBITMAP CreateBitmapIndirect(
     CONST BITMAP *lpbm
     // pointer to the bitmap data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateBrushIndirect", "call CreateBrushIndirect", @"HBRUSH CreateBrushIndirect(
+new Completion("CreateBrushIndirect", "CreateBrushIndirect", @"HBRUSH CreateBrushIndirect(
     CONST LOGBRUSH *lplb
     // pointer to structure describing brush
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateCaret", "call CreateCaret", @"BOOL CreateCaret(
+new Completion("CreateCaret", "CreateCaret", @"BOOL CreateCaret(
     HWND hWnd,
     // handle to owner window
     HBITMAP hBitmap,
@@ -691,7 +691,7 @@ new Completion("CreateCaret", "call CreateCaret", @"BOOL CreateCaret(
     // caret height
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateCompatibleBitmap", "call CreateCompatibleBitmap", @"HBITMAP CreateCompatibleBitmap(
+new Completion("CreateCompatibleBitmap", "CreateCompatibleBitmap", @"HBITMAP CreateCompatibleBitmap(
     HDC hdc,
     // handle to device context
     int nWidth,
@@ -700,12 +700,12 @@ new Completion("CreateCompatibleBitmap", "call CreateCompatibleBitmap", @"HBITMA
     // height of bitmap, in pixels
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateCompatibleDC", "call CreateCompatibleDC", @"HDC CreateCompatibleDC(
+new Completion("CreateCompatibleDC", "CreateCompatibleDC", @"HDC CreateCompatibleDC(
     HDC hdc
     // handle to memory device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateConsoleScreenBuffer", "call CreateConsoleScreenBuffer", @"HANDLE CreateConsoleScreenBuffer(
+new Completion("CreateConsoleScreenBuffer", "CreateConsoleScreenBuffer", @"HANDLE CreateConsoleScreenBuffer(
     DWORD dwDesiredAccess,
     // access flag
     DWORD dwShareMode,
@@ -718,7 +718,7 @@ new Completion("CreateConsoleScreenBuffer", "call CreateConsoleScreenBuffer", @"
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateCursor", "call CreateCursor", @"HCURSOR CreateCursor(
+new Completion("CreateCursor", "CreateCursor", @"HCURSOR CreateCursor(
     HINSTANCE hInst,
     // handle to application instance
     int xHotSpot,
@@ -735,7 +735,7 @@ new Completion("CreateCursor", "call CreateCursor", @"HCURSOR CreateCursor(
     // pointer to XOR bitmask array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDIBitmap", "call CreateDIBitmap", @"HBITMAP CreateDIBitmap(
+new Completion("CreateDIBitmap", "CreateDIBitmap", @"HBITMAP CreateDIBitmap(
     HDC hdc,
     // handle to device context
     CONST BITMAPINFOHEADER *lpbmih,
@@ -750,21 +750,21 @@ new Completion("CreateDIBitmap", "call CreateDIBitmap", @"HBITMAP CreateDIBitmap
     // color-data usage
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDIBPatternBrush", "call CreateDIBPatternBrush", @"HBRUSH CreateDIBPatternBrush(
+new Completion("CreateDIBPatternBrush", "CreateDIBPatternBrush", @"HBRUSH CreateDIBPatternBrush(
     HGLOBAL hglbDIBPacked,
     // handle to device-independent bitmap
     UINT fuColorSpec
     // color table data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDIBPatternBrushPt", "call CreateDIBPatternBrushPt", @"HBRUSH CreateDIBPatternBrushPt(
+new Completion("CreateDIBPatternBrushPt", "CreateDIBPatternBrushPt", @"HBRUSH CreateDIBPatternBrushPt(
     CONST VOID *lpPackedDIB,
     // pointer to structure and bitmap bits
     UINT iUsage
     // usage flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDIBSection", "call CreateDIBSection", @"HBITMAP CreateDIBSection(
+new Completion("CreateDIBSection", "CreateDIBSection", @"HBITMAP CreateDIBSection(
     HDC hdc,
     // handle to device context
     CONST BITMAPINFO *pbmi,
@@ -779,7 +779,7 @@ new Completion("CreateDIBSection", "call CreateDIBSection", @"HBITMAP CreateDIBS
     // offset to the bitmap bit values within the file mapping object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDiscardableBitmap", "call CreateDiscardableBitmap", @"HBITMAP CreateDiscardableBitmap(
+new Completion("CreateDiscardableBitmap", "CreateDiscardableBitmap", @"HBITMAP CreateDiscardableBitmap(
     HDC hdc,
     // handle to device context
     int nWidth,
@@ -788,7 +788,7 @@ new Completion("CreateDiscardableBitmap", "call CreateDiscardableBitmap", @"HBIT
     // bitmap height
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEllipticRgn", "call CreateEllipticRgn", @"HRGN CreateEllipticRgn(
+new Completion("CreateEllipticRgn", "CreateEllipticRgn", @"HRGN CreateEllipticRgn(
     int nLeftRect,
     // x-coordinate of the upper-left corner of the bounding rectangle
     int nTopRect,
@@ -799,12 +799,12 @@ new Completion("CreateEllipticRgn", "call CreateEllipticRgn", @"HRGN CreateEllip
     // y-coordinate of the lower-right corner of the bounding rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEllipticRgnIndirect", "call CreateEllipticRgnIndirect", @"HRGN CreateEllipticRgnIndirect(
+new Completion("CreateEllipticRgnIndirect", "CreateEllipticRgnIndirect", @"HRGN CreateEllipticRgnIndirect(
     CONST RECT *lprc
     // pointer to structure defining bounding rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFiber", "call CreateFiber", @"LPVOID CreateFiber(
+new Completion("CreateFiber", "CreateFiber", @"LPVOID CreateFiber(
     DWORD dwStackSize,
     // initial thread stack size, in bytes
     LPFIBER_START_ROUTINE lpStartAddress,
@@ -813,19 +813,19 @@ new Completion("CreateFiber", "call CreateFiber", @"LPVOID CreateFiber(
     // argument for new fiber
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateHalftonePalette", "call CreateHalftonePalette", @"HPALETTE CreateHalftonePalette(
+new Completion("CreateHalftonePalette", "CreateHalftonePalette", @"HPALETTE CreateHalftonePalette(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateHatchBrush", "call CreateHatchBrush", @"HBRUSH CreateHatchBrush(
+new Completion("CreateHatchBrush", "CreateHatchBrush", @"HBRUSH CreateHatchBrush(
     int fnStyle,
     // hatch style
     COLORREF clrref
     // color value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateIcon", "call CreateIcon", @"HICON CreateIcon(
+new Completion("CreateIcon", "CreateIcon", @"HICON CreateIcon(
     HINSTANCE hInstance,
     // handle to application instance
     int nWidth,
@@ -842,7 +842,7 @@ new Completion("CreateIcon", "call CreateIcon", @"HICON CreateIcon(
     // pointer to XOR bitmask array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateIconFromResource", "call CreateIconFromResource", @"HICON CreateIconFromResource(
+new Completion("CreateIconFromResource", "CreateIconFromResource", @"HICON CreateIconFromResource(
     PBYTE presbits,
     // pointer to icon or cursor bits
     DWORD dwResSize,
@@ -853,12 +853,12 @@ new Completion("CreateIconFromResource", "call CreateIconFromResource", @"HICON 
     // Windows format version
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateIconIndirect", "call CreateIconIndirect", @"HICON CreateIconIndirect(
+new Completion("CreateIconIndirect", "CreateIconIndirect", @"HICON CreateIconIndirect(
     PICONINFO piconinfo
     // pointer to icon information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateIoCompletionPort", "call CreateIoCompletionPort", @"HANDLE CreateIoCompletionPort (
+new Completion("CreateIoCompletionPort", "CreateIoCompletionPort", @"HANDLE CreateIoCompletionPort (
     HANDLE FileHandle,
     // file handle to associate with I/O completion port
     HANDLE ExistingCompletionPort,
@@ -869,18 +869,18 @@ new Completion("CreateIoCompletionPort", "call CreateIoCompletionPort", @"HANDLE
     // number of threads allowed to execute concurrently
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMenu", "call CreateMenu", @"HMENU CreateMenu(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePalette", "call CreatePalette", @"HPALETTE CreatePalette(
+new Completion("CreateMenu", "CreateMenu", @"HMENU CreateMenu(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("CreatePalette", "CreatePalette", @"HPALETTE CreatePalette(
     CONST LOGPALETTE *lplgpl
     // pointer to logical color palette
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePatternBrush", "call CreatePatternBrush", @"HBRUSH CreatePatternBrush(
+new Completion("CreatePatternBrush", "CreatePatternBrush", @"HBRUSH CreatePatternBrush(
     HBITMAP hbmp
     // handle to bitmap
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePen", "call CreatePen", @"HPEN CreatePen(
+new Completion("CreatePen", "CreatePen", @"HPEN CreatePen(
     int fnPenStyle,
     // pen style
     int nWidth,
@@ -889,12 +889,12 @@ new Completion("CreatePen", "call CreatePen", @"HPEN CreatePen(
     // pen color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePenIndirect", "call CreatePenIndirect", @"HPEN CreatePenIndirect(
+new Completion("CreatePenIndirect", "CreatePenIndirect", @"HPEN CreatePenIndirect(
     CONST LOGPEN *lplgpn
     // pointer to LOGPEN structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePipe", "call CreatePipe", @"BOOL CreatePipe(
+new Completion("CreatePipe", "CreatePipe", @"BOOL CreatePipe(
     PHANDLE hReadPipe,
     // address of variable for read handle
     PHANDLE hWritePipe,
@@ -905,7 +905,7 @@ new Completion("CreatePipe", "call CreatePipe", @"BOOL CreatePipe(
     // number of bytes reserved for pipe
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePolygonRgn", "call CreatePolygonRgn", @"HRGN CreatePolygonRgn(
+new Completion("CreatePolygonRgn", "CreatePolygonRgn", @"HRGN CreatePolygonRgn(
     CONST POINT *lppt,
     // pointer to array of points
     int cPoints,
@@ -914,7 +914,7 @@ new Completion("CreatePolygonRgn", "call CreatePolygonRgn", @"HRGN CreatePolygon
     // polygon-filling mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePolyPolygonRgn", "call CreatePolyPolygonRgn", @"HRGN CreatePolyPolygonRgn(
+new Completion("CreatePolyPolygonRgn", "CreatePolyPolygonRgn", @"HRGN CreatePolyPolygonRgn(
     CONST POINT *lppt,
     // pointer to array of points
     CONST INT *lpPolyCounts,
@@ -925,8 +925,8 @@ new Completion("CreatePolyPolygonRgn", "call CreatePolyPolygonRgn", @"HRGN Creat
     // polygon fill mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePopupMenu", "call CreatePopupMenu", @"HMENU CreatePopupMenu(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreatePrivateObjectSecurity", "call CreatePrivateObjectSecurity", @"BOOL CreatePrivateObjectSecurity(
+new Completion("CreatePopupMenu", "CreatePopupMenu", @"HMENU CreatePopupMenu(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("CreatePrivateObjectSecurity", "CreatePrivateObjectSecurity", @"BOOL CreatePrivateObjectSecurity(
     PSECURITY_DESCRIPTOR ParentDescriptor,
     // pointer to parent directory SD
     PSECURITY_DESCRIPTOR CreatorDescriptor,
@@ -941,7 +941,7 @@ new Completion("CreatePrivateObjectSecurity", "call CreatePrivateObjectSecurity"
     // pointer to access-rights structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateRectRgn", "call CreateRectRgn", @"HRGN CreateRectRgn(
+new Completion("CreateRectRgn", "CreateRectRgn", @"HRGN CreateRectRgn(
     int nLeftRect,
     // x-coordinate of region's upper-left corner
     int nTopRect,
@@ -952,12 +952,12 @@ new Completion("CreateRectRgn", "call CreateRectRgn", @"HRGN CreateRectRgn(
     // y-coordinate of region's lower-right corner
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateRectRgnIndirect", "call CreateRectRgnIndirect", @"HRGN CreateRectRgnIndirect(
+new Completion("CreateRectRgnIndirect", "CreateRectRgnIndirect", @"HRGN CreateRectRgnIndirect(
     CONST RECT *lprc
     // pointer to the rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateRemoteThread", "call CreateRemoteThread", @"HANDLE CreateRemoteThread(
+new Completion("CreateRemoteThread", "CreateRemoteThread", @"HANDLE CreateRemoteThread(
     HANDLE hProcess,
     // handle to process to create thread in
     LPSECURITY_ATTRIBUTES lpThreadAttributes,
@@ -974,7 +974,7 @@ new Completion("CreateRemoteThread", "call CreateRemoteThread", @"HANDLE CreateR
     // pointer to returned thread identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateRoundRectRgn", "call CreateRoundRectRgn", @"HRGN CreateRoundRectRgn(
+new Completion("CreateRoundRectRgn", "CreateRoundRectRgn", @"HRGN CreateRoundRectRgn(
     int nLeftRect,
     // x-coordinate of the region's upper-left corner
     int nTopRect,
@@ -989,12 +989,12 @@ new Completion("CreateRoundRectRgn", "call CreateRoundRectRgn", @"HRGN CreateRou
     // width of ellipse for rounded corners
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateSolidBrush", "call CreateSolidBrush", @"HBRUSH CreateSolidBrush(
+new Completion("CreateSolidBrush", "CreateSolidBrush", @"HBRUSH CreateSolidBrush(
     COLORREF crColor
     // brush color value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateTapePartition", "call CreateTapePartition", @"DWORD CreateTapePartition(
+new Completion("CreateTapePartition", "CreateTapePartition", @"DWORD CreateTapePartition(
     HANDLE hDevice,
     // handle to open device
     DWORD dwPartitionMethod,
@@ -1005,7 +1005,7 @@ new Completion("CreateTapePartition", "call CreateTapePartition", @"DWORD Create
     // size of new partition, in megabytes
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateThread", "call CreateThread", @"HANDLE CreateThread(
+new Completion("CreateThread", "CreateThread", @"HANDLE CreateThread(
     LPSECURITY_ATTRIBUTES lpThreadAttributes,
     // pointer to thread security attributes
     DWORD dwStackSize,
@@ -1020,7 +1020,7 @@ new Completion("CreateThread", "call CreateThread", @"HANDLE CreateThread(
     // pointer to returned thread identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeAbandonTransaction", "call DdeAbandonTransaction", @"BOOL DdeAbandonTransaction(
+new Completion("DdeAbandonTransaction", "DdeAbandonTransaction", @"BOOL DdeAbandonTransaction(
     DWORD idInst,
     // instance identifier
     HCONV hConv,
@@ -1029,14 +1029,14 @@ new Completion("DdeAbandonTransaction", "call DdeAbandonTransaction", @"BOOL Dde
     // transaction identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeAccessData", "call DdeAccessData", @"LPBYTE DdeAccessData(
+new Completion("DdeAccessData", "DdeAccessData", @"LPBYTE DdeAccessData(
     HDDEDATA hData,
     // handle to DDE object
     LPDWORD pcbDataSize
     // pointer to variable that receives data length
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeAddData", "call DdeAddData", @"HDDEDATA DdeAddData(
+new Completion("DdeAddData", "DdeAddData", @"HDDEDATA DdeAddData(
     HDDEDATA hData,
     // handle to DDE data object
     LPBYTE pSrc,
@@ -1047,7 +1047,7 @@ new Completion("DdeAddData", "call DdeAddData", @"HDDEDATA DdeAddData(
     // offset within DDE data object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeClientTransaction", "call DdeClientTransaction", @"HDDEDATA DdeClientTransaction(
+new Completion("DdeClientTransaction", "DdeClientTransaction", @"HDDEDATA DdeClientTransaction(
     LPBYTE pData,
     // pointer to data to pass to server
     DWORD cbData,
@@ -1066,14 +1066,14 @@ new Completion("DdeClientTransaction", "call DdeClientTransaction", @"HDDEDATA D
     // pointer to transaction result
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeCmpStringHandles", "call DdeCmpStringHandles", @"int DdeCmpStringHandles(
+new Completion("DdeCmpStringHandles", "DdeCmpStringHandles", @"int DdeCmpStringHandles(
     HSZ hsz1,
     // handle to first string
     HSZ hsz2
     // handle to second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeConnect", "call DdeConnect", @"HCONV DdeConnect(
+new Completion("DdeConnect", "DdeConnect", @"HCONV DdeConnect(
     DWORD idInst,
     // instance identifier
     HSZ hszService,
@@ -1084,7 +1084,7 @@ new Completion("DdeConnect", "call DdeConnect", @"HCONV DdeConnect(
     // pointer to structure with context data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeConnectList", "call DdeConnectList", @"HCONVLIST DdeConnectList(
+new Completion("DdeConnectList", "DdeConnectList", @"HCONVLIST DdeConnectList(
     DWORD idInst,
     // instance identifier
     HSZ hszService,
@@ -1097,7 +1097,7 @@ new Completion("DdeConnectList", "call DdeConnectList", @"HCONVLIST DdeConnectLi
     // pointer to structure with context data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeCreateDataHandle", "call DdeCreateDataHandle", @"HDDEDATA DdeCreateDataHandle(
+new Completion("DdeCreateDataHandle", "DdeCreateDataHandle", @"HDDEDATA DdeCreateDataHandle(
     DWORD idInst,
     // instance identifier
     LPBYTE pSrc,
@@ -1114,17 +1114,17 @@ new Completion("DdeCreateDataHandle", "call DdeCreateDataHandle", @"HDDEDATA Dde
     // creation flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeDisconnect", "call DdeDisconnect", @"BOOL DdeDisconnect(
+new Completion("DdeDisconnect", "DdeDisconnect", @"BOOL DdeDisconnect(
     HCONV hConv
     // handle to conversation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeDisconnectList", "call DdeDisconnectList", @"BOOL DdeDisconnectList(
+new Completion("DdeDisconnectList", "DdeDisconnectList", @"BOOL DdeDisconnectList(
     HCONVLIST hConvList
     // handle to conversation list
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeEnableCallback", "call DdeEnableCallback", @"BOOL DdeEnableCallback(
+new Completion("DdeEnableCallback", "DdeEnableCallback", @"BOOL DdeEnableCallback(
     DWORD idInst,
     // instance identifier
     HCONV hConv,
@@ -1133,19 +1133,19 @@ new Completion("DdeEnableCallback", "call DdeEnableCallback", @"BOOL DdeEnableCa
     // enable or disable function code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeFreeDataHandle", "call DdeFreeDataHandle", @"BOOL DdeFreeDataHandle(
+new Completion("DdeFreeDataHandle", "DdeFreeDataHandle", @"BOOL DdeFreeDataHandle(
     HDDEDATA hData
     // handle to DDE object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeFreeStringHandle", "call DdeFreeStringHandle", @"BOOL DdeFreeStringHandle(
+new Completion("DdeFreeStringHandle", "DdeFreeStringHandle", @"BOOL DdeFreeStringHandle(
     DWORD idInst,
     // instance identifier
     HSZ hsz
     // handle to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeGetData", "call DdeGetData", @"DWORD DdeGetData(
+new Completion("DdeGetData", "DdeGetData", @"DWORD DdeGetData(
     HDDEDATA hData,
     // handle to DDE object
     LPBYTE pDst,
@@ -1156,24 +1156,24 @@ new Completion("DdeGetData", "call DdeGetData", @"DWORD DdeGetData(
     // offset to beginning of data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeGetLastError", "call DdeGetLastError", @"UINT DdeGetLastError(
+new Completion("DdeGetLastError", "DdeGetLastError", @"UINT DdeGetLastError(
     DWORD idInst
     // instance identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeImpersonateClient", "call DdeImpersonateClient", @"BOOL DdeImpersonateClient(
+new Completion("DdeImpersonateClient", "DdeImpersonateClient", @"BOOL DdeImpersonateClient(
     HCONV hConv
     // handle to DDE conversation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeKeepStringHandle", "call DdeKeepStringHandle", @"BOOL DdeKeepStringHandle(
+new Completion("DdeKeepStringHandle", "DdeKeepStringHandle", @"BOOL DdeKeepStringHandle(
     DWORD idInst,
     // instance identifier
     HSZ hsz
     // handle to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeNameService", "call DdeNameService", @"HDDEDATA DdeNameService(
+new Completion("DdeNameService", "DdeNameService", @"HDDEDATA DdeNameService(
     DWORD idInst,
     // instance identifier
     HSZ hsz1,
@@ -1184,7 +1184,7 @@ new Completion("DdeNameService", "call DdeNameService", @"HDDEDATA DdeNameServic
     // service name flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdePostAdvise", "call DdePostAdvise", @"BOOL DdePostAdvise(
+new Completion("DdePostAdvise", "DdePostAdvise", @"BOOL DdePostAdvise(
     DWORD idInst,
     // instance identifier
     HSZ hszTopic,
@@ -1193,7 +1193,7 @@ new Completion("DdePostAdvise", "call DdePostAdvise", @"BOOL DdePostAdvise(
     // handle to item name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeQueryConvInfo", "call DdeQueryConvInfo", @"UINT DdeQueryConvInfo(
+new Completion("DdeQueryConvInfo", "DdeQueryConvInfo", @"UINT DdeQueryConvInfo(
     HCONV hConv,
     // handle to conversation
     DWORD idTransaction,
@@ -1202,19 +1202,19 @@ new Completion("DdeQueryConvInfo", "call DdeQueryConvInfo", @"UINT DdeQueryConvI
     // pointer to structure with conversation data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeQueryNextServer", "call DdeQueryNextServer", @"HCONV DdeQueryNextServer(
+new Completion("DdeQueryNextServer", "DdeQueryNextServer", @"HCONV DdeQueryNextServer(
     HCONVLIST hConvList,
     // handle to conversation list
     HCONV hConvPrev
     // previous conversation handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeReconnect", "call DdeReconnect", @"HCONV DdeReconnect(
+new Completion("DdeReconnect", "DdeReconnect", @"HCONV DdeReconnect(
     HCONV hConv
     // handle to conversation to reestablish
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeSetQualityOfService", "call DdeSetQualityOfService", @"BOOL DdeSetQualityOfService(
+new Completion("DdeSetQualityOfService", "DdeSetQualityOfService", @"BOOL DdeSetQualityOfService(
     HWND hwndClient,
     // handle to DDE client window that will start DDE conversations
     CONST SECURITY_QUALITY_OF_SERVICE *pqosNew,
@@ -1223,7 +1223,7 @@ new Completion("DdeSetQualityOfService", "call DdeSetQualityOfService", @"BOOL D
     // prior quality of service
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeSetUserHandle", "call DdeSetUserHandle", @"BOOL DdeSetUserHandle(
+new Completion("DdeSetUserHandle", "DdeSetUserHandle", @"BOOL DdeSetUserHandle(
     HCONV hConv,
     // handle to conversation
     DWORD id,
@@ -1232,23 +1232,23 @@ new Completion("DdeSetUserHandle", "call DdeSetUserHandle", @"BOOL DdeSetUserHan
     // handle to application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeUnaccessData", "call DdeUnaccessData", @"BOOL DdeUnaccessData(
+new Completion("DdeUnaccessData", "DdeUnaccessData", @"BOOL DdeUnaccessData(
     HDDEDATA hData
     // handle to DDE object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeUninitialize", "call DdeUninitialize", @"BOOL DdeUninitialize(
+new Completion("DdeUninitialize", "DdeUninitialize", @"BOOL DdeUninitialize(
     DWORD idInst
     // instance identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DebugActiveProcess", "call DebugActiveProcess", @"BOOL DebugActiveProcess(
+new Completion("DebugActiveProcess", "DebugActiveProcess", @"BOOL DebugActiveProcess(
     DWORD dwProcessId
     // process to be debugged
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DebugBreak", "call DebugBreak", @"VOID DebugBreak(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeferWindowPos", "call DeferWindowPos", @"HDWP DeferWindowPos(
+new Completion("DebugBreak", "DebugBreak", @"VOID DebugBreak(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("DeferWindowPos", "DeferWindowPos", @"HDWP DeferWindowPos(
     HDWP hWinPosInfo,
     // handle to internal structure
     HWND hWnd,
@@ -1267,39 +1267,39 @@ new Completion("DeferWindowPos", "call DeferWindowPos", @"HDWP DeferWindowPos(
     // window-positioning flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteAce", "call DeleteAce", @"BOOL DeleteAce(
+new Completion("DeleteAce", "DeleteAce", @"BOOL DeleteAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceIndex
     // index of ACE position in ACL
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteAtom", "call DeleteAtom", @"ATOM DeleteAtom(
+new Completion("DeleteAtom", "DeleteAtom", @"ATOM DeleteAtom(
     ATOM nAtom
     // atom to delete
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteCriticalSection", "call DeleteCriticalSection", @"VOID DeleteCriticalSection(
+new Completion("DeleteCriticalSection", "DeleteCriticalSection", @"VOID DeleteCriticalSection(
     LPCRITICAL_SECTION lpCriticalSection
     // pointer to critical section object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteDC", "call DeleteDC", @"BOOL DeleteDC(
+new Completion("DeleteDC", "DeleteDC", @"BOOL DeleteDC(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteEnhMetaFile", "call DeleteEnhMetaFile", @"BOOL DeleteEnhMetaFile(
+new Completion("DeleteEnhMetaFile", "DeleteEnhMetaFile", @"BOOL DeleteEnhMetaFile(
     HENHMETAFILE hemf
     // handle to an enhanced metafile
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteFiber", "call DeleteFiber", @"VOID DeleteFiber(
+new Completion("DeleteFiber", "DeleteFiber", @"VOID DeleteFiber(
     LPVOID lpFiber
     // pointer to the fiber to delete
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteMenu", "call DeleteMenu", @"BOOL DeleteMenu(
+new Completion("DeleteMenu", "DeleteMenu", @"BOOL DeleteMenu(
     HMENU hMenu,
     // handle to menu
     UINT uPosition,
@@ -1308,58 +1308,58 @@ new Completion("DeleteMenu", "call DeleteMenu", @"BOOL DeleteMenu(
     // menu item flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteMetaFile", "call DeleteMetaFile", @"BOOL DeleteMetaFile(
+new Completion("DeleteMetaFile", "DeleteMetaFile", @"BOOL DeleteMetaFile(
     HMETAFILE hmf
     // handle to Windows-format metafile
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteObject", "call DeleteObject", @"BOOL DeleteObject(
+new Completion("DeleteObject", "DeleteObject", @"BOOL DeleteObject(
     HGDIOBJ hObject
     // handle to graphic object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrinter", "call DeletePrinter", @"BOOL DeletePrinter(
+new Completion("DeletePrinter", "DeletePrinter", @"BOOL DeletePrinter(
     HANDLE hPrinter
     // handle to printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteService", "call DeleteService", @"BOOL DeleteService(
+new Completion("DeleteService", "DeleteService", @"BOOL DeleteService(
     SC_HANDLE hService
     // handle to service
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeregisterEventSource", "call DeregisterEventSource", @"BOOL DeregisterEventSource(
+new Completion("DeregisterEventSource", "DeregisterEventSource", @"BOOL DeregisterEventSource(
     HANDLE hEventLog
     // handle to event log
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyAcceleratorTable", "call DestroyAcceleratorTable", @"BOOL DestroyAcceleratorTable(
+new Completion("DestroyAcceleratorTable", "DestroyAcceleratorTable", @"BOOL DestroyAcceleratorTable(
     HACCEL hAccel
     // handle to accelerator table
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyCaret", "call DestroyCaret", @"BOOL DestroyCaret(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyCursor", "call DestroyCursor", @"BOOL DestroyCursor(
+new Completion("DestroyCaret", "DestroyCaret", @"BOOL DestroyCaret(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("DestroyCursor", "DestroyCursor", @"BOOL DestroyCursor(
     HCURSOR hCursor
     // handle to cursor to destroy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyIcon", "call DestroyIcon", @"BOOL DestroyIcon(
+new Completion("DestroyIcon", "DestroyIcon", @"BOOL DestroyIcon(
     HICON hIcon
     // handle to icon to destroy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyMenu", "call DestroyMenu", @"BOOL DestroyMenu(
+new Completion("DestroyMenu", "DestroyMenu", @"BOOL DestroyMenu(
     HMENU hMenu
     // handle to menu to destroy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DestroyPrivateObjectSecurity", "call DestroyPrivateObjectSecurity", @"BOOL DestroyPrivateObjectSecurity(
+new Completion("DestroyPrivateObjectSecurity", "DestroyPrivateObjectSecurity", @"BOOL DestroyPrivateObjectSecurity(
     PSECURITY_DESCRIPTOR *ObjectDescriptor
     // address of pointer to SECURITY_DESCRIPTOR
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeviceCapabilities", "call DeviceCapabilities", @"DWORD DeviceCapabilities(
+new Completion("DeviceCapabilities", "DeviceCapabilities", @"DWORD DeviceCapabilities(
     LPCTSTR pDevice,
     // pointer to a printer-name string
     LPCTSTR pPort,
@@ -1372,7 +1372,7 @@ new Completion("DeviceCapabilities", "call DeviceCapabilities", @"DWORD DeviceCa
     // pointer to structure with device data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeviceIoControl", "call DeviceIoControl", @"BOOL DeviceIoControl(
+new Completion("DeviceIoControl", "DeviceIoControl", @"BOOL DeviceIoControl(
     HANDLE hDevice,
     // handle to device of interest
     DWORD dwIoControlCode,
@@ -1391,17 +1391,17 @@ new Completion("DeviceIoControl", "call DeviceIoControl", @"BOOL DeviceIoControl
     // pointer to overlapped structure for asynchronous operation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DisableThreadLibraryCalls", "call DisableThreadLibraryCalls", @"BOOL DisableThreadLibraryCalls(
+new Completion("DisableThreadLibraryCalls", "DisableThreadLibraryCalls", @"BOOL DisableThreadLibraryCalls(
     HMODULE hLibModule
     // dynamic-link library for which calls are to be disabled
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DisconnectNamedPipe", "call DisconnectNamedPipe", @"BOOL DisconnectNamedPipe(
+new Completion("DisconnectNamedPipe", "DisconnectNamedPipe", @"BOOL DisconnectNamedPipe(
     HANDLE hNamedPipe
     // handle to named pipe
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DosDateTimeToFileTime", "call DosDateTimeToFileTime", @"BOOL DosDateTimeToFileTime(
+new Completion("DosDateTimeToFileTime", "DosDateTimeToFileTime", @"BOOL DosDateTimeToFileTime(
     WORD wFatDate,
     // 16-bit MS-DOS date
     WORD wFatTime,
@@ -1410,7 +1410,7 @@ new Completion("DosDateTimeToFileTime", "call DosDateTimeToFileTime", @"BOOL Dos
     // pointer to buffer for 64-bit file time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DPtoLP", "call DPtoLP", @"BOOL DPtoLP(
+new Completion("DPtoLP", "DPtoLP", @"BOOL DPtoLP(
     HDC hdc,
     // handle to device context
     LPPOINT lpPoints,
@@ -1419,19 +1419,19 @@ new Completion("DPtoLP", "call DPtoLP", @"BOOL DPtoLP(
     // count of points
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragAcceptFiles", "call DragAcceptFiles", @"VOID DragAcceptFiles(
+new Completion("DragAcceptFiles", "DragAcceptFiles", @"VOID DragAcceptFiles(
     HWND hWnd,
     // handle to the registering window
     BOOL fAccept
     // acceptance option
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragFinish", "call DragFinish", @"VOID DragFinish(
+new Completion("DragFinish", "DragFinish", @"VOID DragFinish(
     HDROP hDrop
     // handle to memory to free
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragQueryFile", "call DragQueryFile", @"UINT DragQueryFile(
+new Completion("DragQueryFile", "DragQueryFile", @"UINT DragQueryFile(
     HDROP hDrop,
     // handle to structure for dropped files
     UINT iFile,
@@ -1442,14 +1442,14 @@ new Completion("DragQueryFile", "call DragQueryFile", @"UINT DragQueryFile(
     // size of buffer for filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragQueryPoint", "call DragQueryPoint", @"BOOL DragQueryPoint(
+new Completion("DragQueryPoint", "DragQueryPoint", @"BOOL DragQueryPoint(
     HDROP hDrop,
     // handle to structure for dropped file
     LPPOINT lppt
     // pointer to structure for mouse coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawEdge", "call DrawEdge", @"BOOL DrawEdge(
+new Completion("DrawEdge", "DrawEdge", @"BOOL DrawEdge(
     HDC hdc,
     // handle to device context
     LPRECT qrc,
@@ -1460,7 +1460,7 @@ new Completion("DrawEdge", "call DrawEdge", @"BOOL DrawEdge(
     // type of border
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawEscape", "call DrawEscape", @"int DrawEscape(
+new Completion("DrawEscape", "DrawEscape", @"int DrawEscape(
     HDC hdc,
     // handle to device context
     int nEscape,
@@ -1471,14 +1471,14 @@ new Completion("DrawEscape", "call DrawEscape", @"int DrawEscape(
     // pointer to structure for input
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawFocusRect", "call DrawFocusRect", @"BOOL DrawFocusRect(
+new Completion("DrawFocusRect", "DrawFocusRect", @"BOOL DrawFocusRect(
     HDC hDC,
     // handle to device context
     CONST RECT *lprc
     // pointer to structure for rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawFrameControl", "call DrawFrameControl", @"BOOL DrawFrameControl(
+new Completion("DrawFrameControl", "DrawFrameControl", @"BOOL DrawFrameControl(
     HDC hdc,
     // handle to device context
     LPRECT lprc,
@@ -1489,7 +1489,7 @@ new Completion("DrawFrameControl", "call DrawFrameControl", @"BOOL DrawFrameCont
     // frame-control state
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawIcon", "call DrawIcon", @"BOOL DrawIcon(
+new Completion("DrawIcon", "DrawIcon", @"BOOL DrawIcon(
     HDC hDC,
     // handle to device context
     int X,
@@ -1500,7 +1500,7 @@ new Completion("DrawIcon", "call DrawIcon", @"BOOL DrawIcon(
     // handle to icon to draw
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawIconEx", "call DrawIconEx", @"BOOL DrawIconEx(
+new Completion("DrawIconEx", "DrawIconEx", @"BOOL DrawIconEx(
     HDC hdc,
     // handle to device context
     int xLeft,
@@ -1521,12 +1521,12 @@ new Completion("DrawIconEx", "call DrawIconEx", @"BOOL DrawIconEx(
     // icon-drawing flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawMenuBar", "call DrawMenuBar", @"BOOL DrawMenuBar(
+new Completion("DrawMenuBar", "DrawMenuBar", @"BOOL DrawMenuBar(
     HWND hWnd
     // handle to window with menu bar to redraw
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DuplicateHandle", "call DuplicateHandle", @"BOOL DuplicateHandle(
+new Completion("DuplicateHandle", "DuplicateHandle", @"BOOL DuplicateHandle(
     HANDLE hSourceProcessHandle,
     // handle to process with handle to duplicate
     HANDLE hSourceHandle,
@@ -1543,7 +1543,7 @@ new Completion("DuplicateHandle", "call DuplicateHandle", @"BOOL DuplicateHandle
     // optional actions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DuplicateToken", "call DuplicateToken", @"BOOL DuplicateToken(
+new Completion("DuplicateToken", "DuplicateToken", @"BOOL DuplicateToken(
     HANDLE ExistingTokenHandle,
     // handle to token to duplicate
     SECURITY_IMPERSONATION_LEVEL ImpersonationLevel,
@@ -1552,7 +1552,7 @@ new Completion("DuplicateToken", "call DuplicateToken", @"BOOL DuplicateToken(
     // handle to duplicated token
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Ellipse", "call Ellipse", @"BOOL Ellipse(
+new Completion("Ellipse", "Ellipse", @"BOOL Ellipse(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -1565,8 +1565,8 @@ new Completion("Ellipse", "call Ellipse", @"BOOL Ellipse(
     // y-coord. bounding rectangle's f lower-right corner
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EmptyClipboard", "call EmptyClipboard", @"BOOL EmptyClipboard(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnableMenuItem", "call EnableMenuItem", @"BOOL EnableMenuItem(
+new Completion("EmptyClipboard", "EmptyClipboard", @"BOOL EmptyClipboard(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("EnableMenuItem", "EnableMenuItem", @"BOOL EnableMenuItem(
     HMENU hMenu,
     // handle to menu
     UINT uIDEnableItem,
@@ -1575,7 +1575,7 @@ new Completion("EnableMenuItem", "call EnableMenuItem", @"BOOL EnableMenuItem(
     // menu item flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnableScrollBar", "call EnableScrollBar", @"BOOL EnableScrollBar(
+new Completion("EnableScrollBar", "EnableScrollBar", @"BOOL EnableScrollBar(
     HWND hWnd,
     // handle to window or scroll bar
     UINT wSBflags,
@@ -1584,63 +1584,63 @@ new Completion("EnableScrollBar", "call EnableScrollBar", @"BOOL EnableScrollBar
     // scroll bar arrow flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnableWindow", "call EnableWindow", @"BOOL EnableWindow(
+new Completion("EnableWindow", "EnableWindow", @"BOOL EnableWindow(
     HWND hWnd,
     // handle to window
     BOOL bEnable
     // flag for enabling or disabling input
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndDeferWindowPos", "call EndDeferWindowPos", @"BOOL EndDeferWindowPos(
+new Completion("EndDeferWindowPos", "EndDeferWindowPos", @"BOOL EndDeferWindowPos(
     HDWP hWinPosInfo
     // handle to internal structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndDialog", "call EndDialog", @"BOOL EndDialog(
+new Completion("EndDialog", "EndDialog", @"BOOL EndDialog(
     HWND hDlg,
     // handle to dialog box
     int nResult
     // value to return
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndDoc", "call EndDoc", @"int EndDoc(
+new Completion("EndDoc", "EndDoc", @"int EndDoc(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndDocPrinter", "call EndDocPrinter", @"BOOL EndDocPrinter(
+new Completion("EndDocPrinter", "EndDocPrinter", @"BOOL EndDocPrinter(
     HANDLE hPrinter
     // handle to printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndPage", "call EndPage", @"int EndPage(
+new Completion("EndPage", "EndPage", @"int EndPage(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndPagePrinter", "call EndPagePrinter", @"BOOL EndPagePrinter(
+new Completion("EndPagePrinter", "EndPagePrinter", @"BOOL EndPagePrinter(
     HANDLE hPrinter
     // handle to printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndPaint", "call EndPaint", @"BOOL EndPaint(
+new Completion("EndPaint", "EndPaint", @"BOOL EndPaint(
     HWND hWnd,
     // handle to window
     CONST PAINTSTRUCT *lpPaint
     // pointer to structure for paint data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndPath", "call EndPath", @"BOOL EndPath(
+new Completion("EndPath", "EndPath", @"BOOL EndPath(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnterCriticalSection", "call EnterCriticalSection", @"VOID EnterCriticalSection(
+new Completion("EnterCriticalSection", "EnterCriticalSection", @"VOID EnterCriticalSection(
     LPCRITICAL_SECTION lpCriticalSection
     // pointer to critical section object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumChildWindows", "call EnumChildWindows", @"BOOL EnumChildWindows(
+new Completion("EnumChildWindows", "EnumChildWindows", @"BOOL EnumChildWindows(
     HWND hWndParent,
     // handle to parent window
     WNDENUMPROC lpEnumFunc,
@@ -1649,12 +1649,12 @@ new Completion("EnumChildWindows", "call EnumChildWindows", @"BOOL EnumChildWind
     // application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumClipboardFormats", "call EnumClipboardFormats", @"UINT EnumClipboardFormats(
+new Completion("EnumClipboardFormats", "EnumClipboardFormats", @"UINT EnumClipboardFormats(
     UINT format
     // specifies a known available clipboard format
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDesktopWindows", "call EnumDesktopWindows", @"BOOL EnumDesktopWindows(
+new Completion("EnumDesktopWindows", "EnumDesktopWindows", @"BOOL EnumDesktopWindows(
     HDESK hDesktop,
     // handle to desktop to enumerate
     WNDENUMPROC lpfn,
@@ -1663,7 +1663,7 @@ new Completion("EnumDesktopWindows", "call EnumDesktopWindows", @"BOOL EnumDeskt
     // 32-bit value to pass to the callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumEnhMetaFile", "call EnumEnhMetaFile", @"BOOL EnumEnhMetaFile(
+new Completion("EnumEnhMetaFile", "EnumEnhMetaFile", @"BOOL EnumEnhMetaFile(
     HDC hdc,
     // handle to device context
     HENHMETAFILE hemf,
@@ -1676,7 +1676,7 @@ new Completion("EnumEnhMetaFile", "call EnumEnhMetaFile", @"BOOL EnumEnhMetaFile
     // pointer to bounding rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumMetaFile", "call EnumMetaFile", @"BOOL EnumMetaFile(
+new Completion("EnumMetaFile", "EnumMetaFile", @"BOOL EnumMetaFile(
     HDC hdc,
     // handle to device context
     HMETAFILE hmf,
@@ -1687,7 +1687,7 @@ new Completion("EnumMetaFile", "call EnumMetaFile", @"BOOL EnumMetaFile(
     // address of callback function data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumObjects", "call EnumObjects", @"int EnumObjects(
+new Completion("EnumObjects", "EnumObjects", @"int EnumObjects(
     HDC hdc,
     // handle to device context
     int nObjectType,
@@ -1698,7 +1698,7 @@ new Completion("EnumObjects", "call EnumObjects", @"int EnumObjects(
     // pointer to application-supplied data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumThreadWindows", "call EnumThreadWindows", @"BOOL EnumThreadWindows(
+new Completion("EnumThreadWindows", "EnumThreadWindows", @"BOOL EnumThreadWindows(
     DWORD dwThreadId,
     // thread identifier
     WNDENUMPROC lpfn,
@@ -1707,42 +1707,42 @@ new Completion("EnumThreadWindows", "call EnumThreadWindows", @"BOOL EnumThreadW
     // application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumWindows", "call EnumWindows", @"BOOL EnumWindows(
+new Completion("EnumWindows", "EnumWindows", @"BOOL EnumWindows(
     WNDENUMPROC lpEnumFunc,
     // pointer to callback function
     LPARAM lParam
     // application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EqualPrefixSid", "call EqualPrefixSid", @"BOOL EqualPrefixSid(
+new Completion("EqualPrefixSid", "EqualPrefixSid", @"BOOL EqualPrefixSid(
     PSID pSid1,
     // pointer to first SID to compare
     PSID pSid2
     // pointer to second SID to compare
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EqualRect", "call EqualRect", @"BOOL EqualRect(
+new Completion("EqualRect", "EqualRect", @"BOOL EqualRect(
     CONST RECT *lprc1,
     // pointer to structure with first rectangle
     CONST RECT *lprc2
     // pointer to structure with second rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EqualRgn", "call EqualRgn", @"BOOL EqualRgn(
+new Completion("EqualRgn", "EqualRgn", @"BOOL EqualRgn(
     HRGN hSrcRgn1,
     // handle to first region
     HRGN hSrcRgn2
     // handle to second region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EqualSid", "call EqualSid", @"BOOL EqualSid(
+new Completion("EqualSid", "EqualSid", @"BOOL EqualSid(
     PSID pSid1,
     // pointer to first SID to compare
     PSID pSid2
     // pointer to second SID to compare
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EraseTape", "call EraseTape", @"DWORD EraseTape(
+new Completion("EraseTape", "EraseTape", @"DWORD EraseTape(
     HANDLE hDevice,
     // handle to open device
     DWORD dwEraseType,
@@ -1751,7 +1751,7 @@ new Completion("EraseTape", "call EraseTape", @"DWORD EraseTape(
     // return after erase operation begins
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Escape", "call Escape", @"int Escape(
+new Completion("Escape", "Escape", @"int Escape(
     HDC hdc,
     // handle to device context
     int nEscape,
@@ -1764,14 +1764,14 @@ new Completion("Escape", "call Escape", @"int Escape(
     // pointer to output structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EscapeCommFunction", "call EscapeCommFunction", @"BOOL EscapeCommFunction(
+new Completion("EscapeCommFunction", "EscapeCommFunction", @"BOOL EscapeCommFunction(
     HANDLE hFile,
     // handle to communications device
     DWORD dwFunc
     // extended function to perform
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExcludeClipRect", "call ExcludeClipRect", @"int ExcludeClipRect(
+new Completion("ExcludeClipRect", "ExcludeClipRect", @"int ExcludeClipRect(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -1784,31 +1784,31 @@ new Completion("ExcludeClipRect", "call ExcludeClipRect", @"int ExcludeClipRect(
     // y-coordinate of lower-right corner of rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExcludeUpdateRgn", "call ExcludeUpdateRgn", @"int ExcludeUpdateRgn(
+new Completion("ExcludeUpdateRgn", "ExcludeUpdateRgn", @"int ExcludeUpdateRgn(
     HDC hDC,
     // handle to device context
     HWND hWnd
     // handle to window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExitProcess", "call ExitProcess", @"VOID ExitProcess(
+new Completion("ExitProcess", "ExitProcess", @"VOID ExitProcess(
     UINT uExitCode
     // exit code for all threads
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExitThread", "call ExitThread", @"VOID ExitThread(
+new Completion("ExitThread", "ExitThread", @"VOID ExitThread(
     DWORD dwExitCode
     // exit code for this thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExitWindowsEx", "call ExitWindowsEx", @"BOOL ExitWindowsEx(
+new Completion("ExitWindowsEx", "ExitWindowsEx", @"BOOL ExitWindowsEx(
     UINT uFlags,
     // shutdown operation
     DWORD dwReserved
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtCreatePen", "call ExtCreatePen", @"HPEN ExtCreatePen(
+new Completion("ExtCreatePen", "ExtCreatePen", @"HPEN ExtCreatePen(
     DWORD dwPenStyle,
     // pen style
     DWORD dwWidth,
@@ -1821,7 +1821,7 @@ new Completion("ExtCreatePen", "call ExtCreatePen", @"HPEN ExtCreatePen(
     // optional array of custom style bits
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtCreateRegion", "call ExtCreateRegion", @"HRGN ExtCreateRegion(
+new Completion("ExtCreateRegion", "ExtCreateRegion", @"HRGN ExtCreateRegion(
     CONST XFORM *lpXform,
     // pointer to transformation data
     DWORD nCount,
@@ -1830,7 +1830,7 @@ new Completion("ExtCreateRegion", "call ExtCreateRegion", @"HRGN ExtCreateRegion
     // pointer to region data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtEscape", "call ExtEscape", @"int ExtEscape(
+new Completion("ExtEscape", "ExtEscape", @"int ExtEscape(
     HDC hdc,
     // handle to device context
     int nEscape,
@@ -1845,7 +1845,7 @@ new Completion("ExtEscape", "call ExtEscape", @"int ExtEscape(
     // pointer to output structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtFloodFill", "call ExtFloodFill", @"BOOL ExtFloodFill(
+new Completion("ExtFloodFill", "ExtFloodFill", @"BOOL ExtFloodFill(
     HDC hdc,
     // handle to device context
     int nXStart,
@@ -1858,7 +1858,7 @@ new Completion("ExtFloodFill", "call ExtFloodFill", @"BOOL ExtFloodFill(
     // fill type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtSelectClipRgn", "call ExtSelectClipRgn", @"int ExtSelectClipRgn(
+new Completion("ExtSelectClipRgn", "ExtSelectClipRgn", @"int ExtSelectClipRgn(
     HDC hdc,
     // handle to device context
     HRGN hrgn,
@@ -1867,12 +1867,12 @@ new Completion("ExtSelectClipRgn", "call ExtSelectClipRgn", @"int ExtSelectClipR
     // region-selection mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FatalExit", "call FatalExit", @"VOID FatalExit(
+new Completion("FatalExit", "FatalExit", @"VOID FatalExit(
     int ExitCode
     // error code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FileTimeToDosDateTime", "call FileTimeToDosDateTime", @"BOOL FileTimeToDosDateTime(
+new Completion("FileTimeToDosDateTime", "FileTimeToDosDateTime", @"BOOL FileTimeToDosDateTime(
     CONST FILETIME *lpFileTime,
     // pointer to 64-bit file time
     LPWORD lpFatDate,
@@ -1881,21 +1881,21 @@ new Completion("FileTimeToDosDateTime", "call FileTimeToDosDateTime", @"BOOL Fil
     // pointer to variable for MS-DOS time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FileTimeToLocalFileTime", "call FileTimeToLocalFileTime", @"BOOL FileTimeToLocalFileTime(
+new Completion("FileTimeToLocalFileTime", "FileTimeToLocalFileTime", @"BOOL FileTimeToLocalFileTime(
     CONST FILETIME *lpFileTime,
     // pointer to UTC file time to convert
     LPFILETIME lpLocalFileTime
     // pointer to converted file time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FileTimeToSystemTime", "call FileTimeToSystemTime", @"BOOL FileTimeToSystemTime(
+new Completion("FileTimeToSystemTime", "FileTimeToSystemTime", @"BOOL FileTimeToSystemTime(
     CONST FILETIME *lpFileTime,
     // pointer to file time to convert
     LPSYSTEMTIME lpSystemTime
     // pointer to structure to receive system time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillConsoleOutputAttribute", "call FillConsoleOutputAttribute", @"BOOL FillConsoleOutputAttribute(
+new Completion("FillConsoleOutputAttribute", "FillConsoleOutputAttribute", @"BOOL FillConsoleOutputAttribute(
     HANDLE hConsoleOutput,
     // handle to screen buffer
     WORD wAttribute,
@@ -1908,12 +1908,12 @@ new Completion("FillConsoleOutputAttribute", "call FillConsoleOutputAttribute", 
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillPath", "call FillPath", @"BOOL FillPath(
+new Completion("FillPath", "FillPath", @"BOOL FillPath(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillRect", "call FillRect", @"int FillRect(
+new Completion("FillRect", "FillRect", @"int FillRect(
     HDC hDC,
     // handle to device context
     CONST RECT *lprc,
@@ -1922,7 +1922,7 @@ new Completion("FillRect", "call FillRect", @"int FillRect(
     // handle to brush
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillRgn", "call FillRgn", @"BOOL FillRgn(
+new Completion("FillRgn", "FillRgn", @"BOOL FillRgn(
     HDC hdc,
     // handle to device context
     HRGN hrgn,
@@ -1931,29 +1931,29 @@ new Completion("FillRgn", "call FillRgn", @"BOOL FillRgn(
     // handle to brush used to fill the region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindClose", "call FindClose", @"BOOL FindClose(
+new Completion("FindClose", "FindClose", @"BOOL FindClose(
     HANDLE hFindFile
     // file search handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindCloseChangeNotification", "call FindCloseChangeNotification", @"BOOL FindCloseChangeNotification(
+new Completion("FindCloseChangeNotification", "FindCloseChangeNotification", @"BOOL FindCloseChangeNotification(
     HANDLE hChangeHandle
     // handle to change notification to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindClosePrinterChangeNotification", "call FindClosePrinterChangeNotification", @"BOOL FindClosePrinterChangeNotification(
+new Completion("FindClosePrinterChangeNotification", "FindClosePrinterChangeNotification", @"BOOL FindClosePrinterChangeNotification(
     HANDLE hChange
     // handle to change notification object to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstFreeAce", "call FindFirstFreeAce", @"BOOL FindFirstFreeAce(
+new Completion("FindFirstFreeAce", "FindFirstFreeAce", @"BOOL FindFirstFreeAce(
     PACL pAcl,
     // pointer to access-control list
     LPVOID *pAce
     // pointer to pointer to first free byte
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstPrinterChangeNotification", "call FindFirstPrinterChangeNotification", @"HANDLE FindFirstPrinterChangeNotification(
+new Completion("FindFirstPrinterChangeNotification", "FindFirstPrinterChangeNotification", @"HANDLE FindFirstPrinterChangeNotification(
     HANDLE hPrinter,
     // handle to printer or print server to monitor for changes
     DWORD fdwFlags,
@@ -1964,12 +1964,12 @@ new Completion("FindFirstPrinterChangeNotification", "call FindFirstPrinterChang
     // pointer to structure specifying printer information to monitor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindNextChangeNotification", "call FindNextChangeNotification", @"BOOL FindNextChangeNotification(
+new Completion("FindNextChangeNotification", "FindNextChangeNotification", @"BOOL FindNextChangeNotification(
     HANDLE hChangeHandle
     // handle to change notification to signal
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindNextPrinterChangeNotification", "call FindNextPrinterChangeNotification", @"BOOL FindNextPrinterChangeNotification(
+new Completion("FindNextPrinterChangeNotification", "FindNextPrinterChangeNotification", @"BOOL FindNextPrinterChangeNotification(
     HANDLE hChange,
     // handle to change notification object of interest
     PDWORD pdwChange,
@@ -1980,19 +1980,19 @@ new Completion("FindNextPrinterChangeNotification", "call FindNextPrinterChangeN
     // pointer to a pointer that receives printer information buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlashWindow", "call FlashWindow", @"BOOL FlashWindow(
+new Completion("FlashWindow", "FlashWindow", @"BOOL FlashWindow(
     HWND hWnd,
     // handle to window to flash
     BOOL bInvert
     // flash status
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlattenPath", "call FlattenPath", @"BOOL FlattenPath(
+new Completion("FlattenPath", "FlattenPath", @"BOOL FlattenPath(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FloodFill", "call FloodFill", @"BOOL FloodFill(
+new Completion("FloodFill", "FloodFill", @"BOOL FloodFill(
     HDC hdc,
     // handle to device context
     int nXStart,
@@ -2003,17 +2003,17 @@ new Completion("FloodFill", "call FloodFill", @"BOOL FloodFill(
     // fill color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlushConsoleInputBuffer", "call FlushConsoleInputBuffer", @"BOOL FlushConsoleInputBuffer(
+new Completion("FlushConsoleInputBuffer", "FlushConsoleInputBuffer", @"BOOL FlushConsoleInputBuffer(
     HANDLE hConsoleInput
     // handle to console input buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlushFileBuffers", "call FlushFileBuffers", @"BOOL FlushFileBuffers(
+new Completion("FlushFileBuffers", "FlushFileBuffers", @"BOOL FlushFileBuffers(
     HANDLE hFile
     // open handle to file whose buffers are to be flushed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlushInstructionCache", "call FlushInstructionCache", @"BOOL FlushInstructionCache(
+new Completion("FlushInstructionCache", "FlushInstructionCache", @"BOOL FlushInstructionCache(
     HANDLE hProcess,
     // handle to process with cache to flush
     LPCVOID lpBaseAddress,
@@ -2022,14 +2022,14 @@ new Completion("FlushInstructionCache", "call FlushInstructionCache", @"BOOL Flu
     // length of region to flush
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FlushViewOfFile", "call FlushViewOfFile", @"BOOL FlushViewOfFile(
+new Completion("FlushViewOfFile", "FlushViewOfFile", @"BOOL FlushViewOfFile(
     LPCVOID lpBaseAddress,
     // start address of byte range to flush
     DWORD dwNumberOfBytesToFlush
     // number of bytes in range
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FrameRect", "call FrameRect", @"int FrameRect(
+new Completion("FrameRect", "FrameRect", @"int FrameRect(
     HDC hDC,
     // handle to device context
     CONST RECT *lprc,
@@ -2038,7 +2038,7 @@ new Completion("FrameRect", "call FrameRect", @"int FrameRect(
     // handle to brush
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FrameRgn", "call FrameRgn", @"BOOL FrameRgn(
+new Completion("FrameRgn", "FrameRgn", @"BOOL FrameRgn(
     HDC hdc,
     // handle to device context
     HRGN hrgn,
@@ -2051,37 +2051,37 @@ new Completion("FrameRgn", "call FrameRgn", @"BOOL FrameRgn(
     // height of region frame
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeConsole", "call FreeConsole", @"BOOL FreeConsole(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeDDElParam", "call FreeDDElParam", @"BOOL FreeDDElParam(
+new Completion("FreeConsole", "FreeConsole", @"BOOL FreeConsole(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("FreeDDElParam", "FreeDDElParam", @"BOOL FreeDDElParam(
     UINT msg,
     // posted DDE message
     LONG lParam
     // lParam of message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeLibrary", "call FreeLibrary", @"BOOL FreeLibrary(
+new Completion("FreeLibrary", "FreeLibrary", @"BOOL FreeLibrary(
     HMODULE hLibModule
     // handle to loaded library module
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeLibraryAndExitThread", "call FreeLibraryAndExitThread", @"VOID FreeLibraryAndExitThread(
+new Completion("FreeLibraryAndExitThread", "FreeLibraryAndExitThread", @"VOID FreeLibraryAndExitThread(
     HMODULE hLibModule,
     // dynamic-link library whose reference count is to decrement
     DWORD dwExitCode
     // exit code for thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreePrinterNotifyInfo", "call FreePrinterNotifyInfo", @"BOOL FreePrinterNotifyInfo(
+new Completion("FreePrinterNotifyInfo", "FreePrinterNotifyInfo", @"BOOL FreePrinterNotifyInfo(
     PPRINTER_NOTIFY_INFO pPrinterNotifyInfo
     // pointer to a PRINTER_NOTIFY_INFO buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeSid", "call FreeSid", @"PVOID FreeSid(
+new Completion("FreeSid", "FreeSid", @"PVOID FreeSid(
     PSID pSid
     // pointer to SID to free
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GdiComment", "call GdiComment", @"BOOL GdiComment(
+new Completion("GdiComment", "GdiComment", @"BOOL GdiComment(
     HDC hdc,
     // handle to a device context
     UINT cbSize,
@@ -2090,21 +2090,21 @@ new Completion("GdiComment", "call GdiComment", @"BOOL GdiComment(
     // pointer to text buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GdiFlush", "call GdiFlush", @"BOOL GdiFlush(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GdiGetBatchLimit", "call GdiGetBatchLimit", @"DWORD GdiGetBatchLimit(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GdiSetBatchLimit", "call GdiSetBatchLimit", @"DWORD GdiSetBatchLimit(
+new Completion("GdiFlush", "GdiFlush", @"BOOL GdiFlush(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GdiGetBatchLimit", "GdiGetBatchLimit", @"DWORD GdiGetBatchLimit(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GdiSetBatchLimit", "GdiSetBatchLimit", @"DWORD GdiSetBatchLimit(
     DWORD dwLimit
     // batch limit
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GenerateConsoleCtrlEvent", "call GenerateConsoleCtrlEvent", @"BOOL GenerateConsoleCtrlEvent(
+new Completion("GenerateConsoleCtrlEvent", "GenerateConsoleCtrlEvent", @"BOOL GenerateConsoleCtrlEvent(
     DWORD dwCtrlEvent,
     // signal to generate
     DWORD dwProcessGroupId
     // process group to get signal
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAce", "call GetAce", @"BOOL GetAce(
+new Completion("GetAce", "GetAce", @"BOOL GetAce(
     PACL pAcl,
     // pointer to access-control list
     DWORD dwAceIndex,
@@ -2113,7 +2113,7 @@ new Completion("GetAce", "call GetAce", @"BOOL GetAce(
     // pointer to pointer to ACE
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAclInformation", "call GetAclInformation", @"BOOL GetAclInformation(
+new Completion("GetAclInformation", "GetAclInformation", @"BOOL GetAclInformation(
     PACL pAcl,
     // pointer to access-control list
     LPVOID pAclInformation,
@@ -2124,50 +2124,50 @@ new Completion("GetAclInformation", "call GetAclInformation", @"BOOL GetAclInfor
     // class of requested information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetActiveWindow", "call GetActiveWindow", @"HWND GetActiveWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetArcDirection", "call GetArcDirection", @"int GetArcDirection(
+new Completion("GetActiveWindow", "GetActiveWindow", @"HWND GetActiveWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetArcDirection", "GetArcDirection", @"int GetArcDirection(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAspectRatioFilterEx", "call GetAspectRatioFilterEx", @"BOOL GetAspectRatioFilterEx(
+new Completion("GetAspectRatioFilterEx", "GetAspectRatioFilterEx", @"BOOL GetAspectRatioFilterEx(
     HDC hdc,
     // handle to device context
     LPSIZE lpAspectRatio
     // pointer to aspect-ratio filter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAsyncKeyState", "call GetAsyncKeyState", @"SHORT GetAsyncKeyState(
+new Completion("GetAsyncKeyState", "GetAsyncKeyState", @"SHORT GetAsyncKeyState(
     int vKey
     // virtual-key code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBinaryType", "call GetBinaryType", @"BOOL GetBinaryType (
+new Completion("GetBinaryType", "GetBinaryType", @"BOOL GetBinaryType (
     LPCTSTR lpApplicationName,
     // points to fully qualified path of file to test
     LPDWORD lpBinaryType
     // points to variable to receive binary type information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBitmapBits", "call GetBitmapBits", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBitmapDimensionEx", "call GetBitmapDimensionEx", @"BOOL GetBitmapDimensionEx(
+new Completion("GetBitmapBits", "GetBitmapBits", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetBitmapDimensionEx", "GetBitmapDimensionEx", @"BOOL GetBitmapDimensionEx(
     HBITMAP hBitmap,
     // handle of bitmap
     LPSIZE lpDimension
     // address of structure receiving dimensions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBkColor", "call GetBkColor", @"COLORREF GetBkColor(
+new Completion("GetBkColor", "GetBkColor", @"COLORREF GetBkColor(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBkMode", "call GetBkMode", @"int GetBkMode(
+new Completion("GetBkMode", "GetBkMode", @"int GetBkMode(
     HDC hdc
     // handle to device context of interest
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBoundsRect", "call GetBoundsRect", @"UINT GetBoundsRect(
+new Completion("GetBoundsRect", "GetBoundsRect", @"UINT GetBoundsRect(
     HDC hdc,
     // handle to device context of interest
     LPRECT lprcBounds,
@@ -2176,160 +2176,160 @@ new Completion("GetBoundsRect", "call GetBoundsRect", @"UINT GetBoundsRect(
     // specifies function options
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBrushOrgEx", "call GetBrushOrgEx", @"BOOL GetBrushOrgEx(
+new Completion("GetBrushOrgEx", "GetBrushOrgEx", @"BOOL GetBrushOrgEx(
     HDC hdc,
     // handle of device context
     LPPOINT lppt
     // address of structure of coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCapture", "call GetCapture", @"HWND GetCapture(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCaretBlinkTime", "call GetCaretBlinkTime", @"UINT GetCaretBlinkTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCaretPos", "call GetCaretPos", @"BOOL GetCaretPos(
+new Completion("GetCapture", "GetCapture", @"HWND GetCapture(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCaretBlinkTime", "GetCaretBlinkTime", @"UINT GetCaretBlinkTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCaretPos", "GetCaretPos", @"BOOL GetCaretPos(
     LPPOINT lpPoint
     // address of structure to receive coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassWord", "call GetClassWord", @"WORD GetClassWord(
+new Completion("GetClassWord", "GetClassWord", @"WORD GetClassWord(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClientRect", "call GetClientRect", @"BOOL GetClientRect(
+new Completion("GetClientRect", "GetClientRect", @"BOOL GetClientRect(
     HWND hWnd,
     // handle of window
     LPRECT lpRect
     // address of structure for client coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipboardData", "call GetClipboardData", @"HANDLE GetClipboardData(
+new Completion("GetClipboardData", "GetClipboardData", @"HANDLE GetClipboardData(
     UINT uFormat
     // clipboard format
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipboardOwner", "call GetClipboardOwner", @"HWND GetClipboardOwner(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipboardViewer", "call GetClipboardViewer", @"HWND GetClipboardViewer(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipBox", "call GetClipBox", @"int GetClipBox(
+new Completion("GetClipboardOwner", "GetClipboardOwner", @"HWND GetClipboardOwner(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetClipboardViewer", "GetClipboardViewer", @"HWND GetClipboardViewer(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetClipBox", "GetClipBox", @"int GetClipBox(
     HDC hdc,
     // handle of the device context
     LPRECT lprc
     // address of structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipCursor", "call GetClipCursor", @"BOOL GetClipCursor(
+new Completion("GetClipCursor", "GetClipCursor", @"BOOL GetClipCursor(
     LPRECT lpRect
     // address of structure for rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipRgn", "call GetClipRgn", @"int GetClipRgn(
+new Completion("GetClipRgn", "GetClipRgn", @"int GetClipRgn(
     HDC hdc,
     // handle of device context
     HRGN hrgn
     // handle of region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetColorAdjustment", "call GetColorAdjustment", @"BOOL GetColorAdjustment(
+new Completion("GetColorAdjustment", "GetColorAdjustment", @"BOOL GetColorAdjustment(
     HDC hdc,
     // handle of device context
     LPCOLORADJUSTMENT lpca
     // address of COLORADJUSTMENT structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommMask", "call GetCommMask", @"BOOL GetCommMask(
+new Completion("GetCommMask", "GetCommMask", @"BOOL GetCommMask(
     HANDLE hFile,
     // handle of communications device
     LPDWORD lpEvtMask
     // address of variable to get event mask
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommModemStatus", "call GetCommModemStatus", @"BOOL GetCommModemStatus(
+new Completion("GetCommModemStatus", "GetCommModemStatus", @"BOOL GetCommModemStatus(
     HANDLE hFile,
     // handle of communications device
     LPDWORD lpModemStat
     // address of control-register values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommProperties", "call GetCommProperties", @"BOOL GetCommProperties(
+new Completion("GetCommProperties", "GetCommProperties", @"BOOL GetCommProperties(
     HANDLE hFile,
     // handle of communications device
     LPCOMMPROP lpCommProp
     // address of communications properties structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommState", "call GetCommState", @"BOOL GetCommState(
+new Completion("GetCommState", "GetCommState", @"BOOL GetCommState(
     HANDLE hFile,
     // handle of communications device
     LPDCB lpDCB
     // address of device-control block structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommTimeouts", "call GetCommTimeouts", @"BOOL GetCommTimeouts(
+new Completion("GetCommTimeouts", "GetCommTimeouts", @"BOOL GetCommTimeouts(
     HANDLE hFile,
     // handle of communications device
     LPCOMMTIMEOUTS lpCommTimeouts
     // address of comm. time-outs structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetConsoleCursorInfo", "call GetConsoleCursorInfo", @"BOOL GetConsoleCursorInfo(
+new Completion("GetConsoleCursorInfo", "GetConsoleCursorInfo", @"BOOL GetConsoleCursorInfo(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     PCONSOLE_CURSOR_INFO lpConsoleCursorInfo
     // address of cursor information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetConsoleMode", "call GetConsoleMode", @"BOOL GetConsoleMode(
+new Completion("GetConsoleMode", "GetConsoleMode", @"BOOL GetConsoleMode(
     HANDLE hConsoleHandle,
     // handle of console input or screen buffer
     LPDWORD lpMode
     // current mode flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetConsoleScreenBufferInfo", "call GetConsoleScreenBufferInfo", @"BOOL GetConsoleScreenBufferInfo(
+new Completion("GetConsoleScreenBufferInfo", "GetConsoleScreenBufferInfo", @"BOOL GetConsoleScreenBufferInfo(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     PCONSOLE_SCREEN_BUFFER_INFO lpConsoleScreenBufferInfo
     // address of screen buffer info.
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCPInfo", "call GetCPInfo", @"BOOL GetCPInfo(
+new Completion("GetCPInfo", "GetCPInfo", @"BOOL GetCPInfo(
     UINT CodePage,
     // code page identifier
     LPCPINFO lpCPInfo
     // address of structure for information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentObject", "call GetCurrentObject", @"HGDIOBJ GetCurrentObject(
+new Completion("GetCurrentObject", "GetCurrentObject", @"HGDIOBJ GetCurrentObject(
     HDC hdc,
     // handle of device context
     UINT uObjectType
     // object-type identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentPositionEx", "call GetCurrentPositionEx", @"BOOL GetCurrentPositionEx(
+new Completion("GetCurrentPositionEx", "GetCurrentPositionEx", @"BOOL GetCurrentPositionEx(
     HDC hdc,
     // handle of device context
     LPPOINT lpPoint
     // address of structure receiving current position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentProcess", "call GetCurrentProcess", @"HANDLE GetCurrentProcess(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentProcessId", "call GetCurrentProcessId", @"DWORD GetCurrentProcessId(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentThread", "call GetCurrentThread", @"HANDLE GetCurrentThread(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentThreadId", "call GetCurrentThreadId", @"DWORD GetCurrentThreadId(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCursor", "call GetCursor", @"HCURSOR GetCursor(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCursorPos", "call GetCursorPos", @"BOOL GetCursorPos(
+new Completion("GetCurrentProcess", "GetCurrentProcess", @"HANDLE GetCurrentProcess(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCurrentProcessId", "GetCurrentProcessId", @"DWORD GetCurrentProcessId(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCurrentThread", "GetCurrentThread", @"HANDLE GetCurrentThread(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCurrentThreadId", "GetCurrentThreadId", @"DWORD GetCurrentThreadId(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCursor", "GetCursor", @"HCURSOR GetCursor(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCursorPos", "GetCursorPos", @"BOOL GetCursorPos(
     LPPOINT lpPoint
     // address of structure for cursor position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDC", "call GetDC", @"HDC GetDC(
+new Completion("GetDC", "GetDC", @"HDC GetDC(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDCEx", "call GetDCEx", @"HDC GetDCEx(
+new Completion("GetDCEx", "GetDCEx", @"HDC GetDCEx(
     HWND hWnd,
     // handle of window
     HRGN hrgnClip,
@@ -2338,23 +2338,23 @@ new Completion("GetDCEx", "call GetDCEx", @"HDC GetDCEx(
     // device-context creation flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDCOrgEx", "call GetDCOrgEx", @"BOOL GetDCOrgEx(
+new Completion("GetDCOrgEx", "GetDCOrgEx", @"BOOL GetDCOrgEx(
     HDC hdc,
     // device-context handle
     LPPOINT lpPoint
     // address of structure that receives translation origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDesktopWindow", "call GetDesktopWindow", @"HWND GetDesktopWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDeviceCaps", "call GetDeviceCaps", @"int GetDeviceCaps(
+new Completion("GetDesktopWindow", "GetDesktopWindow", @"HWND GetDesktopWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetDeviceCaps", "GetDeviceCaps", @"int GetDeviceCaps(
     HDC hdc,
     // device-context handle
     int nIndex
     // index of capability to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDialogBaseUnits", "call GetDialogBaseUnits", @"LONG GetDialogBaseUnits(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDIBColorTable", "call GetDIBColorTable", @"UINT GetDIBColorTable(
+new Completion("GetDialogBaseUnits", "GetDialogBaseUnits", @"LONG GetDialogBaseUnits(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetDIBColorTable", "GetDIBColorTable", @"UINT GetDIBColorTable(
     HDC hdc,
     // handle of device context whose DIB is of interest
     UINT uStartIndex,
@@ -2365,7 +2365,7 @@ new Completion("GetDIBColorTable", "call GetDIBColorTable", @"UINT GetDIBColorTa
     // pointer to buffer that receives color table entries
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDIBits", "call GetDIBits", @"int GetDIBits(
+new Completion("GetDIBits", "GetDIBits", @"int GetDIBits(
     HDC hdc,
     // handle of device context
     HBITMAP hbmp,
@@ -2382,19 +2382,19 @@ new Completion("GetDIBits", "call GetDIBits", @"int GetDIBits(
     // RGB or palette index
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDlgCtrlID", "call GetDlgCtrlID", @"int GetDlgCtrlID(
+new Completion("GetDlgCtrlID", "GetDlgCtrlID", @"int GetDlgCtrlID(
     HWND hwndCtl
     // handle of control
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDlgItem", "call GetDlgItem", @"HWND GetDlgItem(
+new Completion("GetDlgItem", "GetDlgItem", @"HWND GetDlgItem(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem
     // identifier of control
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDlgItemInt", "call GetDlgItemInt", @"UINT GetDlgItemInt(
+new Completion("GetDlgItemInt", "GetDlgItemInt", @"UINT GetDlgItemInt(
     HWND hDlg,
     // handle to dialog box
     int nIDDlgItem,
@@ -2405,8 +2405,8 @@ new Completion("GetDlgItemInt", "call GetDlgItemInt", @"UINT GetDlgItemInt(
     // specifies whether value is signed or unsigned
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDoubleClickTime", "call GetDoubleClickTime", @"UINT GetDoubleClickTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileBits", "call GetEnhMetaFileBits", @"UINT GetEnhMetaFileBits(
+new Completion("GetDoubleClickTime", "GetDoubleClickTime", @"UINT GetDoubleClickTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetEnhMetaFileBits", "GetEnhMetaFileBits", @"UINT GetEnhMetaFileBits(
     HENHMETAFILE hemf,
     // handle of metafile
     UINT cbBuffer,
@@ -2415,7 +2415,7 @@ new Completion("GetEnhMetaFileBits", "call GetEnhMetaFileBits", @"UINT GetEnhMet
     // address of data buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileHeader", "call GetEnhMetaFileHeader", @"UINT GetEnhMetaFileHeader(
+new Completion("GetEnhMetaFileHeader", "GetEnhMetaFileHeader", @"UINT GetEnhMetaFileHeader(
     HENHMETAFILE hemf,
     // handle of enhanced metafile
     UINT cbBuffer,
@@ -2424,7 +2424,7 @@ new Completion("GetEnhMetaFileHeader", "call GetEnhMetaFileHeader", @"UINT GetEn
     // address of buffer to receive data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFilePaletteEntries", "call GetEnhMetaFilePaletteEntries", @"UINT GetEnhMetaFilePaletteEntries(
+new Completion("GetEnhMetaFilePaletteEntries", "GetEnhMetaFilePaletteEntries", @"UINT GetEnhMetaFilePaletteEntries(
     HENHMETAFILE hemf,
     // handle of enhanced metafile
     UINT cEntries,
@@ -2433,36 +2433,36 @@ new Completion("GetEnhMetaFilePaletteEntries", "call GetEnhMetaFilePaletteEntrie
     // address of palette-entry array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnvironmentStrings", "call GetEnvironmentStrings", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetExitCodeProcess", "call GetExitCodeProcess", @"BOOL GetExitCodeProcess(
+new Completion("GetEnvironmentStrings", "GetEnvironmentStrings", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetExitCodeProcess", "GetExitCodeProcess", @"BOOL GetExitCodeProcess(
     HANDLE hProcess,
     // handle to the process
     LPDWORD lpExitCode
     // address to receive termination status
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetExitCodeThread", "call GetExitCodeThread", @"BOOL GetExitCodeThread(
+new Completion("GetExitCodeThread", "GetExitCodeThread", @"BOOL GetExitCodeThread(
     HANDLE hThread,
     // handle to the thread
     LPDWORD lpExitCode
     // address to receive termination status
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileInformationByHandle", "call GetFileInformationByHandle", @"BOOL GetFileInformationByHandle(
+new Completion("GetFileInformationByHandle", "GetFileInformationByHandle", @"BOOL GetFileInformationByHandle(
     HANDLE hFile,
     // handle of file
     LPBY_HANDLE_FILE_INFORMATION lpFileInformation
     // address of structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileSize", "call GetFileSize", @"DWORD GetFileSize(
+new Completion("GetFileSize", "GetFileSize", @"DWORD GetFileSize(
     HANDLE hFile,
     // handle of file to get size of
     LPDWORD lpFileSizeHigh
     // address of high-order word for file size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileTime", "call GetFileTime", @"BOOL GetFileTime(
+new Completion("GetFileTime", "GetFileTime", @"BOOL GetFileTime(
     HANDLE hFile,
     // identifies the file
     LPFILETIME lpCreationTime,
@@ -2473,13 +2473,13 @@ new Completion("GetFileTime", "call GetFileTime", @"BOOL GetFileTime(
     // address of last write time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileType", "call GetFileType", @"DWORD GetFileType(
+new Completion("GetFileType", "GetFileType", @"DWORD GetFileType(
     HANDLE hFile
     // file handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFocus", "call GetFocus", @"HWND GetFocus(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFontData", "call GetFontData", @"DWORD GetFontData(
+new Completion("GetFocus", "GetFocus", @"HWND GetFocus(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetFontData", "GetFontData", @"DWORD GetFontData(
     HDC hdc,
     // handle of device context
     DWORD dwTable,
@@ -2492,8 +2492,8 @@ new Completion("GetFontData", "call GetFontData", @"DWORD GetFontData(
     // length of data to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetForegroundWindow", "call GetForegroundWindow", @"HWND GetForegroundWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetGlyphOutline", "call GetGlyphOutline", @"DWORD GetGlyphOutline(
+new Completion("GetForegroundWindow", "GetForegroundWindow", @"HWND GetForegroundWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetGlyphOutline", "GetGlyphOutline", @"DWORD GetGlyphOutline(
     HDC hdc,
     // handle of device context
     UINT uChar,
@@ -2510,28 +2510,28 @@ new Completion("GetGlyphOutline", "call GetGlyphOutline", @"DWORD GetGlyphOutlin
     // address of transformation matrix structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetGraphicsMode", "call GetGraphicsMode", @"int GetGraphicsMode(
+new Completion("GetGraphicsMode", "GetGraphicsMode", @"int GetGraphicsMode(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetHandleInformation", "call GetHandleInformation", @"BOOL GetHandleInformation (
+new Completion("GetHandleInformation", "GetHandleInformation", @"BOOL GetHandleInformation (
     HANDLE hObject,
     // handle to an object
     LPDWORD lpdwFlags
     // points to variable to receive flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetIconInfo", "call GetIconInfo", @"BOOL GetIconInfo(
+new Completion("GetIconInfo", "GetIconInfo", @"BOOL GetIconInfo(
     HICON hIcon,
     // icon handle
     PICONINFO piconinfo
     // address of icon structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetInputState", "call GetInputState", @"BOOL GetInputState(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKBCodePage", "call GetKBCodePage", @"UINT GetKBCodePage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKernelObjectSecurity", "call GetKernelObjectSecurity", @"BOOL GetKernelObjectSecurity(
+new Completion("GetInputState", "GetInputState", @"BOOL GetInputState(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetKBCodePage", "GetKBCodePage", @"UINT GetKBCodePage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetKernelObjectSecurity", "GetKernelObjectSecurity", @"BOOL GetKernelObjectSecurity(
     HANDLE Handle,
     // handle of object to query
     SECURITY_INFORMATION RequestedInformation,
@@ -2544,7 +2544,7 @@ new Completion("GetKernelObjectSecurity", "call GetKernelObjectSecurity", @"BOOL
     // address of required size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKerningPairs", "call GetKerningPairs", @"DWORD GetKerningPairs(
+new Completion("GetKerningPairs", "GetKerningPairs", @"DWORD GetKerningPairs(
     HDC hdc,
     // handle of device context
     DWORD nNumPairs,
@@ -2553,44 +2553,44 @@ new Completion("GetKerningPairs", "call GetKerningPairs", @"DWORD GetKerningPair
     // address of kerning-pair array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyboardState", "call GetKeyboardState", @"BOOL GetKeyboardState(
+new Completion("GetKeyboardState", "GetKeyboardState", @"BOOL GetKeyboardState(
     PBYTE lpKeyState
     // address of array to receive status data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyboardType", "call GetKeyboardType", @"int GetKeyboardType(
+new Completion("GetKeyboardType", "GetKeyboardType", @"int GetKeyboardType(
     int nTypeFlag
     // type of information to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyState", "call GetKeyState", @"SHORT GetKeyState(
+new Completion("GetKeyState", "GetKeyState", @"SHORT GetKeyState(
     int nVirtKey
     // virtual-key code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLargestConsoleWindowSize", "call GetLargestConsoleWindowSize", @"COORD GetLargestConsoleWindowSize(
+new Completion("GetLargestConsoleWindowSize", "GetLargestConsoleWindowSize", @"COORD GetLargestConsoleWindowSize(
     HANDLE hConsoleOutput
     // handle of console screen buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLastActivePopup", "call GetLastActivePopup", @"HWND GetLastActivePopup(
+new Completion("GetLastActivePopup", "GetLastActivePopup", @"HWND GetLastActivePopup(
     HWND hWnd
     // handle of owner window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLastError", "call GetLastError", @"DWORD GetLastError(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLengthSid", "call GetLengthSid", @"DWORD GetLengthSid(
+new Completion("GetLastError", "GetLastError", @"DWORD GetLastError(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetLengthSid", "GetLengthSid", @"DWORD GetLengthSid(
     PSID pSid
     // address of SID to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLocalTime", "call GetLocalTime", @"VOID GetLocalTime(
+new Completion("GetLocalTime", "GetLocalTime", @"VOID GetLocalTime(
     LPSYSTEMTIME lpSystemTime
     // address of system time structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLogicalDrives", "call GetLogicalDrives", @"DWORD GetLogicalDrives(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMailslotInfo", "call GetMailslotInfo", @"BOOL GetMailslotInfo(
+new Completion("GetLogicalDrives", "GetLogicalDrives", @"DWORD GetLogicalDrives(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMailslotInfo", "GetMailslotInfo", @"BOOL GetMailslotInfo(
     HANDLE hMailslot,
     // mailslot handle
     LPDWORD lpMaxMessageSize,
@@ -2603,30 +2603,30 @@ new Completion("GetMailslotInfo", "call GetMailslotInfo", @"BOOL GetMailslotInfo
     // address of read time-out
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMapMode", "call GetMapMode", @"int GetMapMode(
+new Completion("GetMapMode", "GetMapMode", @"int GetMapMode(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMenu", "call GetMenu", @"HMENU GetMenu(
+new Completion("GetMenu", "GetMenu", @"HMENU GetMenu(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMenuCheckMarkDimensions", "call GetMenuCheckMarkDimensions", @"LONG GetMenuCheckMarkDimensions(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMenuItemCount", "call GetMenuItemCount", @"int GetMenuItemCount(
+new Completion("GetMenuCheckMarkDimensions", "GetMenuCheckMarkDimensions", @"LONG GetMenuCheckMarkDimensions(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMenuItemCount", "GetMenuItemCount", @"int GetMenuItemCount(
     HMENU hMenu
     // handle of menu
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMenuItemID", "call GetMenuItemID", @"UINT GetMenuItemID(
+new Completion("GetMenuItemID", "GetMenuItemID", @"UINT GetMenuItemID(
     HMENU hMenu,
     // handle of menu
     int nPos
     // position of menu item
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMenuState", "call GetMenuState", @"UINT GetMenuState(
+new Completion("GetMenuState", "GetMenuState", @"UINT GetMenuState(
     HMENU hMenu,
     // handle of menu
     UINT uId,
@@ -2635,10 +2635,10 @@ new Completion("GetMenuState", "call GetMenuState", @"UINT GetMenuState(
     // menu flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMessageExtraInfo", "call GetMessageExtraInfo", @"LONG GetMessageExtraInfo(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMessagePos", "call GetMessagePos", @"DWORD GetMessagePos(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMessageTime", "call GetMessageTime", @"LONG GetMessageTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMetaFileBitsEx", "call GetMetaFileBitsEx", @"UINT GetMetaFileBitsEx(
+new Completion("GetMessageExtraInfo", "GetMessageExtraInfo", @"LONG GetMessageExtraInfo(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMessagePos", "GetMessagePos", @"DWORD GetMessagePos(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMessageTime", "GetMessageTime", @"LONG GetMessageTime(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMetaFileBitsEx", "GetMetaFileBitsEx", @"UINT GetMetaFileBitsEx(
     HMETAFILE hmf,
     // handle of metafile
     UINT nSize,
@@ -2647,21 +2647,21 @@ new Completion("GetMetaFileBitsEx", "call GetMetaFileBitsEx", @"UINT GetMetaFile
     // address of metafile data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMetaRgn", "call GetMetaRgn", @"int GetMetaRgn(
+new Completion("GetMetaRgn", "GetMetaRgn", @"int GetMetaRgn(
     HDC hdc,
     // handle of device context
     HRGN hrgn
     // handle of region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMiterLimit", "call GetMiterLimit", @"BOOL GetMiterLimit(
+new Completion("GetMiterLimit", "GetMiterLimit", @"BOOL GetMiterLimit(
     HDC hdc,
     // handle of device context
     PFLOAT peLimit
     // address of variable receiving miter limit
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNamedPipeInfo", "call GetNamedPipeInfo", @"BOOL GetNamedPipeInfo(
+new Completion("GetNamedPipeInfo", "GetNamedPipeInfo", @"BOOL GetNamedPipeInfo(
     HANDLE hNamedPipe,
     // handle of named pipe
     LPDWORD lpFlags,
@@ -2674,21 +2674,21 @@ new Completion("GetNamedPipeInfo", "call GetNamedPipeInfo", @"BOOL GetNamedPipeI
     // address of max. number of pipe instances
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNearestColor", "call GetNearestColor", @"COLORREF GetNearestColor(
+new Completion("GetNearestColor", "GetNearestColor", @"COLORREF GetNearestColor(
     HDC hdc,
     // handle of device context
     COLORREF crColor
     // color to be matched
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNearestPaletteIndex", "call GetNearestPaletteIndex", @"UINT GetNearestPaletteIndex(
+new Completion("GetNearestPaletteIndex", "GetNearestPaletteIndex", @"UINT GetNearestPaletteIndex(
     HPALETTE hpal,
     // handle of logical color palette
     COLORREF crColor
     // color to be matched
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNextDlgGroupItem", "call GetNextDlgGroupItem", @"HWND GetNextDlgGroupItem(
+new Completion("GetNextDlgGroupItem", "GetNextDlgGroupItem", @"HWND GetNextDlgGroupItem(
     HWND hDlg,
     // handle of dialog box
     HWND hCtl,
@@ -2697,7 +2697,7 @@ new Completion("GetNextDlgGroupItem", "call GetNextDlgGroupItem", @"HWND GetNext
     // direction flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNextDlgTabItem", "call GetNextDlgTabItem", @"HWND GetNextDlgTabItem(
+new Completion("GetNextDlgTabItem", "GetNextDlgTabItem", @"HWND GetNextDlgTabItem(
     HWND hDlg,
     // handle of dialog box
     HWND hCtl,
@@ -2706,34 +2706,34 @@ new Completion("GetNextDlgTabItem", "call GetNextDlgTabItem", @"HWND GetNextDlgT
     // direction flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNumberOfConsoleInputEvents", "call GetNumberOfConsoleInputEvents", @"BOOL GetNumberOfConsoleInputEvents(
+new Completion("GetNumberOfConsoleInputEvents", "GetNumberOfConsoleInputEvents", @"BOOL GetNumberOfConsoleInputEvents(
     HANDLE hConsoleInput,
     // handle of console input buffer
     LPDWORD lpcNumberOfEvents
     // address for number of events
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNumberOfConsoleMouseButtons", "call GetNumberOfConsoleMouseButtons", @"BOOL GetNumberOfConsoleMouseButtons(
+new Completion("GetNumberOfConsoleMouseButtons", "GetNumberOfConsoleMouseButtons", @"BOOL GetNumberOfConsoleMouseButtons(
     LPDWORD lpNumberOfMouseButtons
     // address of number of buttons
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNumberOfEventLogRecords", "call GetNumberOfEventLogRecords", @"BOOL GetNumberOfEventLogRecords(
+new Completion("GetNumberOfEventLogRecords", "GetNumberOfEventLogRecords", @"BOOL GetNumberOfEventLogRecords(
     HANDLE hEventLog,
     // handle to event log
     PDWORD NumberOfRecords
     // buffer for number of records
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOldestEventLogRecord", "call GetOldestEventLogRecord", @"BOOL GetOldestEventLogRecord(
+new Completion("GetOldestEventLogRecord", "GetOldestEventLogRecord", @"BOOL GetOldestEventLogRecord(
     HANDLE hEventLog,
     // handle to event log
     PDWORD OldestRecord
     // buffer for number of oldest record
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOpenClipboardWindow", "call GetOpenClipboardWindow", @"HWND GetOpenClipboardWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPaletteEntries", "call GetPaletteEntries", @"UINT GetPaletteEntries(
+new Completion("GetOpenClipboardWindow", "GetOpenClipboardWindow", @"HWND GetOpenClipboardWindow(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetPaletteEntries", "GetPaletteEntries", @"UINT GetPaletteEntries(
     HPALETTE hpal,
     // handle of logical color palette
     UINT iStartIndex,
@@ -2744,12 +2744,12 @@ new Completion("GetPaletteEntries", "call GetPaletteEntries", @"UINT GetPaletteE
     // address of array receiving entries
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetParent", "call GetParent", @"HWND GetParent(
+new Completion("GetParent", "GetParent", @"HWND GetParent(
     HWND hWnd
     // handle of child window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPath", "call GetPath", @"int GetPath(
+new Completion("GetPath", "GetPath", @"int GetPath(
     HDC hdc,
     // handle of device context
     LPPOINT lpPoints,
@@ -2760,7 +2760,7 @@ new Completion("GetPath", "call GetPath", @"int GetPath(
     // count of points defining path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPixel", "call GetPixel", @"COLORREF GetPixel(
+new Completion("GetPixel", "GetPixel", @"COLORREF GetPixel(
     HDC hdc,
     // handle of device context
     int XPos,
@@ -2769,31 +2769,31 @@ new Completion("GetPixel", "call GetPixel", @"COLORREF GetPixel(
     // y-coordinate of pixel
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPolyFillMode", "call GetPolyFillMode", @"int GetPolyFillMode(
+new Completion("GetPolyFillMode", "GetPolyFillMode", @"int GetPolyFillMode(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPriorityClass", "call GetPriorityClass", @"DWORD GetPriorityClass(
+new Completion("GetPriorityClass", "GetPriorityClass", @"DWORD GetPriorityClass(
     HANDLE hProcess
     // handle to the process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPriorityClipboardFormat", "call GetPriorityClipboardFormat", @"int GetPriorityClipboardFormat(
+new Completion("GetPriorityClipboardFormat", "GetPriorityClipboardFormat", @"int GetPriorityClipboardFormat(
     UINT *paFormatPriorityList,
     // address of priority list
     int cFormats
     // number of entries in list
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcAddress", "call GetProcAddress", @"FARPROC GetProcAddress(
+new Completion("GetProcAddress", "GetProcAddress", @"FARPROC GetProcAddress(
     HMODULE hModule,
     // handle to DLL module
     LPCSTR lpProcName
     // name of function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessAffinityMask", "call GetProcessAffinityMask", @"BOOL GetProcessAffinityMask(
+new Completion("GetProcessAffinityMask", "GetProcessAffinityMask", @"BOOL GetProcessAffinityMask(
     HANDLE hProcess,
     // handle to the process of interest
     LPDWORD lpProcessAffinityMask,
@@ -2802,22 +2802,22 @@ new Completion("GetProcessAffinityMask", "call GetProcessAffinityMask", @"BOOL G
     // pointer to structure to receive system affinity mask
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessHeap", "call GetProcessHeap", @"HANDLE GetProcessHeap(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessHeaps", "call GetProcessHeaps", @"DWORD GetProcessHeaps(
+new Completion("GetProcessHeap", "GetProcessHeap", @"HANDLE GetProcessHeap(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetProcessHeaps", "GetProcessHeaps", @"DWORD GetProcessHeaps(
     DWORD NumberOfHeaps,
     // maximum number of heap handles buffer can receive
     PHANDLE ProcessHeaps
     // points to buffer to receive array of heap handles
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessShutdownParameters", "call GetProcessShutdownParameters", @"BOOL GetProcessShutdownParameters(
+new Completion("GetProcessShutdownParameters", "GetProcessShutdownParameters", @"BOOL GetProcessShutdownParameters(
     LPDWORD lpdwLevel,
     // shutdown priority
     LPDWORD lpdwFlags
     // shutdown flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessTimes", "call GetProcessTimes", @"BOOL GetProcessTimes(
+new Completion("GetProcessTimes", "GetProcessTimes", @"BOOL GetProcessTimes(
     HANDLE hProcess,
     // specifies the process of interest
     LPFILETIME lpCreationTime,
@@ -2830,13 +2830,13 @@ new Completion("GetProcessTimes", "call GetProcessTimes", @"BOOL GetProcessTimes
     // time the process has spent in user mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessVersion", "call GetProcessVersion", @"DWORD GetProcessVersion(
+new Completion("GetProcessVersion", "GetProcessVersion", @"DWORD GetProcessVersion(
     DWORD ProcessId
     // identifier specifying the process of interest
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessWindowStation", "call GetProcessWindowStation", @"HWINSTA GetProcessWindowStation(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProcessWorkingSetSize", "call GetProcessWorkingSetSize", @"BOOL GetProcessWorkingSetSize(
+new Completion("GetProcessWindowStation", "GetProcessWindowStation", @"HWINSTA GetProcessWindowStation(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetProcessWorkingSetSize", "GetProcessWorkingSetSize", @"BOOL GetProcessWorkingSetSize(
     HANDLE hProcess,
     // open handle to the process of interest
     LPDWORD lpMinimumWorkingSetSize,
@@ -2845,7 +2845,7 @@ new Completion("GetProcessWorkingSetSize", "call GetProcessWorkingSetSize", @"BO
     // points to variable to receive maximum working set size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetQueuedCompletionStatus", "call GetQueuedCompletionStatus", @"BOOL GetQueuedCompletionStatus(
+new Completion("GetQueuedCompletionStatus", "GetQueuedCompletionStatus", @"BOOL GetQueuedCompletionStatus(
     HANDLE CompletionPort,
     // the I/O completion port of interest
     LPDWORD lpNumberOfBytesTransferred,
@@ -2858,19 +2858,19 @@ new Completion("GetQueuedCompletionStatus", "call GetQueuedCompletionStatus", @"
     // optional timeout value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetQueueStatus", "call GetQueueStatus", @"DWORD GetQueueStatus(
+new Completion("GetQueueStatus", "GetQueueStatus", @"DWORD GetQueueStatus(
     UINT flags
     // queue-status flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetRasterizerCaps", "call GetRasterizerCaps", @"BOOL GetRasterizerCaps(
+new Completion("GetRasterizerCaps", "GetRasterizerCaps", @"BOOL GetRasterizerCaps(
     LPRASTERIZER_STATUS lprs,
     // address of rasterizer information structure
     UINT cb
     // number of bytes in structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetRegionData", "call GetRegionData", @"DWORD GetRegionData(
+new Completion("GetRegionData", "GetRegionData", @"DWORD GetRegionData(
     HRGN hRgn,
     // handle of region
     DWORD dwCount,
@@ -2879,19 +2879,19 @@ new Completion("GetRegionData", "call GetRegionData", @"DWORD GetRegionData(
     // address of buffer containing region data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetRgnBox", "call GetRgnBox", @"int GetRgnBox(
+new Completion("GetRgnBox", "GetRgnBox", @"int GetRgnBox(
     HRGN hrgn,
     // handle of a region
     LPRECT lprc
     // address of structure that receives bounding rect.
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetROP2", "call GetROP2", @"int GetROP2(
+new Completion("GetROP2", "GetROP2", @"int GetROP2(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetScrollInfo", "call GetScrollInfo", @"BOOL GetScrollInfo(
+new Completion("GetScrollInfo", "GetScrollInfo", @"BOOL GetScrollInfo(
     HWND hwnd,
     // handle of window with scroll bar
     int fnBar,
@@ -2900,14 +2900,14 @@ new Completion("GetScrollInfo", "call GetScrollInfo", @"BOOL GetScrollInfo(
     // pointer to structure for scroll parameters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetScrollPos", "call GetScrollPos", @"int GetScrollPos(
+new Completion("GetScrollPos", "GetScrollPos", @"int GetScrollPos(
     HWND hWnd,
     // handle of window with scroll bar
     int nBar
     // scroll bar flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetScrollRange", "call GetScrollRange", @"BOOL GetScrollRange(
+new Completion("GetScrollRange", "GetScrollRange", @"BOOL GetScrollRange(
     HWND hWnd,
     // handle of window with scroll bar
     int nBar,
@@ -2918,7 +2918,7 @@ new Completion("GetScrollRange", "call GetScrollRange", @"BOOL GetScrollRange(
     // address of variable that receives maximum position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorControl", "call GetSecurityDescriptorControl", @"BOOL GetSecurityDescriptorControl(
+new Completion("GetSecurityDescriptorControl", "GetSecurityDescriptorControl", @"BOOL GetSecurityDescriptorControl(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     PSECURITY_DESCRIPTOR_CONTROL pControl,
@@ -2927,7 +2927,7 @@ new Completion("GetSecurityDescriptorControl", "call GetSecurityDescriptorContro
     // address of revision value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorDacl", "call GetSecurityDescriptorDacl", @"BOOL GetSecurityDescriptorDacl(
+new Completion("GetSecurityDescriptorDacl", "GetSecurityDescriptorDacl", @"BOOL GetSecurityDescriptorDacl(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     LPBOOL lpbDaclPresent,
@@ -2938,7 +2938,7 @@ new Completion("GetSecurityDescriptorDacl", "call GetSecurityDescriptorDacl", @"
     // address of flag for default disc. ACL
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorGroup", "call GetSecurityDescriptorGroup", @"BOOL GetSecurityDescriptorGroup(
+new Completion("GetSecurityDescriptorGroup", "GetSecurityDescriptorGroup", @"BOOL GetSecurityDescriptorGroup(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     PSID *pGroup,
@@ -2947,12 +2947,12 @@ new Completion("GetSecurityDescriptorGroup", "call GetSecurityDescriptorGroup", 
     // address of flag for default
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorLength", "call GetSecurityDescriptorLength", @"DWORD GetSecurityDescriptorLength(
+new Completion("GetSecurityDescriptorLength", "GetSecurityDescriptorLength", @"DWORD GetSecurityDescriptorLength(
     PSECURITY_DESCRIPTOR pSecurityDescriptor
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorOwner", "call GetSecurityDescriptorOwner", @"BOOL GetSecurityDescriptorOwner(
+new Completion("GetSecurityDescriptorOwner", "GetSecurityDescriptorOwner", @"BOOL GetSecurityDescriptorOwner(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     PSID *pOwner,
@@ -2961,7 +2961,7 @@ new Completion("GetSecurityDescriptorOwner", "call GetSecurityDescriptorOwner", 
     // address of flag for default
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSecurityDescriptorSacl", "call GetSecurityDescriptorSacl", @"BOOL GetSecurityDescriptorSacl(
+new Completion("GetSecurityDescriptorSacl", "GetSecurityDescriptorSacl", @"BOOL GetSecurityDescriptorSacl(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     LPBOOL lpbSaclPresent,
@@ -2972,44 +2972,44 @@ new Completion("GetSecurityDescriptorSacl", "call GetSecurityDescriptorSacl", @"
     // address of flag for default system ACL
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSidIdentifierAuthority", "call GetSidIdentifierAuthority", @"PSID_IDENTIFIER_AUTHORITY GetSidIdentifierAuthority(
+new Completion("GetSidIdentifierAuthority", "GetSidIdentifierAuthority", @"PSID_IDENTIFIER_AUTHORITY GetSidIdentifierAuthority(
     PSID pSid
     // address of SID to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSidLengthRequired", "call GetSidLengthRequired", @"DWORD GetSidLengthRequired(
+new Completion("GetSidLengthRequired", "GetSidLengthRequired", @"DWORD GetSidLengthRequired(
     UCHAR nSubAuthorityCount
     // count of subauthorities
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSidSubAuthority", "call GetSidSubAuthority", @"PDWORD GetSidSubAuthority(
+new Completion("GetSidSubAuthority", "GetSidSubAuthority", @"PDWORD GetSidSubAuthority(
     PSID pSid,
     // address of security identifier to query
     DWORD nSubAuthority
     // index of subauthority to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSidSubAuthorityCount", "call GetSidSubAuthorityCount", @"PUCHAR GetSidSubAuthorityCount(
+new Completion("GetSidSubAuthorityCount", "GetSidSubAuthorityCount", @"PUCHAR GetSidSubAuthorityCount(
     PSID pSid
     // address of security identifier to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStdHandle", "call GetStdHandle", @"HANDLE GetStdHandle(
+new Completion("GetStdHandle", "GetStdHandle", @"HANDLE GetStdHandle(
     DWORD nStdHandle
     // input, output, or error device
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStockObject", "call GetStockObject", @"HGDIOBJ GetStockObject(
+new Completion("GetStockObject", "GetStockObject", @"HGDIOBJ GetStockObject(
     int fnObject
     // type of stock object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStretchBltMode", "call GetStretchBltMode", @"int GetStretchBltMode(
+new Completion("GetStretchBltMode", "GetStretchBltMode", @"int GetStretchBltMode(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStringTypeA", "call GetStringTypeA", @"BOOL GetStringTypeA(
+new Completion("GetStringTypeA", "GetStringTypeA", @"BOOL GetStringTypeA(
     LCID Locale,
     // locale identifer
     DWORD dwInfoType,
@@ -3022,7 +3022,7 @@ new Completion("GetStringTypeA", "call GetStringTypeA", @"BOOL GetStringTypeA(
     // pointer to the buffer for output
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStringTypeW", "call GetStringTypeW", @"BOOL GetStringTypeW(
+new Completion("GetStringTypeW", "GetStringTypeW", @"BOOL GetStringTypeW(
     DWORD dwInfoType,
     // information-type options
     LPCWSTR lpSrcStr,
@@ -3033,43 +3033,43 @@ new Completion("GetStringTypeW", "call GetStringTypeW", @"BOOL GetStringTypeW(
     // address of buffer for output
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSubMenu", "call GetSubMenu", @"HMENU GetSubMenu(
+new Completion("GetSubMenu", "GetSubMenu", @"HMENU GetSubMenu(
     HMENU hMenu,
     // handle of menu
     int nPos
     // menu item position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSysColor", "call GetSysColor", @"DWORD GetSysColor(
+new Completion("GetSysColor", "GetSysColor", @"DWORD GetSysColor(
     int nIndex
     // display element
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSysColorBrush", "call GetSysColorBrush", @"HBRUSH GetSysColorBrush(
+new Completion("GetSysColorBrush", "GetSysColorBrush", @"HBRUSH GetSysColorBrush(
     int nIndex
     // system color index
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemDefaultLangID", "call GetSystemDefaultLangID", @"LANGID GetSystemDefaultLangID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemDefaultLCID", "call GetSystemDefaultLCID", @"LCID GetSystemDefaultLCID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemInfo", "call GetSystemInfo", @"VOID GetSystemInfo(
+new Completion("GetSystemDefaultLangID", "GetSystemDefaultLangID", @"LANGID GetSystemDefaultLangID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetSystemDefaultLCID", "GetSystemDefaultLCID", @"LCID GetSystemDefaultLCID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetSystemInfo", "GetSystemInfo", @"VOID GetSystemInfo(
     LPSYSTEM_INFO lpSystemInfo
     // address of system information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemMenu", "call GetSystemMenu", @"HMENU GetSystemMenu(
+new Completion("GetSystemMenu", "GetSystemMenu", @"HMENU GetSystemMenu(
     HWND hWnd,
     // handle of window to own window menu
     BOOL bRevert
     // reset flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemMetrics", "call GetSystemMetrics", @"int GetSystemMetrics(
+new Completion("GetSystemMetrics", "GetSystemMetrics", @"int GetSystemMetrics(
     int nIndex
     // system metric or configuration setting to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemPaletteEntries", "call GetSystemPaletteEntries", @"UINT GetSystemPaletteEntries(
+new Completion("GetSystemPaletteEntries", "GetSystemPaletteEntries", @"UINT GetSystemPaletteEntries(
     HDC hdc,
     // handle of device context
     UINT iStartIndex,
@@ -3080,17 +3080,17 @@ new Completion("GetSystemPaletteEntries", "call GetSystemPaletteEntries", @"UINT
     // array receiving system-palette entries
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemPaletteUse", "call GetSystemPaletteUse", @"UINT GetSystemPaletteUse(
+new Completion("GetSystemPaletteUse", "GetSystemPaletteUse", @"UINT GetSystemPaletteUse(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemTime", "call GetSystemTime", @"VOID GetSystemTime(
+new Completion("GetSystemTime", "GetSystemTime", @"VOID GetSystemTime(
     LPSYSTEMTIME lpSystemTime
     // address of system time structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemTimeAdjustment", "call GetSystemTimeAdjustment", @"BOOL GetSystemTimeAdjustment(
+new Completion("GetSystemTimeAdjustment", "GetSystemTimeAdjustment", @"BOOL GetSystemTimeAdjustment(
     PDWORD lpTimeAdjustment,
     // size, in 100-nanosecond units, of a periodic time adjustment
     PDWORD lpTimeIncrement,
@@ -3099,12 +3099,12 @@ new Completion("GetSystemTimeAdjustment", "call GetSystemTimeAdjustment", @"BOOL
     // whether periodic time adjustment is disabled or enabled
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemTimeAsFileTime", "call GetSystemTimeAsFileTime", @"VOID GetSystemTimeAsFileTime(
+new Completion("GetSystemTimeAsFileTime", "GetSystemTimeAsFileTime", @"VOID GetSystemTimeAsFileTime(
     LPFILETIME lpSystemTimeAsFileTime
     // pointer to a file time structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTapeParameters", "call GetTapeParameters", @"DWORD GetTapeParameters(
+new Completion("GetTapeParameters", "GetTapeParameters", @"DWORD GetTapeParameters(
     HANDLE hDevice,
     // handle of open device
     DWORD dwOperation,
@@ -3115,7 +3115,7 @@ new Completion("GetTapeParameters", "call GetTapeParameters", @"DWORD GetTapePar
     // tape media or drive information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTapePosition", "call GetTapePosition", @"DWORD GetTapePosition(
+new Completion("GetTapePosition", "GetTapePosition", @"DWORD GetTapePosition(
     HANDLE hDevice,
     // handle of open device
     DWORD dwPositionType,
@@ -3128,27 +3128,27 @@ new Completion("GetTapePosition", "call GetTapePosition", @"DWORD GetTapePositio
     // address of high-order 32 bits of tape position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTapeStatus", "call GetTapeStatus", @"DWORD GetTapeStatus(
+new Completion("GetTapeStatus", "GetTapeStatus", @"DWORD GetTapeStatus(
     HANDLE hDevice
     // handle of open device
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextAlign", "call GetTextAlign", @"UINT GetTextAlign(
+new Completion("GetTextAlign", "GetTextAlign", @"UINT GetTextAlign(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextCharacterExtra", "call GetTextCharacterExtra", @"int GetTextCharacterExtra(
+new Completion("GetTextCharacterExtra", "GetTextCharacterExtra", @"int GetTextCharacterExtra(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextCharset", "call GetTextCharset", @"UINT GetTextCharsetInfo(
+new Completion("GetTextCharset", "GetTextCharset", @"UINT GetTextCharsetInfo(
     HDC hdc,
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextCharsetInfo", "call GetTextCharsetInfo", @"UINT GetTextCharsetInfo(
+new Completion("GetTextCharsetInfo", "GetTextCharsetInfo", @"UINT GetTextCharsetInfo(
     HDC hdc,
     // handle to device context
     LPFONTSIGNATURE lpSig,
@@ -3157,30 +3157,30 @@ new Completion("GetTextCharsetInfo", "call GetTextCharsetInfo", @"UINT GetTextCh
     // reserved; must be zero
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextColor", "call GetTextColor", @"COLORREF GetTextColor(
+new Completion("GetTextColor", "GetTextColor", @"COLORREF GetTextColor(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadContext", "call GetThreadContext", @"BOOL GetThreadContext(
+new Completion("GetThreadContext", "GetThreadContext", @"BOOL GetThreadContext(
     HANDLE hThread,
     // handle of thread with context
     LPCONTEXT lpContext
     // address of context structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadDesktop", "call GetThreadDesktop", @"HDESK GetThreadDesktop(
+new Completion("GetThreadDesktop", "GetThreadDesktop", @"HDESK GetThreadDesktop(
     DWORD dwThreadId
     // thread identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadLocale", "call GetThreadLocale", @"LCID GetThreadLocale(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadPriority", "call GetThreadPriority", @"int GetThreadPriority(
+new Completion("GetThreadLocale", "GetThreadLocale", @"LCID GetThreadLocale(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetThreadPriority", "GetThreadPriority", @"int GetThreadPriority(
     HANDLE hThread
     // handle to thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadSelectorEntry", "call GetThreadSelectorEntry", @"BOOL GetThreadSelectorEntry(
+new Completion("GetThreadSelectorEntry", "GetThreadSelectorEntry", @"BOOL GetThreadSelectorEntry(
     HANDLE hThread,
     // handle of thread that contains selector
     DWORD dwSelector,
@@ -3189,7 +3189,7 @@ new Completion("GetThreadSelectorEntry", "call GetThreadSelectorEntry", @"BOOL G
     // address of selector entry structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetThreadTimes", "call GetThreadTimes", @"BOOL GetThreadTimes(
+new Completion("GetThreadTimes", "GetThreadTimes", @"BOOL GetThreadTimes(
     HANDLE hThread,
     // specifies the thread of interest
     LPFILETIME lpCreationTime,
@@ -3202,13 +3202,13 @@ new Completion("GetThreadTimes", "call GetThreadTimes", @"BOOL GetThreadTimes(
     // time the thread has spent in user mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTickCount", "call GetTickCount", @"DWORD GetTickCount(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTimeZoneInformation", "call GetTimeZoneInformation", @"DWORD GetTimeZoneInformation(
+new Completion("GetTickCount", "GetTickCount", @"DWORD GetTickCount(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetTimeZoneInformation", "GetTimeZoneInformation", @"DWORD GetTimeZoneInformation(
     LPTIME_ZONE_INFORMATION lpTimeZoneInformation
     // address of time-zone settings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTokenInformation", "call GetTokenInformation", @"BOOL GetTokenInformation(
+new Completion("GetTokenInformation", "GetTokenInformation", @"BOOL GetTokenInformation(
     HANDLE TokenHandle,
     // handle of access token
     TOKEN_INFORMATION_CLASS TokenInformationClass,
@@ -3221,12 +3221,12 @@ new Completion("GetTokenInformation", "call GetTokenInformation", @"BOOL GetToke
     // address of required buffer size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTopWindow", "call GetTopWindow", @"HWND GetTopWindow(
+new Completion("GetTopWindow", "GetTopWindow", @"HWND GetTopWindow(
     HWND hWnd
     // handle of parent window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUpdateRect", "call GetUpdateRect", @"BOOL GetUpdateRect(
+new Completion("GetUpdateRect", "GetUpdateRect", @"BOOL GetUpdateRect(
     HWND hWnd,
     // handle of window
     LPRECT lpRect,
@@ -3235,7 +3235,7 @@ new Completion("GetUpdateRect", "call GetUpdateRect", @"BOOL GetUpdateRect(
     // erase flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUpdateRgn", "call GetUpdateRgn", @"int GetUpdateRgn(
+new Completion("GetUpdateRgn", "GetUpdateRgn", @"int GetUpdateRgn(
     HWND hWnd,
     // handle of window
     HRGN hRgn,
@@ -3244,9 +3244,9 @@ new Completion("GetUpdateRgn", "call GetUpdateRgn", @"int GetUpdateRgn(
     // erase background flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserDefaultLangID", "call GetUserDefaultLangID", @"LANGID GetUserDefaultLangID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserDefaultLCID", "call GetUserDefaultLCID", @"LCID GetUserDefaultLCID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserObjectSecurity", "call GetUserObjectSecurity", @"BOOL GetUserObjectSecurity(
+new Completion("GetUserDefaultLangID", "GetUserDefaultLangID", @"LANGID GetUserDefaultLangID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetUserDefaultLCID", "GetUserDefaultLCID", @"LCID GetUserDefaultLCID(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetUserObjectSecurity", "GetUserObjectSecurity", @"BOOL GetUserObjectSecurity(
     HANDLE hObj,
     // handle of user object
     PSECURITY_INFORMATION pSIRequested,
@@ -3259,77 +3259,77 @@ new Completion("GetUserObjectSecurity", "call GetUserObjectSecurity", @"BOOL Get
     // address of required size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetViewportExtEx", "call GetViewportExtEx", @"BOOL GetViewportExtEx(
+new Completion("GetViewportExtEx", "GetViewportExtEx", @"BOOL GetViewportExtEx(
     HDC hdc,
     // handle of device context
     LPSIZE lpSize
     // address of structure receiving viewport dimensions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetViewportOrgEx", "call GetViewportOrgEx", @"BOOL GetViewportOrgEx(
+new Completion("GetViewportOrgEx", "GetViewportOrgEx", @"BOOL GetViewportOrgEx(
     HDC hdc,
     // handle of device context
     LPPOINT lpPoint
     // address of structure receiving the viewport origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindow", "call GetWindow", @"HWND GetWindow(
+new Completion("GetWindow", "GetWindow", @"HWND GetWindow(
     HWND hWnd,
     // handle of original window
     UINT uCmd
     // relationship flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowExtEx", "call GetWindowExtEx", @"BOOL GetWindowExtEx(
+new Completion("GetWindowExtEx", "GetWindowExtEx", @"BOOL GetWindowExtEx(
     HDC hdc,
     // handle of device context
     LPSIZE lpSize
     // address of structure receiving window extents
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowOrgEx", "call GetWindowOrgEx", @"BOOL GetWindowOrgEx(
+new Completion("GetWindowOrgEx", "GetWindowOrgEx", @"BOOL GetWindowOrgEx(
     HDC hdc,
     // handle of device context
     LPPOINT lpPoint
     // address of structure receiving the window origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowPlacement", "call GetWindowPlacement", @"BOOL GetWindowPlacement(
+new Completion("GetWindowPlacement", "GetWindowPlacement", @"BOOL GetWindowPlacement(
     HWND hWnd,
     // handle of window
     WINDOWPLACEMENT *lpwndpl
     // address of structure for position data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowRect", "call GetWindowRect", @"BOOL GetWindowRect(
+new Completion("GetWindowRect", "GetWindowRect", @"BOOL GetWindowRect(
     HWND hWnd,
     // handle of window
     LPRECT lpRect
     // address of structure for window coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowRgn", "call GetWindowRgn", @"int GetWindowRgn(
+new Completion("GetWindowRgn", "GetWindowRgn", @"int GetWindowRgn(
     HWND hWnd,
     // handle to window whose window region is to be obtained
     HRGN hRgn
     // handle to region that receives a copy of the window region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowThreadProcessId", "call GetWindowThreadProcessId", @"DWORD GetWindowThreadProcessId(
+new Completion("GetWindowThreadProcessId", "GetWindowThreadProcessId", @"DWORD GetWindowThreadProcessId(
     HWND hWnd,
     // handle of window
     LPDWORD lpdwProcessId
     // address of variable for process identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowWord", "call GetWindowWord", @"WORD GetWindowWord(
+new Completion("GetWindowWord", "GetWindowWord", @"WORD GetWindowWord(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWinMetaFileBits", "call GetWinMetaFileBits", @"UINT GetWinMetaFileBits(
+new Completion("GetWinMetaFileBits", "GetWinMetaFileBits", @"UINT GetWinMetaFileBits(
     HENHMETAFILE hemf,
     // handle to the enhanced metafile
     UINT cbBuffer,
@@ -3342,53 +3342,53 @@ new Completion("GetWinMetaFileBits", "call GetWinMetaFileBits", @"UINT GetWinMet
     // handle of reference device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWorldTransform", "call GetWorldTransform", @"BOOL GetWorldTransform(
+new Completion("GetWorldTransform", "GetWorldTransform", @"BOOL GetWorldTransform(
     HDC hdc,
     // handle to the device context
     LPXFORM lpXform
     // pointer to the structure receiving transformation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalAlloc", "call GlobalAlloc", @"HGLOBAL GlobalAlloc(
+new Completion("GlobalAlloc", "GlobalAlloc", @"HGLOBAL GlobalAlloc(
     UINT uFlags,
     // object allocation attributes
     DWORD dwBytes
     // number of bytes to allocate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalCompact", "call GlobalCompact", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalDeleteAtom", "call GlobalDeleteAtom", @"ATOM GlobalDeleteAtom(
+new Completion("GlobalCompact", "GlobalCompact", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GlobalDeleteAtom", "GlobalDeleteAtom", @"ATOM GlobalDeleteAtom(
     ATOM nAtom
     // atom to delete
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalFix", "call GlobalFix", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalFlags", "call GlobalFlags", @"UINT GlobalFlags(
+new Completion("GlobalFix", "GlobalFix", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GlobalFlags", "GlobalFlags", @"UINT GlobalFlags(
     HGLOBAL hMem
     // handle to the global memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalFree", "call GlobalFree", @"HGLOBAL GlobalFree(
+new Completion("GlobalFree", "GlobalFree", @"HGLOBAL GlobalFree(
     HGLOBAL hMem
     // handle to the global memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalHandle", "call GlobalHandle", @"HGLOBAL GlobalHandle(
+new Completion("GlobalHandle", "GlobalHandle", @"HGLOBAL GlobalHandle(
     LPCVOID pMem
     // pointer to the global memory block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalLock", "call GlobalLock", @"LPVOID GlobalLock(
+new Completion("GlobalLock", "GlobalLock", @"LPVOID GlobalLock(
     HGLOBAL hMem
     // address of the global memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalMemoryStatus", "call GlobalMemoryStatus", @"VOID GlobalMemoryStatus(
+new Completion("GlobalMemoryStatus", "GlobalMemoryStatus", @"VOID GlobalMemoryStatus(
     LPMEMORYSTATUS lpBuffer
     // pointer to the memory status structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalReAlloc", "call GlobalReAlloc", @"HGLOBAL GlobalReAlloc(
+new Completion("GlobalReAlloc", "GlobalReAlloc", @"HGLOBAL GlobalReAlloc(
     HGLOBAL hMem,
     // handle to the global memory object
     DWORD dwBytes,
@@ -3397,20 +3397,20 @@ new Completion("GlobalReAlloc", "call GlobalReAlloc", @"HGLOBAL GlobalReAlloc(
     // how to reallocate object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalSize", "call GlobalSize", @"DWORD GlobalSize(
+new Completion("GlobalSize", "GlobalSize", @"DWORD GlobalSize(
     HGLOBAL hMem
     // handle to the global memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalUnfix", "call GlobalUnfix", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalUnlock", "call GlobalUnlock", @"BOOL GlobalUnlock(
+new Completion("GlobalUnfix", "GlobalUnfix", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GlobalUnlock", "GlobalUnlock", @"BOOL GlobalUnlock(
     HGLOBAL hMem
     // handle to the global memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalUnWire", "call GlobalUnWire", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalWire", "call GlobalWire", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapAlloc", "call HeapAlloc", @"LPVOID HeapAlloc(
+new Completion("GlobalUnWire", "GlobalUnWire", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GlobalWire", "GlobalWire", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("HeapAlloc", "HeapAlloc", @"LPVOID HeapAlloc(
     HANDLE hHeap,
     // handle to the private heap block
     DWORD dwFlags,
@@ -3419,14 +3419,14 @@ new Completion("HeapAlloc", "call HeapAlloc", @"LPVOID HeapAlloc(
     // number of bytes to allocate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapCompact", "call HeapCompact", @"UINT HeapCompact(
+new Completion("HeapCompact", "HeapCompact", @"UINT HeapCompact(
     HANDLE hHeap,
     // handle to the heap to compact
     DWORD dwFlags
     // bit-flags that control heap access during function operation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapCreate", "call HeapCreate", @"HANDLE HeapCreate(
+new Completion("HeapCreate", "HeapCreate", @"HANDLE HeapCreate(
     DWORD flOptions,
     // heap allocation flag
     DWORD dwInitialSize,
@@ -3435,12 +3435,12 @@ new Completion("HeapCreate", "call HeapCreate", @"HANDLE HeapCreate(
     // maximum heap size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapDestroy", "call HeapDestroy", @"BOOL HeapDestroy(
+new Completion("HeapDestroy", "HeapDestroy", @"BOOL HeapDestroy(
     HANDLE hHeap
     // handle to the heap
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapFree", "call HeapFree", @"BOOL HeapFree(
+new Completion("HeapFree", "HeapFree", @"BOOL HeapFree(
     HANDLE hHeap,
     // handle to the heap
     DWORD dwFlags,
@@ -3449,12 +3449,12 @@ new Completion("HeapFree", "call HeapFree", @"BOOL HeapFree(
     // pointer to the memory to free
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapLock", "call HeapLock", @"BOOL HeapLock(
+new Completion("HeapLock", "HeapLock", @"BOOL HeapLock(
     HANDLE hHeap
     // handle to the heap to lock for exclusive thread access
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapReAlloc", "call HeapReAlloc", @"LPVOID HeapReAlloc(
+new Completion("HeapReAlloc", "HeapReAlloc", @"LPVOID HeapReAlloc(
     HANDLE hHeap,
     // handle to a heap block
     DWORD dwFlags,
@@ -3465,7 +3465,7 @@ new Completion("HeapReAlloc", "call HeapReAlloc", @"LPVOID HeapReAlloc(
     // number of bytes to reallocate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapSize", "call HeapSize", @"DWORD HeapSize(
+new Completion("HeapSize", "HeapSize", @"DWORD HeapSize(
     HANDLE hHeap,
     // handle to the heap
     DWORD dwFlags,
@@ -3474,12 +3474,12 @@ new Completion("HeapSize", "call HeapSize", @"DWORD HeapSize(
     // pointer to memory to return size for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapUnlock", "call HeapUnlock", @"BOOL HeapUnlock(
+new Completion("HeapUnlock", "HeapUnlock", @"BOOL HeapUnlock(
     HANDLE hHeap
     // handle to the heap to unlock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapValidate", "call HeapValidate", @"BOOL HeapValidate(
+new Completion("HeapValidate", "HeapValidate", @"BOOL HeapValidate(
     HANDLE hHeap,
     // handle to the heap of interest
     DWORD dwFlags,
@@ -3488,19 +3488,19 @@ new Completion("HeapValidate", "call HeapValidate", @"BOOL HeapValidate(
     // optional pointer to individual memory block to validate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HeapWalk", "call HeapWalk", @"BOOL HeapWalk(
+new Completion("HeapWalk", "HeapWalk", @"BOOL HeapWalk(
     HANDLE hHeap,
     // handle to the heap to enumerate
     LPPROCESS_HEAP_ENTRY lpEntry
     // points to structure that maintains enumeration state information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HideCaret", "call HideCaret", @"BOOL HideCaret(
+new Completion("HideCaret", "HideCaret", @"BOOL HideCaret(
     HWND hWnd
     // handle to the window with the caret
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("HiliteMenuItem", "call HiliteMenuItem", @"BOOL HiliteMenuItem(
+new Completion("HiliteMenuItem", "HiliteMenuItem", @"BOOL HiliteMenuItem(
     HWND hwnd,
     // handle to the window with the menu
     HMENU hmenu,
@@ -3511,29 +3511,29 @@ new Completion("HiliteMenuItem", "call HiliteMenuItem", @"BOOL HiliteMenuItem(
     // highlight flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ImpersonateDdeClientWindow", "call ImpersonateDdeClientWindow", @"BOOL ImpersonateDdeClientWindow(
+new Completion("ImpersonateDdeClientWindow", "ImpersonateDdeClientWindow", @"BOOL ImpersonateDdeClientWindow(
     HWND hWndClient,
     // handle of DDE client window
     HWND hWndServer
     // handle of DDE server window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ImpersonateLoggedOnUser", "call ImpersonateLoggedOnUser", @"BOOL ImpersonateLoggedOnUser(
+new Completion("ImpersonateLoggedOnUser", "ImpersonateLoggedOnUser", @"BOOL ImpersonateLoggedOnUser(
     HANDLE hToken
     // handle to a token that represents a logged-on user
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ImpersonateNamedPipeClient", "call ImpersonateNamedPipeClient", @"BOOL ImpersonateNamedPipeClient(
+new Completion("ImpersonateNamedPipeClient", "ImpersonateNamedPipeClient", @"BOOL ImpersonateNamedPipeClient(
     HANDLE hNamedPipe
     // handle of a named pipe
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ImpersonateSelf", "call ImpersonateSelf", @"BOOL ImpersonateSelf(
+new Completion("ImpersonateSelf", "ImpersonateSelf", @"BOOL ImpersonateSelf(
     SECURITY_IMPERSONATION_LEVEL ImpersonationLevel
     // impersonation level
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InflateRect", "call InflateRect", @"BOOL InflateRect(
+new Completion("InflateRect", "InflateRect", @"BOOL InflateRect(
     LPRECT lprc,
     // address of rectangle
     int dx,
@@ -3542,12 +3542,12 @@ new Completion("InflateRect", "call InflateRect", @"BOOL InflateRect(
     // amount to increase or decrease height
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitAtomTable", "call InitAtomTable", @"BOOL InitAtomTable(
+new Completion("InitAtomTable", "InitAtomTable", @"BOOL InitAtomTable(
     DWORD nSize
     // size of atom table
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitializeAcl", "call InitializeAcl", @"BOOL InitializeAcl(
+new Completion("InitializeAcl", "InitializeAcl", @"BOOL InitializeAcl(
     PACL pAcl,
     // address of access-control list
     DWORD nAclLength,
@@ -3556,19 +3556,19 @@ new Completion("InitializeAcl", "call InitializeAcl", @"BOOL InitializeAcl(
     // revision level of access-control list
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitializeCriticalSection", "call InitializeCriticalSection", @"VOID InitializeCriticalSection(
+new Completion("InitializeCriticalSection", "InitializeCriticalSection", @"VOID InitializeCriticalSection(
     LPCRITICAL_SECTION lpCriticalSection
     // address of critical section object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitializeSecurityDescriptor", "call InitializeSecurityDescriptor", @"BOOL InitializeSecurityDescriptor(
+new Completion("InitializeSecurityDescriptor", "InitializeSecurityDescriptor", @"BOOL InitializeSecurityDescriptor(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     DWORD dwRevision
     // revision level
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitializeSid", "call InitializeSid", @"BOOL InitializeSid(
+new Completion("InitializeSid", "InitializeSid", @"BOOL InitializeSid(
     PSID Sid,
     // address of SID to initialize
     PSID_IDENTIFIER_AUTHORITY pIdentifierAuthority,
@@ -3577,8 +3577,8 @@ new Completion("InitializeSid", "call InitializeSid", @"BOOL InitializeSid(
     // count of subauthorities
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InSendMessage", "call InSendMessage", @"BOOL InSendMessage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IntersectClipRect", "call IntersectClipRect", @"int IntersectClipRect(
+new Completion("InSendMessage", "InSendMessage", @"BOOL InSendMessage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("IntersectClipRect", "IntersectClipRect", @"int IntersectClipRect(
     HDC hdc,
     // handle of device context
     int nLeftRect,
@@ -3591,7 +3591,7 @@ new Completion("IntersectClipRect", "call IntersectClipRect", @"int IntersectCli
     // y-coordinate of lower-right corner of rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IntersectRect", "call IntersectRect", @"BOOL IntersectRect(
+new Completion("IntersectRect", "IntersectRect", @"BOOL IntersectRect(
     LPRECT lprcDst,
     // address of structure for intersection
     CONST RECT *lprcSrc1,
@@ -3600,7 +3600,7 @@ new Completion("IntersectRect", "call IntersectRect", @"BOOL IntersectRect(
     // address of structure with second rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InvalidateRect", "call InvalidateRect", @"BOOL InvalidateRect(
+new Completion("InvalidateRect", "InvalidateRect", @"BOOL InvalidateRect(
     HWND hWnd,
     // handle of window with changed update region
     CONST RECT *lpRect,
@@ -3609,7 +3609,7 @@ new Completion("InvalidateRect", "call InvalidateRect", @"BOOL InvalidateRect(
     // erase-background flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InvalidateRgn", "call InvalidateRgn", @"BOOL InvalidateRgn(
+new Completion("InvalidateRgn", "InvalidateRgn", @"BOOL InvalidateRgn(
     HWND hWnd,
     // handle of window with changed update region
     HRGN hRgn,
@@ -3618,107 +3618,107 @@ new Completion("InvalidateRgn", "call InvalidateRgn", @"BOOL InvalidateRgn(
     // erase-background flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InvertRect", "call InvertRect", @"BOOL InvertRect(
+new Completion("InvertRect", "InvertRect", @"BOOL InvertRect(
     HDC hDC,
     // handle of device context
     CONST RECT *lprc
     // address of structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InvertRgn", "call InvertRgn", @"BOOL InvertRgn(
+new Completion("InvertRgn", "InvertRgn", @"BOOL InvertRgn(
     HDC hdc,
     // handle of device context
     HRGN hrgn
     // handle of region to be inverted
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadCodePtr", "call IsBadCodePtr", @"BOOL IsBadCodePtr(
+new Completion("IsBadCodePtr", "IsBadCodePtr", @"BOOL IsBadCodePtr(
     FARPROC lpfn
     // address of function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadHugeReadPtr", "call IsBadHugeReadPtr", @"BOOL IsBadHugeReadPtr(
+new Completion("IsBadHugeReadPtr", "IsBadHugeReadPtr", @"BOOL IsBadHugeReadPtr(
     CONST VOID *lp,
     // address of memory block
     UINT ucb
     // size of block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadHugeWritePtr", "call IsBadHugeWritePtr", @"BOOL IsBadHugeWritePtr(
+new Completion("IsBadHugeWritePtr", "IsBadHugeWritePtr", @"BOOL IsBadHugeWritePtr(
     LPVOID lp,
     // address of memory block
     UINT ucb
     // size of block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadReadPtr", "call IsBadReadPtr", @"BOOL IsBadReadPtr(
+new Completion("IsBadReadPtr", "IsBadReadPtr", @"BOOL IsBadReadPtr(
     CONST VOID *lp,
     // address of memory block
     UINT ucb
     // size of block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadWritePtr", "call IsBadWritePtr", @"BOOL IsBadWritePtr(
+new Completion("IsBadWritePtr", "IsBadWritePtr", @"BOOL IsBadWritePtr(
     LPVOID lp,
     // address of memory block
     UINT ucb
     // size of block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsChild", "call IsChild", @"BOOL IsChild(
+new Completion("IsChild", "IsChild", @"BOOL IsChild(
     HWND hWndParent,
     // handle of parent window
     HWND hWnd
     // handle of window to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsClipboardFormatAvailable", "call IsClipboardFormatAvailable", @"BOOL IsClipboardFormatAvailable(
+new Completion("IsClipboardFormatAvailable", "IsClipboardFormatAvailable", @"BOOL IsClipboardFormatAvailable(
     UINT format
     // clipboard format
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDBCSLeadByte", "call IsDBCSLeadByte", @"BOOL IsDBCSLeadByte(
+new Completion("IsDBCSLeadByte", "IsDBCSLeadByte", @"BOOL IsDBCSLeadByte(
     BYTE TestChar
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDBCSLeadByteEx", "call IsDBCSLeadByteEx", @"BOOL IsDBCSLeadByteEx(
+new Completion("IsDBCSLeadByteEx", "IsDBCSLeadByteEx", @"BOOL IsDBCSLeadByteEx(
     UINT CodePage,
     // identifier of code page
     BYTE TestChar
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDialogMessage", "call IsDialogMessage", @"BOOL IsDialogMessage(
+new Completion("IsDialogMessage", "IsDialogMessage", @"BOOL IsDialogMessage(
     HWND hDlg,
     // handle of dialog box
     LPMSG lpMsg
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDlgButtonChecked", "call IsDlgButtonChecked", @"UINT IsDlgButtonChecked(
+new Completion("IsDlgButtonChecked", "IsDlgButtonChecked", @"UINT IsDlgButtonChecked(
     HWND hDlg,
     // handle of dialog box
     int nIDButton
     // button identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsIconic", "call IsIconic", @"BOOL IsIconic(
+new Completion("IsIconic", "IsIconic", @"BOOL IsIconic(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsMenu", "call IsMenu", @"BOOL IsMenu(
+new Completion("IsMenu", "IsMenu", @"BOOL IsMenu(
     HMENU hMenu
     // handle to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsRectEmpty", "call IsRectEmpty", @"BOOL IsRectEmpty(
+new Completion("IsRectEmpty", "IsRectEmpty", @"BOOL IsRectEmpty(
     CONST RECT *lprc
     // address of structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsTextUnicode", "call IsTextUnicode", @"DWORD IsTextUnicode(
+new Completion("IsTextUnicode", "IsTextUnicode", @"DWORD IsTextUnicode(
     CONST LPVOID lpBuffer,
     // pointer to an input buffer to be examined
     int cb,
@@ -3727,54 +3727,54 @@ new Completion("IsTextUnicode", "call IsTextUnicode", @"DWORD IsTextUnicode(
     // pointer to flags that condition text examination and receive results
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsValidAcl", "call IsValidAcl", @"BOOL IsValidAcl(
+new Completion("IsValidAcl", "IsValidAcl", @"BOOL IsValidAcl(
     PACL pAcl
     // address of access-control list
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsValidLocale", "call IsValidLocale", @"BOOL IsValidLocale(
+new Completion("IsValidLocale", "IsValidLocale", @"BOOL IsValidLocale(
     LCID Locale,
     // locale indentifier to validate
     DWORD dwFlags
     // specifies validity test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsValidSecurityDescriptor", "call IsValidSecurityDescriptor", @"BOOL IsValidSecurityDescriptor(
+new Completion("IsValidSecurityDescriptor", "IsValidSecurityDescriptor", @"BOOL IsValidSecurityDescriptor(
     PSECURITY_DESCRIPTOR pSecurityDescriptor
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsValidSid", "call IsValidSid", @"BOOL IsValidSid(
+new Completion("IsValidSid", "IsValidSid", @"BOOL IsValidSid(
     PSID pSid
     // address of SID to query
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsWindow", "call IsWindow", @"BOOL IsWindow(
+new Completion("IsWindow", "IsWindow", @"BOOL IsWindow(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsWindowEnabled", "call IsWindowEnabled", @"BOOL IsWindowEnabled(
+new Completion("IsWindowEnabled", "IsWindowEnabled", @"BOOL IsWindowEnabled(
     HWND hWnd
     // handle of window to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsWindowUnicode", "call IsWindowUnicode", @"BOOL IsWindowUnicode(
+new Completion("IsWindowUnicode", "IsWindowUnicode", @"BOOL IsWindowUnicode(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsWindowVisible", "call IsWindowVisible", @"BOOL IsWindowVisible(
+new Completion("IsWindowVisible", "IsWindowVisible", @"BOOL IsWindowVisible(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsZoomed", "call IsZoomed", @"BOOL IsZoomed(
+new Completion("IsZoomed", "IsZoomed", @"BOOL IsZoomed(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("keybd_event", "call keybd_event", @"VOID keybd_event(
+new Completion("keybd_event", "keybd_event", @"VOID keybd_event(
     BYTE bVk,
     // virtual-key code
     BYTE bScan,
@@ -3785,19 +3785,19 @@ new Completion("keybd_event", "call keybd_event", @"VOID keybd_event(
     // additional data associated with keystroke
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("KillTimer", "call KillTimer", @"BOOL KillTimer(
+new Completion("KillTimer", "KillTimer", @"BOOL KillTimer(
     HWND hWnd,
     // handle of window that installed timer
     UINT uIDEvent
     // timer identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LeaveCriticalSection", "call LeaveCriticalSection", @"VOID LeaveCriticalSection(
+new Completion("LeaveCriticalSection", "LeaveCriticalSection", @"VOID LeaveCriticalSection(
     LPCRITICAL_SECTION lpCriticalSection
     // address of critical section object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LineDDA", "call LineDDA", @"BOOL LineDDA(
+new Completion("LineDDA", "LineDDA", @"BOOL LineDDA(
     int nXStart,
     // x-coordinate of line's starting point
     int nYStart,
@@ -3812,7 +3812,7 @@ new Completion("LineDDA", "call LineDDA", @"BOOL LineDDA(
     // address of application-defined data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LineTo", "call LineTo", @"BOOL LineTo(
+new Completion("LineTo", "LineTo", @"BOOL LineTo(
     HDC hdc,
     // device context handle
     int nXEnd,
@@ -3821,56 +3821,56 @@ new Completion("LineTo", "call LineTo", @"BOOL LineTo(
     // y-coordinate of line's ending point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadModule", "call LoadModule", @"DWORD LoadModule(
+new Completion("LoadModule", "LoadModule", @"DWORD LoadModule(
     LPCSTR lpModuleName,
     // address of filename to load
     LPVOID lpParameterBlock
     // address of parameter block for new module
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadResource", "call LoadResource", @"HGLOBAL LoadResource(
+new Completion("LoadResource", "LoadResource", @"HGLOBAL LoadResource(
     HMODULE hModule,
     // resource-module handle
     HRSRC hResInfo
     // resource handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalAlloc", "call LocalAlloc", @"HLOCAL LocalAlloc(
+new Completion("LocalAlloc", "LocalAlloc", @"HLOCAL LocalAlloc(
     UINT uFlags,
     // allocation attributes
     UINT uBytes
     // number of bytes to allocate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalCompact", "call LocalCompact", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalFileTimeToFileTime", "call LocalFileTimeToFileTime", @"BOOL LocalFileTimeToFileTime(
+new Completion("LocalCompact", "LocalCompact", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("LocalFileTimeToFileTime", "LocalFileTimeToFileTime", @"BOOL LocalFileTimeToFileTime(
     CONST FILETIME *lpLocalFileTime,
     // address of local file time to convert
     LPFILETIME lpFileTime
     // address of converted file time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalFlags", "call LocalFlags", @"UINT LocalFlags(
+new Completion("LocalFlags", "LocalFlags", @"UINT LocalFlags(
     HLOCAL hMem
     // handle of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalFree", "call LocalFree", @"HLOCAL LocalFree(
+new Completion("LocalFree", "LocalFree", @"HLOCAL LocalFree(
     HLOCAL hMem
     // handle of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalHandle", "call LocalHandle", @"HLOCAL LocalHandle(
+new Completion("LocalHandle", "LocalHandle", @"HLOCAL LocalHandle(
     LPCVOID pMem
     // address of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalLock", "call LocalLock", @"LPVOID LocalLock(
+new Completion("LocalLock", "LocalLock", @"LPVOID LocalLock(
     HLOCAL hMem
     // handle of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalReAlloc", "call LocalReAlloc", @"HLOCAL LocalReAlloc(
+new Completion("LocalReAlloc", "LocalReAlloc", @"HLOCAL LocalReAlloc(
     HLOCAL hMem,
     // handle of local memory object
     UINT uBytes,
@@ -3879,18 +3879,18 @@ new Completion("LocalReAlloc", "call LocalReAlloc", @"HLOCAL LocalReAlloc(
     // how to reallocate object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalShrink", "call LocalShrink", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalSize", "call LocalSize", @"UINT LocalSize(
+new Completion("LocalShrink", "LocalShrink", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("LocalSize", "LocalSize", @"UINT LocalSize(
     HLOCAL hMem
     // handle of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LocalUnlock", "call LocalUnlock", @"BOOL LocalUnlock(
+new Completion("LocalUnlock", "LocalUnlock", @"BOOL LocalUnlock(
     HLOCAL hMem
     // handle of local memory object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LockFile", "call LockFile", @"BOOL LockFile(
+new Completion("LockFile", "LockFile", @"BOOL LockFile(
     HANDLE hFile,
     // handle of file to lock
     DWORD dwFileOffsetLow,
@@ -3903,7 +3903,7 @@ new Completion("LockFile", "call LockFile", @"BOOL LockFile(
     // high-order word of length to lock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LockFileEx", "call LockFileEx", @"BOOL LockFileEx(
+new Completion("LockFileEx", "LockFileEx", @"BOOL LockFileEx(
     HANDLE hFile,
     // handle of file to lock
     DWORD dwFlags,
@@ -3918,29 +3918,29 @@ new Completion("LockFileEx", "call LockFileEx", @"BOOL LockFileEx(
     // addr. of structure with lock region start offset
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LockResource", "call LockResource", @"LPVOID LockResource(
+new Completion("LockResource", "LockResource", @"LPVOID LockResource(
     HGLOBAL hResData
     // handle to resource to lock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LockServiceDatabase", "call LockServiceDatabase", @"SC_LOCK LockServiceDatabase(
+new Completion("LockServiceDatabase", "LockServiceDatabase", @"SC_LOCK LockServiceDatabase(
     SC_HANDLE hSCManager
     // handle of service control manager database
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LockWindowUpdate", "call LockWindowUpdate", @"BOOL LockWindowUpdate(
+new Completion("LockWindowUpdate", "LockWindowUpdate", @"BOOL LockWindowUpdate(
     HWND hWndLock
     // handle of window to lock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupIconIdFromDirectory", "call LookupIconIdFromDirectory", @"int LookupIconIdFromDirectory(
+new Completion("LookupIconIdFromDirectory", "LookupIconIdFromDirectory", @"int LookupIconIdFromDirectory(
     PBYTE presbits,
     // address of resource data
     BOOL fIcon
     // look for icon or cursor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LPtoDP", "call LPtoDP", @"BOOL LPtoDP(
+new Completion("LPtoDP", "LPtoDP", @"BOOL LPtoDP(
     HDC hdc,
     // handle of device context
     LPPOINT lpPoints,
@@ -3949,35 +3949,35 @@ new Completion("LPtoDP", "call LPtoDP", @"BOOL LPtoDP(
     // count of points
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcat", "call lstrcat", @"LPTSTR lstrcat(
+new Completion("lstrcat", "lstrcat", @"LPTSTR lstrcat(
     LPTSTR lpString1,
     // address of buffer for concatenated strings
     LPCTSTR lpString2
     // address of string to add to string1
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmp", "call lstrcmp", @"int lstrcmp(
+new Completion("lstrcmp", "lstrcmp", @"int lstrcmp(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmpi", "call lstrcmpi", @"int lstrcmpi(
+new Completion("lstrcmpi", "lstrcmpi", @"int lstrcmpi(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpy", "call lstrcpy", @"LPTSTR lstrcpy(
+new Completion("lstrcpy", "lstrcpy", @"LPTSTR lstrcpy(
     LPTSTR lpString1,
     // address of buffer
     LPCTSTR lpString2
     // address of string to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpyn", "call lstrcpyn", @"LPTSTR lstrcpyn(
+new Completion("lstrcpyn", "lstrcpyn", @"LPTSTR lstrcpyn(
     LPTSTR lpString1,
     // address of target buffer
     LPCTSTR lpString2,
@@ -3986,12 +3986,12 @@ new Completion("lstrcpyn", "call lstrcpyn", @"LPTSTR lstrcpyn(
     // number of bytes or characters to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrlen", "call lstrlen", @"int lstrlen(
+new Completion("lstrlen", "lstrlen", @"int lstrlen(
     LPCTSTR lpString
     // address of string to count
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MakeAbsoluteSD", "call MakeAbsoluteSD", @"BOOL MakeAbsoluteSD(
+new Completion("MakeAbsoluteSD", "MakeAbsoluteSD", @"BOOL MakeAbsoluteSD(
     PSECURITY_DESCRIPTOR pSelfRelativeSecurityDescriptor,
     // address self-relative SD
     PSECURITY_DESCRIPTOR pAbsoluteSecurityDescriptor,
@@ -4016,7 +4016,7 @@ new Completion("MakeAbsoluteSD", "call MakeAbsoluteSD", @"BOOL MakeAbsoluteSD(
     // address of size of group SID
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MakeSelfRelativeSD", "call MakeSelfRelativeSD", @"BOOL MakeSelfRelativeSD(
+new Completion("MakeSelfRelativeSD", "MakeSelfRelativeSD", @"BOOL MakeSelfRelativeSD(
     PSECURITY_DESCRIPTOR pAbsoluteSecurityDescriptor,
     // address of absolute SD
     PSECURITY_DESCRIPTOR pSelfRelativeSecurityDescriptor,
@@ -4025,21 +4025,21 @@ new Completion("MakeSelfRelativeSD", "call MakeSelfRelativeSD", @"BOOL MakeSelfR
     // address of SD size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapDialogRect", "call MapDialogRect", @"BOOL MapDialogRect(
+new Completion("MapDialogRect", "MapDialogRect", @"BOOL MapDialogRect(
     HWND hDlg,
     // handle of dialog box
     LPRECT lpRect
     // address of structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapGenericMask", "call MapGenericMask", @"VOID MapGenericMask(
+new Completion("MapGenericMask", "MapGenericMask", @"VOID MapGenericMask(
     PDWORD AccessMask,
     // address of access mask
     PGENERIC_MAPPING GenericMapping
     // address of GENERIC_MAPPING structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapViewOfFile", "call MapViewOfFile", @"LPVOID MapViewOfFile(
+new Completion("MapViewOfFile", "MapViewOfFile", @"LPVOID MapViewOfFile(
     HANDLE hFileMappingObject,
     // file-mapping object to map into address space
     DWORD dwDesiredAccess,
@@ -4052,7 +4052,7 @@ new Completion("MapViewOfFile", "call MapViewOfFile", @"LPVOID MapViewOfFile(
     // number of bytes to map
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapViewOfFileEx", "call MapViewOfFileEx", @"LPVOID MapViewOfFileEx(
+new Completion("MapViewOfFileEx", "MapViewOfFileEx", @"LPVOID MapViewOfFileEx(
     HANDLE hFileMappingObject,
     // file-mapping object to map into address space
     DWORD dwDesiredAccess,
@@ -4067,7 +4067,7 @@ new Completion("MapViewOfFileEx", "call MapViewOfFileEx", @"LPVOID MapViewOfFile
     // suggested starting address for mapped view
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapWindowPoints", "call MapWindowPoints", @"int MapWindowPoints(
+new Completion("MapWindowPoints", "MapWindowPoints", @"int MapWindowPoints(
     HWND hWndFrom,
     // handle of window to be mapped from
     HWND hWndTo,
@@ -4078,7 +4078,7 @@ new Completion("MapWindowPoints", "call MapWindowPoints", @"int MapWindowPoints(
     // number of structures in array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MaskBlt", "call MaskBlt", @"BOOL MaskBlt(
+new Completion("MaskBlt", "MaskBlt", @"BOOL MaskBlt(
     HDC hdcDest,
     // handle of destination device context
     int nXDest,
@@ -4105,12 +4105,12 @@ new Completion("MaskBlt", "call MaskBlt", @"BOOL MaskBlt(
     // raster operation code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MessageBeep", "call MessageBeep", @"BOOL MessageBeep(
+new Completion("MessageBeep", "MessageBeep", @"BOOL MessageBeep(
     UINT uType
     // sound type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ModifyWorldTransform", "call ModifyWorldTransform", @"BOOL ModifyWorldTransform(
+new Completion("ModifyWorldTransform", "ModifyWorldTransform", @"BOOL ModifyWorldTransform(
     HDC hdc,
     // handle of device context
     CONST XFORM *lpXform,
@@ -4119,7 +4119,7 @@ new Completion("ModifyWorldTransform", "call ModifyWorldTransform", @"BOOL Modif
     // modification mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("mouse_event", "call mouse_event", @"VOID mouse_event(
+new Completion("mouse_event", "mouse_event", @"VOID mouse_event(
     DWORD dwFlags,
     // flags specifying various motion/click variants
     DWORD dx,
@@ -4132,7 +4132,7 @@ new Completion("mouse_event", "call mouse_event", @"VOID mouse_event(
     // 32 bits of application-defined information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveToEx", "call MoveToEx", @"BOOL MoveToEx(
+new Completion("MoveToEx", "MoveToEx", @"BOOL MoveToEx(
     HDC hdc,
     // handle of device context
     int X,
@@ -4143,7 +4143,7 @@ new Completion("MoveToEx", "call MoveToEx", @"BOOL MoveToEx(
     // address of old current position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveWindow", "call MoveWindow", @"BOOL MoveWindow(
+new Completion("MoveWindow", "MoveWindow", @"BOOL MoveWindow(
     HWND hWnd,
     // handle of window
     int X,
@@ -4158,7 +4158,7 @@ new Completion("MoveWindow", "call MoveWindow", @"BOOL MoveWindow(
     // repaint flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MsgWaitForMultipleObjects", "call MsgWaitForMultipleObjects", @"DWORD MsgWaitForMultipleObjects(
+new Completion("MsgWaitForMultipleObjects", "MsgWaitForMultipleObjects", @"DWORD MsgWaitForMultipleObjects(
     DWORD nCount,
     // number of handles in the object handle array
     LPHANDLE pHandles,
@@ -4171,7 +4171,7 @@ new Completion("MsgWaitForMultipleObjects", "call MsgWaitForMultipleObjects", @"
     // type of input events to wait for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MulDiv", "call MulDiv", @"int MulDiv(
+new Completion("MulDiv", "MulDiv", @"int MulDiv(
     int nNumber,
     // 32-bit signed multiplicand
     int nNumerator,
@@ -4180,7 +4180,7 @@ new Completion("MulDiv", "call MulDiv", @"int MulDiv(
     // 32-bit signed divisor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MultiByteToWideChar", "call MultiByteToWideChar", @"int MultiByteToWideChar(
+new Completion("MultiByteToWideChar", "MultiByteToWideChar", @"int MultiByteToWideChar(
     UINT CodePage,
     // code page
     DWORD dwFlags,
@@ -4195,24 +4195,24 @@ new Completion("MultiByteToWideChar", "call MultiByteToWideChar", @"int MultiByt
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("NotifyBootConfigStatus", "call NotifyBootConfigStatus", @"BOOL NotifyBootConfigStatus(
+new Completion("NotifyBootConfigStatus", "NotifyBootConfigStatus", @"BOOL NotifyBootConfigStatus(
     BOOL BootAcceptable
     // indicates acceptability of boot configuration
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("NotifyChangeEventLog", "call NotifyChangeEventLog", @"BOOL NotifyChangeEventLog(
+new Completion("NotifyChangeEventLog", "NotifyChangeEventLog", @"BOOL NotifyChangeEventLog(
     HANDLE hEventLog,
     // handle to an event log
     HANDLE hEvent
     // handle to a Win32 event
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OemKeyScan", "call OemKeyScan", @"DWORD OemKeyScan(
+new Completion("OemKeyScan", "OemKeyScan", @"DWORD OemKeyScan(
     WORD wOemChar
     // ASCII value of OEM character
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OffsetClipRgn", "call OffsetClipRgn", @"int OffsetClipRgn(
+new Completion("OffsetClipRgn", "OffsetClipRgn", @"int OffsetClipRgn(
     HDC hdc,
     // handle to device context
     int nXOffset,
@@ -4221,7 +4221,7 @@ new Completion("OffsetClipRgn", "call OffsetClipRgn", @"int OffsetClipRgn(
     // offset along y-axis
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OffsetRect", "call OffsetRect", @"BOOL OffsetRect(
+new Completion("OffsetRect", "OffsetRect", @"BOOL OffsetRect(
     LPRECT lprc,
     // pointer to structure with rectangle
     int dx,
@@ -4230,7 +4230,7 @@ new Completion("OffsetRect", "call OffsetRect", @"BOOL OffsetRect(
     // vertical offset
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OffsetRgn", "call OffsetRgn", @"int OffsetRgn(
+new Completion("OffsetRgn", "OffsetRgn", @"int OffsetRgn(
     HRGN hrgn,
     // handle to region
     int nXOffset,
@@ -4239,7 +4239,7 @@ new Completion("OffsetRgn", "call OffsetRgn", @"int OffsetRgn(
     // offset along y-axis
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OffsetViewportOrgEx", "call OffsetViewportOrgEx", @"BOOL OffsetViewportOrgEx(
+new Completion("OffsetViewportOrgEx", "OffsetViewportOrgEx", @"BOOL OffsetViewportOrgEx(
     HDC hdc,
     // handle to device context
     int nXOffset,
@@ -4250,7 +4250,7 @@ new Completion("OffsetViewportOrgEx", "call OffsetViewportOrgEx", @"BOOL OffsetV
     // pointer to structure receiving original origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OffsetWindowOrgEx", "call OffsetWindowOrgEx", @"BOOL OffsetWindowOrgEx(
+new Completion("OffsetWindowOrgEx", "OffsetWindowOrgEx", @"BOOL OffsetWindowOrgEx(
     HDC hdc,
     // handle to device context
     int nXOffset,
@@ -4261,12 +4261,12 @@ new Completion("OffsetWindowOrgEx", "call OffsetWindowOrgEx", @"BOOL OffsetWindo
     // pointer to structure receiving the original origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenClipboard", "call OpenClipboard", @"BOOL OpenClipboard(
+new Completion("OpenClipboard", "OpenClipboard", @"BOOL OpenClipboard(
     HWND hWndNewOwner
     // handle to window opening clipboard
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenFile", "call OpenFile", @"HFILE OpenFile(
+new Completion("OpenFile", "OpenFile", @"HFILE OpenFile(
     LPCSTR lpFileName,
     // pointer to filename
     LPOFSTRUCT lpReOpenBuff,
@@ -4275,12 +4275,12 @@ new Completion("OpenFile", "call OpenFile", @"HFILE OpenFile(
     // action and attributes
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenIcon", "call OpenIcon", @"BOOL OpenIcon(
+new Completion("OpenIcon", "OpenIcon", @"BOOL OpenIcon(
     HWND hWnd
     // handle to window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenInputDesktop", "call OpenInputDesktop", @"HDESK OpenInputDesktop(
+new Completion("OpenInputDesktop", "OpenInputDesktop", @"HDESK OpenInputDesktop(
     DWORD dwFlags,
     // flags to control interaction with other applications
     BOOL fInherit,
@@ -4289,7 +4289,7 @@ new Completion("OpenInputDesktop", "call OpenInputDesktop", @"HDESK OpenInputDes
     // specifies access of returned handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenProcess", "call OpenProcess", @"HANDLE OpenProcess(
+new Completion("OpenProcess", "OpenProcess", @"HANDLE OpenProcess(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -4298,7 +4298,7 @@ new Completion("OpenProcess", "call OpenProcess", @"HANDLE OpenProcess(
     // process identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenProcessToken", "call OpenProcessToken", @"BOOL OpenProcessToken(
+new Completion("OpenProcessToken", "OpenProcessToken", @"BOOL OpenProcessToken(
     HANDLE ProcessHandle,
     // handle to process
     DWORD DesiredAccess,
@@ -4307,7 +4307,7 @@ new Completion("OpenProcessToken", "call OpenProcessToken", @"BOOL OpenProcessTo
     // pointer to handle of open access token
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenThreadToken", "call OpenThreadToken", @"BOOL OpenThreadToken(
+new Completion("OpenThreadToken", "OpenThreadToken", @"BOOL OpenThreadToken(
     HANDLE ThreadHandle,
     // handle to thread
     DWORD DesiredAccess,
@@ -4318,7 +4318,7 @@ new Completion("OpenThreadToken", "call OpenThreadToken", @"BOOL OpenThreadToken
     // pointer to handle to open access token
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PackDDElParam", "call PackDDElParam", @"LONG PackDDElParam(
+new Completion("PackDDElParam", "PackDDElParam", @"LONG PackDDElParam(
     UINT msg,
     // DDE message to be posted
     UINT uiLo,
@@ -4327,14 +4327,14 @@ new Completion("PackDDElParam", "call PackDDElParam", @"LONG PackDDElParam(
     // high-order word of lParam of message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PaintRgn", "call PaintRgn", @"BOOL PaintRgn(
+new Completion("PaintRgn", "PaintRgn", @"BOOL PaintRgn(
     HDC hdc,
     // handle to device context
     HRGN hrgn
     // handle to region to be painted
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PatBlt", "call PatBlt", @"BOOL PatBlt(
+new Completion("PatBlt", "PatBlt", @"BOOL PatBlt(
     HDC hdc,
     // handle to device context
     int nXLeft,
@@ -4349,12 +4349,12 @@ new Completion("PatBlt", "call PatBlt", @"BOOL PatBlt(
     // raster operation code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PathToRegion", "call PathToRegion", @"HRGN PathToRegion(
+new Completion("PathToRegion", "PathToRegion", @"HRGN PathToRegion(
     HDC hdc
     // handle to device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PeekNamedPipe", "call PeekNamedPipe", @"BOOL PeekNamedPipe(
+new Completion("PeekNamedPipe", "PeekNamedPipe", @"BOOL PeekNamedPipe(
     HANDLE hNamedPipe,
     // handle to pipe to copy from
     LPVOID lpBuffer,
@@ -4369,7 +4369,7 @@ new Completion("PeekNamedPipe", "call PeekNamedPipe", @"BOOL PeekNamedPipe(
     // pointer to unread bytes in this message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Pie", "call Pie", @"BOOL Pie(
+new Completion("Pie", "Pie", @"BOOL Pie(
     HDC hdc,
     // handle to device context
     int nLeftRect,
@@ -4390,7 +4390,7 @@ new Completion("Pie", "call Pie", @"BOOL Pie(
     // y-coord. of second radial's endpoint
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PlayEnhMetaFile", "call PlayEnhMetaFile", @"BOOL PlayEnhMetaFile(
+new Completion("PlayEnhMetaFile", "PlayEnhMetaFile", @"BOOL PlayEnhMetaFile(
     HDC hdc,
     // handle to a device context
     HENHMETAFILE hemf,
@@ -4399,7 +4399,7 @@ new Completion("PlayEnhMetaFile", "call PlayEnhMetaFile", @"BOOL PlayEnhMetaFile
     // pointer to bounding rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PlayEnhMetaFileRecord", "call PlayEnhMetaFileRecord", @"BOOL PlayEnhMetaFileRecord(
+new Completion("PlayEnhMetaFileRecord", "PlayEnhMetaFileRecord", @"BOOL PlayEnhMetaFileRecord(
     HDC hdc,
     // handle to device context
     LPHANDLETABLE lpHandletable,
@@ -4410,14 +4410,14 @@ new Completion("PlayEnhMetaFileRecord", "call PlayEnhMetaFileRecord", @"BOOL Pla
     // count of handles
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PlayMetaFile", "call PlayMetaFile", @"BOOL PlayMetaFile(
+new Completion("PlayMetaFile", "PlayMetaFile", @"BOOL PlayMetaFile(
     HDC hdc,
     // handle to the device context
     HMETAFILE hmf
     // handle to the metafile
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PlayMetaFileRecord", "call PlayMetaFileRecord", @"BOOL PlayMetaFileRecord(
+new Completion("PlayMetaFileRecord", "PlayMetaFileRecord", @"BOOL PlayMetaFileRecord(
     HDC hdc,
     // handle to device context
     LPHANDLETABLE lpHandletable,
@@ -4428,7 +4428,7 @@ new Completion("PlayMetaFileRecord", "call PlayMetaFileRecord", @"BOOL PlayMetaF
     // count of handles
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PlgBlt", "call PlgBlt", @"BOOL PlgBlt(
+new Completion("PlgBlt", "PlgBlt", @"BOOL PlgBlt(
     HDC hdcDest,
     // handle to destination device context
     CONST POINT *lpPoint,
@@ -4451,7 +4451,7 @@ new Completion("PlgBlt", "call PlgBlt", @"BOOL PlgBlt(
     // y-coord. of upper-left corner of bitmask rect.
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyBezier", "call PolyBezier", @"BOOL PolyBezier(
+new Completion("PolyBezier", "PolyBezier", @"BOOL PolyBezier(
     HDC hdc,
     // handle to device context
     CONST POINT *lppt,
@@ -4460,7 +4460,7 @@ new Completion("PolyBezier", "call PolyBezier", @"BOOL PolyBezier(
     // count of endpoints and control points
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyBezierTo", "call PolyBezierTo", @"BOOL PolyBezierTo(
+new Completion("PolyBezierTo", "PolyBezierTo", @"BOOL PolyBezierTo(
     HDC hdc,
     // handle to device context
     CONST POINT *lppt,
@@ -4469,7 +4469,7 @@ new Completion("PolyBezierTo", "call PolyBezierTo", @"BOOL PolyBezierTo(
     // count of endpoints and control points
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyDraw", "call PolyDraw", @"BOOL PolyDraw(
+new Completion("PolyDraw", "PolyDraw", @"BOOL PolyDraw(
     HDC hdc,
     // handle to a device context
     CONST POINT *lppt,
@@ -4480,7 +4480,7 @@ new Completion("PolyDraw", "call PolyDraw", @"BOOL PolyDraw(
     // count of points
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Polygon", "call Polygon", @"BOOL Polygon(
+new Completion("Polygon", "Polygon", @"BOOL Polygon(
     HDC hdc,
     // handle to device context
     CONST POINT *lpPoints,
@@ -4489,7 +4489,7 @@ new Completion("Polygon", "call Polygon", @"BOOL Polygon(
     // count of polygon's vertices
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Polyline", "call Polyline", @"BOOL Polyline(
+new Completion("Polyline", "Polyline", @"BOOL Polyline(
     HDC hdc,
     // handle of device context
     CONST POINT *lppt,
@@ -4498,7 +4498,7 @@ new Completion("Polyline", "call Polyline", @"BOOL Polyline(
     // number of points in the array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolylineTo", "call PolylineTo", @"BOOL PolylineTo(
+new Completion("PolylineTo", "PolylineTo", @"BOOL PolylineTo(
     HDC hdc,
     // handle of device context
     CONST POINT *lppt,
@@ -4507,7 +4507,7 @@ new Completion("PolylineTo", "call PolylineTo", @"BOOL PolylineTo(
     // number of points in array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyPolygon", "call PolyPolygon", @"BOOL PolyPolygon(
+new Completion("PolyPolygon", "PolyPolygon", @"BOOL PolyPolygon(
     HDC hdc,
     // handle of device context
     CONST POINT *lpPoints,
@@ -4518,7 +4518,7 @@ new Completion("PolyPolygon", "call PolyPolygon", @"BOOL PolyPolygon(
     // count of polygons
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyPolyline", "call PolyPolyline", @"BOOL PolyPolyline(
+new Completion("PolyPolyline", "PolyPolyline", @"BOOL PolyPolyline(
     HDC hdc,
     // handle of a device context
     CONST POINT *lppt,
@@ -4529,7 +4529,7 @@ new Completion("PolyPolyline", "call PolyPolyline", @"BOOL PolyPolyline(
     // number of counts in the second array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostQueuedCompletionStatus", "call PostQueuedCompletionStatus", @"BOOL PostQueuedCompletionStatus(
+new Completion("PostQueuedCompletionStatus", "PostQueuedCompletionStatus", @"BOOL PostQueuedCompletionStatus(
     HANDLE CompletionPort,
     // handle to an I/O completion port
     DWORD dwNumberOfBytesTransferred,
@@ -4545,12 +4545,12 @@ new Completion("PostQueuedCompletionStatus", "call PostQueuedCompletionStatus", 
     // GetQueuedCompletionStatus' lpOverlapped
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostQuitMessage", "call PostQuitMessage", @"VOID PostQuitMessage(
+new Completion("PostQuitMessage", "PostQuitMessage", @"VOID PostQuitMessage(
     int nExitCode
     // exit code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrepareTape", "call PrepareTape", @"DWORD PrepareTape(
+new Completion("PrepareTape", "PrepareTape", @"DWORD PrepareTape(
     HANDLE hDevice,
     // handle of open device
     DWORD dwOperation,
@@ -4559,14 +4559,14 @@ new Completion("PrepareTape", "call PrepareTape", @"DWORD PrepareTape(
     // return after operation begins
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrinterProperties", "call PrinterProperties", @"BOOL PrinterProperties(
+new Completion("PrinterProperties", "PrinterProperties", @"BOOL PrinterProperties(
     HWND hWnd,
     // handle of parent window
     HANDLE hPrinter
     // handle of printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrivilegeCheck", "call PrivilegeCheck", @"BOOL PrivilegeCheck(
+new Completion("PrivilegeCheck", "PrivilegeCheck", @"BOOL PrivilegeCheck(
     HANDLE ClientToken,
     // handle of client's access token
     PPRIVILEGE_SET RequiredPrivileges,
@@ -4575,14 +4575,14 @@ new Completion("PrivilegeCheck", "call PrivilegeCheck", @"BOOL PrivilegeCheck(
     // address of flag for result
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PtInRect", "call PtInRect", @"BOOL PtInRect(
+new Completion("PtInRect", "PtInRect", @"BOOL PtInRect(
     CONST RECT *lprc,
     // address of structure with rectangle
     POINT pt
     // structure with point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PtInRegion", "call PtInRegion", @"BOOL PtInRegion(
+new Completion("PtInRegion", "PtInRegion", @"BOOL PtInRegion(
     HRGN hrgn,
     // handle of region
     int X,
@@ -4591,7 +4591,7 @@ new Completion("PtInRegion", "call PtInRegion", @"BOOL PtInRegion(
     // y-coordinate of point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PtVisible", "call PtVisible", @"BOOL PtVisible(
+new Completion("PtVisible", "PtVisible", @"BOOL PtVisible(
     HDC hdc,
     // handle of device context
     int X,
@@ -4600,29 +4600,29 @@ new Completion("PtVisible", "call PtVisible", @"BOOL PtVisible(
     // y-coordinate of point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PulseEvent", "call PulseEvent", @"BOOL PulseEvent(
+new Completion("PulseEvent", "PulseEvent", @"BOOL PulseEvent(
     HANDLE hEvent
     // handle of event object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PurgeComm", "call PurgeComm", @"BOOL PurgeComm(
+new Completion("PurgeComm", "PurgeComm", @"BOOL PurgeComm(
     HANDLE hFile,
     // handle of communications resource
     DWORD dwFlags
     // action to perform
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryPerformanceCounter", "call QueryPerformanceCounter", @"BOOL QueryPerformanceCounter(
+new Completion("QueryPerformanceCounter", "QueryPerformanceCounter", @"BOOL QueryPerformanceCounter(
     LARGE_INTEGER *lpPerformanceCount
     // address of current counter value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryPerformanceFrequency", "call QueryPerformanceFrequency", @"BOOL QueryPerformanceFrequency(
+new Completion("QueryPerformanceFrequency", "QueryPerformanceFrequency", @"BOOL QueryPerformanceFrequency(
     LARGE_INTEGER *lpFrequency
     // address of current frequency
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceObjectSecurity", "call QueryServiceObjectSecurity", @"BOOL QueryServiceObjectSecurity(
+new Completion("QueryServiceObjectSecurity", "QueryServiceObjectSecurity", @"BOOL QueryServiceObjectSecurity(
     SC_HANDLE hService,
     // handle of service
     SECURITY_INFORMATION dwSecurityInformation,
@@ -4635,14 +4635,14 @@ new Completion("QueryServiceObjectSecurity", "call QueryServiceObjectSecurity", 
     // address of variable for bytes needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceStatus", "call QueryServiceStatus", @"BOOL QueryServiceStatus(
+new Completion("QueryServiceStatus", "QueryServiceStatus", @"BOOL QueryServiceStatus(
     SC_HANDLE hService,
     // handle of service
     LPSERVICE_STATUS lpServiceStatus
     // address of service status structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RaiseException", "call RaiseException", @"VOID RaiseException(
+new Completion("RaiseException", "RaiseException", @"VOID RaiseException(
     DWORD dwExceptionCode,
     // exception code
     DWORD dwExceptionFlags,
@@ -4653,7 +4653,7 @@ new Completion("RaiseException", "call RaiseException", @"VOID RaiseException(
     // address of array of arguments
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleOutputAttribute", "call ReadConsoleOutputAttribute", @"BOOL ReadConsoleOutputAttribute(
+new Completion("ReadConsoleOutputAttribute", "ReadConsoleOutputAttribute", @"BOOL ReadConsoleOutputAttribute(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     LPWORD lpAttribute,
@@ -4666,7 +4666,7 @@ new Completion("ReadConsoleOutputAttribute", "call ReadConsoleOutputAttribute", 
     // address of number of cells read from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadFile", "call ReadFile", @"BOOL ReadFile(
+new Completion("ReadFile", "ReadFile", @"BOOL ReadFile(
     HANDLE hFile,
     // handle of file to read
     LPVOID lpBuffer,
@@ -4679,7 +4679,7 @@ new Completion("ReadFile", "call ReadFile", @"BOOL ReadFile(
     // address of structure for data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadFileEx", "call ReadFileEx", @"BOOL ReadFileEx(
+new Completion("ReadFileEx", "ReadFileEx", @"BOOL ReadFileEx(
     HANDLE hFile,
     // handle of file to read
     LPVOID lpBuffer,
@@ -4692,7 +4692,7 @@ new Completion("ReadFileEx", "call ReadFileEx", @"BOOL ReadFileEx(
     // address of completion routine
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadPrinter", "call ReadPrinter", @"BOOL ReadPrinter(
+new Completion("ReadPrinter", "ReadPrinter", @"BOOL ReadPrinter(
     HANDLE hPrinter,
     // handle of printer object
     LPVOID pBuf,
@@ -4703,7 +4703,7 @@ new Completion("ReadPrinter", "call ReadPrinter", @"BOOL ReadPrinter(
     // address of variable with number of bytes retrieved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadProcessMemory", "call ReadProcessMemory", @"BOOL ReadProcessMemory(
+new Completion("ReadProcessMemory", "ReadProcessMemory", @"BOOL ReadProcessMemory(
     HANDLE hProcess,
     // handle of the process whose memory is read
     LPCVOID lpBaseAddress,
@@ -4716,12 +4716,12 @@ new Completion("ReadProcessMemory", "call ReadProcessMemory", @"BOOL ReadProcess
     // address of number of bytes read
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RealizePalette", "call RealizePalette", @"UINT RealizePalette(
+new Completion("RealizePalette", "RealizePalette", @"UINT RealizePalette(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Rectangle", "call Rectangle", @"BOOL Rectangle(
+new Completion("Rectangle", "Rectangle", @"BOOL Rectangle(
     HDC hdc,
     // handle of device context
     int nLeftRect,
@@ -4734,21 +4734,21 @@ new Completion("Rectangle", "call Rectangle", @"BOOL Rectangle(
     // y-coord. of bounding rectangle's lower-right corner
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RectInRegion", "call RectInRegion", @"BOOL RectInRegion(
+new Completion("RectInRegion", "RectInRegion", @"BOOL RectInRegion(
     HRGN hrgn,
     // handle of region
     CONST RECT *lprc
     // address of structure with rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RectVisible", "call RectVisible", @"BOOL RectVisible(
+new Completion("RectVisible", "RectVisible", @"BOOL RectVisible(
     HDC hdc,
     // handle of the device context
     CONST RECT *lprc
     // address of rectangle structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RedrawWindow", "call RedrawWindow", @"BOOL RedrawWindow(
+new Completion("RedrawWindow", "RedrawWindow", @"BOOL RedrawWindow(
     HWND hWnd,
     // handle of window
     CONST RECT *lprcUpdate,
@@ -4759,17 +4759,17 @@ new Completion("RedrawWindow", "call RedrawWindow", @"BOOL RedrawWindow(
     // array of redraw flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegCloseKey", "call RegCloseKey", @"LONG RegCloseKey(
+new Completion("RegCloseKey", "RegCloseKey", @"LONG RegCloseKey(
     HKEY hKey
     // handle of key to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegFlushKey", "call RegFlushKey", @"LONG RegFlushKey(
+new Completion("RegFlushKey", "RegFlushKey", @"LONG RegFlushKey(
     HKEY hKey
     // handle of key to write
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegGetKeySecurity", "call RegGetKeySecurity", @"LONG RegGetKeySecurity(
+new Completion("RegGetKeySecurity", "RegGetKeySecurity", @"LONG RegGetKeySecurity(
     HKEY hKey,
     // open handle of key to set
     SECURITY_INFORMATION SecurityInformation,
@@ -4780,7 +4780,7 @@ new Completion("RegGetKeySecurity", "call RegGetKeySecurity", @"LONG RegGetKeySe
     // address of size of buffer and descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterHotKey", "call RegisterHotKey", @"BOOL RegisterHotKey(
+new Completion("RegisterHotKey", "RegisterHotKey", @"BOOL RegisterHotKey(
     HWND hWnd,
     // window to receive hot-key notification
     int id,
@@ -4791,7 +4791,7 @@ new Completion("RegisterHotKey", "call RegisterHotKey", @"BOOL RegisterHotKey(
     // virtual-key code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegNotifyChangeKeyValue", "call RegNotifyChangeKeyValue", @"LONG RegNotifyChangeKeyValue(
+new Completion("RegNotifyChangeKeyValue", "RegNotifyChangeKeyValue", @"LONG RegNotifyChangeKeyValue(
     HKEY hKey,
     // handle of key to watch
     BOOL bWatchSubtree,
@@ -4804,7 +4804,7 @@ new Completion("RegNotifyChangeKeyValue", "call RegNotifyChangeKeyValue", @"LONG
     // flag for asynchronous reporting
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSetKeySecurity", "call RegSetKeySecurity", @"LONG RegSetKeySecurity(
+new Completion("RegSetKeySecurity", "RegSetKeySecurity", @"LONG RegSetKeySecurity(
     HKEY hKey,
     // open handle of key to set
     SECURITY_INFORMATION SecurityInformation,
@@ -4813,20 +4813,20 @@ new Completion("RegSetKeySecurity", "call RegSetKeySecurity", @"LONG RegSetKeySe
     // address of descriptor for key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReleaseCapture", "call ReleaseCapture", @"BOOL ReleaseCapture(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReleaseDC", "call ReleaseDC", @"int ReleaseDC(
+new Completion("ReleaseCapture", "ReleaseCapture", @"BOOL ReleaseCapture(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("ReleaseDC", "ReleaseDC", @"int ReleaseDC(
     HWND hWnd,
     // handle of window
     HDC hDC
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReleaseMutex", "call ReleaseMutex", @"BOOL ReleaseMutex(
+new Completion("ReleaseMutex", "ReleaseMutex", @"BOOL ReleaseMutex(
     HANDLE hMutex
     // handle of mutex object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReleaseSemaphore", "call ReleaseSemaphore", @"BOOL ReleaseSemaphore(
+new Completion("ReleaseSemaphore", "ReleaseSemaphore", @"BOOL ReleaseSemaphore(
     HANDLE hSemaphore,
     // handle of the semaphore object
     LONG lReleaseCount,
@@ -4835,7 +4835,7 @@ new Completion("ReleaseSemaphore", "call ReleaseSemaphore", @"BOOL ReleaseSemaph
     // address of previous count
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemoveMenu", "call RemoveMenu", @"BOOL RemoveMenu(
+new Completion("RemoveMenu", "RemoveMenu", @"BOOL RemoveMenu(
     HMENU hMenu,
     // handle of menu
     UINT uPosition,
@@ -4844,36 +4844,36 @@ new Completion("RemoveMenu", "call RemoveMenu", @"BOOL RemoveMenu(
     // menu item flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReplyMessage", "call ReplyMessage", @"BOOL ReplyMessage(
+new Completion("ReplyMessage", "ReplyMessage", @"BOOL ReplyMessage(
     LRESULT lResult
     // message-specific reply
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResetEvent", "call ResetEvent", @"BOOL ResetEvent(
+new Completion("ResetEvent", "ResetEvent", @"BOOL ResetEvent(
     HANDLE hEvent
     // handle of event object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResizePalette", "call ResizePalette", @"BOOL ResizePalette(
+new Completion("ResizePalette", "ResizePalette", @"BOOL ResizePalette(
     HPALETTE hpal,
     // handle of logical palette
     UINT nEntries
     // number of entries in logical palette
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RestoreDC", "call RestoreDC", @"BOOL RestoreDC(
+new Completion("RestoreDC", "RestoreDC", @"BOOL RestoreDC(
     HDC hdc,
     // handle of device context
     int nSavedDC
     // specifies state to be restored
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResumeThread", "call ResumeThread", @"DWORD ResumeThread(
+new Completion("ResumeThread", "ResumeThread", @"DWORD ResumeThread(
     HANDLE hThread
     // identifies thread to restart
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReuseDDElParam", "call ReuseDDElParam", @"LONG ReuseDDElParam(
+new Completion("ReuseDDElParam", "ReuseDDElParam", @"LONG ReuseDDElParam(
     LONG lParam,
     // posted lParam to be reused
     UINT msgIn,
@@ -4886,8 +4886,8 @@ new Completion("ReuseDDElParam", "call ReuseDDElParam", @"LONG ReuseDDElParam(
     // high-order word of new lParam
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RevertToSelf", "call RevertToSelf", @"BOOL RevertToSelf(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RoundRect", "call RoundRect", @"BOOL RoundRect(
+new Completion("RevertToSelf", "RevertToSelf", @"BOOL RevertToSelf(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("RoundRect", "RoundRect", @"BOOL RoundRect(
     HDC hdc,
     // handle of device context
     int nLeftRect,
@@ -4904,12 +4904,12 @@ new Completion("RoundRect", "call RoundRect", @"BOOL RoundRect(
     // height of ellipse used to draw rounded corners
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SaveDC", "call SaveDC", @"int SaveDC(
+new Completion("SaveDC", "SaveDC", @"int SaveDC(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScaleViewportExtEx", "call ScaleViewportExtEx", @"BOOL ScaleViewportExtEx(
+new Completion("ScaleViewportExtEx", "ScaleViewportExtEx", @"BOOL ScaleViewportExtEx(
     HDC hdc,
     // handle of device context
     int Xnum,
@@ -4924,7 +4924,7 @@ new Completion("ScaleViewportExtEx", "call ScaleViewportExtEx", @"BOOL ScaleView
     // address of previous viewport extents
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScaleWindowExtEx", "call ScaleWindowExtEx", @"BOOL ScaleWindowExtEx(
+new Completion("ScaleWindowExtEx", "ScaleWindowExtEx", @"BOOL ScaleWindowExtEx(
     HDC hdc,
     // handle of device context
     int Xnum,
@@ -4939,21 +4939,21 @@ new Completion("ScaleWindowExtEx", "call ScaleWindowExtEx", @"BOOL ScaleWindowEx
     // address of previous window extents
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScheduleJob", "call ScheduleJob", @"BOOL ScheduleJob(
+new Completion("ScheduleJob", "ScheduleJob", @"BOOL ScheduleJob(
     HANDLE hPrinter,
     // specifies printer for the print job
     DWORD dwJobID
     // print job identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScreenToClient", "call ScreenToClient", @"BOOL ScreenToClient(
+new Completion("ScreenToClient", "ScreenToClient", @"BOOL ScreenToClient(
     HWND hWnd,
     // window handle for source coordinates
     LPPOINT lpPoint
     // address of structure containing coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScrollDC", "call ScrollDC", @"BOOL ScrollDC(
+new Completion("ScrollDC", "ScrollDC", @"BOOL ScrollDC(
     HDC hDC,
     // handle of device context
     int dx,
@@ -4970,7 +4970,7 @@ new Completion("ScrollDC", "call ScrollDC", @"BOOL ScrollDC(
     // address of structure for update rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScrollWindow", "call ScrollWindow", @"BOOL ScrollWindow(
+new Completion("ScrollWindow", "ScrollWindow", @"BOOL ScrollWindow(
     HWND hWnd,
     // handle of window to scroll
     int XAmount,
@@ -4983,7 +4983,7 @@ new Completion("ScrollWindow", "call ScrollWindow", @"BOOL ScrollWindow(
     // address of structure with clip rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScrollWindowEx", "call ScrollWindowEx", @"int ScrollWindowEx(
+new Completion("ScrollWindowEx", "ScrollWindowEx", @"int ScrollWindowEx(
     HWND hWnd,
     // handle of window to scroll
     int dx,
@@ -5002,28 +5002,28 @@ new Completion("ScrollWindowEx", "call ScrollWindowEx", @"int ScrollWindowEx(
     // scrolling flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SelectClipPath", "call SelectClipPath", @"BOOL SelectClipPath(
+new Completion("SelectClipPath", "SelectClipPath", @"BOOL SelectClipPath(
     HDC hdc,
     // handle of device context
     int iMode
     // clipping mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SelectClipRgn", "call SelectClipRgn", @"int SelectClipRgn(
+new Completion("SelectClipRgn", "SelectClipRgn", @"int SelectClipRgn(
     HDC hdc,
     // handle of device context
     HRGN hrgn
     // handle of region to be selected
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SelectObject", "call SelectObject", @"HGDIOBJ SelectObject(
+new Completion("SelectObject", "SelectObject", @"HGDIOBJ SelectObject(
     HDC hdc,
     // handle of device context
     HGDIOBJ hgdiobj
     // handle of object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SelectPalette", "call SelectPalette", @"HPALETTE SelectPalette(
+new Completion("SelectPalette", "SelectPalette", @"HPALETTE SelectPalette(
     HDC hdc,
     // handle of device context
     HPALETTE hpal,
@@ -5032,14 +5032,14 @@ new Completion("SelectPalette", "call SelectPalette", @"HPALETTE SelectPalette(
     // foreground/background mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetAbortProc", "call SetAbortProc", @"int SetAbortProc(
+new Completion("SetAbortProc", "SetAbortProc", @"int SetAbortProc(
     HDC hdc,
     // handle of device context
     ABORTPROC lpAbortProc
     // address of abort function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetAclInformation", "call SetAclInformation", @"BOOL SetAclInformation(
+new Completion("SetAclInformation", "SetAclInformation", @"BOOL SetAclInformation(
     PACL pAcl,
     // address of access-control list
     LPVOID pAclInformation,
@@ -5050,19 +5050,19 @@ new Completion("SetAclInformation", "call SetAclInformation", @"BOOL SetAclInfor
     // specifies class of requested info
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetActiveWindow", "call SetActiveWindow", @"HWND SetActiveWindow(
+new Completion("SetActiveWindow", "SetActiveWindow", @"HWND SetActiveWindow(
     HWND hWnd
     // handle of window to activate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetArcDirection", "call SetArcDirection", @"int SetArcDirection(
+new Completion("SetArcDirection", "SetArcDirection", @"int SetArcDirection(
     HDC hdc,
     // identifies the device context
     int ArcDirection
     // specifies the new arc direction
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBitmapBits", "call SetBitmapBits", @"LONG SetBitmapBits(
+new Completion("SetBitmapBits", "SetBitmapBits", @"LONG SetBitmapBits(
     HBITMAP hbmp,
     // handle of bitmap
     DWORD cBytes,
@@ -5071,7 +5071,7 @@ new Completion("SetBitmapBits", "call SetBitmapBits", @"LONG SetBitmapBits(
     // address of array with bitmap bits
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBitmapDimensionEx", "call SetBitmapDimensionEx", @"BOOL SetBitmapDimensionEx(
+new Completion("SetBitmapDimensionEx", "SetBitmapDimensionEx", @"BOOL SetBitmapDimensionEx(
     HBITMAP hBitmap,
     // handle of bitmap
     int nWidth,
@@ -5082,21 +5082,21 @@ new Completion("SetBitmapDimensionEx", "call SetBitmapDimensionEx", @"BOOL SetBi
     // address of structure for original dimensions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBkColor", "call SetBkColor", @"COLORREF SetBkColor(
+new Completion("SetBkColor", "SetBkColor", @"COLORREF SetBkColor(
     HDC hdc,
     // handle of device context
     COLORREF crColor
     // background color value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBkMode", "call SetBkMode", @"int SetBkMode(
+new Completion("SetBkMode", "SetBkMode", @"int SetBkMode(
     HDC hdc,
     // handle of device context
     int iBkMode
     // flag specifying background mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBoundsRect", "call SetBoundsRect", @"UINT SetBoundsRect(
+new Completion("SetBoundsRect", "SetBoundsRect", @"UINT SetBoundsRect(
     HDC hdc,
     // handle of device context
     CONST RECT *lprcBounds,
@@ -5105,7 +5105,7 @@ new Completion("SetBoundsRect", "call SetBoundsRect", @"UINT SetBoundsRect(
     // controls rectangle combination
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetBrushOrgEx", "call SetBrushOrgEx", @"BOOL SetBrushOrgEx(
+new Completion("SetBrushOrgEx", "SetBrushOrgEx", @"BOOL SetBrushOrgEx(
     HDC hdc,
     // handle of device context
     int nXOrg,
@@ -5116,24 +5116,24 @@ new Completion("SetBrushOrgEx", "call SetBrushOrgEx", @"BOOL SetBrushOrgEx(
     // points to previous brush origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCapture", "call SetCapture", @"HWND SetCapture(
+new Completion("SetCapture", "SetCapture", @"HWND SetCapture(
     HWND hWnd
     // handle of window to receive mouse capture
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCaretBlinkTime", "call SetCaretBlinkTime", @"BOOL SetCaretBlinkTime(
+new Completion("SetCaretBlinkTime", "SetCaretBlinkTime", @"BOOL SetCaretBlinkTime(
     UINT uMSeconds
     // blink time, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCaretPos", "call SetCaretPos", @"BOOL SetCaretPos(
+new Completion("SetCaretPos", "SetCaretPos", @"BOOL SetCaretPos(
     int X,
     // horizontal position
     int Y
     // vertical position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetClassWord", "call SetClassWord", @"WORD SetClassWord(
+new Completion("SetClassWord", "SetClassWord", @"WORD SetClassWord(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -5142,116 +5142,116 @@ new Completion("SetClassWord", "call SetClassWord", @"WORD SetClassWord(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetClipboardData", "call SetClipboardData", @"HANDLE SetClipboardData(
+new Completion("SetClipboardData", "SetClipboardData", @"HANDLE SetClipboardData(
     UINT uFormat,
     // clipboard format
     HANDLE hMem
     // data handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetClipboardViewer", "call SetClipboardViewer", @"HWND SetClipboardViewer(
+new Completion("SetClipboardViewer", "SetClipboardViewer", @"HWND SetClipboardViewer(
     HWND hWndNewViewer
     // handle of clipboard viewer window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetColorAdjustment", "call SetColorAdjustment", @"BOOL SetColorAdjustment(
+new Completion("SetColorAdjustment", "SetColorAdjustment", @"BOOL SetColorAdjustment(
     HDC hdc,
     // handle to device context
     CONST COLORADJUSTMENT *lpca
     // pointer to COLORADJUSTMENT structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetColorSpace", "call SetColorSpace", @"BOOL SetColorSpace(
+new Completion("SetColorSpace", "SetColorSpace", @"BOOL SetColorSpace(
     HDC hdc,
     // handle to the device context
     HCOLORSPACE hColorSpace
     // handle to the logical color space
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCommBreak", "call SetCommBreak", @"BOOL SetCommBreak(
+new Completion("SetCommBreak", "SetCommBreak", @"BOOL SetCommBreak(
     HANDLE hFile
     // handle of communications device
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCommMask", "call SetCommMask", @"BOOL SetCommMask(
+new Completion("SetCommMask", "SetCommMask", @"BOOL SetCommMask(
     HANDLE hFile,
     // handle of communications device
     DWORD dwEvtMask
     // mask that identifies enabled events
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCommState", "call SetCommState", @"BOOL SetCommState(
+new Completion("SetCommState", "SetCommState", @"BOOL SetCommState(
     HANDLE hFile,
     // handle of communications device
     LPDCB lpDCB
     // address of device-control block structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCommTimeouts", "call SetCommTimeouts", @"BOOL SetCommTimeouts(
+new Completion("SetCommTimeouts", "SetCommTimeouts", @"BOOL SetCommTimeouts(
     HANDLE hFile,
     // handle of communications device
     LPCOMMTIMEOUTS lpCommTimeouts
     // address of communications time-out structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleActiveScreenBuffer", "call SetConsoleActiveScreenBuffer", @"BOOL SetConsoleActiveScreenBuffer(
+new Completion("SetConsoleActiveScreenBuffer", "SetConsoleActiveScreenBuffer", @"BOOL SetConsoleActiveScreenBuffer(
     HANDLE hConsoleOutput
     // handle of console screen buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleCP", "call SetConsoleCP", @"BOOL SetConsoleCP(
+new Completion("SetConsoleCP", "SetConsoleCP", @"BOOL SetConsoleCP(
     UINT wCodePageID
     // code page to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleCtrlHandler", "call SetConsoleCtrlHandler", @"BOOL SetConsoleCtrlHandler(
+new Completion("SetConsoleCtrlHandler", "SetConsoleCtrlHandler", @"BOOL SetConsoleCtrlHandler(
     PHANDLER_ROUTINE HandlerRoutine,
     // address of handler function
     BOOL Add
     // handler to add or remove
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleCursorInfo", "call SetConsoleCursorInfo", @"BOOL SetConsoleCursorInfo(
+new Completion("SetConsoleCursorInfo", "SetConsoleCursorInfo", @"BOOL SetConsoleCursorInfo(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     CONST CONSOLE_CURSOR_INFO *lpConsoleCursorInfo
     // address of cursor information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleCursorPosition", "call SetConsoleCursorPosition", @"BOOL SetConsoleCursorPosition(
+new Completion("SetConsoleCursorPosition", "SetConsoleCursorPosition", @"BOOL SetConsoleCursorPosition(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     COORD dwCursorPosition
     // new cursor position coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleMode", "call SetConsoleMode", @"BOOL SetConsoleMode(
+new Completion("SetConsoleMode", "SetConsoleMode", @"BOOL SetConsoleMode(
     HANDLE hConsoleHandle,
     // handle of console input or screen buffer
     DWORD dwMode
     // input or output mode to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleOutputCP", "call SetConsoleOutputCP", @"BOOL SetConsoleOutputCP(
+new Completion("SetConsoleOutputCP", "SetConsoleOutputCP", @"BOOL SetConsoleOutputCP(
     UINT wCodePageID
     // code page to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleScreenBufferSize", "call SetConsoleScreenBufferSize", @"BOOL SetConsoleScreenBufferSize(
+new Completion("SetConsoleScreenBufferSize", "SetConsoleScreenBufferSize", @"BOOL SetConsoleScreenBufferSize(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     COORD dwSize
     // new size in character rows and cols.
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleTextAttribute", "call SetConsoleTextAttribute", @"BOOL SetConsoleTextAttribute(
+new Completion("SetConsoleTextAttribute", "SetConsoleTextAttribute", @"BOOL SetConsoleTextAttribute(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     WORD wAttributes
     // text and background colors
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleWindowInfo", "call SetConsoleWindowInfo", @"BOOL SetConsoleWindowInfo(
+new Completion("SetConsoleWindowInfo", "SetConsoleWindowInfo", @"BOOL SetConsoleWindowInfo(
     HANDLE hConsoleOutput,
     // handle of console screen buffer
     BOOL bAbsolute,
@@ -5260,24 +5260,24 @@ new Completion("SetConsoleWindowInfo", "call SetConsoleWindowInfo", @"BOOL SetCo
     // address of new window rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCursor", "call SetCursor", @"HCURSOR SetCursor(
+new Completion("SetCursor", "SetCursor", @"HCURSOR SetCursor(
     HCURSOR hCursor
     // handle of cursor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCursorPos", "call SetCursorPos", @"BOOL SetCursorPos(
+new Completion("SetCursorPos", "SetCursorPos", @"BOOL SetCursorPos(
     int X,
     // horizontal position
     int Y
     // vertical position
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDebugErrorLevel", "call SetDebugErrorLevel", @"VOID SetDebugErrorLevel(
+new Completion("SetDebugErrorLevel", "SetDebugErrorLevel", @"VOID SetDebugErrorLevel(
     DWORD dwLevel
     // debugging error level
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDIBColorTable", "call SetDIBColorTable", @"UINT SetDIBColorTable(
+new Completion("SetDIBColorTable", "SetDIBColorTable", @"UINT SetDIBColorTable(
     HDC hdc,
     // handle of device context whose DIB is of interest
     UINT uStartIndex,
@@ -5288,7 +5288,7 @@ new Completion("SetDIBColorTable", "call SetDIBColorTable", @"UINT SetDIBColorTa
     // pointer to array of color table entries
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDIBits", "call SetDIBits", @"int SetDIBits(
+new Completion("SetDIBits", "SetDIBits", @"int SetDIBits(
     HDC hdc,
     // handle of device context
     HBITMAP hbmp,
@@ -5305,7 +5305,7 @@ new Completion("SetDIBits", "call SetDIBits", @"int SetDIBits(
     // type of color indices to use
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDIBitsToDevice", "call SetDIBitsToDevice", @"int SetDIBitsToDevice(
+new Completion("SetDIBitsToDevice", "SetDIBitsToDevice", @"int SetDIBitsToDevice(
     HDC hdc,
     // handle of device context
     int XDest,
@@ -5332,7 +5332,7 @@ new Completion("SetDIBitsToDevice", "call SetDIBitsToDevice", @"int SetDIBitsToD
     // RGB or palette indices
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDlgItemInt", "call SetDlgItemInt", @"BOOL SetDlgItemInt(
+new Completion("SetDlgItemInt", "SetDlgItemInt", @"BOOL SetDlgItemInt(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -5343,34 +5343,34 @@ new Completion("SetDlgItemInt", "call SetDlgItemInt", @"BOOL SetDlgItemInt(
     // signed or unsigned indicator
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDoubleClickTime", "call SetDoubleClickTime", @"BOOL SetDoubleClickTime(
+new Completion("SetDoubleClickTime", "SetDoubleClickTime", @"BOOL SetDoubleClickTime(
     UINT uInterval
     // double-click interval
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetEndOfFile", "call SetEndOfFile", @"BOOL SetEndOfFile(
+new Completion("SetEndOfFile", "SetEndOfFile", @"BOOL SetEndOfFile(
     HANDLE hFile
     // handle of file whose EOF is to be set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetEnhMetaFileBits", "call SetEnhMetaFileBits", @"HENHMETAFILE SetEnhMetaFileBits(
+new Completion("SetEnhMetaFileBits", "SetEnhMetaFileBits", @"HENHMETAFILE SetEnhMetaFileBits(
     UINT cbBuffer,
     // buffer size
     CONST BYTE *lpData
     // buffer that contains enhanced metafile data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetErrorMode", "call SetErrorMode", @"UINT SetErrorMode(
+new Completion("SetErrorMode", "SetErrorMode", @"UINT SetErrorMode(
     UINT uMode
     // set of bit flags that specify error-handling properties
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetEvent", "call SetEvent", @"BOOL SetEvent(
+new Completion("SetEvent", "SetEvent", @"BOOL SetEvent(
     HANDLE hEvent
     // handle of event object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFilePointer", "call SetFilePointer", @"DWORD SetFilePointer(
+new Completion("SetFilePointer", "SetFilePointer", @"DWORD SetFilePointer(
     HANDLE hFile,
     // handle of file
     LONG lDistanceToMove,
@@ -5381,7 +5381,7 @@ new Completion("SetFilePointer", "call SetFilePointer", @"DWORD SetFilePointer(
     // how to move
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFileTime", "call SetFileTime", @"BOOL SetFileTime(
+new Completion("SetFileTime", "SetFileTime", @"BOOL SetFileTime(
     HANDLE hFile,
     // identifies the file
     CONST FILETIME *lpCreationTime,
@@ -5392,29 +5392,29 @@ new Completion("SetFileTime", "call SetFileTime", @"BOOL SetFileTime(
     // time the file was last written
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFocus", "call SetFocus", @"HWND SetFocus(
+new Completion("SetFocus", "SetFocus", @"HWND SetFocus(
     HWND hWnd
     // handle of window to receive focus
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetForegroundWindow", "call SetForegroundWindow", @"BOOL SetForegroundWindow(
+new Completion("SetForegroundWindow", "SetForegroundWindow", @"BOOL SetForegroundWindow(
     HWND hWnd
     // handle of window to bring to foreground
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetGraphicsMode", "call SetGraphicsMode", @"int SetGraphicsMode(
+new Completion("SetGraphicsMode", "SetGraphicsMode", @"int SetGraphicsMode(
     HDC hdc,
     // handle of the device context
     int iMode
     // graphics mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetHandleCount", "call SetHandleCount", @"UINT SetHandleCount(
+new Completion("SetHandleCount", "SetHandleCount", @"UINT SetHandleCount(
     UINT uNumber
     // number of file handles needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetHandleInformation", "call SetHandleInformation", @"BOOL SetHandleInformation (
+new Completion("SetHandleInformation", "SetHandleInformation", @"BOOL SetHandleInformation (
     HANDLE hObject,
     // handle to an object
     DWORD dwMask,
@@ -5423,7 +5423,7 @@ new Completion("SetHandleInformation", "call SetHandleInformation", @"BOOL SetHa
     // specifies new values for flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetKernelObjectSecurity", "call SetKernelObjectSecurity", @"BOOL SetKernelObjectSecurity(
+new Completion("SetKernelObjectSecurity", "SetKernelObjectSecurity", @"BOOL SetKernelObjectSecurity(
     HANDLE Handle,
     // handle of object
     SECURITY_INFORMATION SecurityInformation,
@@ -5432,57 +5432,57 @@ new Completion("SetKernelObjectSecurity", "call SetKernelObjectSecurity", @"BOOL
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetKeyboardState", "call SetKeyboardState", @"BOOL SetKeyboardState(
+new Completion("SetKeyboardState", "SetKeyboardState", @"BOOL SetKeyboardState(
     LPBYTE lpKeyState
     // address of array with virtual-key codes
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetLastError", "call SetLastError", @"VOID SetLastError(
+new Completion("SetLastError", "SetLastError", @"VOID SetLastError(
     DWORD dwErrCode
     // per-thread error code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetLastErrorEx", "call SetLastErrorEx", @"VOID SetLastErrorEx(
+new Completion("SetLastErrorEx", "SetLastErrorEx", @"VOID SetLastErrorEx(
     DWORD dwErrCode,
     // per-thread error code
     DWORD dwType
     // error type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetLocalTime", "call SetLocalTime", @"BOOL SetLocalTime(
+new Completion("SetLocalTime", "SetLocalTime", @"BOOL SetLocalTime(
     CONST SYSTEMTIME *lpSystemTime
     // address of local time to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMailslotInfo", "call SetMailslotInfo", @"BOOL SetMailslotInfo(
+new Completion("SetMailslotInfo", "SetMailslotInfo", @"BOOL SetMailslotInfo(
     HANDLE hMailslot,
     // mailslot handle
     DWORD lReadTimeout
     // read time-out
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMapMode", "call SetMapMode", @"int SetMapMode(
+new Completion("SetMapMode", "SetMapMode", @"int SetMapMode(
     HDC hdc,
     // handle of device context
     int fnMapMode
     // new mapping mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMapperFlags", "call SetMapperFlags", @"DWORD SetMapperFlags(
+new Completion("SetMapperFlags", "SetMapperFlags", @"DWORD SetMapperFlags(
     HDC hdc,
     // handle of device context
     DWORD dwFlag
     // font-mapper flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMenu", "call SetMenu", @"BOOL SetMenu(
+new Completion("SetMenu", "SetMenu", @"BOOL SetMenu(
     HWND hWnd,
     // handle of window
     HMENU hMenu
     // handle of menu
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMenuItemBitmaps", "call SetMenuItemBitmaps", @"BOOL SetMenuItemBitmaps(
+new Completion("SetMenuItemBitmaps", "SetMenuItemBitmaps", @"BOOL SetMenuItemBitmaps(
     HMENU hMenu,
     // handle of menu
     UINT uPosition,
@@ -5495,25 +5495,25 @@ new Completion("SetMenuItemBitmaps", "call SetMenuItemBitmaps", @"BOOL SetMenuIt
     // handle of checked bitmap
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMessageExtraInfo", "call SetMessageExtraInfo", @"LPARAM SetMessageExtraInfo(
+new Completion("SetMessageExtraInfo", "SetMessageExtraInfo", @"LPARAM SetMessageExtraInfo(
     LPARAM lParam
     // application-defined 32-bit value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMessageQueue", "call SetMessageQueue", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMetaFileBitsEx", "call SetMetaFileBitsEx", @"HMETAFILE SetMetaFileBitsEx(
+new Completion("SetMessageQueue", "SetMessageQueue", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("SetMetaFileBitsEx", "SetMetaFileBitsEx", @"HMETAFILE SetMetaFileBitsEx(
     UINT nSize,
     // size of Windows-format metafile
     CONST BYTE *lpData
     // address of buffer containing metafile data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMetaRgn", "call SetMetaRgn", @"int SetMetaRgn(
+new Completion("SetMetaRgn", "SetMetaRgn", @"int SetMetaRgn(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetMiterLimit", "call SetMiterLimit", @"BOOL SetMiterLimit(
+new Completion("SetMiterLimit", "SetMiterLimit", @"BOOL SetMiterLimit(
     HDC hdc,
     // handle of device context
     FLOAT eNewLimit,
@@ -5522,7 +5522,7 @@ new Completion("SetMiterLimit", "call SetMiterLimit", @"BOOL SetMiterLimit(
     // previous miter limit
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetNamedPipeHandleState", "call SetNamedPipeHandleState", @"BOOL SetNamedPipeHandleState(
+new Completion("SetNamedPipeHandleState", "SetNamedPipeHandleState", @"BOOL SetNamedPipeHandleState(
     HANDLE hNamedPipe,
     // handle of named pipe
     LPDWORD lpMode,
@@ -5533,7 +5533,7 @@ new Completion("SetNamedPipeHandleState", "call SetNamedPipeHandleState", @"BOOL
     // address of max. time before remote transmission
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPaletteEntries", "call SetPaletteEntries", @"UINT SetPaletteEntries(
+new Completion("SetPaletteEntries", "SetPaletteEntries", @"UINT SetPaletteEntries(
     HPALETTE hpal,
     // handle of logical palette
     UINT iStart,
@@ -5544,14 +5544,14 @@ new Completion("SetPaletteEntries", "call SetPaletteEntries", @"UINT SetPaletteE
     // address of array of structures
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetParent", "call SetParent", @"HWND SetParent(
+new Completion("SetParent", "SetParent", @"HWND SetParent(
     HWND hWndChild,
     // handle of window whose parent is changing
     HWND hWndNewParent
     // handle of new parent window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPixel", "call SetPixel", @"COLORREF SetPixel(
+new Completion("SetPixel", "SetPixel", @"COLORREF SetPixel(
     HDC hdc,
     // handle of device context
     int X,
@@ -5562,7 +5562,7 @@ new Completion("SetPixel", "call SetPixel", @"COLORREF SetPixel(
     // pixel color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPixelV", "call SetPixelV", @"BOOL SetPixelV(
+new Completion("SetPixelV", "SetPixelV", @"BOOL SetPixelV(
     HDC hdc,
     // handle of device context
     int X,
@@ -5573,21 +5573,21 @@ new Completion("SetPixelV", "call SetPixelV", @"BOOL SetPixelV(
     // new pixel color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPolyFillMode", "call SetPolyFillMode", @"int SetPolyFillMode(
+new Completion("SetPolyFillMode", "SetPolyFillMode", @"int SetPolyFillMode(
     HDC hdc,
     // handle of device context
     int iPolyFillMode
     // polygon fill mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPriorityClass", "call SetPriorityClass", @"BOOL SetPriorityClass(
+new Completion("SetPriorityClass", "SetPriorityClass", @"BOOL SetPriorityClass(
     HANDLE hProcess,
     // handle to the process
     DWORD dwPriorityClass
     // priority class value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPrivateObjectSecurity", "call SetPrivateObjectSecurity", @"BOOL SetPrivateObjectSecurity(
+new Completion("SetPrivateObjectSecurity", "SetPrivateObjectSecurity", @"BOOL SetPrivateObjectSecurity(
     SECURITY_INFORMATION SecurityInformation,
     // type of security information
     PSECURITY_DESCRIPTOR ModificationDescriptor,
@@ -5600,19 +5600,19 @@ new Completion("SetPrivateObjectSecurity", "call SetPrivateObjectSecurity", @"BO
     // handle of client access token
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetProcessShutdownParameters", "call SetProcessShutdownParameters", @"BOOL SetProcessShutdownParameters(
+new Completion("SetProcessShutdownParameters", "SetProcessShutdownParameters", @"BOOL SetProcessShutdownParameters(
     DWORD dwLevel,
     // shutdown priority
     DWORD dwFlags
     // shutdown flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetProcessWindowStation", "call SetProcessWindowStation", @"BOOL SetProcessWindowStation(
+new Completion("SetProcessWindowStation", "SetProcessWindowStation", @"BOOL SetProcessWindowStation(
     HWINSTA hWinSta
     // handle of window station to assign to this process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetProcessWorkingSetSize", "call SetProcessWorkingSetSize", @"BOOL SetProcessWorkingSetSize(
+new Completion("SetProcessWorkingSetSize", "SetProcessWorkingSetSize", @"BOOL SetProcessWorkingSetSize(
     HANDLE hProcess,
     // open handle to the process of interest
     DWORD dwMinimumWorkingSetSize,
@@ -5621,7 +5621,7 @@ new Completion("SetProcessWorkingSetSize", "call SetProcessWorkingSetSize", @"BO
     // specifies maximum working set size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetRect", "call SetRect", @"BOOL SetRect(
+new Completion("SetRect", "SetRect", @"BOOL SetRect(
     LPRECT lprc,
     // address of structure with rectangle to set
     int xLeft,
@@ -5634,12 +5634,12 @@ new Completion("SetRect", "call SetRect", @"BOOL SetRect(
     // bottom side
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetRectEmpty", "call SetRectEmpty", @"BOOL SetRectEmpty(
+new Completion("SetRectEmpty", "SetRectEmpty", @"BOOL SetRectEmpty(
     LPRECT lprc
     // address of structure with rectangle set to empty
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetRectRgn", "call SetRectRgn", @"BOOL SetRectRgn(
+new Completion("SetRectRgn", "SetRectRgn", @"BOOL SetRectRgn(
     HRGN hrgn,
     // handle of region
     int nLeftRect,
@@ -5652,14 +5652,14 @@ new Completion("SetRectRgn", "call SetRectRgn", @"BOOL SetRectRgn(
     // y-coordinate of lower-right corner of rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetROP2", "call SetROP2", @"int SetROP2(
+new Completion("SetROP2", "SetROP2", @"int SetROP2(
     HDC hdc,
     // handle of device context
     int fnDrawMode
     // drawing mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetScrollInfo", "call SetScrollInfo", @"int SetScrollInfo(
+new Completion("SetScrollInfo", "SetScrollInfo", @"int SetScrollInfo(
     HWND hwnd,
     // handle of window with scroll bar
     int fnBar,
@@ -5670,7 +5670,7 @@ new Completion("SetScrollInfo", "call SetScrollInfo", @"int SetScrollInfo(
     // redraw flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetScrollPos", "call SetScrollPos", @"int SetScrollPos(
+new Completion("SetScrollPos", "SetScrollPos", @"int SetScrollPos(
     HWND hWnd,
     // handle of window with scroll bar
     int nBar,
@@ -5681,7 +5681,7 @@ new Completion("SetScrollPos", "call SetScrollPos", @"int SetScrollPos(
     // redraw flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetScrollRange", "call SetScrollRange", @"BOOL SetScrollRange(
+new Completion("SetScrollRange", "SetScrollRange", @"BOOL SetScrollRange(
     HWND hWnd,
     // handle of window with scroll bar
     int nBar,
@@ -5694,7 +5694,7 @@ new Completion("SetScrollRange", "call SetScrollRange", @"BOOL SetScrollRange(
     // redraw flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSecurityDescriptorDacl", "call SetSecurityDescriptorDacl", @"BOOL SetSecurityDescriptorDacl(
+new Completion("SetSecurityDescriptorDacl", "SetSecurityDescriptorDacl", @"BOOL SetSecurityDescriptorDacl(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     BOOL bDaclPresent,
@@ -5705,7 +5705,7 @@ new Completion("SetSecurityDescriptorDacl", "call SetSecurityDescriptorDacl", @"
     // flag for default discretionary ACL
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSecurityDescriptorGroup", "call SetSecurityDescriptorGroup", @"BOOL SetSecurityDescriptorGroup(
+new Completion("SetSecurityDescriptorGroup", "SetSecurityDescriptorGroup", @"BOOL SetSecurityDescriptorGroup(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     PSID pGroup,
@@ -5714,7 +5714,7 @@ new Completion("SetSecurityDescriptorGroup", "call SetSecurityDescriptorGroup", 
     // flag for default
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSecurityDescriptorOwner", "call SetSecurityDescriptorOwner", @"BOOL SetSecurityDescriptorOwner(
+new Completion("SetSecurityDescriptorOwner", "SetSecurityDescriptorOwner", @"BOOL SetSecurityDescriptorOwner(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     PSID pOwner,
@@ -5723,7 +5723,7 @@ new Completion("SetSecurityDescriptorOwner", "call SetSecurityDescriptorOwner", 
     // flag for default
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSecurityDescriptorSacl", "call SetSecurityDescriptorSacl", @"BOOL SetSecurityDescriptorSacl(
+new Completion("SetSecurityDescriptorSacl", "SetSecurityDescriptorSacl", @"BOOL SetSecurityDescriptorSacl(
     PSECURITY_DESCRIPTOR pSecurityDescriptor,
     // address of security descriptor
     BOOL bSaclPresent,
@@ -5734,7 +5734,7 @@ new Completion("SetSecurityDescriptorSacl", "call SetSecurityDescriptorSacl", @"
     // flag for default system ACL
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetServiceBits", "call SetServiceBits", @"BOOL SetServiceBits(
+new Completion("SetServiceBits", "SetServiceBits", @"BOOL SetServiceBits(
     SERVICE_STATUS_HANDLE hServiceStatus,
     // service status handle
     DWORD dwServiceBits,
@@ -5745,7 +5745,7 @@ new Completion("SetServiceBits", "call SetServiceBits", @"BOOL SetServiceBits(
     // flag to announce server type immediately
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetServiceObjectSecurity", "call SetServiceObjectSecurity", @"BOOL SetServiceObjectSecurity(
+new Completion("SetServiceObjectSecurity", "SetServiceObjectSecurity", @"BOOL SetServiceObjectSecurity(
     SC_HANDLE hService,
     // handle of service
     SECURITY_INFORMATION dwSecurityInformation,
@@ -5754,28 +5754,28 @@ new Completion("SetServiceObjectSecurity", "call SetServiceObjectSecurity", @"BO
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetServiceStatus", "call SetServiceStatus", @"BOOL SetServiceStatus(
+new Completion("SetServiceStatus", "SetServiceStatus", @"BOOL SetServiceStatus(
     SERVICE_STATUS_HANDLE hServiceStatus~,
     // service status handle
     LPSERVICE_STATUS lpServiceStatus
     // address of status structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetStdHandle", "call SetStdHandle", @"BOOL SetStdHandle(
+new Completion("SetStdHandle", "SetStdHandle", @"BOOL SetStdHandle(
     DWORD nStdHandle,
     // input, output, or error device
     HANDLE hHandle
     // handle to be a standard handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetStretchBltMode", "call SetStretchBltMode", @"int SetStretchBltMode(
+new Completion("SetStretchBltMode", "SetStretchBltMode", @"int SetStretchBltMode(
     HDC hdc,
     // handle of device context
     int iStretchMode
     // bitmap stretching mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSysColors", "call SetSysColors", @"BOOL callSetSysColors(
+new Completion("SetSysColors", "SetSysColors", @"BOOL callSetSysColors(
     int cElements,
     // number of elements to change
     CONST INT *lpaElements,
@@ -5784,7 +5784,7 @@ new Completion("SetSysColors", "call SetSysColors", @"BOOL callSetSysColors(
     // address of array of RGB values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSystemCursor", "call SetSystemCursor", @"BOOL SetSystemCursor (
+new Completion("SetSystemCursor", "SetSystemCursor", @"BOOL SetSystemCursor (
     HCURSOR hcur,
     // set specified system cursor to this cursor's contents,
     // then destroy this
@@ -5792,26 +5792,26 @@ new Completion("SetSystemCursor", "call SetSystemCursor", @"BOOL SetSystemCursor
     // system cursor specified by its identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSystemPaletteUse", "call SetSystemPaletteUse", @"UINT SetSystemPaletteUse(
+new Completion("SetSystemPaletteUse", "SetSystemPaletteUse", @"UINT SetSystemPaletteUse(
     HDC hdc,
     // handle of device context
     UINT uUsage
     // palette-usage flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSystemTime", "call SetSystemTime", @"BOOL SetSystemTime(
+new Completion("SetSystemTime", "SetSystemTime", @"BOOL SetSystemTime(
     CONST SYSTEMTIME *lpSystemTime
     // address of system time to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetSystemTimeAdjustment", "call SetSystemTimeAdjustment", @"BOOL SetSystemTimeAdjustment(
+new Completion("SetSystemTimeAdjustment", "SetSystemTimeAdjustment", @"BOOL SetSystemTimeAdjustment(
     DWORD dwTimeAdjustment,
     // size, in 100-nanosecond units, of a periodic time adjustment
     BOOL bTimeAdjustmentDisabled
     // whether periodic time adjustment is to be disabled or enabled
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTapeParameters", "call SetTapeParameters", @"DWORD SetTapeParameters(
+new Completion("SetTapeParameters", "SetTapeParameters", @"DWORD SetTapeParameters(
     HANDLE hDevice,
     // handle of open device
     DWORD dwOperation,
@@ -5820,28 +5820,28 @@ new Completion("SetTapeParameters", "call SetTapeParameters", @"DWORD SetTapePar
     // address of buffer with information to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTextAlign", "call SetTextAlign", @"UINT SetTextAlign(
+new Completion("SetTextAlign", "SetTextAlign", @"UINT SetTextAlign(
     HDC hdc,
     // handle of device context
     UINT fMode
     // text-alignment flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTextCharacterExtra", "call SetTextCharacterExtra", @"int SetTextCharacterExtra(
+new Completion("SetTextCharacterExtra", "SetTextCharacterExtra", @"int SetTextCharacterExtra(
     HDC hdc,
     // handle of device context
     int nCharExtra
     // extra-space value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTextColor", "call SetTextColor", @"COLORREF SetTextColor(
+new Completion("SetTextColor", "SetTextColor", @"COLORREF SetTextColor(
     HDC hdc,
     // handle of device context
     COLORREF crColor
     // text color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTextJustification", "call SetTextJustification", @"BOOL SetTextJustification(
+new Completion("SetTextJustification", "SetTextJustification", @"BOOL SetTextJustification(
     HDC hdc,
     // handle of device context
     int nBreakExtra,
@@ -5850,45 +5850,45 @@ new Completion("SetTextJustification", "call SetTextJustification", @"BOOL SetTe
     // count of space characters in line of text
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadAffinityMask", "call SetThreadAffinityMask", @"DWORD SetThreadAffinityMask (
+new Completion("SetThreadAffinityMask", "SetThreadAffinityMask", @"DWORD SetThreadAffinityMask (
     HANDLE hThread,
     // handle to the thread of interest
     DWORD dwThreadAffinityMask
     // a thread affinity mask
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadContext", "call SetThreadContext", @"BOOL SetThreadContext(
+new Completion("SetThreadContext", "SetThreadContext", @"BOOL SetThreadContext(
     HANDLE hThread,
     // handle of thread with context
     CONST CONTEXT *lpContext
     // address of context structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadDesktop", "call SetThreadDesktop", @"BOOL SetThreadDesktop(
+new Completion("SetThreadDesktop", "SetThreadDesktop", @"BOOL SetThreadDesktop(
     HDESK hDesktop
     // handle of the desktop to assign to this thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadLocale", "call SetThreadLocale", @"BOOL SetThreadLocale (
+new Completion("SetThreadLocale", "SetThreadLocale", @"BOOL SetThreadLocale (
     LCID Locale
     // locale identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadPriority", "call SetThreadPriority", @"BOOL SetThreadPriority(
+new Completion("SetThreadPriority", "SetThreadPriority", @"BOOL SetThreadPriority(
     HANDLE hThread,
     // handle to the thread
     int nPriority
     // thread priority level
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetThreadToken", "call SetThreadToken", @"BOOL SetThreadToken(
+new Completion("SetThreadToken", "SetThreadToken", @"BOOL SetThreadToken(
     PHANDLE Thread,
     // points to a handle to the thread
     HANDLE Token
     // handle to the impersonation token
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTimer", "call SetTimer", @"UINT SetTimer(
+new Completion("SetTimer", "SetTimer", @"UINT SetTimer(
     HWND hWnd,
     // handle of window for timer messages
     UINT nIDEvent,
@@ -5899,12 +5899,12 @@ new Completion("SetTimer", "call SetTimer", @"UINT SetTimer(
     // address of timer procedure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTimeZoneInformation", "call SetTimeZoneInformation", @"BOOL SetTimeZoneInformation(
+new Completion("SetTimeZoneInformation", "SetTimeZoneInformation", @"BOOL SetTimeZoneInformation(
     CONST TIME_ZONE_INFORMATION *lpTimeZoneInformation
     // address of time-zone settings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetTokenInformation", "call SetTokenInformation", @"BOOL SetTokenInformation(
+new Completion("SetTokenInformation", "SetTokenInformation", @"BOOL SetTokenInformation(
     HANDLE TokenHandle,
     // handle of access token
     TOKEN_INFORMATION_CLASS TokenInformationClass,
@@ -5915,12 +5915,12 @@ new Completion("SetTokenInformation", "call SetTokenInformation", @"BOOL SetToke
     // size of information buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetUnhandledExceptionFilter", "call SetUnhandledExceptionFilter", @"LPTOP_LEVEL_EXCEPTION_FILTER SetUnhandledExceptionFilter(
+new Completion("SetUnhandledExceptionFilter", "SetUnhandledExceptionFilter", @"LPTOP_LEVEL_EXCEPTION_FILTER SetUnhandledExceptionFilter(
     LPTOP_LEVEL_EXCEPTION_FILTER lpTopLevelExceptionFilter
     // exception filter function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetupComm", "call SetupComm", @"BOOL SetupComm(
+new Completion("SetupComm", "SetupComm", @"BOOL SetupComm(
     HANDLE hFile,
     // handle of communications device
     DWORD dwInQueue,
@@ -5929,7 +5929,7 @@ new Completion("SetupComm", "call SetupComm", @"BOOL SetupComm(
     // size of output buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetUserObjectSecurity", "call SetUserObjectSecurity", @"BOOL SetUserObjectSecurity(
+new Completion("SetUserObjectSecurity", "SetUserObjectSecurity", @"BOOL SetUserObjectSecurity(
     HANDLE hObj,
     // handle of user object
     PSECURITY_INFORMATION pSIRequested,
@@ -5938,7 +5938,7 @@ new Completion("SetUserObjectSecurity", "call SetUserObjectSecurity", @"BOOL Set
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetViewportExtEx", "call SetViewportExtEx", @"BOOL SetViewportExtEx(
+new Completion("SetViewportExtEx", "SetViewportExtEx", @"BOOL SetViewportExtEx(
     HDC hdc,
     // handle of device context
     int nXExtent,
@@ -5949,7 +5949,7 @@ new Completion("SetViewportExtEx", "call SetViewportExtEx", @"BOOL SetViewportEx
     // original viewport extent
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetViewportOrgEx", "call SetViewportOrgEx", @"BOOL SetViewportOrgEx(
+new Completion("SetViewportOrgEx", "SetViewportOrgEx", @"BOOL SetViewportOrgEx(
     HDC hdc,
     // handle of device context
     int X,
@@ -5960,7 +5960,7 @@ new Completion("SetViewportOrgEx", "call SetViewportOrgEx", @"BOOL SetViewportOr
     // address of structure receiving original origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowExtEx", "call SetWindowExtEx", @"BOOL SetWindowExtEx(
+new Completion("SetWindowExtEx", "SetWindowExtEx", @"BOOL SetWindowExtEx(
     HDC hdc,
     // handle of device context
     int nXExtent,
@@ -5971,7 +5971,7 @@ new Completion("SetWindowExtEx", "call SetWindowExtEx", @"BOOL SetWindowExtEx(
     // original window extent
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowOrgEx", "call SetWindowOrgEx", @"BOOL SetWindowOrgEx(
+new Completion("SetWindowOrgEx", "SetWindowOrgEx", @"BOOL SetWindowOrgEx(
     HDC hdc,
     // handle of device context
     int X,
@@ -5982,14 +5982,14 @@ new Completion("SetWindowOrgEx", "call SetWindowOrgEx", @"BOOL SetWindowOrgEx(
     // address of structure receiving original origin
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowPlacement", "call SetWindowPlacement", @"BOOL SetWindowPlacement(
+new Completion("SetWindowPlacement", "SetWindowPlacement", @"BOOL SetWindowPlacement(
     HWND hWnd,
     // handle of window
     CONST WINDOWPLACEMENT *lpwndpl
     // address of structure with position data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowPos", "call SetWindowPos", @"BOOL SetWindowPos(
+new Completion("SetWindowPos", "SetWindowPos", @"BOOL SetWindowPos(
     HWND hWnd,
     // handle of window
     HWND hWndInsertAfter,
@@ -6006,7 +6006,7 @@ new Completion("SetWindowPos", "call SetWindowPos", @"BOOL SetWindowPos(
     // window-positioning flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowRgn", "call SetWindowRgn", @"int SetWindowRgn(
+new Completion("SetWindowRgn", "SetWindowRgn", @"int SetWindowRgn(
     HWND hWnd,
     // handle to window whose window region is to be set
     HRGN hRgn,
@@ -6015,7 +6015,7 @@ new Completion("SetWindowRgn", "call SetWindowRgn", @"int SetWindowRgn(
     // window redraw flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowWord", "call SetWindowWord", @"WORD SetWindowWord(
+new Completion("SetWindowWord", "SetWindowWord", @"WORD SetWindowWord(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -6024,7 +6024,7 @@ new Completion("SetWindowWord", "call SetWindowWord", @"WORD SetWindowWord(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWinMetaFileBits", "call SetWinMetaFileBits", @"HENHMETAFILE SetWinMetaFileBits(
+new Completion("SetWinMetaFileBits", "SetWinMetaFileBits", @"HENHMETAFILE SetWinMetaFileBits(
     UINT cbBuffer,
     // size of buffer
     CONST BYTE *lpbBuffer,
@@ -6035,31 +6035,31 @@ new Completion("SetWinMetaFileBits", "call SetWinMetaFileBits", @"HENHMETAFILE S
     // suggested size of metafile picture
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWorldTransform", "call SetWorldTransform", @"BOOL SetWorldTransform(
+new Completion("SetWorldTransform", "SetWorldTransform", @"BOOL SetWorldTransform(
     HDC hdc,
     // handle of device context
     CONST XFORM *lpXform
     // address of transformation data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShowCaret", "call ShowCaret", @"BOOL ShowCaret(
+new Completion("ShowCaret", "ShowCaret", @"BOOL ShowCaret(
     HWND hWnd
     // handle of window with caret
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShowCursor", "call ShowCursor", @"int ShowCursor(
+new Completion("ShowCursor", "ShowCursor", @"int ShowCursor(
     BOOL bShow
     // cursor visibility flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShowOwnedPopups", "call ShowOwnedPopups", @"BOOL ShowOwnedPopups(
+new Completion("ShowOwnedPopups", "ShowOwnedPopups", @"BOOL ShowOwnedPopups(
     HWND hWnd,
     // handle of window
     BOOL fShow
     // window visibility flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShowScrollBar", "call ShowScrollBar", @"BOOL ShowScrollBar(
+new Completion("ShowScrollBar", "ShowScrollBar", @"BOOL ShowScrollBar(
     HWND hWnd,
     // handle of window with scroll bar
     int wBar,
@@ -6068,43 +6068,43 @@ new Completion("ShowScrollBar", "call ShowScrollBar", @"BOOL ShowScrollBar(
     // scroll bar visibility flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShowWindow", "call ShowWindow", @"BOOL ShowWindow(
+new Completion("ShowWindow", "ShowWindow", @"BOOL ShowWindow(
     HWND hWnd,
     // handle of window
     int nCmdShow
     // show state of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SizeofResource", "call SizeofResource", @"DWORD SizeofResource(
+new Completion("SizeofResource", "SizeofResource", @"DWORD SizeofResource(
     HMODULE hModule,
     // resource-module handle
     HRSRC hResInfo
     // resource handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("Sleep", "call Sleep", @"VOID Sleep(
+new Completion("Sleep", "Sleep", @"VOID Sleep(
     DWORD dwMilliseconds
     // sleep time in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SleepEx", "call SleepEx", @"DWORD SleepEx(
+new Completion("SleepEx", "SleepEx", @"DWORD SleepEx(
     DWORD dwMilliseconds,
     // time-out interval in milliseconds
     BOOL bAlertable
     // early completion flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartPage", "call StartPage", @"int StartPage(
+new Completion("StartPage", "StartPage", @"int StartPage(
     HDC hDC
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartPagePrinter", "call StartPagePrinter", @"BOOL StartPagePrinter(
+new Completion("StartPagePrinter", "StartPagePrinter", @"BOOL StartPagePrinter(
     HANDLE hPrinter
     // handle of printer object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StretchBlt", "call StretchBlt", @"BOOL StretchBlt(
+new Completion("StretchBlt", "StretchBlt", @"BOOL StretchBlt(
     HDC hdcDest,
     // handle of destination device context
     int nXOriginDest,
@@ -6129,7 +6129,7 @@ new Completion("StretchBlt", "call StretchBlt", @"BOOL StretchBlt(
     // raster operation code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StretchDIBits", "call StretchDIBits", @"int StretchDIBits(
+new Completion("StretchDIBits", "StretchDIBits", @"int StretchDIBits(
     HDC hdc,
     // handle of device context
     int XDest,
@@ -6158,17 +6158,17 @@ new Completion("StretchDIBits", "call StretchDIBits", @"int StretchDIBits(
     // raster operation code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StrokeAndFillPath", "call StrokeAndFillPath", @"BOOL StrokeAndFillPath(
+new Completion("StrokeAndFillPath", "StrokeAndFillPath", @"BOOL StrokeAndFillPath(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StrokePath", "call StrokePath", @"BOOL StrokePath(
+new Completion("StrokePath", "StrokePath", @"BOOL StrokePath(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SubtractRect", "call SubtractRect", @"BOOL SubtractRect(
+new Completion("SubtractRect", "SubtractRect", @"BOOL SubtractRect(
     LPRECT lprcDst,
     // pointer to destination rectangle
     CONST RECT *lprcSrc1,
@@ -6177,34 +6177,34 @@ new Completion("SubtractRect", "call SubtractRect", @"BOOL SubtractRect(
     // pointer to rectangle to subtract
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SuspendThread", "call SuspendThread", @"DWORD SuspendThread(
+new Completion("SuspendThread", "SuspendThread", @"DWORD SuspendThread(
     HANDLE hThread
     // handle to the thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SwapMouseButton", "call SwapMouseButton", @"BOOL SwapMouseButton(
+new Completion("SwapMouseButton", "SwapMouseButton", @"BOOL SwapMouseButton(
     BOOL fSwap
     // reverse or restore buttons
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SwitchDesktop", "call SwitchDesktop", @"BOOL SwitchDesktop(
+new Completion("SwitchDesktop", "SwitchDesktop", @"BOOL SwitchDesktop(
     HDESK hDesktop
     // handle of desktop to activate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SwitchToFiber", "call SwitchToFiber", @"VOID SwitchToFiber(
+new Completion("SwitchToFiber", "SwitchToFiber", @"VOID SwitchToFiber(
     LPVOID lpFiber
     // pointer to fiber to switch to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SystemTimeToFileTime", "call SystemTimeToFileTime", @"BOOL SystemTimeToFileTime(
+new Completion("SystemTimeToFileTime", "SystemTimeToFileTime", @"BOOL SystemTimeToFileTime(
     CONST SYSTEMTIME *lpSystemTime,
     // address of system time to convert
     LPFILETIME lpFileTime
     // address of buffer for converted file time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SystemTimeToTzSpecificLocalTime", "call SystemTimeToTzSpecificLocalTime", @"BOOL SystemTimeToTzSpecificLocalTime(
+new Completion("SystemTimeToTzSpecificLocalTime", "SystemTimeToTzSpecificLocalTime", @"BOOL SystemTimeToTzSpecificLocalTime(
     LPTIME_ZONE_INFORMATION lpTimeZoneInformation,
     // pointer to time zone of interest
     LPSYSTEMTIME lpUniversalTime,
@@ -6213,39 +6213,39 @@ new Completion("SystemTimeToTzSpecificLocalTime", "call SystemTimeToTzSpecificLo
     // pointer to structure to receive local time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TerminateProcess", "call TerminateProcess", @"BOOL TerminateProcess(
+new Completion("TerminateProcess", "TerminateProcess", @"BOOL TerminateProcess(
     HANDLE hProcess,
     // handle to the process
     UINT uExitCode
     // exit code for the process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TerminateThread", "call TerminateThread", @"BOOL TerminateThread(
+new Completion("TerminateThread", "TerminateThread", @"BOOL TerminateThread(
     HANDLE hThread,
     // handle to the thread
     DWORD dwExitCode
     // exit code for the thread
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TlsAlloc", "call TlsAlloc", @"DWORD TlsAlloc(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TlsFree", "call TlsFree", @"BOOL TlsFree(
+new Completion("TlsAlloc", "TlsAlloc", @"DWORD TlsAlloc(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("TlsFree", "TlsFree", @"BOOL TlsFree(
     DWORD dwTlsIndex
     // TLS index to free
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TlsGetValue", "call TlsGetValue", @"LPVOID TlsGetValue(
+new Completion("TlsGetValue", "TlsGetValue", @"LPVOID TlsGetValue(
     DWORD dwTlsIndex
     // TLS index to retrieve value for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TlsSetValue", "call TlsSetValue", @"BOOL TlsSetValue(
+new Completion("TlsSetValue", "TlsSetValue", @"BOOL TlsSetValue(
     DWORD dwTlsIndex,
     // TLS index to set value for
     LPVOID lpTlsValue
     // value to be stored
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ToAscii", "call ToAscii", @"int ToAscii(
+new Completion("ToAscii", "ToAscii", @"int ToAscii(
     UINT uVirtKey,
     // virtual-key code
     UINT uScanCode,
@@ -6258,7 +6258,7 @@ new Completion("ToAscii", "call ToAscii", @"int ToAscii(
     // active-menu flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ToUnicode", "call ToUnicode", @"int ToUnicode(
+new Completion("ToUnicode", "ToUnicode", @"int ToUnicode(
     UINT wVirtKey,
     // virtual-key code
     UINT wScanCode,
@@ -6273,7 +6273,7 @@ new Completion("ToUnicode", "call ToUnicode", @"int ToUnicode(
     // set of function-conditioning flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ToUnicodeEx", "call ToUnicodeEx", @"int ToUnicodeEx(
+new Completion("ToUnicodeEx", "ToUnicodeEx", @"int ToUnicodeEx(
     UINT wVirtKey,
     // virtual-key code
     UINT wScanCode,
@@ -6290,7 +6290,7 @@ new Completion("ToUnicodeEx", "call ToUnicodeEx", @"int ToUnicodeEx(
     // keyboard layout handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TrackPopupMenu", "call TrackPopupMenu", @"BOOL TrackPopupMenu(
+new Completion("TrackPopupMenu", "TrackPopupMenu", @"BOOL TrackPopupMenu(
     HMENU hMenu,
     // handle of shortcut menu
     UINT uFlags,
@@ -6307,7 +6307,7 @@ new Completion("TrackPopupMenu", "call TrackPopupMenu", @"BOOL TrackPopupMenu(
     // points to RECT that specifies no-dismissal area
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TransactNamedPipe", "call TransactNamedPipe", @"BOOL TransactNamedPipe(
+new Completion("TransactNamedPipe", "TransactNamedPipe", @"BOOL TransactNamedPipe(
     HANDLE hNamedPipe,
     // handle of named pipe
     LPVOID lpInBuffer,
@@ -6324,7 +6324,7 @@ new Completion("TransactNamedPipe", "call TransactNamedPipe", @"BOOL TransactNam
     // address of overlapped structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TranslateAccelerator", "call TranslateAccelerator", @"int TranslateAccelerator(
+new Completion("TranslateAccelerator", "TranslateAccelerator", @"int TranslateAccelerator(
     HWND hWnd,
     // handle of destination window
     HACCEL hAccTable,
@@ -6333,37 +6333,37 @@ new Completion("TranslateAccelerator", "call TranslateAccelerator", @"int Transl
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TranslateMDISysAccel", "call TranslateMDISysAccel", @"BOOL TranslateMDISysAccel(
+new Completion("TranslateMDISysAccel", "TranslateMDISysAccel", @"BOOL TranslateMDISysAccel(
     HWND hWndClient,
     // handle of MDI client window
     LPMSG lpMsg
     // address of structure with message data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TranslateMessage", "call TranslateMessage", @"BOOL TranslateMessage(
+new Completion("TranslateMessage", "TranslateMessage", @"BOOL TranslateMessage(
     CONST MSG *lpMsg
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TransmitCommChar", "call TransmitCommChar", @"BOOL TransmitCommChar(
+new Completion("TransmitCommChar", "TransmitCommChar", @"BOOL TransmitCommChar(
     HANDLE hFile,
     // handle of communications device
     char cChar
     // character to transmit
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnhandledExceptionFilter", "call UnhandledExceptionFilter", @"LONG UnhandledExceptionFilter(
+new Completion("UnhandledExceptionFilter", "UnhandledExceptionFilter", @"LONG UnhandledExceptionFilter(
     STRUCT _EXCEPTION_POINTERS *ExceptionInfo
     // address of exception info
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnhookWindowsHook", "call UnhookWindowsHook", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnhookWindowsHookEx", "call UnhookWindowsHookEx", @"BOOL UnhookWindowsHookEx(
+new Completion("UnhookWindowsHook", "UnhookWindowsHook", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("UnhookWindowsHookEx", "UnhookWindowsHookEx", @"BOOL UnhookWindowsHookEx(
     HHOOK hhk
     // handle of hook procedure to remove
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnionRect", "call UnionRect", @"BOOL UnionRect(
+new Completion("UnionRect", "UnionRect", @"BOOL UnionRect(
     LPRECT lprcDst,
     // address of structure for union
     CONST RECT *lprcSrc1,
@@ -6372,12 +6372,12 @@ new Completion("UnionRect", "call UnionRect", @"BOOL UnionRect(
     // address of structure with second rectangle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnloadKeyboardLayout", "call UnloadKeyboardLayout", @"BOOL UnloadKeyboardLayout(
+new Completion("UnloadKeyboardLayout", "UnloadKeyboardLayout", @"BOOL UnloadKeyboardLayout(
     HKL hkl
     // handle of keyboard layout
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnlockFile", "call UnlockFile", @"BOOL UnlockFile(
+new Completion("UnlockFile", "UnlockFile", @"BOOL UnlockFile(
     HANDLE hFile,
     // handle of file to unlock
     DWORD dwFileOffsetLow,
@@ -6390,7 +6390,7 @@ new Completion("UnlockFile", "call UnlockFile", @"BOOL UnlockFile(
     // high-order word of length to unlock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnlockFileEx", "call UnlockFileEx", @"BOOL UnlockFileEx(
+new Completion("UnlockFileEx", "UnlockFileEx", @"BOOL UnlockFileEx(
     HANDLE hFile,
     // handle of file to unlock
     DWORD dwReserved,
@@ -6403,17 +6403,17 @@ new Completion("UnlockFileEx", "call UnlockFileEx", @"BOOL UnlockFileEx(
     // addr. of struct. with unlock region start offset
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnlockServiceDatabase", "call UnlockServiceDatabase", @"BOOL UnlockServiceDatabase(
+new Completion("UnlockServiceDatabase", "UnlockServiceDatabase", @"BOOL UnlockServiceDatabase(
     SC_LOCK ScLock
     // service control manager database lock to be released
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnmapViewOfFile", "call UnmapViewOfFile", @"BOOL UnmapViewOfFile(
+new Completion("UnmapViewOfFile", "UnmapViewOfFile", @"BOOL UnmapViewOfFile(
     LPCVOID lpBaseAddress
     // address where mapped view begins
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnpackDDElParam", "call UnpackDDElParam", @"BOOL UnpackDDElParam(
+new Completion("UnpackDDElParam", "UnpackDDElParam", @"BOOL UnpackDDElParam(
     UINT msg,
     // posted DDE message
     LONG lParam,
@@ -6424,43 +6424,43 @@ new Completion("UnpackDDElParam", "call UnpackDDElParam", @"BOOL UnpackDDElParam
     // address of high-order word of lParam
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnrealizeObject", "call UnrealizeObject", @"BOOL UnrealizeObject(
+new Completion("UnrealizeObject", "UnrealizeObject", @"BOOL UnrealizeObject(
     HGDIOBJ hgdiobj
     // logical palette handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnregisterHotKey", "call UnregisterHotKey", @"BOOL UnregisterHotKey(
+new Completion("UnregisterHotKey", "UnregisterHotKey", @"BOOL UnregisterHotKey(
     HWND hWnd,
     // window associated with hot key
     int id
     // identifier of hot key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UpdateColors", "call UpdateColors", @"BOOL UpdateColors(
+new Completion("UpdateColors", "UpdateColors", @"BOOL UpdateColors(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UpdateWindow", "call UpdateWindow", @"BOOL UpdateWindow(
+new Completion("UpdateWindow", "UpdateWindow", @"BOOL UpdateWindow(
     HWND hWnd
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ValidateRect", "call ValidateRect", @"BOOL ValidateRect(
+new Completion("ValidateRect", "ValidateRect", @"BOOL ValidateRect(
     HWND hWnd,
     // handle of window
     CONST RECT *lpRect
     // address of validation rectangle coordinates
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ValidateRgn", "call ValidateRgn", @"BOOL ValidateRgn(
+new Completion("ValidateRgn", "ValidateRgn", @"BOOL ValidateRgn(
     HWND hWnd,
     // handle of window
     HRGN hRgn
     // handle of valid region
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualAlloc", "call VirtualAlloc", @"LPVOID VirtualAlloc(
+new Completion("VirtualAlloc", "VirtualAlloc", @"LPVOID VirtualAlloc(
     LPVOID lpAddress,
     // address of region to reserve or commit
     DWORD dwSize,
@@ -6471,7 +6471,7 @@ new Completion("VirtualAlloc", "call VirtualAlloc", @"LPVOID VirtualAlloc(
     // type of access protection
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualFree", "call VirtualFree", @"BOOL VirtualFree(
+new Completion("VirtualFree", "VirtualFree", @"BOOL VirtualFree(
     LPVOID lpAddress,
     // address of region of committed pages
     DWORD dwSize,
@@ -6480,14 +6480,14 @@ new Completion("VirtualFree", "call VirtualFree", @"BOOL VirtualFree(
     // type of free operation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualLock", "call VirtualLock", @"BOOL VirtualLock(
+new Completion("VirtualLock", "VirtualLock", @"BOOL VirtualLock(
     LPVOID lpAddress,
     // address of first byte of range to lock
     DWORD dwSize
     // number of bytes in range to lock
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualProtect", "call VirtualProtect", @"BOOL VirtualProtect(
+new Completion("VirtualProtect", "VirtualProtect", @"BOOL VirtualProtect(
     LPVOID lpAddress,
     // address of region of committed pages
     DWORD dwSize,
@@ -6498,7 +6498,7 @@ new Completion("VirtualProtect", "call VirtualProtect", @"BOOL VirtualProtect(
     // address of variable to get old protection
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualProtectEx", "call VirtualProtectEx", @"BOOL VirtualProtectEx(
+new Completion("VirtualProtectEx", "VirtualProtectEx", @"BOOL VirtualProtectEx(
     HANDLE hProcess,
     // handle of process
     LPVOID lpAddress,
@@ -6511,7 +6511,7 @@ new Completion("VirtualProtectEx", "call VirtualProtectEx", @"BOOL VirtualProtec
     // address of variable to get old protection
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualQuery", "call VirtualQuery", @"DWORD VirtualQuery(
+new Completion("VirtualQuery", "VirtualQuery", @"DWORD VirtualQuery(
     LPCVOID lpAddress,
     // address of region
     PMEMORY_BASIC_INFORMATION lpBuffer,
@@ -6520,7 +6520,7 @@ new Completion("VirtualQuery", "call VirtualQuery", @"DWORD VirtualQuery(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualQueryEx", "call VirtualQueryEx", @"DWORD VirtualQueryEx(
+new Completion("VirtualQueryEx", "VirtualQueryEx", @"DWORD VirtualQueryEx(
     HANDLE hProcess,
     // handle of process
     LPCVOID lpAddress,
@@ -6531,14 +6531,14 @@ new Completion("VirtualQueryEx", "call VirtualQueryEx", @"DWORD VirtualQueryEx(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VirtualUnlock", "call VirtualUnlock", @"BOOL VirtualUnlock(
+new Completion("VirtualUnlock", "VirtualUnlock", @"BOOL VirtualUnlock(
     LPVOID lpAddress,
     // address of first byte of range
     DWORD dwSize
     // number of bytes in range
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitCommEvent", "call WaitCommEvent", @"BOOL WaitCommEvent(
+new Completion("WaitCommEvent", "WaitCommEvent", @"BOOL WaitCommEvent(
     HANDLE hFile,
     // handle of communications device
     LPDWORD lpEvtMask,
@@ -6547,21 +6547,21 @@ new Completion("WaitCommEvent", "call WaitCommEvent", @"BOOL WaitCommEvent(
     // address of overlapped structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForDebugEvent", "call WaitForDebugEvent", @"BOOL WaitForDebugEvent(
+new Completion("WaitForDebugEvent", "WaitForDebugEvent", @"BOOL WaitForDebugEvent(
     LPDEBUG_EVENT lpDebugEvent,
     // address of structure for event information
     DWORD dwMilliseconds
     // number of milliseconds to wait for event
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForInputIdle", "call WaitForInputIdle", @"DWORD WaitForInputIdle(
+new Completion("WaitForInputIdle", "WaitForInputIdle", @"DWORD WaitForInputIdle(
     HANDLE hProcess,
     // handle to process
     DWORD dwMilliseconds
     // time-out interval in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForMultipleObjects", "call WaitForMultipleObjects", @"DWORD WaitForMultipleObjects(
+new Completion("WaitForMultipleObjects", "WaitForMultipleObjects", @"DWORD WaitForMultipleObjects(
     DWORD nCount,
     // number of handles in the object handle array
     CONST HANDLE *lpHandles,
@@ -6572,7 +6572,7 @@ new Completion("WaitForMultipleObjects", "call WaitForMultipleObjects", @"DWORD 
     // time-out interval in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForMultipleObjectsEx", "call WaitForMultipleObjectsEx", @"DWORD WaitForMultipleObjectsEx(
+new Completion("WaitForMultipleObjectsEx", "WaitForMultipleObjectsEx", @"DWORD WaitForMultipleObjectsEx(
     DWORD nCount,
     // number of handles in handle array
     CONST HANDLE *lpHandles,
@@ -6585,15 +6585,15 @@ new Completion("WaitForMultipleObjectsEx", "call WaitForMultipleObjectsEx", @"DW
     // alertable wait flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForPrinterChange", "call WaitForPrinterChange", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForSingleObject", "call WaitForSingleObject", @"DWORD WaitForSingleObject(
+new Completion("WaitForPrinterChange", "WaitForPrinterChange", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("WaitForSingleObject", "WaitForSingleObject", @"DWORD WaitForSingleObject(
     HANDLE hHandle,
     // handle of object to wait for
     DWORD dwMilliseconds
     // time-out interval in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitForSingleObjectEx", "call WaitForSingleObjectEx", @"DWORD WaitForSingleObjectEx(
+new Completion("WaitForSingleObjectEx", "WaitForSingleObjectEx", @"DWORD WaitForSingleObjectEx(
     HANDLE hHandle,
     // handle of object to wait for
     DWORD dwMilliseconds,
@@ -6602,8 +6602,8 @@ new Completion("WaitForSingleObjectEx", "call WaitForSingleObjectEx", @"DWORD Wa
     // return to execute I/O completion routine if TRUE
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitMessage", "call WaitMessage", @"BOOL WaitMessage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WideCharToMultiByte", "call WideCharToMultiByte", @"int WideCharToMultiByte(
+new Completion("WaitMessage", "WaitMessage", @"BOOL WaitMessage(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("WideCharToMultiByte", "WideCharToMultiByte", @"int WideCharToMultiByte(
     UINT CodePage,
     // code page
     DWORD dwFlags,
@@ -6622,29 +6622,29 @@ new Completion("WideCharToMultiByte", "call WideCharToMultiByte", @"int WideChar
     // address of flag set when default char. used
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WidenPath", "call WidenPath", @"BOOL WidenPath(
+new Completion("WidenPath", "WidenPath", @"BOOL WidenPath(
     HDC hdc
     // handle of device context
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WindowFromDC", "call WindowFromDC", @"HWND WindowFromDC(
+new Completion("WindowFromDC", "WindowFromDC", @"HWND WindowFromDC(
     HDC hDC
     // handle of window
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WindowFromPoint", "call WindowFromPoint", @"HWND WindowFromPoint(
+new Completion("WindowFromPoint", "WindowFromPoint", @"HWND WindowFromPoint(
     POINT Point
     // structure with point
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WinExec", "call WinExec", @"UINT WinExec(
+new Completion("WinExec", "WinExec", @"UINT WinExec(
     LPCSTR lpCmdLine,
     // address of command line
     UINT uCmdShow
     // window style for new application
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleOutputAttribute", "call WriteConsoleOutputAttribute", @"BOOL WriteConsoleOutputAttribute(
+new Completion("WriteConsoleOutputAttribute", "WriteConsoleOutputAttribute", @"BOOL WriteConsoleOutputAttribute(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     CONST WORD *lpAttribute,
@@ -6657,7 +6657,7 @@ new Completion("WriteConsoleOutputAttribute", "call WriteConsoleOutputAttribute"
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteFile", "call WriteFile", @"BOOL WriteFile(
+new Completion("WriteFile", "WriteFile", @"BOOL WriteFile(
     HANDLE hFile,
     // handle to file to write to
     LPCVOID lpBuffer,
@@ -6670,7 +6670,7 @@ new Completion("WriteFile", "call WriteFile", @"BOOL WriteFile(
     // pointer to structure needed for overlapped I/O
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrinter", "call WritePrinter", @"BOOL WritePrinter(
+new Completion("WritePrinter", "WritePrinter", @"BOOL WritePrinter(
     HANDLE hPrinter,
     // handle to printer object
     LPVOID pBuf,
@@ -6681,7 +6681,7 @@ new Completion("WritePrinter", "call WritePrinter", @"BOOL WritePrinter(
     // addr. of variable with count of bytes written
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteProcessMemory", "call WriteProcessMemory", @"BOOL WriteProcessMemory(
+new Completion("WriteProcessMemory", "WriteProcessMemory", @"BOOL WriteProcessMemory(
     HANDLE hProcess,
     // handle to process whose memory is written to
     LPVOID lpBaseAddress,
@@ -6694,7 +6694,7 @@ new Completion("WriteProcessMemory", "call WriteProcessMemory", @"BOOL WriteProc
     // actual number of bytes written
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteTapemark", "call WriteTapemark", @"DWORD WriteTapemark(
+new Completion("WriteTapemark", "WriteTapemark", @"DWORD WriteTapemark(
     HANDLE hDevice,
     // handle to open device
     DWORD dwTapemarkType,
@@ -6705,7 +6705,7 @@ new Completion("WriteTapemark", "call WriteTapemark", @"DWORD WriteTapemark(
     // return after write begins
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_hread", "call _hread", @"long _hread(
+new Completion("_hread", "_hread", @"long _hread(
     HFILE hFile,
     // handle to file
     LPVOID lpBuffer,
@@ -6714,7 +6714,7 @@ new Completion("_hread", "call _hread", @"long _hread(
     // length, in bytes, of data buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_hwrite", "call _hwrite", @"long _hwrite(
+new Completion("_hwrite", "_hwrite", @"long _hwrite(
     HFILE hFile,
     // handle to file
     LPCSTR lpBuffer,
@@ -6723,19 +6723,19 @@ new Completion("_hwrite", "call _hwrite", @"long _hwrite(
     // number of bytes to write
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_lclose", "call _lclose", @"HFILE _lclose(
+new Completion("_lclose", "_lclose", @"HFILE _lclose(
     HFILE hFile
     // handle to file to close
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_lcreat", "call _lcreat", @"HFILE _lcreat(
+new Completion("_lcreat", "_lcreat", @"HFILE _lcreat(
     LPCSTR lpPathName,
     // pointer to name of file to open
     int iAttribute
     // file attribute
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_llseek", "call _llseek", @"LONG _llseek(
+new Completion("_llseek", "_llseek", @"LONG _llseek(
     HFILE hFile,
     // handle to file
     LONG lOffset,
@@ -6744,14 +6744,14 @@ new Completion("_llseek", "call _llseek", @"LONG _llseek(
     // position to move from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_lopen", "call _lopen", @"HFILE _lopen(
+new Completion("_lopen", "_lopen", @"HFILE _lopen(
     LPCSTR lpPathName,
     // pointer to name of file to open
     int iReadWrite
     // file access mode
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_lread", "call _lread", @"UINT _lread(
+new Completion("_lread", "_lread", @"UINT _lread(
     HFILE hFile,
     // handle to file
     LPVOID lpBuffer,
@@ -6760,7 +6760,7 @@ new Completion("_lread", "call _lread", @"UINT _lread(
     // length, in bytes, of data buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("_lwrite", "call _lwrite", @"UINT _lwrite(
+new Completion("_lwrite", "_lwrite", @"UINT _lwrite(
     HFILE hFile,
     // handle to file
     LPCSTR lpBuffer,
@@ -6769,17 +6769,17 @@ new Completion("_lwrite", "call _lwrite", @"UINT _lwrite(
     // number of bytes to write
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AbortSystemShutdownA", "call AbortSystemShutdownA", @"BOOL AbortSystemShutdown(
+new Completion("AbortSystemShutdownA", "AbortSystemShutdownA", @"BOOL AbortSystemShutdown(
     LPTSTR lpMachineName
     // pointer to name of computer to stop shutting down
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AbortSystemShutdownW", "call AbortSystemShutdownW", @"BOOL AbortSystemShutdown(
+new Completion("AbortSystemShutdownW", "AbortSystemShutdownW", @"BOOL AbortSystemShutdown(
     LPTSTR lpMachineName
     // pointer to name of computer to stop shutting down
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AccessCheckAndAuditAlarmA", "call AccessCheckAndAuditAlarmA", @"BOOL AccessCheckAndAuditAlarm(
+new Completion("AccessCheckAndAuditAlarmA", "AccessCheckAndAuditAlarmA", @"BOOL AccessCheckAndAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -6804,7 +6804,7 @@ new Completion("AccessCheckAndAuditAlarmA", "call AccessCheckAndAuditAlarmA", @"
     // pointer to flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AccessCheckAndAuditAlarmW", "call AccessCheckAndAuditAlarmW", @"BOOL AccessCheckAndAuditAlarm(
+new Completion("AccessCheckAndAuditAlarmW", "AccessCheckAndAuditAlarmW", @"BOOL AccessCheckAndAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -6829,27 +6829,27 @@ new Completion("AccessCheckAndAuditAlarmW", "call AccessCheckAndAuditAlarmW", @"
     // pointer to flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAtomA", "call AddAtomA", @"ATOM AddAtom(
+new Completion("AddAtomA", "AddAtomA", @"ATOM AddAtom(
     LPCTSTR lpString
     // pointer to string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddAtomW", "call AddAtomW", @"ATOM AddAtom(
+new Completion("AddAtomW", "AddAtomW", @"ATOM AddAtom(
     LPCTSTR lpString
     // pointer to string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddFontResourceA", "call AddFontResourceA", @"int AddFontResource(
+new Completion("AddFontResourceA", "AddFontResourceA", @"int AddFontResource(
     LPCTSTR lpszFilename
     // pointer to font-resource filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddFontResourceW", "call AddFontResourceW", @"int AddFontResource(
+new Completion("AddFontResourceW", "AddFontResourceW", @"int AddFontResource(
     LPCTSTR lpszFilename
     // pointer to font-resource filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddFormA", "call AddFormA", @"BOOL AddForm(
+new Completion("AddFormA", "AddFormA", @"BOOL AddForm(
     HANDLE hPrinter,
     // handle to printer object
     DWORD Level,
@@ -6858,7 +6858,7 @@ new Completion("AddFormA", "call AddFormA", @"BOOL AddForm(
     // pointer to form info. data structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddFormW", "call AddFormW", @"BOOL AddForm(
+new Completion("AddFormW", "AddFormW", @"BOOL AddForm(
     HANDLE hPrinter,
     // handle to printer object
     DWORD Level,
@@ -6867,7 +6867,7 @@ new Completion("AddFormW", "call AddFormW", @"BOOL AddForm(
     // pointer to form info. data structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddJobA", "call AddJobA", @"BOOL AddJob(
+new Completion("AddJobA", "AddJobA", @"BOOL AddJob(
     HANDLE hPrinter,
     // specifies printer for the print job
     DWORD Level,
@@ -6880,7 +6880,7 @@ new Completion("AddJobA", "call AddJobA", @"BOOL AddJob(
     // pointer to variable to receive size of print job information data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddJobW", "call AddJobW", @"BOOL AddJob(
+new Completion("AddJobW", "AddJobW", @"BOOL AddJob(
     HANDLE hPrinter,
     // specifies printer for the print job
     DWORD Level,
@@ -6893,7 +6893,7 @@ new Completion("AddJobW", "call AddJobW", @"BOOL AddJob(
     // pointer to variable to receive size of print job information data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddMonitorA", "call AddMonitorA", @"BOOL AddMonitor (
+new Completion("AddMonitorA", "AddMonitorA", @"BOOL AddMonitor (
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6902,7 +6902,7 @@ new Completion("AddMonitorA", "call AddMonitorA", @"BOOL AddMonitor (
     // pointer to monitor info. structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddMonitorW", "call AddMonitorW", @"BOOL AddMonitor (
+new Completion("AddMonitorW", "AddMonitorW", @"BOOL AddMonitor (
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6911,7 +6911,7 @@ new Completion("AddMonitorW", "call AddMonitorW", @"BOOL AddMonitor (
     // pointer to monitor info. structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPortA", "call AddPortA", @"BOOL AddPort(
+new Completion("AddPortA", "AddPortA", @"BOOL AddPort(
     LPTSTR pName,
     // pointer to a server name
     HWND hWnd,
@@ -6920,7 +6920,7 @@ new Completion("AddPortA", "call AddPortA", @"BOOL AddPort(
     // pointer to a monitor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPortW", "call AddPortW", @"BOOL AddPort(
+new Completion("AddPortW", "AddPortW", @"BOOL AddPort(
     LPTSTR pName,
     // pointer to a server name
     HWND hWnd,
@@ -6929,7 +6929,7 @@ new Completion("AddPortW", "call AddPortW", @"BOOL AddPort(
     // pointer to a monitor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterA", "call AddPrinterA", @"HANDLE AddPrinter(
+new Completion("AddPrinterA", "AddPrinterA", @"HANDLE AddPrinter(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6938,7 +6938,7 @@ new Completion("AddPrinterA", "call AddPrinterA", @"HANDLE AddPrinter(
     // pointer to structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterW", "call AddPrinterW", @"HANDLE AddPrinter(
+new Completion("AddPrinterW", "AddPrinterW", @"HANDLE AddPrinter(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6947,17 +6947,17 @@ new Completion("AddPrinterW", "call AddPrinterW", @"HANDLE AddPrinter(
     // pointer to structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterConnectionA", "call AddPrinterConnectionA", @"BOOL AddPrinterConnection (
+new Completion("AddPrinterConnectionA", "AddPrinterConnectionA", @"BOOL AddPrinterConnection (
     LPTSTR pName
     // pointer to printer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterConnectionW", "call AddPrinterConnectionW", @"BOOL AddPrinterConnection (
+new Completion("AddPrinterConnectionW", "AddPrinterConnectionW", @"BOOL AddPrinterConnection (
     LPTSTR pName
     // pointer to printer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterDriverA", "call AddPrinterDriverA", @"BOOL AddPrinterDriver(
+new Completion("AddPrinterDriverA", "AddPrinterDriverA", @"BOOL AddPrinterDriver(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6966,7 +6966,7 @@ new Completion("AddPrinterDriverA", "call AddPrinterDriverA", @"BOOL AddPrinterD
     // pointer to printer info. structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrinterDriverW", "call AddPrinterDriverW", @"BOOL AddPrinterDriver(
+new Completion("AddPrinterDriverW", "AddPrinterDriverW", @"BOOL AddPrinterDriver(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -6975,7 +6975,7 @@ new Completion("AddPrinterDriverW", "call AddPrinterDriverW", @"BOOL AddPrinterD
     // pointer to printer info. structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrintProcessorA", "call AddPrintProcessorA", @"BOOL AddPrintProcessor(
+new Completion("AddPrintProcessorA", "AddPrintProcessorA", @"BOOL AddPrintProcessor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -6986,7 +6986,7 @@ new Completion("AddPrintProcessorA", "call AddPrintProcessorA", @"BOOL AddPrintP
     // pointer to print-processor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrintProcessorW", "call AddPrintProcessorW", @"BOOL AddPrintProcessor(
+new Completion("AddPrintProcessorW", "AddPrintProcessorW", @"BOOL AddPrintProcessor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -6997,7 +6997,7 @@ new Completion("AddPrintProcessorW", "call AddPrintProcessorW", @"BOOL AddPrintP
     // pointer to print-processor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrintProvidorA", "call AddPrintProvidorA", @"BOOL AddPrintProvidor (
+new Completion("AddPrintProvidorA", "AddPrintProvidorA", @"BOOL AddPrintProvidor (
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -7006,7 +7006,7 @@ new Completion("AddPrintProvidorA", "call AddPrintProvidorA", @"BOOL AddPrintPro
     // pointer to provider information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AddPrintProvidorW", "call AddPrintProvidorW", @"BOOL AddPrintProvidor (
+new Completion("AddPrintProvidorW", "AddPrintProvidorW", @"BOOL AddPrintProvidor (
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -7015,7 +7015,7 @@ new Completion("AddPrintProvidorW", "call AddPrintProvidorW", @"BOOL AddPrintPro
     // pointer to provider information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdvancedDocumentPropertiesA", "call AdvancedDocumentPropertiesA", @"LONG AdvancedDocumentProperties(
+new Completion("AdvancedDocumentPropertiesA", "AdvancedDocumentPropertiesA", @"LONG AdvancedDocumentProperties(
     HWND hWnd,
     // handle to dialog box's parent window
     HANDLE hPrinter,
@@ -7028,7 +7028,7 @@ new Completion("AdvancedDocumentPropertiesA", "call AdvancedDocumentPropertiesA"
     // pointer to original device mode structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AdvancedDocumentPropertiesW", "call AdvancedDocumentPropertiesW", @"LONG AdvancedDocumentProperties(
+new Completion("AdvancedDocumentPropertiesW", "AdvancedDocumentPropertiesW", @"LONG AdvancedDocumentProperties(
     HWND hWnd,
     // handle to dialog box's parent window
     HANDLE hPrinter,
@@ -7041,7 +7041,7 @@ new Completion("AdvancedDocumentPropertiesW", "call AdvancedDocumentPropertiesW"
     // pointer to original device mode structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AppendMenuA", "call AppendMenuA", @"BOOL AppendMenu(
+new Completion("AppendMenuA", "AppendMenuA", @"BOOL AppendMenu(
     HMENU hMenu,
     // handle to menu to be changed
     UINT uFlags,
@@ -7052,7 +7052,7 @@ new Completion("AppendMenuA", "call AppendMenuA", @"BOOL AppendMenu(
     // menu-item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("AppendMenuW", "call AppendMenuW", @"BOOL AppendMenu(
+new Completion("AppendMenuW", "AppendMenuW", @"BOOL AppendMenu(
     HMENU hMenu,
     // handle to menu to be changed
     UINT uFlags,
@@ -7063,49 +7063,49 @@ new Completion("AppendMenuW", "call AppendMenuW", @"BOOL AppendMenu(
     // menu-item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BackupEventLogA", "call BackupEventLogA", @"BOOL BackupEventLog(
+new Completion("BackupEventLogA", "BackupEventLogA", @"BOOL BackupEventLog(
     HANDLE hEventLog,
     // handle to event log
     LPCTSTR lpBackupFileName
     // name of backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BackupEventLogW", "call BackupEventLogW", @"BOOL BackupEventLog(
+new Completion("BackupEventLogW", "BackupEventLogW", @"BOOL BackupEventLog(
     HANDLE hEventLog,
     // handle to event log
     LPCTSTR lpBackupFileName
     // name of backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BeginUpdateResourceA", "call BeginUpdateResourceA", @"HANDLE BeginUpdateResource(
+new Completion("BeginUpdateResourceA", "BeginUpdateResourceA", @"HANDLE BeginUpdateResource(
     LPCTSTR pFileName,
     // pointer to file in which to update resources
     BOOL bDeleteExistingResources
     // deletion option
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BeginUpdateResourceW", "call BeginUpdateResourceW", @"HANDLE BeginUpdateResource(
+new Completion("BeginUpdateResourceW", "BeginUpdateResourceW", @"HANDLE BeginUpdateResource(
     LPCTSTR pFileName,
     // pointer to file in which to update resources
     BOOL bDeleteExistingResources
     // deletion option
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BuildCommDCBA", "call BuildCommDCBA", @"BOOL BuildCommDCB(
+new Completion("BuildCommDCBA", "BuildCommDCBA", @"BOOL BuildCommDCB(
     LPCTSTR lpDef,
     // pointer to device-control string
     LPDCB lpDCB
     // pointer to device-control block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BuildCommDCBW", "call BuildCommDCBW", @"BOOL BuildCommDCB(
+new Completion("BuildCommDCBW", "BuildCommDCBW", @"BOOL BuildCommDCB(
     LPCTSTR lpDef,
     // pointer to device-control string
     LPDCB lpDCB
     // pointer to device-control block
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BuildCommDCBAndTimeoutsA", "call BuildCommDCBAndTimeoutsA", @"BOOL BuildCommDCBAndTimeouts(
+new Completion("BuildCommDCBAndTimeoutsA", "BuildCommDCBAndTimeoutsA", @"BOOL BuildCommDCBAndTimeouts(
     LPCTSTR lpDef,
     // pointer to the device-control string
     LPDCB lpDCB,
@@ -7114,7 +7114,7 @@ new Completion("BuildCommDCBAndTimeoutsA", "call BuildCommDCBAndTimeoutsA", @"BO
     // pointer to comm. time-out structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("BuildCommDCBAndTimeoutsW", "call BuildCommDCBAndTimeoutsW", @"BOOL BuildCommDCBAndTimeouts(
+new Completion("BuildCommDCBAndTimeoutsW", "BuildCommDCBAndTimeoutsW", @"BOOL BuildCommDCBAndTimeouts(
     LPCTSTR lpDef,
     // pointer to the device-control string
     LPDCB lpDCB,
@@ -7123,21 +7123,21 @@ new Completion("BuildCommDCBAndTimeoutsW", "call BuildCommDCBAndTimeoutsW", @"BO
     // pointer to comm. time-out structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallMsgFilterA", "call CallMsgFilterA", @"BOOL CallMsgFilter(
+new Completion("CallMsgFilterA", "CallMsgFilterA", @"BOOL CallMsgFilter(
     LPMSG lpMsg,
     // pointer to structure with message data
     int nCode
     // hook code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallMsgFilterW", "call CallMsgFilterW", @"BOOL CallMsgFilter(
+new Completion("CallMsgFilterW", "CallMsgFilterW", @"BOOL CallMsgFilter(
     LPMSG lpMsg,
     // pointer to structure with message data
     int nCode
     // hook code
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallNamedPipeA", "call CallNamedPipeA", @"BOOL CallNamedPipe(
+new Completion("CallNamedPipeA", "CallNamedPipeA", @"BOOL CallNamedPipe(
     LPCTSTR lpNamedPipeName,
     // pointer to pipe name
     LPVOID lpInBuffer,
@@ -7154,7 +7154,7 @@ new Completion("CallNamedPipeA", "call CallNamedPipeA", @"BOOL CallNamedPipe(
     // time-out time, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallNamedPipeW", "call CallNamedPipeW", @"BOOL CallNamedPipe(
+new Completion("CallNamedPipeW", "CallNamedPipeW", @"BOOL CallNamedPipe(
     LPCTSTR lpNamedPipeName,
     // pointer to pipe name
     LPVOID lpInBuffer,
@@ -7171,7 +7171,7 @@ new Completion("CallNamedPipeW", "call CallNamedPipeW", @"BOOL CallNamedPipe(
     // time-out time, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallWindowProcA", "call CallWindowProcA", @"LRESULT CallWindowProc(
+new Completion("CallWindowProcA", "CallWindowProcA", @"LRESULT CallWindowProc(
     WNDPROC lpPrevWndFunc,
     // pointer to previous procedure
     HWND hWnd,
@@ -7184,7 +7184,7 @@ new Completion("CallWindowProcA", "call CallWindowProcA", @"LRESULT CallWindowPr
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CallWindowProcW", "call CallWindowProcW", @"LRESULT CallWindowProc(
+new Completion("CallWindowProcW", "CallWindowProcW", @"LRESULT CallWindowProc(
     WNDPROC lpPrevWndFunc,
     // pointer to previous procedure
     HWND hWnd,
@@ -7197,7 +7197,7 @@ new Completion("CallWindowProcW", "call CallWindowProcW", @"LRESULT CallWindowPr
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChangeServiceConfigA", "call ChangeServiceConfigA", @"BOOL ChangeServiceConfig(
+new Completion("ChangeServiceConfigA", "ChangeServiceConfigA", @"BOOL ChangeServiceConfig(
     SC_HANDLE hService,
     // handle to service
     DWORD dwServiceType,
@@ -7222,7 +7222,7 @@ new Completion("ChangeServiceConfigA", "call ChangeServiceConfigA", @"BOOL Chang
     // pointer to display name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChangeServiceConfigW", "call ChangeServiceConfigW", @"BOOL ChangeServiceConfig(
+new Completion("ChangeServiceConfigW", "ChangeServiceConfigW", @"BOOL ChangeServiceConfig(
     SC_HANDLE hService,
     // handle to service
     DWORD dwServiceType,
@@ -7247,69 +7247,69 @@ new Completion("ChangeServiceConfigW", "call ChangeServiceConfigW", @"BOOL Chang
     // pointer to display name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharLowerA", "call CharLowerA", @"LPTSTR CharLower(
+new Completion("CharLowerA", "CharLowerA", @"LPTSTR CharLower(
     LPTSTR lpsz
     // single character or pointer to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharLowerW", "call CharLowerW", @"LPTSTR CharLower(
+new Completion("CharLowerW", "CharLowerW", @"LPTSTR CharLower(
     LPTSTR lpsz
     // single character or pointer to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharLowerBuffA", "call CharLowerBuffA", @"DWORD CharLowerBuff(
+new Completion("CharLowerBuffA", "CharLowerBuffA", @"DWORD CharLowerBuff(
     LPTSTR lpsz,
     // pointer to buffer containing characters to process
     DWORD cchLength
     // number of bytes or characters to process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharLowerBuffW", "call CharLowerBuffW", @"DWORD CharLowerBuff(
+new Completion("CharLowerBuffW", "CharLowerBuffW", @"DWORD CharLowerBuff(
     LPTSTR lpsz,
     // pointer to buffer containing characters to process
     DWORD cchLength
     // number of bytes or characters to process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharNextA", "call CharNextA", @"LPTSTR CharNext(
+new Completion("CharNextA", "CharNextA", @"LPTSTR CharNext(
     LPCTSTR lpsz
     // pointer to current character
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharNextW", "call CharNextW", @"LPTSTR CharNext(
+new Completion("CharNextW", "CharNextW", @"LPTSTR CharNext(
     LPCTSTR lpsz
     // pointer to current character
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharPrevA", "call CharPrevA", @"LPTSTR CharPrev(
+new Completion("CharPrevA", "CharPrevA", @"LPTSTR CharPrev(
     LPCTSTR lpszStart,
     // pointer to first character
     LPCTSTR lpszCurrent
     // pointer to current character
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharPrevW", "call CharPrevW", @"LPTSTR CharPrev(
+new Completion("CharPrevW", "CharPrevW", @"LPTSTR CharPrev(
     LPCTSTR lpszStart,
     // pointer to first character
     LPCTSTR lpszCurrent
     // pointer to current character
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharToOemA", "call CharToOemA", @"BOOL CharToOem(
+new Completion("CharToOemA", "CharToOemA", @"BOOL CharToOem(
     LPCTSTR lpszSrc,
     // pointer to string to translate
     LPSTR lpszDst
     // pointer to translated string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharToOemW", "call CharToOemW", @"BOOL CharToOem(
+new Completion("CharToOemW", "CharToOemW", @"BOOL CharToOem(
     LPCTSTR lpszSrc,
     // pointer to string to translate
     LPSTR lpszDst
     // pointer to translated string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharToOemBuffA", "call CharToOemBuffA", @"BOOL CharToOemBuff(
+new Completion("CharToOemBuffA", "CharToOemBuffA", @"BOOL CharToOemBuff(
     LPCTSTR lpszSrc,
     // pointer to string to translate
     LPSTR lpszDst,
@@ -7318,7 +7318,7 @@ new Completion("CharToOemBuffA", "call CharToOemBuffA", @"BOOL CharToOemBuff(
     // length of string to translate, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharToOemBuffW", "call CharToOemBuffW", @"BOOL CharToOemBuff(
+new Completion("CharToOemBuffW", "CharToOemBuffW", @"BOOL CharToOemBuff(
     LPCTSTR lpszSrc,
     // pointer to string to translate
     LPSTR lpszDst,
@@ -7327,65 +7327,65 @@ new Completion("CharToOemBuffW", "call CharToOemBuffW", @"BOOL CharToOemBuff(
     // length of string to translate, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharUpperA", "call CharUpperA", @"LPTSTR CharUpper(
+new Completion("CharUpperA", "CharUpperA", @"LPTSTR CharUpper(
     LPTSTR lpsz
     // single character or pointer to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharUpperW", "call CharUpperW", @"LPTSTR CharUpper(
+new Completion("CharUpperW", "CharUpperW", @"LPTSTR CharUpper(
     LPTSTR lpsz
     // single character or pointer to string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharUpperBuffA", "call CharUpperBuffA", @"DWORD CharUpperBuff(
+new Completion("CharUpperBuffA", "CharUpperBuffA", @"DWORD CharUpperBuff(
     LPTSTR lpsz,
     // pointer to buffer containing characters to process
     DWORD cchLength
     // number of characters to process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CharUpperBuffW", "call CharUpperBuffW", @"DWORD CharUpperBuff(
+new Completion("CharUpperBuffW", "CharUpperBuffW", @"DWORD CharUpperBuff(
     LPTSTR lpsz,
     // pointer to buffer containing characters to process
     DWORD cchLength
     // number of characters to process
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChooseColorA", "call ChooseColorA", @"BOOL ChooseColor(
+new Completion("ChooseColorA", "ChooseColorA", @"BOOL ChooseColor(
     LPCHOOSECOLOR lpcc
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChooseColorW", "call ChooseColorW", @"BOOL ChooseColor(
+new Completion("ChooseColorW", "ChooseColorW", @"BOOL ChooseColor(
     LPCHOOSECOLOR lpcc
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChooseFontA", "call ChooseFontA", @"BOOL ChooseFont(
+new Completion("ChooseFontA", "ChooseFontA", @"BOOL ChooseFont(
     LPCHOOSEFONT lpcf
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ChooseFontW", "call ChooseFontW", @"BOOL ChooseFont(
+new Completion("ChooseFontW", "ChooseFontW", @"BOOL ChooseFont(
     LPCHOOSEFONT lpcf
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClearEventLogA", "call ClearEventLogA", @"BOOL ClearEventLog(
+new Completion("ClearEventLogA", "ClearEventLogA", @"BOOL ClearEventLog(
     HANDLE hEventLog,
     // handle to event log
     LPCTSTR lpBackupFileName
     // name of backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ClearEventLogW", "call ClearEventLogW", @"BOOL ClearEventLog(
+new Completion("ClearEventLogW", "ClearEventLogW", @"BOOL ClearEventLog(
     HANDLE hEventLog,
     // handle to event log
     LPCTSTR lpBackupFileName
     // name of backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CommConfigDialogA", "call CommConfigDialogA", @"BOOL CommConfigDialog(
+new Completion("CommConfigDialogA", "CommConfigDialogA", @"BOOL CommConfigDialog(
     LPTSTR lpszName,
     // pointer to device name string
     HWND hWnd,
@@ -7394,7 +7394,7 @@ new Completion("CommConfigDialogA", "call CommConfigDialogA", @"BOOL CommConfigD
     // pointer to comm. configuration structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CommConfigDialogW", "call CommConfigDialogW", @"BOOL CommConfigDialog(
+new Completion("CommConfigDialogW", "CommConfigDialogW", @"BOOL CommConfigDialog(
     LPTSTR lpszName,
     // pointer to device name string
     HWND hWnd,
@@ -7403,7 +7403,7 @@ new Completion("CommConfigDialogW", "call CommConfigDialogW", @"BOOL CommConfigD
     // pointer to comm. configuration structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CompareStringA", "call CompareStringA", @"int CompareString(
+new Completion("CompareStringA", "CompareStringA", @"int CompareString(
     LCID Locale,
     // locale identifier
     DWORD dwCmpFlags,
@@ -7418,7 +7418,7 @@ new Completion("CompareStringA", "call CompareStringA", @"int CompareString(
     // size, in bytes or characters, of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CompareStringW", "call CompareStringW", @"int CompareString(
+new Completion("CompareStringW", "CompareStringW", @"int CompareString(
     LCID Locale,
     // locale identifier
     DWORD dwCmpFlags,
@@ -7433,7 +7433,7 @@ new Completion("CompareStringW", "call CompareStringW", @"int CompareString(
     // size, in bytes or characters, of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConfigurePortA", "call ConfigurePortA", @"BOOL ConfigurePort(
+new Completion("ConfigurePortA", "ConfigurePortA", @"BOOL ConfigurePort(
     LPTSTR pName,
     // pointer to server name
     HWND hWnd,
@@ -7442,7 +7442,7 @@ new Completion("ConfigurePortA", "call ConfigurePortA", @"BOOL ConfigurePort(
     // pointer to port name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ConfigurePortW", "call ConfigurePortW", @"BOOL ConfigurePort(
+new Completion("ConfigurePortW", "ConfigurePortW", @"BOOL ConfigurePort(
     LPTSTR pName,
     // pointer to server name
     HWND hWnd,
@@ -7451,7 +7451,7 @@ new Completion("ConfigurePortW", "call ConfigurePortW", @"BOOL ConfigurePort(
     // pointer to port name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyAcceleratorTableA", "call CopyAcceleratorTableA", @"int CopyAcceleratorTable(
+new Completion("CopyAcceleratorTableA", "CopyAcceleratorTableA", @"int CopyAcceleratorTable(
     HACCEL hAccelSrc,
     // handle to accelerator table to copy
     LPACCEL lpAccelDst,
@@ -7460,7 +7460,7 @@ new Completion("CopyAcceleratorTableA", "call CopyAcceleratorTableA", @"int Copy
     // number of entries in table being copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyAcceleratorTableW", "call CopyAcceleratorTableW", @"int CopyAcceleratorTable(
+new Completion("CopyAcceleratorTableW", "CopyAcceleratorTableW", @"int CopyAcceleratorTable(
     HACCEL hAccelSrc,
     // handle to accelerator table to copy
     LPACCEL lpAccelDst,
@@ -7469,21 +7469,21 @@ new Completion("CopyAcceleratorTableW", "call CopyAcceleratorTableW", @"int Copy
     // number of entries in table being copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyEnhMetaFileA", "call CopyEnhMetaFileA", @"HENHMETAFILE CopyEnhMetaFile(
+new Completion("CopyEnhMetaFileA", "CopyEnhMetaFileA", @"HENHMETAFILE CopyEnhMetaFile(
     HENHMETAFILE hemfSrc,
     // handle to an enhanced metafile
     LPCTSTR lpszFile
     // pointer to a filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyEnhMetaFileW", "call CopyEnhMetaFileW", @"HENHMETAFILE CopyEnhMetaFile(
+new Completion("CopyEnhMetaFileW", "CopyEnhMetaFileW", @"HENHMETAFILE CopyEnhMetaFile(
     HENHMETAFILE hemfSrc,
     // handle to an enhanced metafile
     LPCTSTR lpszFile
     // pointer to a filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyFileA", "call CopyFileA", @"BOOL CopyFile(
+new Completion("CopyFileA", "CopyFileA", @"BOOL CopyFile(
     LPCTSTR lpExistingFileName,
     // pointer to name of an existing file
     LPCTSTR lpNewFileName,
@@ -7492,7 +7492,7 @@ new Completion("CopyFileA", "call CopyFileA", @"BOOL CopyFile(
     // flag for operation if file exists
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyFileW", "call CopyFileW", @"BOOL CopyFile(
+new Completion("CopyFileW", "CopyFileW", @"BOOL CopyFile(
     LPCTSTR lpExistingFileName,
     // pointer to name of an existing file
     LPCTSTR lpNewFileName,
@@ -7501,35 +7501,35 @@ new Completion("CopyFileW", "call CopyFileW", @"BOOL CopyFile(
     // flag for operation if file exists
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyMetaFileA", "call CopyMetaFileA", @"HMETAFILE CopyMetaFile(
+new Completion("CopyMetaFileA", "CopyMetaFileA", @"HMETAFILE CopyMetaFile(
     HMETAFILE hmfSrc,
     // handle to a Windows-format metafile
     LPCTSTR lpszFile
     // pointer to a filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CopyMetaFileW", "call CopyMetaFileW", @"HMETAFILE CopyMetaFile(
+new Completion("CopyMetaFileW", "CopyMetaFileW", @"HMETAFILE CopyMetaFile(
     HMETAFILE hmfSrc,
     // handle to a Windows-format metafile
     LPCTSTR lpszFile
     // pointer to a filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateAcceleratorTableA", "call CreateAcceleratorTableA", @"HACCEL CreateAcceleratorTable(
+new Completion("CreateAcceleratorTableA", "CreateAcceleratorTableA", @"HACCEL CreateAcceleratorTable(
     LPACCEL lpaccl,
     // pointer to structure array with accelerator data
     int cEntries
     // number of structures in the array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateAcceleratorTableW", "call CreateAcceleratorTableW", @"HACCEL CreateAcceleratorTable(
+new Completion("CreateAcceleratorTableW", "CreateAcceleratorTableW", @"HACCEL CreateAcceleratorTable(
     LPACCEL lpaccl,
     // pointer to structure array with accelerator data
     int cEntries
     // number of structures in the array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDCA", "call CreateDCA", @"HDC CreateDC(
+new Completion("CreateDCA", "CreateDCA", @"HDC CreateDC(
     LPCTSTR lpszDriver,
     // pointer to string specifying driver name
     LPCTSTR lpszDevice,
@@ -7540,7 +7540,7 @@ new Completion("CreateDCA", "call CreateDCA", @"HDC CreateDC(
     // pointer to optional printer data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDCW", "call CreateDCW", @"HDC CreateDC(
+new Completion("CreateDCW", "CreateDCW", @"HDC CreateDC(
     LPCTSTR lpszDriver,
     // pointer to string specifying driver name
     LPCTSTR lpszDevice,
@@ -7551,7 +7551,7 @@ new Completion("CreateDCW", "call CreateDCW", @"HDC CreateDC(
     // pointer to optional printer data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDesktopA", "call CreateDesktopA", @"HDESK CreateDesktop(
+new Completion("CreateDesktopA", "CreateDesktopA", @"HDESK CreateDesktop(
     LPCTSTR lpszDesktop,
     // name of the new desktop
     LPCTSTR lpszDevice,
@@ -7566,7 +7566,7 @@ new Completion("CreateDesktopA", "call CreateDesktopA", @"HDESK CreateDesktop(
     // specifies security attributes of the desktop
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDesktopW", "call CreateDesktopW", @"HDESK CreateDesktop(
+new Completion("CreateDesktopW", "CreateDesktopW", @"HDESK CreateDesktop(
     LPCTSTR lpszDesktop,
     // name of the new desktop
     LPCTSTR lpszDevice,
@@ -7581,7 +7581,7 @@ new Completion("CreateDesktopW", "call CreateDesktopW", @"HDESK CreateDesktop(
     // specifies security attributes of the desktop
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDialogIndirectParamA", "call CreateDialogIndirectParamA", @"HWND CreateDialogIndirectParam(
+new Completion("CreateDialogIndirectParamA", "CreateDialogIndirectParamA", @"HWND CreateDialogIndirectParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCDLGTEMPLATE lpTemplate,
@@ -7594,7 +7594,7 @@ new Completion("CreateDialogIndirectParamA", "call CreateDialogIndirectParamA", 
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDialogIndirectParamW", "call CreateDialogIndirectParamW", @"HWND CreateDialogIndirectParam(
+new Completion("CreateDialogIndirectParamW", "CreateDialogIndirectParamW", @"HWND CreateDialogIndirectParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCDLGTEMPLATE lpTemplate,
@@ -7607,7 +7607,7 @@ new Completion("CreateDialogIndirectParamW", "call CreateDialogIndirectParamW", 
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDialogParamA", "call CreateDialogParamA", @"HWND CreateDialogParam(
+new Completion("CreateDialogParamA", "CreateDialogParamA", @"HWND CreateDialogParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCTSTR lpTemplateName,
@@ -7620,7 +7620,7 @@ new Completion("CreateDialogParamA", "call CreateDialogParamA", @"HWND CreateDia
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDialogParamW", "call CreateDialogParamW", @"HWND CreateDialogParam(
+new Completion("CreateDialogParamW", "CreateDialogParamW", @"HWND CreateDialogParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCTSTR lpTemplateName,
@@ -7633,21 +7633,21 @@ new Completion("CreateDialogParamW", "call CreateDialogParamW", @"HWND CreateDia
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDirectoryA", "call CreateDirectoryA", @"BOOL CreateDirectory(
+new Completion("CreateDirectoryA", "CreateDirectoryA", @"BOOL CreateDirectory(
     LPCTSTR lpPathName,
     // pointer to a directory path string
     LPSECURITY_ATTRIBUTES lpSecurityAttributes
     // pointer to a security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDirectoryW", "call CreateDirectoryW", @"BOOL CreateDirectory(
+new Completion("CreateDirectoryW", "CreateDirectoryW", @"BOOL CreateDirectory(
     LPCTSTR lpPathName,
     // pointer to a directory path string
     LPSECURITY_ATTRIBUTES lpSecurityAttributes
     // pointer to a security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDirectoryExA", "call CreateDirectoryExA", @"BOOL CreateDirectoryEx(
+new Completion("CreateDirectoryExA", "CreateDirectoryExA", @"BOOL CreateDirectoryEx(
     LPCTSTR lpTemplateDirectory,
     // pointer to path string of template directory
     LPCTSTR lpNewDirectory,
@@ -7656,7 +7656,7 @@ new Completion("CreateDirectoryExA", "call CreateDirectoryExA", @"BOOL CreateDir
     // pointer to security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateDirectoryExW", "call CreateDirectoryExW", @"BOOL CreateDirectoryEx(
+new Completion("CreateDirectoryExW", "CreateDirectoryExW", @"BOOL CreateDirectoryEx(
     LPCTSTR lpTemplateDirectory,
     // pointer to path string of template directory
     LPCTSTR lpNewDirectory,
@@ -7665,7 +7665,7 @@ new Completion("CreateDirectoryExW", "call CreateDirectoryExW", @"BOOL CreateDir
     // pointer to security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEnhMetaFileA", "call CreateEnhMetaFileA", @"HDC CreateEnhMetaFile(
+new Completion("CreateEnhMetaFileA", "CreateEnhMetaFileA", @"HDC CreateEnhMetaFile(
     HDC hdcRef,
     // handle to a reference device context
     LPCTSTR lpFilename,
@@ -7676,7 +7676,7 @@ new Completion("CreateEnhMetaFileA", "call CreateEnhMetaFileA", @"HDC CreateEnhM
     // pointer to an optional description string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEnhMetaFileW", "call CreateEnhMetaFileW", @"HDC CreateEnhMetaFile(
+new Completion("CreateEnhMetaFileW", "CreateEnhMetaFileW", @"HDC CreateEnhMetaFile(
     HDC hdcRef,
     // handle to a reference device context
     LPCTSTR lpFilename,
@@ -7687,7 +7687,7 @@ new Completion("CreateEnhMetaFileW", "call CreateEnhMetaFileW", @"HDC CreateEnhM
     // pointer to an optional description string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEventA", "call CreateEventA", @"HANDLE CreateEvent(
+new Completion("CreateEventA", "CreateEventA", @"HANDLE CreateEvent(
     LPSECURITY_ATTRIBUTES lpEventAttributes,
     // pointer to security attributes
     BOOL bManualReset,
@@ -7698,7 +7698,7 @@ new Completion("CreateEventA", "call CreateEventA", @"HANDLE CreateEvent(
     // pointer to event-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateEventW", "call CreateEventW", @"HANDLE CreateEvent(
+new Completion("CreateEventW", "CreateEventW", @"HANDLE CreateEvent(
     LPSECURITY_ATTRIBUTES lpEventAttributes,
     // pointer to security attributes
     BOOL bManualReset,
@@ -7709,7 +7709,7 @@ new Completion("CreateEventW", "call CreateEventW", @"HANDLE CreateEvent(
     // pointer to event-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFileA", "call CreateFileA", @"HANDLE CreateFile(
+new Completion("CreateFileA", "CreateFileA", @"HANDLE CreateFile(
     LPCTSTR lpFileName,
     // pointer to name of the file
     DWORD dwDesiredAccess,
@@ -7726,7 +7726,7 @@ new Completion("CreateFileA", "call CreateFileA", @"HANDLE CreateFile(
     // handle to file with attributes to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFileW", "call CreateFileW", @"HANDLE CreateFile(
+new Completion("CreateFileW", "CreateFileW", @"HANDLE CreateFile(
     LPCTSTR lpFileName,
     // pointer to name of the file
     DWORD dwDesiredAccess,
@@ -7743,7 +7743,7 @@ new Completion("CreateFileW", "call CreateFileW", @"HANDLE CreateFile(
     // handle to file with attributes to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFileMappingA", "call CreateFileMappingA", @"HANDLE CreateFileMapping(
+new Completion("CreateFileMappingA", "CreateFileMappingA", @"HANDLE CreateFileMapping(
     HANDLE hFile,
     // handle to file to map
     LPSECURITY_ATTRIBUTES lpFileMappingAttributes,
@@ -7758,7 +7758,7 @@ new Completion("CreateFileMappingA", "call CreateFileMappingA", @"HANDLE CreateF
     // name of file-mapping object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFileMappingW", "call CreateFileMappingW", @"HANDLE CreateFileMapping(
+new Completion("CreateFileMappingW", "CreateFileMappingW", @"HANDLE CreateFileMapping(
     HANDLE hFile,
     // handle to file to map
     LPSECURITY_ATTRIBUTES lpFileMappingAttributes,
@@ -7773,7 +7773,7 @@ new Completion("CreateFileMappingW", "call CreateFileMappingW", @"HANDLE CreateF
     // name of file-mapping object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFontA", "call CreateFontA", @"HFONT CreateFont(
+new Completion("CreateFontA", "CreateFontA", @"HFONT CreateFont(
     int nHeight,
     // logical height of font
     int nWidth,
@@ -7804,7 +7804,7 @@ new Completion("CreateFontA", "call CreateFontA", @"HFONT CreateFont(
     // pointer to typeface name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFontW", "call CreateFontW", @"HFONT CreateFont(
+new Completion("CreateFontW", "CreateFontW", @"HFONT CreateFont(
     int nHeight,
     // logical height of font
     int nWidth,
@@ -7835,17 +7835,17 @@ new Completion("CreateFontW", "call CreateFontW", @"HFONT CreateFont(
     // pointer to typeface name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFontIndirectA", "call CreateFontIndirectA", @"HFONT CreateFontIndirect(
+new Completion("CreateFontIndirectA", "CreateFontIndirectA", @"HFONT CreateFontIndirect(
     CONST LOGFONT *lplf
     // pointer to logical font structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateFontIndirectW", "call CreateFontIndirectW", @"HFONT CreateFontIndirect(
+new Completion("CreateFontIndirectW", "CreateFontIndirectW", @"HFONT CreateFontIndirect(
     CONST LOGFONT *lplf
     // pointer to logical font structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateICA", "call CreateICA", @"HDC CreateIC(
+new Completion("CreateICA", "CreateICA", @"HDC CreateIC(
     LPCTSTR lpszDriver,
     // pointer to string specifying driver name
     LPCTSTR lpszDevice,
@@ -7856,7 +7856,7 @@ new Completion("CreateICA", "call CreateICA", @"HDC CreateIC(
     // pointer to optional initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateICW", "call CreateICW", @"HDC CreateIC(
+new Completion("CreateICW", "CreateICW", @"HDC CreateIC(
     LPCTSTR lpszDriver,
     // pointer to string specifying driver name
     LPCTSTR lpszDevice,
@@ -7867,7 +7867,7 @@ new Completion("CreateICW", "call CreateICW", @"HDC CreateIC(
     // pointer to optional initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMailslotA", "call CreateMailslotA", @"HANDLE CreateMailslot(
+new Completion("CreateMailslotA", "CreateMailslotA", @"HANDLE CreateMailslot(
     LPCTSTR lpName,
     // pointer to string for mailslot name
     DWORD nMaxMessageSize,
@@ -7878,7 +7878,7 @@ new Completion("CreateMailslotA", "call CreateMailslotA", @"HANDLE CreateMailslo
     // pointer to security structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMailslotW", "call CreateMailslotW", @"HANDLE CreateMailslot(
+new Completion("CreateMailslotW", "CreateMailslotW", @"HANDLE CreateMailslot(
     LPCTSTR lpName,
     // pointer to string for mailslot name
     DWORD nMaxMessageSize,
@@ -7889,7 +7889,7 @@ new Completion("CreateMailslotW", "call CreateMailslotW", @"HANDLE CreateMailslo
     // pointer to security structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMDIWindowA", "call CreateMDIWindowA", @"HWND CreateMDIWindow(
+new Completion("CreateMDIWindowA", "CreateMDIWindowA", @"HWND CreateMDIWindow(
     LPTSTR lpClassName,
     // pointer to registered child class name
     LPTSTR lpWindowName,
@@ -7912,7 +7912,7 @@ new Completion("CreateMDIWindowA", "call CreateMDIWindowA", @"HWND CreateMDIWind
     // application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMDIWindowW", "call CreateMDIWindowW", @"HWND CreateMDIWindow(
+new Completion("CreateMDIWindowW", "CreateMDIWindowW", @"HWND CreateMDIWindow(
     LPTSTR lpClassName,
     // pointer to registered child class name
     LPTSTR lpWindowName,
@@ -7935,17 +7935,17 @@ new Completion("CreateMDIWindowW", "call CreateMDIWindowW", @"HWND CreateMDIWind
     // application-defined value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMetaFileA", "call CreateMetaFileA", @"HDC CreateMetaFile(
+new Completion("CreateMetaFileA", "CreateMetaFileA", @"HDC CreateMetaFile(
     LPCTSTR lpszFile
     // pointer to filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMetaFileW", "call CreateMetaFileW", @"HDC CreateMetaFile(
+new Completion("CreateMetaFileW", "CreateMetaFileW", @"HDC CreateMetaFile(
     LPCTSTR lpszFile
     // pointer to filename string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMutexA", "call CreateMutexA", @"HANDLE CreateMutex(
+new Completion("CreateMutexA", "CreateMutexA", @"HANDLE CreateMutex(
     LPSECURITY_ATTRIBUTES lpMutexAttributes,
     // pointer to security attributes
     BOOL bInitialOwner,
@@ -7954,7 +7954,7 @@ new Completion("CreateMutexA", "call CreateMutexA", @"HANDLE CreateMutex(
     // pointer to mutex-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateMutexW", "call CreateMutexW", @"HANDLE CreateMutex(
+new Completion("CreateMutexW", "CreateMutexW", @"HANDLE CreateMutex(
     LPSECURITY_ATTRIBUTES lpMutexAttributes,
     // pointer to security attributes
     BOOL bInitialOwner,
@@ -7963,7 +7963,7 @@ new Completion("CreateMutexW", "call CreateMutexW", @"HANDLE CreateMutex(
     // pointer to mutex-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateNamedPipeA", "call CreateNamedPipeA", @"HANDLE CreateNamedPipe(
+new Completion("CreateNamedPipeA", "CreateNamedPipeA", @"HANDLE CreateNamedPipe(
     LPCTSTR lpName,
     // pointer to pipe name
     DWORD dwOpenMode,
@@ -7982,7 +7982,7 @@ new Completion("CreateNamedPipeA", "call CreateNamedPipeA", @"HANDLE CreateNamed
     // pointer to security attributes structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateNamedPipeW", "call CreateNamedPipeW", @"HANDLE CreateNamedPipe(
+new Completion("CreateNamedPipeW", "CreateNamedPipeW", @"HANDLE CreateNamedPipe(
     LPCTSTR lpName,
     // pointer to pipe name
     DWORD dwOpenMode,
@@ -8001,7 +8001,7 @@ new Completion("CreateNamedPipeW", "call CreateNamedPipeW", @"HANDLE CreateNamed
     // pointer to security attributes structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateProcessA", "call CreateProcessA", @"BOOL CreateProcess(
+new Completion("CreateProcessA", "CreateProcessA", @"BOOL CreateProcess(
     LPCTSTR lpApplicationName,
     // pointer to name of executable module
     LPTSTR lpCommandLine,
@@ -8024,7 +8024,7 @@ new Completion("CreateProcessA", "call CreateProcessA", @"BOOL CreateProcess(
     // pointer to PROCESS_INFORMATION
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateProcessW", "call CreateProcessW", @"BOOL CreateProcess(
+new Completion("CreateProcessW", "CreateProcessW", @"BOOL CreateProcess(
     LPCTSTR lpApplicationName,
     // pointer to name of executable module
     LPTSTR lpCommandLine,
@@ -8047,7 +8047,7 @@ new Completion("CreateProcessW", "call CreateProcessW", @"BOOL CreateProcess(
     // pointer to PROCESS_INFORMATION
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateProcessAsUserA", "call CreateProcessAsUserA", @"BOOL CreateProcessAsUser(
+new Completion("CreateProcessAsUserA", "CreateProcessAsUserA", @"BOOL CreateProcessAsUser(
     HANDLE hToken,
     // handle to a token that represents a logged-on user
     LPCTSTR lpApplicationName,
@@ -8072,7 +8072,7 @@ new Completion("CreateProcessAsUserA", "call CreateProcessAsUserA", @"BOOL Creat
     // pointer to PROCESS_INFORMATION
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateProcessAsUserW", "call CreateProcessAsUserW", @"BOOL CreateProcessAsUser(
+new Completion("CreateProcessAsUserW", "CreateProcessAsUserW", @"BOOL CreateProcessAsUser(
     HANDLE hToken,
     // handle to a token that represents a logged-on user
     LPCTSTR lpApplicationName,
@@ -8097,7 +8097,7 @@ new Completion("CreateProcessAsUserW", "call CreateProcessAsUserW", @"BOOL Creat
     // pointer to PROCESS_INFORMATION
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateScalableFontResourceA", "call CreateScalableFontResourceA", @"BOOL CreateScalableFontResource(
+new Completion("CreateScalableFontResourceA", "CreateScalableFontResourceA", @"BOOL CreateScalableFontResource(
     DWORD fdwHidden,
     // flag for read-only embedded font
     LPCTSTR lpszFontRes,
@@ -8108,7 +8108,7 @@ new Completion("CreateScalableFontResourceA", "call CreateScalableFontResourceA"
     // pointer to path to font file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateScalableFontResourceW", "call CreateScalableFontResourceW", @"BOOL CreateScalableFontResource(
+new Completion("CreateScalableFontResourceW", "CreateScalableFontResourceW", @"BOOL CreateScalableFontResource(
     DWORD fdwHidden,
     // flag for read-only embedded font
     LPCTSTR lpszFontRes,
@@ -8119,7 +8119,7 @@ new Completion("CreateScalableFontResourceW", "call CreateScalableFontResourceW"
     // pointer to path to font file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateSemaphoreA", "call CreateSemaphoreA", @"HANDLE CreateSemaphore(
+new Completion("CreateSemaphoreA", "CreateSemaphoreA", @"HANDLE CreateSemaphore(
     LPSECURITY_ATTRIBUTES lpSemaphoreAttributes,
     // pointer to security attributes
     LONG lInitialCount,
@@ -8130,7 +8130,7 @@ new Completion("CreateSemaphoreA", "call CreateSemaphoreA", @"HANDLE CreateSemap
     // pointer to semaphore-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateSemaphoreW", "call CreateSemaphoreW", @"HANDLE CreateSemaphore(
+new Completion("CreateSemaphoreW", "CreateSemaphoreW", @"HANDLE CreateSemaphore(
     LPSECURITY_ATTRIBUTES lpSemaphoreAttributes,
     // pointer to security attributes
     LONG lInitialCount,
@@ -8141,7 +8141,7 @@ new Completion("CreateSemaphoreW", "call CreateSemaphoreW", @"HANDLE CreateSemap
     // pointer to semaphore-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateServiceA", "call CreateServiceA", @"SC_HANDLE CreateService(
+new Completion("CreateServiceA", "CreateServiceA", @"SC_HANDLE CreateService(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     LPCTSTR lpServiceName,
@@ -8170,7 +8170,7 @@ new Completion("CreateServiceA", "call CreateServiceA", @"SC_HANDLE CreateServic
     // pointer to password for service account
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateServiceW", "call CreateServiceW", @"SC_HANDLE CreateService(
+new Completion("CreateServiceW", "CreateServiceW", @"SC_HANDLE CreateService(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     LPCTSTR lpServiceName,
@@ -8199,7 +8199,7 @@ new Completion("CreateServiceW", "call CreateServiceW", @"SC_HANDLE CreateServic
     // pointer to password for service account
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateWindowExA", "call CreateWindowExA", @"HWND CreateWindowEx(
+new Completion("CreateWindowExA", "CreateWindowExA", @"HWND CreateWindowEx(
     DWORD dwExStyle,
     // extended window style
     LPCTSTR lpClassName,
@@ -8226,7 +8226,7 @@ new Completion("CreateWindowExA", "call CreateWindowExA", @"HWND CreateWindowEx(
     // pointer to window-creation data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateWindowExW", "call CreateWindowExW", @"HWND CreateWindowEx(
+new Completion("CreateWindowExW", "CreateWindowExW", @"HWND CreateWindowEx(
     DWORD dwExStyle,
     // extended window style
     LPCTSTR lpClassName,
@@ -8253,7 +8253,7 @@ new Completion("CreateWindowExW", "call CreateWindowExW", @"HWND CreateWindowEx(
     // pointer to window-creation data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateWindowStationA", "call CreateWindowStationA", @"HWINSTA CreateWindowStation(
+new Completion("CreateWindowStationA", "CreateWindowStationA", @"HWINSTA CreateWindowStation(
     LPTSTR lpwinsta,
     // name of the new window station
     DWORD dwReserved,
@@ -8264,7 +8264,7 @@ new Completion("CreateWindowStationA", "call CreateWindowStationA", @"HWINSTA Cr
     // specifies security attributes of the window station
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("CreateWindowStationW", "call CreateWindowStationW", @"HWINSTA CreateWindowStation(
+new Completion("CreateWindowStationW", "CreateWindowStationW", @"HWINSTA CreateWindowStation(
     LPTSTR lpwinsta,
     // name of the new window station
     DWORD dwReserved,
@@ -8275,7 +8275,7 @@ new Completion("CreateWindowStationW", "call CreateWindowStationW", @"HWINSTA Cr
     // specifies security attributes of the window station
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeCreateStringHandleA", "call DdeCreateStringHandleA", @"HSZ DdeCreateStringHandle(
+new Completion("DdeCreateStringHandleA", "DdeCreateStringHandleA", @"HSZ DdeCreateStringHandle(
     DWORD idInst,
     // instance identifier
     LPTSTR psz,
@@ -8284,7 +8284,7 @@ new Completion("DdeCreateStringHandleA", "call DdeCreateStringHandleA", @"HSZ Dd
     // code page identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeCreateStringHandleW", "call DdeCreateStringHandleW", @"HSZ DdeCreateStringHandle(
+new Completion("DdeCreateStringHandleW", "DdeCreateStringHandleW", @"HSZ DdeCreateStringHandle(
     DWORD idInst,
     // instance identifier
     LPTSTR psz,
@@ -8293,7 +8293,7 @@ new Completion("DdeCreateStringHandleW", "call DdeCreateStringHandleW", @"HSZ Dd
     // code page identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeInitializeA", "call DdeInitializeA", @"UINT DdeInitialize(
+new Completion("DdeInitializeA", "DdeInitializeA", @"UINT DdeInitialize(
     LPDWORD pidInst,
     // pointer to instance identifier
     PFNCALLBACK pfnCallback,
@@ -8304,7 +8304,7 @@ new Completion("DdeInitializeA", "call DdeInitializeA", @"UINT DdeInitialize(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeInitializeW", "call DdeInitializeW", @"UINT DdeInitialize(
+new Completion("DdeInitializeW", "DdeInitializeW", @"UINT DdeInitialize(
     LPDWORD pidInst,
     // pointer to instance identifier
     PFNCALLBACK pfnCallback,
@@ -8315,7 +8315,7 @@ new Completion("DdeInitializeW", "call DdeInitializeW", @"UINT DdeInitialize(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeQueryStringA", "call DdeQueryStringA", @"DWORD DdeQueryString(
+new Completion("DdeQueryStringA", "DdeQueryStringA", @"DWORD DdeQueryString(
     DWORD idInst,
     // instance identifier
     HSZ hsz,
@@ -8328,7 +8328,7 @@ new Completion("DdeQueryStringA", "call DdeQueryStringA", @"DWORD DdeQueryString
     // code page identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DdeQueryStringW", "call DdeQueryStringW", @"DWORD DdeQueryString(
+new Completion("DdeQueryStringW", "DdeQueryStringW", @"DWORD DdeQueryString(
     DWORD idInst,
     // instance identifier
     HSZ hsz,
@@ -8341,7 +8341,7 @@ new Completion("DdeQueryStringW", "call DdeQueryStringW", @"DWORD DdeQueryString
     // code page identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefDlgProcA", "call DefDlgProcA", @"LRESULT DefDlgProc(
+new Completion("DefDlgProcA", "DefDlgProcA", @"LRESULT DefDlgProc(
     HWND hDlg,
     // handle to dialog box
     UINT Msg,
@@ -8352,7 +8352,7 @@ new Completion("DefDlgProcA", "call DefDlgProcA", @"LRESULT DefDlgProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefDlgProcW", "call DefDlgProcW", @"LRESULT DefDlgProc(
+new Completion("DefDlgProcW", "DefDlgProcW", @"LRESULT DefDlgProc(
     HWND hDlg,
     // handle to dialog box
     UINT Msg,
@@ -8363,7 +8363,7 @@ new Completion("DefDlgProcW", "call DefDlgProcW", @"LRESULT DefDlgProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefFrameProcA", "call DefFrameProcA", @"LRESULT DefFrameProc(
+new Completion("DefFrameProcA", "DefFrameProcA", @"LRESULT DefFrameProc(
     HWND hWnd,
     // handle to MDI frame window
     HWND hWndMDIClient,
@@ -8376,7 +8376,7 @@ new Completion("DefFrameProcA", "call DefFrameProcA", @"LRESULT DefFrameProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefFrameProcW", "call DefFrameProcW", @"LRESULT DefFrameProc(
+new Completion("DefFrameProcW", "DefFrameProcW", @"LRESULT DefFrameProc(
     HWND hWnd,
     // handle to MDI frame window
     HWND hWndMDIClient,
@@ -8389,7 +8389,7 @@ new Completion("DefFrameProcW", "call DefFrameProcW", @"LRESULT DefFrameProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefineDosDeviceA", "call DefineDosDeviceA", @"BOOL DefineDosDevice(
+new Completion("DefineDosDeviceA", "DefineDosDeviceA", @"BOOL DefineDosDevice(
     DWORD dwFlags,
     // flags specifying aspects of device definition
     LPCTSTR lpDeviceName,
@@ -8398,7 +8398,7 @@ new Completion("DefineDosDeviceA", "call DefineDosDeviceA", @"BOOL DefineDosDevi
     // pointer to MS-DOS or path string for 32-bit Windows
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefineDosDeviceW", "call DefineDosDeviceW", @"BOOL DefineDosDevice(
+new Completion("DefineDosDeviceW", "DefineDosDeviceW", @"BOOL DefineDosDevice(
     DWORD dwFlags,
     // flags specifying aspects of device definition
     LPCTSTR lpDeviceName,
@@ -8407,7 +8407,7 @@ new Completion("DefineDosDeviceW", "call DefineDosDeviceW", @"BOOL DefineDosDevi
     // pointer to MS-DOS or path string for 32-bit Windows
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefMDIChildProcA", "call DefMDIChildProcA", @"LRESULT DefMDIChildProc(
+new Completion("DefMDIChildProcA", "DefMDIChildProcA", @"LRESULT DefMDIChildProc(
     HWND hWnd,
     // handle to MDI child window
     UINT uMsg,
@@ -8418,7 +8418,7 @@ new Completion("DefMDIChildProcA", "call DefMDIChildProcA", @"LRESULT DefMDIChil
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefMDIChildProcW", "call DefMDIChildProcW", @"LRESULT DefMDIChildProc(
+new Completion("DefMDIChildProcW", "DefMDIChildProcW", @"LRESULT DefMDIChildProc(
     HWND hWnd,
     // handle to MDI child window
     UINT uMsg,
@@ -8429,7 +8429,7 @@ new Completion("DefMDIChildProcW", "call DefMDIChildProcW", @"LRESULT DefMDIChil
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefWindowProcA", "call DefWindowProcA", @"LRESULT DefWindowProc(
+new Completion("DefWindowProcA", "DefWindowProcA", @"LRESULT DefWindowProc(
     HWND hWnd,
     // handle to window
     UINT Msg,
@@ -8440,7 +8440,7 @@ new Completion("DefWindowProcA", "call DefWindowProcA", @"LRESULT DefWindowProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DefWindowProcW", "call DefWindowProcW", @"LRESULT DefWindowProc(
+new Completion("DefWindowProcW", "DefWindowProcW", @"LRESULT DefWindowProc(
     HWND hWnd,
     // handle to window
     UINT Msg,
@@ -8451,31 +8451,31 @@ new Completion("DefWindowProcW", "call DefWindowProcW", @"LRESULT DefWindowProc(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteFileA", "call DeleteFileA", @"BOOL DeleteFile(
+new Completion("DeleteFileA", "DeleteFileA", @"BOOL DeleteFile(
     LPCTSTR lpFileName
     // pointer to name of file to delete
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteFileW", "call DeleteFileW", @"BOOL DeleteFile(
+new Completion("DeleteFileW", "DeleteFileW", @"BOOL DeleteFile(
     LPCTSTR lpFileName
     // pointer to name of file to delete
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteFormA", "call DeleteFormA", @"BOOL DeleteForm(
+new Completion("DeleteFormA", "DeleteFormA", @"BOOL DeleteForm(
     HANDLE hPrinter,
     // handle to printer object
     LPTSTR pFormName
     // pointer to form name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteFormW", "call DeleteFormW", @"BOOL DeleteForm(
+new Completion("DeleteFormW", "DeleteFormW", @"BOOL DeleteForm(
     HANDLE hPrinter,
     // handle to printer object
     LPTSTR pFormName
     // pointer to form name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteMonitorA", "call DeleteMonitorA", @"BOOL DeleteMonitor(
+new Completion("DeleteMonitorA", "DeleteMonitorA", @"BOOL DeleteMonitor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8484,7 +8484,7 @@ new Completion("DeleteMonitorA", "call DeleteMonitorA", @"BOOL DeleteMonitor(
     // pointer to monitor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeleteMonitorW", "call DeleteMonitorW", @"BOOL DeleteMonitor(
+new Completion("DeleteMonitorW", "DeleteMonitorW", @"BOOL DeleteMonitor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8493,7 +8493,7 @@ new Completion("DeleteMonitorW", "call DeleteMonitorW", @"BOOL DeleteMonitor(
     // pointer to monitor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePortA", "call DeletePortA", @"BOOL DeletePort(
+new Completion("DeletePortA", "DeletePortA", @"BOOL DeletePort(
     LPTSTR pName,
     // pointer to server name
     HWND hWnd,
@@ -8502,7 +8502,7 @@ new Completion("DeletePortA", "call DeletePortA", @"BOOL DeletePort(
     // pointer to port name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePortW", "call DeletePortW", @"BOOL DeletePort(
+new Completion("DeletePortW", "DeletePortW", @"BOOL DeletePort(
     LPTSTR pName,
     // pointer to server name
     HWND hWnd,
@@ -8511,17 +8511,17 @@ new Completion("DeletePortW", "call DeletePortW", @"BOOL DeletePort(
     // pointer to port name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrinterConnectionA", "call DeletePrinterConnectionA", @"BOOL DeletePrinterConnection (
+new Completion("DeletePrinterConnectionA", "DeletePrinterConnectionA", @"BOOL DeletePrinterConnection (
     LPTSTR pName
     // pointer to printer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrinterConnectionW", "call DeletePrinterConnectionW", @"BOOL DeletePrinterConnection (
+new Completion("DeletePrinterConnectionW", "DeletePrinterConnectionW", @"BOOL DeletePrinterConnection (
     LPTSTR pName
     // pointer to printer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrinterDriverA", "call DeletePrinterDriverA", @"BOOL DeletePrinterDriver(
+new Completion("DeletePrinterDriverA", "DeletePrinterDriverA", @"BOOL DeletePrinterDriver(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8530,7 +8530,7 @@ new Completion("DeletePrinterDriverA", "call DeletePrinterDriverA", @"BOOL Delet
     // pointer to driver name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrinterDriverW", "call DeletePrinterDriverW", @"BOOL DeletePrinterDriver(
+new Completion("DeletePrinterDriverW", "DeletePrinterDriverW", @"BOOL DeletePrinterDriver(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8539,7 +8539,7 @@ new Completion("DeletePrinterDriverW", "call DeletePrinterDriverW", @"BOOL Delet
     // pointer to driver name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrintProcessorA", "call DeletePrintProcessorA", @"BOOL DeletePrintProcessor(
+new Completion("DeletePrintProcessorA", "DeletePrintProcessorA", @"BOOL DeletePrintProcessor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8548,7 +8548,7 @@ new Completion("DeletePrintProcessorA", "call DeletePrintProcessorA", @"BOOL Del
     // pointer to processor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrintProcessorW", "call DeletePrintProcessorW", @"BOOL DeletePrintProcessor(
+new Completion("DeletePrintProcessorW", "DeletePrintProcessorW", @"BOOL DeletePrintProcessor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8557,7 +8557,7 @@ new Completion("DeletePrintProcessorW", "call DeletePrintProcessorW", @"BOOL Del
     // pointer to processor name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrintProvidorA", "call DeletePrintProvidorA", @"BOOL DeletePrintProvidor(
+new Completion("DeletePrintProvidorA", "DeletePrintProvidorA", @"BOOL DeletePrintProvidor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8566,7 +8566,7 @@ new Completion("DeletePrintProvidorA", "call DeletePrintProvidorA", @"BOOL Delet
     // pointer to provider name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeletePrintProvidorW", "call DeletePrintProvidorW", @"BOOL DeletePrintProvidor(
+new Completion("DeletePrintProvidorW", "DeletePrintProvidorW", @"BOOL DeletePrintProvidor(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -8575,7 +8575,7 @@ new Completion("DeletePrintProvidorW", "call DeletePrintProvidorW", @"BOOL Delet
     // pointer to provider name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeviceCapabilitiesA", "call DeviceCapabilitiesA", @"DWORD DeviceCapabilities(
+new Completion("DeviceCapabilitiesA", "DeviceCapabilitiesA", @"DWORD DeviceCapabilities(
     LPCTSTR pDevice,
     // pointer to a printer-name string
     LPCTSTR pPort,
@@ -8588,7 +8588,7 @@ new Completion("DeviceCapabilitiesA", "call DeviceCapabilitiesA", @"DWORD Device
     // pointer to structure with device data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DeviceCapabilitiesW", "call DeviceCapabilitiesW", @"DWORD DeviceCapabilities(
+new Completion("DeviceCapabilitiesW", "DeviceCapabilitiesW", @"DWORD DeviceCapabilities(
     LPCTSTR pDevice,
     // pointer to a printer-name string
     LPCTSTR pPort,
@@ -8601,7 +8601,7 @@ new Completion("DeviceCapabilitiesW", "call DeviceCapabilitiesW", @"DWORD Device
     // pointer to structure with device data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DialogBoxIndirectParamA", "call DialogBoxIndirectParamA", @"int DialogBoxIndirectParam(
+new Completion("DialogBoxIndirectParamA", "DialogBoxIndirectParamA", @"int DialogBoxIndirectParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCDLGTEMPLATE hDialogTemplate,
@@ -8614,7 +8614,7 @@ new Completion("DialogBoxIndirectParamA", "call DialogBoxIndirectParamA", @"int 
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DialogBoxIndirectParamW", "call DialogBoxIndirectParamW", @"int DialogBoxIndirectParam(
+new Completion("DialogBoxIndirectParamW", "DialogBoxIndirectParamW", @"int DialogBoxIndirectParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCDLGTEMPLATE hDialogTemplate,
@@ -8627,7 +8627,7 @@ new Completion("DialogBoxIndirectParamW", "call DialogBoxIndirectParamW", @"int 
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DialogBoxParamA", "call DialogBoxParamA", @"int DialogBoxParam(
+new Completion("DialogBoxParamA", "DialogBoxParamA", @"int DialogBoxParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCTSTR lpTemplateName,
@@ -8640,7 +8640,7 @@ new Completion("DialogBoxParamA", "call DialogBoxParamA", @"int DialogBoxParam(
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DialogBoxParamW", "call DialogBoxParamW", @"int DialogBoxParam(
+new Completion("DialogBoxParamW", "DialogBoxParamW", @"int DialogBoxParam(
     HINSTANCE hInstance,
     // handle to application instance
     LPCTSTR lpTemplateName,
@@ -8653,17 +8653,17 @@ new Completion("DialogBoxParamW", "call DialogBoxParamW", @"int DialogBoxParam(
     // initialization value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DispatchMessageA", "call DispatchMessageA", @"LONG DispatchMessage(
+new Completion("DispatchMessageA", "DispatchMessageA", @"LONG DispatchMessage(
     CONST MSG *lpmsg
     // pointer to structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DispatchMessageW", "call DispatchMessageW", @"LONG DispatchMessage(
+new Completion("DispatchMessageW", "DispatchMessageW", @"LONG DispatchMessage(
     CONST MSG *lpmsg
     // pointer to structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirListA", "call DlgDirListA", @"int DlgDirList(
+new Completion("DlgDirListA", "DlgDirListA", @"int DlgDirList(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpPathSpec,
@@ -8676,7 +8676,7 @@ new Completion("DlgDirListA", "call DlgDirListA", @"int DlgDirList(
     // file attributes to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirListW", "call DlgDirListW", @"int DlgDirList(
+new Completion("DlgDirListW", "DlgDirListW", @"int DlgDirList(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpPathSpec,
@@ -8689,7 +8689,7 @@ new Completion("DlgDirListW", "call DlgDirListW", @"int DlgDirList(
     // file attributes to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirListComboBoxA", "call DlgDirListComboBoxA", @"int DlgDirListComboBox(
+new Completion("DlgDirListComboBoxA", "DlgDirListComboBoxA", @"int DlgDirListComboBox(
     HWND hDlg,
     // handle to dialog box with combo box
     LPTSTR lpPathSpec,
@@ -8702,7 +8702,7 @@ new Completion("DlgDirListComboBoxA", "call DlgDirListComboBoxA", @"int DlgDirLi
     // file attributes to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirListComboBoxW", "call DlgDirListComboBoxW", @"int DlgDirListComboBox(
+new Completion("DlgDirListComboBoxW", "DlgDirListComboBoxW", @"int DlgDirListComboBox(
     HWND hDlg,
     // handle to dialog box with combo box
     LPTSTR lpPathSpec,
@@ -8715,7 +8715,7 @@ new Completion("DlgDirListComboBoxW", "call DlgDirListComboBoxW", @"int DlgDirLi
     // file attributes to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirSelectComboBoxExA", "call DlgDirSelectComboBoxExA", @"BOOL DlgDirSelectComboBoxEx(
+new Completion("DlgDirSelectComboBoxExA", "DlgDirSelectComboBoxExA", @"BOOL DlgDirSelectComboBoxEx(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpString,
@@ -8726,7 +8726,7 @@ new Completion("DlgDirSelectComboBoxExA", "call DlgDirSelectComboBoxExA", @"BOOL
     // identifier of combo box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirSelectComboBoxExW", "call DlgDirSelectComboBoxExW", @"BOOL DlgDirSelectComboBoxEx(
+new Completion("DlgDirSelectComboBoxExW", "DlgDirSelectComboBoxExW", @"BOOL DlgDirSelectComboBoxEx(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpString,
@@ -8737,7 +8737,7 @@ new Completion("DlgDirSelectComboBoxExW", "call DlgDirSelectComboBoxExW", @"BOOL
     // identifier of combo box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirSelectExA", "call DlgDirSelectExA", @"BOOL DlgDirSelectEx(
+new Completion("DlgDirSelectExA", "DlgDirSelectExA", @"BOOL DlgDirSelectEx(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpString,
@@ -8748,7 +8748,7 @@ new Completion("DlgDirSelectExA", "call DlgDirSelectExA", @"BOOL DlgDirSelectEx(
     // identifier of list box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DlgDirSelectExW", "call DlgDirSelectExW", @"BOOL DlgDirSelectEx(
+new Completion("DlgDirSelectExW", "DlgDirSelectExW", @"BOOL DlgDirSelectEx(
     HWND hDlg,
     // handle to dialog box with list box
     LPTSTR lpString,
@@ -8759,7 +8759,7 @@ new Completion("DlgDirSelectExW", "call DlgDirSelectExW", @"BOOL DlgDirSelectEx(
     // identifier of list box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DocumentPropertiesA", "call DocumentPropertiesA", @"LONG DocumentProperties(
+new Completion("DocumentPropertiesA", "DocumentPropertiesA", @"LONG DocumentProperties(
     HWND hWnd,
     // handle to window that displays dialog box
     HANDLE hPrinter,
@@ -8774,7 +8774,7 @@ new Completion("DocumentPropertiesA", "call DocumentPropertiesA", @"LONG Documen
     // mode flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DocumentPropertiesW", "call DocumentPropertiesW", @"LONG DocumentProperties(
+new Completion("DocumentPropertiesW", "DocumentPropertiesW", @"LONG DocumentProperties(
     HWND hWnd,
     // handle to window that displays dialog box
     HANDLE hPrinter,
@@ -8789,7 +8789,7 @@ new Completion("DocumentPropertiesW", "call DocumentPropertiesW", @"LONG Documen
     // mode flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragQueryFileA", "call DragQueryFileA", @"UINT DragQueryFile(
+new Completion("DragQueryFileA", "DragQueryFileA", @"UINT DragQueryFile(
     HDROP hDrop,
     // handle to structure for dropped files
     UINT iFile,
@@ -8800,7 +8800,7 @@ new Completion("DragQueryFileA", "call DragQueryFileA", @"UINT DragQueryFile(
     // size of buffer for filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DragQueryFileW", "call DragQueryFileW", @"UINT DragQueryFile(
+new Completion("DragQueryFileW", "DragQueryFileW", @"UINT DragQueryFile(
     HDROP hDrop,
     // handle to structure for dropped files
     UINT iFile,
@@ -8811,7 +8811,7 @@ new Completion("DragQueryFileW", "call DragQueryFileW", @"UINT DragQueryFile(
     // size of buffer for filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawTextA", "call DrawTextA", @"int DrawText(
+new Completion("DrawTextA", "DrawTextA", @"int DrawText(
     HDC hDC,
     // handle to device context
     LPCTSTR lpString,
@@ -8824,7 +8824,7 @@ new Completion("DrawTextA", "call DrawTextA", @"int DrawText(
     // text-drawing flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("DrawTextW", "call DrawTextW", @"int DrawText(
+new Completion("DrawTextW", "DrawTextW", @"int DrawText(
     HDC hDC,
     // handle to device context
     LPCTSTR lpString,
@@ -8837,21 +8837,21 @@ new Completion("DrawTextW", "call DrawTextW", @"int DrawText(
     // text-drawing flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndUpdateResourceA", "call EndUpdateResourceA", @"BOOL EndUpdateResource(
+new Completion("EndUpdateResourceA", "EndUpdateResourceA", @"BOOL EndUpdateResource(
     HANDLE hUpdate,
     // update-file handle
     BOOL fDiscard
     // write flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EndUpdateResourceW", "call EndUpdateResourceW", @"BOOL EndUpdateResource(
+new Completion("EndUpdateResourceW", "EndUpdateResourceW", @"BOOL EndUpdateResource(
     HANDLE hUpdate,
     // update-file handle
     BOOL fDiscard
     // write flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumCalendarInfoA", "call EnumCalendarInfoA", @"BOOL EnumCalendarInfo(
+new Completion("EnumCalendarInfoA", "EnumCalendarInfoA", @"BOOL EnumCalendarInfo(
     CALINFO_ENUMPROC lpCalInfoEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -8862,7 +8862,7 @@ new Completion("EnumCalendarInfoA", "call EnumCalendarInfoA", @"BOOL EnumCalenda
     // type of calendar information of interest
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumCalendarInfoW", "call EnumCalendarInfoW", @"BOOL EnumCalendarInfo(
+new Completion("EnumCalendarInfoW", "EnumCalendarInfoW", @"BOOL EnumCalendarInfo(
     CALINFO_ENUMPROC lpCalInfoEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -8873,7 +8873,7 @@ new Completion("EnumCalendarInfoW", "call EnumCalendarInfoW", @"BOOL EnumCalenda
     // type of calendar information of interest
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDateFormatsA", "call EnumDateFormatsA", @"BOOL EnumDateFormats(
+new Completion("EnumDateFormatsA", "EnumDateFormatsA", @"BOOL EnumDateFormats(
     DATEFMT_ENUMPROC lpDateFmtEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -8882,7 +8882,7 @@ new Completion("EnumDateFormatsA", "call EnumDateFormatsA", @"BOOL EnumDateForma
     // date formats to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDateFormatsW", "call EnumDateFormatsW", @"BOOL EnumDateFormats(
+new Completion("EnumDateFormatsW", "EnumDateFormatsW", @"BOOL EnumDateFormats(
     DATEFMT_ENUMPROC lpDateFmtEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -8891,7 +8891,7 @@ new Completion("EnumDateFormatsW", "call EnumDateFormatsW", @"BOOL EnumDateForma
     // date formats to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDependentServicesA", "call EnumDependentServicesA", @"BOOL EnumDependentServices(
+new Completion("EnumDependentServicesA", "EnumDependentServicesA", @"BOOL EnumDependentServices(
     SC_HANDLE hService,
     // handle to service
     DWORD dwServiceState,
@@ -8906,7 +8906,7 @@ new Completion("EnumDependentServicesA", "call EnumDependentServicesA", @"BOOL E
     // pointer to variable for number returned
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDependentServicesW", "call EnumDependentServicesW", @"BOOL EnumDependentServices(
+new Completion("EnumDependentServicesW", "EnumDependentServicesW", @"BOOL EnumDependentServices(
     SC_HANDLE hService,
     // handle to service
     DWORD dwServiceState,
@@ -8921,7 +8921,7 @@ new Completion("EnumDependentServicesW", "call EnumDependentServicesW", @"BOOL E
     // pointer to variable for number returned
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDesktopsA", "call EnumDesktopsA", @"BOOL EnumDesktops(
+new Completion("EnumDesktopsA", "EnumDesktopsA", @"BOOL EnumDesktops(
     HWINSTA hwinsta,
     // handle to window station to enumerate
     DESKTOPENUMPROC lpEnumFunc,
@@ -8930,7 +8930,7 @@ new Completion("EnumDesktopsA", "call EnumDesktopsA", @"BOOL EnumDesktops(
     // 32-bit value to pass to the callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDesktopsW", "call EnumDesktopsW", @"BOOL EnumDesktops(
+new Completion("EnumDesktopsW", "EnumDesktopsW", @"BOOL EnumDesktops(
     HWINSTA hwinsta,
     // handle to window station to enumerate
     DESKTOPENUMPROC lpEnumFunc,
@@ -8939,7 +8939,7 @@ new Completion("EnumDesktopsW", "call EnumDesktopsW", @"BOOL EnumDesktops(
     // 32-bit value to pass to the callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDisplaySettingsA", "call EnumDisplaySettingsA", @"BOOL EnumDisplaySettings(
+new Completion("EnumDisplaySettingsA", "EnumDisplaySettingsA", @"BOOL EnumDisplaySettings(
     LPCTSTR lpszDeviceName,
     // specifies the display device
     DWORD iModeNum,
@@ -8948,7 +8948,7 @@ new Completion("EnumDisplaySettingsA", "call EnumDisplaySettingsA", @"BOOL EnumD
     // points to structure to receive settings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumDisplaySettingsW", "call EnumDisplaySettingsW", @"BOOL EnumDisplaySettings(
+new Completion("EnumDisplaySettingsW", "EnumDisplaySettingsW", @"BOOL EnumDisplaySettings(
     LPCTSTR lpszDeviceName,
     // specifies the display device
     DWORD iModeNum,
@@ -8957,7 +8957,7 @@ new Completion("EnumDisplaySettingsW", "call EnumDisplaySettingsW", @"BOOL EnumD
     // points to structure to receive settings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFontFamiliesA", "call EnumFontFamiliesA", @"int EnumFontFamilies(
+new Completion("EnumFontFamiliesA", "EnumFontFamiliesA", @"int EnumFontFamilies(
     HDC hdc,
     // handle to device control
     LPCTSTR lpszFamily,
@@ -8968,7 +8968,7 @@ new Completion("EnumFontFamiliesA", "call EnumFontFamiliesA", @"int EnumFontFami
     // address of application-supplied data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFontFamiliesW", "call EnumFontFamiliesW", @"int EnumFontFamilies(
+new Completion("EnumFontFamiliesW", "EnumFontFamiliesW", @"int EnumFontFamilies(
     HDC hdc,
     // handle to device control
     LPCTSTR lpszFamily,
@@ -8979,7 +8979,7 @@ new Completion("EnumFontFamiliesW", "call EnumFontFamiliesW", @"int EnumFontFami
     // address of application-supplied data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFontsA", "call EnumFontsA", @"int EnumFonts(
+new Completion("EnumFontsA", "EnumFontsA", @"int EnumFonts(
     HDC hdc,
     // handle to device context
     LPCTSTR lpFaceName,
@@ -8990,7 +8990,7 @@ new Completion("EnumFontsA", "call EnumFontsA", @"int EnumFonts(
     // address of application-supplied data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFontsW", "call EnumFontsW", @"int EnumFonts(
+new Completion("EnumFontsW", "EnumFontsW", @"int EnumFonts(
     HDC hdc,
     // handle to device context
     LPCTSTR lpFaceName,
@@ -9001,7 +9001,7 @@ new Completion("EnumFontsW", "call EnumFontsW", @"int EnumFonts(
     // address of application-supplied data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFormsA", "call EnumFormsA", @"BOOL EnumForms(
+new Completion("EnumFormsA", "EnumFormsA", @"BOOL EnumForms(
     HANDLE hPrinter,
     // handle to printer object
     DWORD Level,
@@ -9016,7 +9016,7 @@ new Completion("EnumFormsA", "call EnumFormsA", @"BOOL EnumForms(
     // points to variable to receive count of structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumFormsW", "call EnumFormsW", @"BOOL EnumForms(
+new Completion("EnumFormsW", "EnumFormsW", @"BOOL EnumForms(
     HANDLE hPrinter,
     // handle to printer object
     DWORD Level,
@@ -9031,7 +9031,7 @@ new Completion("EnumFormsW", "call EnumFormsW", @"BOOL EnumForms(
     // points to variable to receive count of structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumJobsA", "call EnumJobsA", @"BOOL EnumJobs(
+new Completion("EnumJobsA", "EnumJobsA", @"BOOL EnumJobs(
     HANDLE hPrinter,
     // handle to printer object
     DWORD FirstJob,
@@ -9050,7 +9050,7 @@ new Completion("EnumJobsA", "call EnumJobsA", @"BOOL EnumJobs(
     // addr. of variable with no. of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumJobsW", "call EnumJobsW", @"BOOL EnumJobs(
+new Completion("EnumJobsW", "EnumJobsW", @"BOOL EnumJobs(
     HANDLE hPrinter,
     // handle to printer object
     DWORD FirstJob,
@@ -9069,7 +9069,7 @@ new Completion("EnumJobsW", "call EnumJobsW", @"BOOL EnumJobs(
     // addr. of variable with no. of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumMonitorsA", "call EnumMonitorsA", @"BOOL EnumMonitors(
+new Completion("EnumMonitorsA", "EnumMonitorsA", @"BOOL EnumMonitors(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -9084,7 +9084,7 @@ new Completion("EnumMonitorsA", "call EnumMonitorsA", @"BOOL EnumMonitors(
     // addr. of variable with no. of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumMonitorsW", "call EnumMonitorsW", @"BOOL EnumMonitors(
+new Completion("EnumMonitorsW", "EnumMonitorsW", @"BOOL EnumMonitors(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -9099,7 +9099,7 @@ new Completion("EnumMonitorsW", "call EnumMonitorsW", @"BOOL EnumMonitors(
     // addr. of variable with no. of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPortsA", "call EnumPortsA", @"BOOL EnumPorts(
+new Completion("EnumPortsA", "EnumPortsA", @"BOOL EnumPorts(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -9115,7 +9115,7 @@ new Completion("EnumPortsA", "call EnumPortsA", @"BOOL EnumPorts(
     // pointer to number of PORT_INFO_*. structures stored into buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPortsW", "call EnumPortsW", @"BOOL EnumPorts(
+new Completion("EnumPortsW", "EnumPortsW", @"BOOL EnumPorts(
     LPTSTR pName,
     // pointer to server name
     DWORD Level,
@@ -9131,7 +9131,7 @@ new Completion("EnumPortsW", "call EnumPortsW", @"BOOL EnumPorts(
     // pointer to number of PORT_INFO_*. structures stored into buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrinterDriversA", "call EnumPrinterDriversA", @"BOOL EnumPrinterDrivers(
+new Completion("EnumPrinterDriversA", "EnumPrinterDriversA", @"BOOL EnumPrinterDrivers(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -9148,7 +9148,7 @@ new Completion("EnumPrinterDriversA", "call EnumPrinterDriversA", @"BOOL EnumPri
     // pointer to number of DRIVER_INFO. structures
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrinterDriversW", "call EnumPrinterDriversW", @"BOOL EnumPrinterDrivers(
+new Completion("EnumPrinterDriversW", "EnumPrinterDriversW", @"BOOL EnumPrinterDrivers(
     LPTSTR pName,
     // pointer to server name
     LPTSTR pEnvironment,
@@ -9165,7 +9165,7 @@ new Completion("EnumPrinterDriversW", "call EnumPrinterDriversW", @"BOOL EnumPri
     // pointer to number of DRIVER_INFO. structures
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintersA", "call EnumPrintersA", @"BOOL EnumPrinters(
+new Completion("EnumPrintersA", "EnumPrintersA", @"BOOL EnumPrinters(
     DWORD Flags,
     // types of printer objects to enumerate
     LPTSTR Name,
@@ -9182,7 +9182,7 @@ new Completion("EnumPrintersA", "call EnumPrintersA", @"BOOL EnumPrinters(
     // pointer to variable with no. of printer info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintersW", "call EnumPrintersW", @"BOOL EnumPrinters(
+new Completion("EnumPrintersW", "EnumPrintersW", @"BOOL EnumPrinters(
     DWORD Flags,
     // types of printer objects to enumerate
     LPTSTR Name,
@@ -9199,7 +9199,7 @@ new Completion("EnumPrintersW", "call EnumPrintersW", @"BOOL EnumPrinters(
     // pointer to variable with no. of printer info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintProcessorDatatypesA", "call EnumPrintProcessorDatatypesA", @"BOOL EnumPrintProcessorDatatypes(
+new Completion("EnumPrintProcessorDatatypesA", "EnumPrintProcessorDatatypesA", @"BOOL EnumPrintProcessorDatatypes(
     LPTSTR pName,
     // points to server name string
     LPTSTR pPrintProcessorName,
@@ -9216,7 +9216,7 @@ new Completion("EnumPrintProcessorDatatypesA", "call EnumPrintProcessorDatatypes
     // points to number of data structures obtained
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintProcessorDatatypesW", "call EnumPrintProcessorDatatypesW", @"BOOL EnumPrintProcessorDatatypes(
+new Completion("EnumPrintProcessorDatatypesW", "EnumPrintProcessorDatatypesW", @"BOOL EnumPrintProcessorDatatypes(
     LPTSTR pName,
     // points to server name string
     LPTSTR pPrintProcessorName,
@@ -9233,7 +9233,7 @@ new Completion("EnumPrintProcessorDatatypesW", "call EnumPrintProcessorDatatypes
     // points to number of data structures obtained
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintProcessorsA", "call EnumPrintProcessorsA", @"BOOL EnumPrintProcessors(
+new Completion("EnumPrintProcessorsA", "EnumPrintProcessorsA", @"BOOL EnumPrintProcessors(
     LPTSTR pName,
     // points to server name
     LPTSTR pEnvironment,
@@ -9250,7 +9250,7 @@ new Completion("EnumPrintProcessorsA", "call EnumPrintProcessorsA", @"BOOL EnumP
     // points to number of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPrintProcessorsW", "call EnumPrintProcessorsW", @"BOOL EnumPrintProcessors(
+new Completion("EnumPrintProcessorsW", "EnumPrintProcessorsW", @"BOOL EnumPrintProcessors(
     LPTSTR pName,
     // points to server name
     LPTSTR pEnvironment,
@@ -9267,21 +9267,21 @@ new Completion("EnumPrintProcessorsW", "call EnumPrintProcessorsW", @"BOOL EnumP
     // points to number of job info. structures copied
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPropsA", "call EnumPropsA", @"int EnumProps(
+new Completion("EnumPropsA", "EnumPropsA", @"int EnumProps(
     HWND hWnd,
     // handle to window
     PROPENUMPROC lpEnumFunc
     // pointer to callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPropsW", "call EnumPropsW", @"int EnumProps(
+new Completion("EnumPropsW", "EnumPropsW", @"int EnumProps(
     HWND hWnd,
     // handle to window
     PROPENUMPROC lpEnumFunc
     // pointer to callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPropsExA", "call EnumPropsExA", @"int EnumPropsEx(
+new Completion("EnumPropsExA", "EnumPropsExA", @"int EnumPropsEx(
     HWND hWnd,
     // handle to window
     PROPENUMPROCEX lpEnumFunc,
@@ -9290,7 +9290,7 @@ new Completion("EnumPropsExA", "call EnumPropsExA", @"int EnumPropsEx(
     // application-defined data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumPropsExW", "call EnumPropsExW", @"int EnumPropsEx(
+new Completion("EnumPropsExW", "EnumPropsExW", @"int EnumPropsEx(
     HWND hWnd,
     // handle to window
     PROPENUMPROCEX lpEnumFunc,
@@ -9299,7 +9299,7 @@ new Completion("EnumPropsExW", "call EnumPropsExW", @"int EnumPropsEx(
     // application-defined data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceLanguagesA", "call EnumResourceLanguagesA", @"BOOL EnumResourceLanguages(
+new Completion("EnumResourceLanguagesA", "EnumResourceLanguagesA", @"BOOL EnumResourceLanguages(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpType,
@@ -9312,7 +9312,7 @@ new Completion("EnumResourceLanguagesA", "call EnumResourceLanguagesA", @"BOOL E
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceLanguagesW", "call EnumResourceLanguagesW", @"BOOL EnumResourceLanguages(
+new Completion("EnumResourceLanguagesW", "EnumResourceLanguagesW", @"BOOL EnumResourceLanguages(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpType,
@@ -9325,7 +9325,7 @@ new Completion("EnumResourceLanguagesW", "call EnumResourceLanguagesW", @"BOOL E
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceNamesA", "call EnumResourceNamesA", @"BOOL EnumResourceNames(
+new Completion("EnumResourceNamesA", "EnumResourceNamesA", @"BOOL EnumResourceNames(
     HINSTANCE hModule,
     // resource-module handling
     LPCTSTR lpszType,
@@ -9336,7 +9336,7 @@ new Completion("EnumResourceNamesA", "call EnumResourceNamesA", @"BOOL EnumResou
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceNamesW", "call EnumResourceNamesW", @"BOOL EnumResourceNames(
+new Completion("EnumResourceNamesW", "EnumResourceNamesW", @"BOOL EnumResourceNames(
     HINSTANCE hModule,
     // resource-module handling
     LPCTSTR lpszType,
@@ -9347,7 +9347,7 @@ new Completion("EnumResourceNamesW", "call EnumResourceNamesW", @"BOOL EnumResou
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceTypesA", "call EnumResourceTypesA", @"BOOL EnumResourceTypes(
+new Completion("EnumResourceTypesA", "EnumResourceTypesA", @"BOOL EnumResourceTypes(
     HMODULE hModule,
     // resource-module handle
     ENUMRESTYPEPROC lpEnumFunc,
@@ -9356,7 +9356,7 @@ new Completion("EnumResourceTypesA", "call EnumResourceTypesA", @"BOOL EnumResou
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumResourceTypesW", "call EnumResourceTypesW", @"BOOL EnumResourceTypes(
+new Completion("EnumResourceTypesW", "EnumResourceTypesW", @"BOOL EnumResourceTypes(
     HMODULE hModule,
     // resource-module handle
     ENUMRESTYPEPROC lpEnumFunc,
@@ -9365,7 +9365,7 @@ new Completion("EnumResourceTypesW", "call EnumResourceTypesW", @"BOOL EnumResou
     // application-defined parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumServicesStatusA", "call EnumServicesStatusA", @"BOOL EnumServicesStatus(
+new Completion("EnumServicesStatusA", "EnumServicesStatusA", @"BOOL EnumServicesStatus(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     DWORD dwServiceType,
@@ -9384,7 +9384,7 @@ new Completion("EnumServicesStatusA", "call EnumServicesStatusA", @"BOOL EnumSer
     // pointer to variable for next entry
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumServicesStatusW", "call EnumServicesStatusW", @"BOOL EnumServicesStatus(
+new Completion("EnumServicesStatusW", "EnumServicesStatusW", @"BOOL EnumServicesStatus(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     DWORD dwServiceType,
@@ -9403,35 +9403,35 @@ new Completion("EnumServicesStatusW", "call EnumServicesStatusW", @"BOOL EnumSer
     // pointer to variable for next entry
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumSystemCodePagesA", "call EnumSystemCodePagesA", @"BOOL EnumSystemCodePages(
+new Completion("EnumSystemCodePagesA", "EnumSystemCodePagesA", @"BOOL EnumSystemCodePages(
     CODEPAGE_ENUMPROC lpCodePageEnumProc,
     // pointer to enumeration callback function
     DWORD dwFlags
     // indicates which code pages to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumSystemCodePagesW", "call EnumSystemCodePagesW", @"BOOL EnumSystemCodePages(
+new Completion("EnumSystemCodePagesW", "EnumSystemCodePagesW", @"BOOL EnumSystemCodePages(
     CODEPAGE_ENUMPROC lpCodePageEnumProc,
     // pointer to enumeration callback function
     DWORD dwFlags
     // indicates which code pages to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumSystemLocalesA", "call EnumSystemLocalesA", @"BOOL EnumSystemLocales(
+new Completion("EnumSystemLocalesA", "EnumSystemLocalesA", @"BOOL EnumSystemLocales(
     LOCALE_ENUMPROC lpLocaleEnumProc,
     // pointer to enumeration callback function
     DWORD dwFlags
     // indicates which locales to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumSystemLocalesW", "call EnumSystemLocalesW", @"BOOL EnumSystemLocales(
+new Completion("EnumSystemLocalesW", "EnumSystemLocalesW", @"BOOL EnumSystemLocales(
     LOCALE_ENUMPROC lpLocaleEnumProc,
     // pointer to enumeration callback function
     DWORD dwFlags
     // indicates which locales to enumerate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumTimeFormatsA", "call EnumTimeFormatsA", @"BOOL EnumTimeFormats(
+new Completion("EnumTimeFormatsA", "EnumTimeFormatsA", @"BOOL EnumTimeFormats(
     TIMEFMT_ENUMPROC lpTimeFmtEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -9440,7 +9440,7 @@ new Completion("EnumTimeFormatsA", "call EnumTimeFormatsA", @"BOOL EnumTimeForma
     // currently unused
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumTimeFormatsW", "call EnumTimeFormatsW", @"BOOL EnumTimeFormats(
+new Completion("EnumTimeFormatsW", "EnumTimeFormatsW", @"BOOL EnumTimeFormats(
     TIMEFMT_ENUMPROC lpTimeFmtEnumProc,
     // pointer to enumeration callback function
     LCID Locale,
@@ -9449,21 +9449,21 @@ new Completion("EnumTimeFormatsW", "call EnumTimeFormatsW", @"BOOL EnumTimeForma
     // currently unused
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumWindowStationsA", "call EnumWindowStationsA", @"BOOL EnumWindowStations(
+new Completion("EnumWindowStationsA", "EnumWindowStationsA", @"BOOL EnumWindowStations(
     WINSTAENUMPROC lpEnumFunc,
     // points to application's callback function
     LPARAM lParam
     // 32-bit value to pass to the callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("EnumWindowStationsW", "call EnumWindowStationsW", @"BOOL EnumWindowStations(
+new Completion("EnumWindowStationsW", "EnumWindowStationsW", @"BOOL EnumWindowStations(
     WINSTAENUMPROC lpEnumFunc,
     // points to application's callback function
     LPARAM lParam
     // 32-bit value to pass to the callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExpandEnvironmentStringsA", "call ExpandEnvironmentStringsA", @"DWORD ExpandEnvironmentStrings(
+new Completion("ExpandEnvironmentStringsA", "ExpandEnvironmentStringsA", @"DWORD ExpandEnvironmentStrings(
     LPCTSTR lpSrc,
     // pointer to string with environment variables
     LPTSTR lpDst,
@@ -9472,7 +9472,7 @@ new Completion("ExpandEnvironmentStringsA", "call ExpandEnvironmentStringsA", @"
     // maximum characters in expanded string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExpandEnvironmentStringsW", "call ExpandEnvironmentStringsW", @"DWORD ExpandEnvironmentStrings(
+new Completion("ExpandEnvironmentStringsW", "ExpandEnvironmentStringsW", @"DWORD ExpandEnvironmentStrings(
     LPCTSTR lpSrc,
     // pointer to string with environment variables
     LPTSTR lpDst,
@@ -9481,7 +9481,7 @@ new Completion("ExpandEnvironmentStringsW", "call ExpandEnvironmentStringsW", @"
     // maximum characters in expanded string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtractAssociatedIconA", "call ExtractAssociatedIconA", @"HICON ExtractAssociatedIcon(
+new Completion("ExtractAssociatedIconA", "ExtractAssociatedIconA", @"HICON ExtractAssociatedIcon(
     HINSTANCE hInst,
     // application instance handle
     LPTSTR lpIconPath,
@@ -9490,7 +9490,7 @@ new Completion("ExtractAssociatedIconA", "call ExtractAssociatedIconA", @"HICON 
     // pointer to icon index
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtractAssociatedIconW", "call ExtractAssociatedIconW", @"HICON ExtractAssociatedIcon(
+new Completion("ExtractAssociatedIconW", "ExtractAssociatedIconW", @"HICON ExtractAssociatedIcon(
     HINSTANCE hInst,
     // application instance handle
     LPTSTR lpIconPath,
@@ -9499,7 +9499,7 @@ new Completion("ExtractAssociatedIconW", "call ExtractAssociatedIconW", @"HICON 
     // pointer to icon index
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtractIconA", "call ExtractIconA", @"HICON ExtractIcon(
+new Completion("ExtractIconA", "ExtractIconA", @"HICON ExtractIcon(
     HINSTANCE hInst,
     // instance handle
     LPCTSTR lpszExeFileName,
@@ -9508,7 +9508,7 @@ new Completion("ExtractIconA", "call ExtractIconA", @"HICON ExtractIcon(
     // index of icon to extract
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtractIconW", "call ExtractIconW", @"HICON ExtractIcon(
+new Completion("ExtractIconW", "ExtractIconW", @"HICON ExtractIcon(
     HINSTANCE hInst,
     // instance handle
     LPCTSTR lpszExeFileName,
@@ -9517,7 +9517,7 @@ new Completion("ExtractIconW", "call ExtractIconW", @"HICON ExtractIcon(
     // index of icon to extract
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtTextOutA", "call ExtTextOutA", @"BOOL ExtTextOut(
+new Completion("ExtTextOutA", "ExtTextOutA", @"BOOL ExtTextOut(
     HDC hdc,
     // handle to device context
     int X,
@@ -9536,7 +9536,7 @@ new Completion("ExtTextOutA", "call ExtTextOutA", @"BOOL ExtTextOut(
     // pointer to array of intercharacter spacing values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ExtTextOutW", "call ExtTextOutW", @"BOOL ExtTextOut(
+new Completion("ExtTextOutW", "ExtTextOutW", @"BOOL ExtTextOut(
     HDC hdc,
     // handle to device context
     int X,
@@ -9555,21 +9555,21 @@ new Completion("ExtTextOutW", "call ExtTextOutW", @"BOOL ExtTextOut(
     // pointer to array of intercharacter spacing values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FatalAppExitA", "call FatalAppExitA", @"VOID FatalAppExit(
+new Completion("FatalAppExitA", "FatalAppExitA", @"VOID FatalAppExit(
     UINT uAction,
     // reserved
     LPCTSTR lpMessageText
     // pointer to string to display in message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FatalAppExitW", "call FatalAppExitW", @"VOID FatalAppExit(
+new Completion("FatalAppExitW", "FatalAppExitW", @"VOID FatalAppExit(
     UINT uAction,
     // reserved
     LPCTSTR lpMessageText
     // pointer to string to display in message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillConsoleOutputCharacterA", "call FillConsoleOutputCharacterA", @"BOOL FillConsoleOutputCharacter(
+new Completion("FillConsoleOutputCharacterA", "FillConsoleOutputCharacterA", @"BOOL FillConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle to screen buffer
     TCHAR cCharacter,
@@ -9582,7 +9582,7 @@ new Completion("FillConsoleOutputCharacterA", "call FillConsoleOutputCharacterA"
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FillConsoleOutputCharacterW", "call FillConsoleOutputCharacterW", @"BOOL FillConsoleOutputCharacter(
+new Completion("FillConsoleOutputCharacterW", "FillConsoleOutputCharacterW", @"BOOL FillConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle to screen buffer
     TCHAR cCharacter,
@@ -9595,17 +9595,17 @@ new Completion("FillConsoleOutputCharacterW", "call FillConsoleOutputCharacterW"
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindAtomA", "call FindAtomA", @"ATOM FindAtom(
+new Completion("FindAtomA", "FindAtomA", @"ATOM FindAtom(
     LPCTSTR lpString
     // pointer to string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindAtomW", "call FindAtomW", @"ATOM FindAtom(
+new Completion("FindAtomW", "FindAtomW", @"ATOM FindAtom(
     LPCTSTR lpString
     // pointer to string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindExecutableA", "call FindExecutableA", @"HINSTANCE FindExecutable(
+new Completion("FindExecutableA", "FindExecutableA", @"HINSTANCE FindExecutable(
     LPCTSTR lpFile,
     // pointer to string for filename
     LPCTSTR lpDirectory,
@@ -9614,7 +9614,7 @@ new Completion("FindExecutableA", "call FindExecutableA", @"HINSTANCE FindExecut
     // pointer to buffer for string for executable file on return
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindExecutableW", "call FindExecutableW", @"HINSTANCE FindExecutable(
+new Completion("FindExecutableW", "FindExecutableW", @"HINSTANCE FindExecutable(
     LPCTSTR lpFile,
     // pointer to string for filename
     LPCTSTR lpDirectory,
@@ -9623,7 +9623,7 @@ new Completion("FindExecutableW", "call FindExecutableW", @"HINSTANCE FindExecut
     // pointer to buffer for string for executable file on return
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstChangeNotificationA", "call FindFirstChangeNotificationA", @"HANDLE FindFirstChangeNotification(
+new Completion("FindFirstChangeNotificationA", "FindFirstChangeNotificationA", @"HANDLE FindFirstChangeNotification(
     LPCTSTR lpPathName,
     // pointer to name of directory to watch
     BOOL bWatchSubtree,
@@ -9632,7 +9632,7 @@ new Completion("FindFirstChangeNotificationA", "call FindFirstChangeNotification
     // filter conditions to watch for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstChangeNotificationW", "call FindFirstChangeNotificationW", @"HANDLE FindFirstChangeNotification(
+new Completion("FindFirstChangeNotificationW", "FindFirstChangeNotificationW", @"HANDLE FindFirstChangeNotification(
     LPCTSTR lpPathName,
     // pointer to name of directory to watch
     BOOL bWatchSubtree,
@@ -9641,35 +9641,35 @@ new Completion("FindFirstChangeNotificationW", "call FindFirstChangeNotification
     // filter conditions to watch for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstFileA", "call FindFirstFileA", @"HANDLE FindFirstFile(
+new Completion("FindFirstFileA", "FindFirstFileA", @"HANDLE FindFirstFile(
     LPCTSTR lpFileName,
     // pointer to name of file to search for
     LPWIN32_FIND_DATA lpFindFileData
     // pointer to returned information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindFirstFileW", "call FindFirstFileW", @"HANDLE FindFirstFile(
+new Completion("FindFirstFileW", "FindFirstFileW", @"HANDLE FindFirstFile(
     LPCTSTR lpFileName,
     // pointer to name of file to search for
     LPWIN32_FIND_DATA lpFindFileData
     // pointer to returned information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindNextFileA", "call FindNextFileA", @"BOOL FindNextFile(
+new Completion("FindNextFileA", "FindNextFileA", @"BOOL FindNextFile(
     HANDLE hFindFile,
     // handle to search
     LPWIN32_FIND_DATA lpFindFileData
     // pointer to structure for data on found file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindNextFileW", "call FindNextFileW", @"BOOL FindNextFile(
+new Completion("FindNextFileW", "FindNextFileW", @"BOOL FindNextFile(
     HANDLE hFindFile,
     // handle to search
     LPWIN32_FIND_DATA lpFindFileData
     // pointer to structure for data on found file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindResourceA", "call FindResourceA", @"HRSRC FindResource(
+new Completion("FindResourceA", "FindResourceA", @"HRSRC FindResource(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpName,
@@ -9678,7 +9678,7 @@ new Completion("FindResourceA", "call FindResourceA", @"HRSRC FindResource(
     // pointer to resource type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindResourceW", "call FindResourceW", @"HRSRC FindResource(
+new Completion("FindResourceW", "FindResourceW", @"HRSRC FindResource(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpName,
@@ -9687,7 +9687,7 @@ new Completion("FindResourceW", "call FindResourceW", @"HRSRC FindResource(
     // pointer to resource type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindResourceExA", "call FindResourceExA", @"HRSRC FindResourceEx(
+new Completion("FindResourceExA", "FindResourceExA", @"HRSRC FindResourceEx(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpType,
@@ -9698,7 +9698,7 @@ new Completion("FindResourceExA", "call FindResourceExA", @"HRSRC FindResourceEx
     // resource language
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindResourceExW", "call FindResourceExW", @"HRSRC FindResourceEx(
+new Completion("FindResourceExW", "FindResourceExW", @"HRSRC FindResourceEx(
     HMODULE hModule,
     // resource-module handle
     LPCTSTR lpType,
@@ -9709,31 +9709,31 @@ new Completion("FindResourceExW", "call FindResourceExW", @"HRSRC FindResourceEx
     // resource language
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindTextA", "call FindTextA", @"HWND FindText(
+new Completion("FindTextA", "FindTextA", @"HWND FindText(
     LPFINDREPLACE lpfr
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindTextW", "call FindTextW", @"HWND FindText(
+new Completion("FindTextW", "FindTextW", @"HWND FindText(
     LPFINDREPLACE lpfr
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindWindowA", "call FindWindowA", @"HWND FindWindow(
+new Completion("FindWindowA", "FindWindowA", @"HWND FindWindow(
     LPCTSTR lpClassName,
     // pointer to class name
     LPCTSTR lpWindowName
     // pointer to window name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FindWindowW", "call FindWindowW", @"HWND FindWindow(
+new Completion("FindWindowW", "FindWindowW", @"HWND FindWindow(
     LPCTSTR lpClassName,
     // pointer to class name
     LPCTSTR lpWindowName
     // pointer to window name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FoldStringA", "call FoldStringA", @"int FoldString(
+new Completion("FoldStringA", "FoldStringA", @"int FoldString(
     DWORD dwMapFlags,
     // mapping transformation options
     LPCTSTR lpSrcStr,
@@ -9746,7 +9746,7 @@ new Completion("FoldStringA", "call FoldStringA", @"int FoldString(
     // size of destination buffer, in bytes or characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FoldStringW", "call FoldStringW", @"int FoldString(
+new Completion("FoldStringW", "FoldStringW", @"int FoldString(
     DWORD dwMapFlags,
     // mapping transformation options
     LPCTSTR lpSrcStr,
@@ -9759,7 +9759,7 @@ new Completion("FoldStringW", "call FoldStringW", @"int FoldString(
     // size of destination buffer, in bytes or characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FormatMessageA", "call FormatMessageA", @"DWORD FormatMessage(
+new Completion("FormatMessageA", "FormatMessageA", @"DWORD FormatMessage(
     DWORD dwFlags,
     // source and processing options
     LPCVOID lpSource,
@@ -9776,7 +9776,7 @@ new Completion("FormatMessageA", "call FormatMessageA", @"DWORD FormatMessage(
     // address of array of message inserts
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FormatMessageW", "call FormatMessageW", @"DWORD FormatMessage(
+new Completion("FormatMessageW", "FormatMessageW", @"DWORD FormatMessage(
     DWORD dwFlags,
     // source and processing options
     LPCVOID lpSource,
@@ -9793,17 +9793,17 @@ new Completion("FormatMessageW", "call FormatMessageW", @"DWORD FormatMessage(
     // address of array of message inserts
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeEnvironmentStringsA", "call FreeEnvironmentStringsA", @"BOOL FreeEnvironmentStrings(
+new Completion("FreeEnvironmentStringsA", "FreeEnvironmentStringsA", @"BOOL FreeEnvironmentStrings(
     LPTSTR lpszEnvironmentBlock
     // pointer to a block of environment strings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("FreeEnvironmentStringsW", "call FreeEnvironmentStringsW", @"BOOL FreeEnvironmentStrings(
+new Completion("FreeEnvironmentStringsW", "FreeEnvironmentStringsW", @"BOOL FreeEnvironmentStrings(
     LPTSTR lpszEnvironmentBlock
     // pointer to a block of environment strings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAtomNameA", "call GetAtomNameA", @"UINT GetAtomName(
+new Completion("GetAtomNameA", "GetAtomNameA", @"UINT GetAtomName(
     ATOM nAtom,
     // atom identifying character string
     LPTSTR lpBuffer,
@@ -9812,7 +9812,7 @@ new Completion("GetAtomNameA", "call GetAtomNameA", @"UINT GetAtomName(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetAtomNameW", "call GetAtomNameW", @"UINT GetAtomName(
+new Completion("GetAtomNameW", "GetAtomNameW", @"UINT GetAtomName(
     ATOM nAtom,
     // atom identifying character string
     LPTSTR lpBuffer,
@@ -9821,21 +9821,21 @@ new Completion("GetAtomNameW", "call GetAtomNameW", @"UINT GetAtomName(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBinaryTypeA", "call GetBinaryTypeA", @"BOOL GetBinaryType (
+new Completion("GetBinaryTypeA", "GetBinaryTypeA", @"BOOL GetBinaryType (
     LPCTSTR lpApplicationName,
     // points to fully qualified path of file to test
     LPDWORD lpBinaryType
     // points to variable to receive binary type information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetBinaryTypeW", "call GetBinaryTypeW", @"BOOL GetBinaryType (
+new Completion("GetBinaryTypeW", "GetBinaryTypeW", @"BOOL GetBinaryType (
     LPCTSTR lpApplicationName,
     // points to fully qualified path of file to test
     LPDWORD lpBinaryType
     // points to variable to receive binary type information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharABCWidthsA", "call GetCharABCWidthsA", @"BOOL GetCharABCWidths(
+new Completion("GetCharABCWidthsA", "GetCharABCWidthsA", @"BOOL GetCharABCWidths(
     HDC hdc,
     // handle of device context
     UINT uFirstChar,
@@ -9846,7 +9846,7 @@ new Completion("GetCharABCWidthsA", "call GetCharABCWidthsA", @"BOOL GetCharABCW
     // address of character-width structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharABCWidthsW", "call GetCharABCWidthsW", @"BOOL GetCharABCWidths(
+new Completion("GetCharABCWidthsW", "GetCharABCWidthsW", @"BOOL GetCharABCWidths(
     HDC hdc,
     // handle of device context
     UINT uFirstChar,
@@ -9857,7 +9857,7 @@ new Completion("GetCharABCWidthsW", "call GetCharABCWidthsW", @"BOOL GetCharABCW
     // address of character-width structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharABCWidthsFloatA", "call GetCharABCWidthsFloatA", @"BOOL GetCharABCWidthsFloat(
+new Completion("GetCharABCWidthsFloatA", "GetCharABCWidthsFloatA", @"BOOL GetCharABCWidthsFloat(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9868,7 +9868,7 @@ new Completion("GetCharABCWidthsFloatA", "call GetCharABCWidthsFloatA", @"BOOL G
     // address of character-width structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharABCWidthsFloatW", "call GetCharABCWidthsFloatW", @"BOOL GetCharABCWidthsFloat(
+new Completion("GetCharABCWidthsFloatW", "GetCharABCWidthsFloatW", @"BOOL GetCharABCWidthsFloat(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9879,7 +9879,7 @@ new Completion("GetCharABCWidthsFloatW", "call GetCharABCWidthsFloatW", @"BOOL G
     // address of character-width structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharWidth32A", "call GetCharWidth32A", @"BOOL GetCharWidth32(
+new Completion("GetCharWidth32A", "GetCharWidth32A", @"BOOL GetCharWidth32(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9890,7 +9890,7 @@ new Completion("GetCharWidth32A", "call GetCharWidth32A", @"BOOL GetCharWidth32(
     // address of buffer for widths
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharWidth32W", "call GetCharWidth32W", @"BOOL GetCharWidth32(
+new Completion("GetCharWidth32W", "GetCharWidth32W", @"BOOL GetCharWidth32(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9901,7 +9901,7 @@ new Completion("GetCharWidth32W", "call GetCharWidth32W", @"BOOL GetCharWidth32(
     // address of buffer for widths
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharWidthFloatA", "call GetCharWidthFloatA", @"BOOL GetCharWidthFloat(
+new Completion("GetCharWidthFloatA", "GetCharWidthFloatA", @"BOOL GetCharWidthFloat(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9912,7 +9912,7 @@ new Completion("GetCharWidthFloatA", "call GetCharWidthFloatA", @"BOOL GetCharWi
     // address of buffer that receives width-values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCharWidthFloatW", "call GetCharWidthFloatW", @"BOOL GetCharWidthFloat(
+new Completion("GetCharWidthFloatW", "GetCharWidthFloatW", @"BOOL GetCharWidthFloat(
     HDC hdc,
     // handle of device context
     UINT iFirstChar,
@@ -9923,7 +9923,7 @@ new Completion("GetCharWidthFloatW", "call GetCharWidthFloatW", @"BOOL GetCharWi
     // address of buffer that receives width-values
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassInfoA", "call GetClassInfoA", @"BOOL GetClassInfo(
+new Completion("GetClassInfoA", "GetClassInfoA", @"BOOL GetClassInfo(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpClassName,
@@ -9932,7 +9932,7 @@ new Completion("GetClassInfoA", "call GetClassInfoA", @"BOOL GetClassInfo(
     // address of structure for class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassInfoW", "call GetClassInfoW", @"BOOL GetClassInfo(
+new Completion("GetClassInfoW", "GetClassInfoW", @"BOOL GetClassInfo(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpClassName,
@@ -9941,7 +9941,7 @@ new Completion("GetClassInfoW", "call GetClassInfoW", @"BOOL GetClassInfo(
     // address of structure for class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassInfoExA", "call GetClassInfoExA", @"BOOL GetClassInfoEx(
+new Completion("GetClassInfoExA", "GetClassInfoExA", @"BOOL GetClassInfoEx(
     HINSTANCE hinst,
     // handle of application instance
     LPCTSTR lpszClass,
@@ -9950,7 +9950,7 @@ new Completion("GetClassInfoExA", "call GetClassInfoExA", @"BOOL GetClassInfoEx(
     // address of structure for class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassInfoExW", "call GetClassInfoExW", @"BOOL GetClassInfoEx(
+new Completion("GetClassInfoExW", "GetClassInfoExW", @"BOOL GetClassInfoEx(
     HINSTANCE hinst,
     // handle of application instance
     LPCTSTR lpszClass,
@@ -9959,21 +9959,21 @@ new Completion("GetClassInfoExW", "call GetClassInfoExW", @"BOOL GetClassInfoEx(
     // address of structure for class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassLongA", "call GetClassLongA", @"DWORD GetClassLong(
+new Completion("GetClassLongA", "GetClassLongA", @"DWORD GetClassLong(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassLongW", "call GetClassLongW", @"DWORD GetClassLong(
+new Completion("GetClassLongW", "GetClassLongW", @"DWORD GetClassLong(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassNameA", "call GetClassNameA", @"int GetClassName(
+new Completion("GetClassNameA", "GetClassNameA", @"int GetClassName(
     HWND hWnd,
     // handle of window
     LPTSTR lpClassName,
@@ -9982,7 +9982,7 @@ new Completion("GetClassNameA", "call GetClassNameA", @"int GetClassName(
     // size of buffer, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClassNameW", "call GetClassNameW", @"int GetClassName(
+new Completion("GetClassNameW", "GetClassNameW", @"int GetClassName(
     HWND hWnd,
     // handle of window
     LPTSTR lpClassName,
@@ -9991,7 +9991,7 @@ new Completion("GetClassNameW", "call GetClassNameW", @"int GetClassName(
     // size of buffer, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipboardFormatNameA", "call GetClipboardFormatNameA", @"int GetClipboardFormatName(
+new Completion("GetClipboardFormatNameA", "GetClipboardFormatNameA", @"int GetClipboardFormatName(
     UINT format,
     // clipboard format to retrieve
     LPTSTR lpszFormatName,
@@ -10000,7 +10000,7 @@ new Completion("GetClipboardFormatNameA", "call GetClipboardFormatNameA", @"int 
     // length of name string in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetClipboardFormatNameW", "call GetClipboardFormatNameW", @"int GetClipboardFormatName(
+new Completion("GetClipboardFormatNameW", "GetClipboardFormatNameW", @"int GetClipboardFormatName(
     UINT format,
     // clipboard format to retrieve
     LPTSTR lpszFormatName,
@@ -10009,51 +10009,51 @@ new Completion("GetClipboardFormatNameW", "call GetClipboardFormatNameW", @"int 
     // length of name string in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommandLineA", "call GetCommandLineA", @"LPTSTR GetCommandLine(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCommandLineW", "call GetCommandLineW", @"LPTSTR GetCommandLine(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCompressedFileSizeA", "call GetCompressedFileSizeA", @"DWORD GetCompressedFileSize(
+new Completion("GetCommandLineA", "GetCommandLineA", @"LPTSTR GetCommandLine(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCommandLineW", "GetCommandLineW", @"LPTSTR GetCommandLine(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetCompressedFileSizeA", "GetCompressedFileSizeA", @"DWORD GetCompressedFileSize(
     LPCTSTR lpFileName,
     // pointer to name of file
     LPDWORD lpFileSizeHigh
     // pointer to DWORD to receive high-order doubleword of file size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCompressedFileSizeW", "call GetCompressedFileSizeW", @"DWORD GetCompressedFileSize(
+new Completion("GetCompressedFileSizeW", "GetCompressedFileSizeW", @"DWORD GetCompressedFileSize(
     LPCTSTR lpFileName,
     // pointer to name of file
     LPDWORD lpFileSizeHigh
     // pointer to DWORD to receive high-order doubleword of file size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetComputerNameA", "call GetComputerNameA", @"BOOL GetComputerName(
+new Completion("GetComputerNameA", "GetComputerNameA", @"BOOL GetComputerName(
     LPTSTR lpBuffer,
     // address of name buffer
     LPDWORD nSize
     // address of size of name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetComputerNameW", "call GetComputerNameW", @"BOOL GetComputerName(
+new Completion("GetComputerNameW", "GetComputerNameW", @"BOOL GetComputerName(
     LPTSTR lpBuffer,
     // address of name buffer
     LPDWORD nSize
     // address of size of name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetConsoleTitleA", "call GetConsoleTitleA", @"DWORD GetConsoleTitle(
+new Completion("GetConsoleTitleA", "GetConsoleTitleA", @"DWORD GetConsoleTitle(
     LPTSTR lpConsoleTitle,
     // address of buffer for title
     DWORD nSize
     // size of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetConsoleTitleW", "call GetConsoleTitleW", @"DWORD GetConsoleTitle(
+new Completion("GetConsoleTitleW", "GetConsoleTitleW", @"DWORD GetConsoleTitle(
     LPTSTR lpConsoleTitle,
     // address of buffer for title
     DWORD nSize
     // size of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrencyFormatA", "call GetCurrencyFormatA", @"int GetCurrencyFormat(
+new Completion("GetCurrencyFormatA", "GetCurrencyFormatA", @"int GetCurrencyFormat(
     LCID Locale,
     // locale for which currency string is to be formatted
     DWORD dwFlags,
@@ -10068,7 +10068,7 @@ new Completion("GetCurrencyFormatA", "call GetCurrencyFormatA", @"int GetCurrenc
     // size of output buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrencyFormatW", "call GetCurrencyFormatW", @"int GetCurrencyFormat(
+new Completion("GetCurrencyFormatW", "GetCurrencyFormatW", @"int GetCurrencyFormat(
     LCID Locale,
     // locale for which currency string is to be formatted
     DWORD dwFlags,
@@ -10083,21 +10083,21 @@ new Completion("GetCurrencyFormatW", "call GetCurrencyFormatW", @"int GetCurrenc
     // size of output buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentDirectoryA", "call GetCurrentDirectoryA", @"DWORD GetCurrentDirectory(
+new Completion("GetCurrentDirectoryA", "GetCurrentDirectoryA", @"DWORD GetCurrentDirectory(
     DWORD nBufferLength,
     // size, in characters, of directory buffer
     LPTSTR lpBuffer
     // address of buffer for current directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetCurrentDirectoryW", "call GetCurrentDirectoryW", @"DWORD GetCurrentDirectory(
+new Completion("GetCurrentDirectoryW", "GetCurrentDirectoryW", @"DWORD GetCurrentDirectory(
     DWORD nBufferLength,
     // size, in characters, of directory buffer
     LPTSTR lpBuffer
     // address of buffer for current directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDateFormatA", "call GetDateFormatA", @"int GetDateFormat(
+new Completion("GetDateFormatA", "GetDateFormatA", @"int GetDateFormat(
     LCID Locale,
     // locale for which date is to be formatted
     DWORD dwFlags,
@@ -10112,7 +10112,7 @@ new Completion("GetDateFormatA", "call GetDateFormatA", @"int GetDateFormat(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDateFormatW", "call GetDateFormatW", @"int GetDateFormat(
+new Completion("GetDateFormatW", "GetDateFormatW", @"int GetDateFormat(
     LCID Locale,
     // locale for which date is to be formatted
     DWORD dwFlags,
@@ -10127,7 +10127,7 @@ new Completion("GetDateFormatW", "call GetDateFormatW", @"int GetDateFormat(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDiskFreeSpaceA", "call GetDiskFreeSpaceA", @"BOOL GetDiskFreeSpace(
+new Completion("GetDiskFreeSpaceA", "GetDiskFreeSpaceA", @"BOOL GetDiskFreeSpace(
     LPCTSTR lpRootPathName,
     // address of root path
     LPDWORD lpSectorsPerCluster,
@@ -10140,7 +10140,7 @@ new Completion("GetDiskFreeSpaceA", "call GetDiskFreeSpaceA", @"BOOL GetDiskFree
     // address of total number of clusters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDiskFreeSpaceW", "call GetDiskFreeSpaceW", @"BOOL GetDiskFreeSpace(
+new Completion("GetDiskFreeSpaceW", "GetDiskFreeSpaceW", @"BOOL GetDiskFreeSpace(
     LPCTSTR lpRootPathName,
     // address of root path
     LPDWORD lpSectorsPerCluster,
@@ -10153,7 +10153,7 @@ new Completion("GetDiskFreeSpaceW", "call GetDiskFreeSpaceW", @"BOOL GetDiskFree
     // address of total number of clusters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDlgItemTextA", "call GetDlgItemTextA", @"UINT GetDlgItemText(
+new Completion("GetDlgItemTextA", "GetDlgItemTextA", @"UINT GetDlgItemText(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -10164,7 +10164,7 @@ new Completion("GetDlgItemTextA", "call GetDlgItemTextA", @"UINT GetDlgItemText(
     // maximum size of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDlgItemTextW", "call GetDlgItemTextW", @"UINT GetDlgItemText(
+new Completion("GetDlgItemTextW", "GetDlgItemTextW", @"UINT GetDlgItemText(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -10175,27 +10175,27 @@ new Completion("GetDlgItemTextW", "call GetDlgItemTextW", @"UINT GetDlgItemText(
     // maximum size of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDriveTypeA", "call GetDriveTypeA", @"UINT GetDriveType(
+new Completion("GetDriveTypeA", "GetDriveTypeA", @"UINT GetDriveType(
     LPCTSTR lpRootPathName
     // address of root path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetDriveTypeW", "call GetDriveTypeW", @"UINT GetDriveType(
+new Completion("GetDriveTypeW", "GetDriveTypeW", @"UINT GetDriveType(
     LPCTSTR lpRootPathName
     // address of root path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileA", "call GetEnhMetaFileA", @"HENHMETAFILE GetEnhMetaFile(
+new Completion("GetEnhMetaFileA", "GetEnhMetaFileA", @"HENHMETAFILE GetEnhMetaFile(
     LPCTSTR lpszMetaFile
     // address of metafile name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileW", "call GetEnhMetaFileW", @"HENHMETAFILE GetEnhMetaFile(
+new Completion("GetEnhMetaFileW", "GetEnhMetaFileW", @"HENHMETAFILE GetEnhMetaFile(
     LPCTSTR lpszMetaFile
     // address of metafile name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileDescriptionA", "call GetEnhMetaFileDescriptionA", @"UINT GetEnhMetaFileDescription(
+new Completion("GetEnhMetaFileDescriptionA", "GetEnhMetaFileDescriptionA", @"UINT GetEnhMetaFileDescription(
     HENHMETAFILE hemf,
     // handle of enhanced metafile
     UINT cchBuffer,
@@ -10204,7 +10204,7 @@ new Completion("GetEnhMetaFileDescriptionA", "call GetEnhMetaFileDescriptionA", 
     // address of text buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnhMetaFileDescriptionW", "call GetEnhMetaFileDescriptionW", @"UINT GetEnhMetaFileDescription(
+new Completion("GetEnhMetaFileDescriptionW", "GetEnhMetaFileDescriptionW", @"UINT GetEnhMetaFileDescription(
     HENHMETAFILE hemf,
     // handle of enhanced metafile
     UINT cchBuffer,
@@ -10213,9 +10213,9 @@ new Completion("GetEnhMetaFileDescriptionW", "call GetEnhMetaFileDescriptionW", 
     // address of text buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnvironmentStringsA", "call GetEnvironmentStringsA", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnvironmentStringsW", "call GetEnvironmentStringsW", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnvironmentVariableA", "call GetEnvironmentVariableA", @"DWORD GetEnvironmentVariable(
+new Completion("GetEnvironmentStringsA", "GetEnvironmentStringsA", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetEnvironmentStringsW", "GetEnvironmentStringsW", @"LPVOID GetEnvironmentStrings(VOID)", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetEnvironmentVariableA", "GetEnvironmentVariableA", @"DWORD GetEnvironmentVariable(
     LPCTSTR lpName,
     // address of environment variable name
     LPTSTR lpBuffer,
@@ -10224,7 +10224,7 @@ new Completion("GetEnvironmentVariableA", "call GetEnvironmentVariableA", @"DWOR
     // size of buffer, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetEnvironmentVariableW", "call GetEnvironmentVariableW", @"DWORD GetEnvironmentVariable(
+new Completion("GetEnvironmentVariableW", "GetEnvironmentVariableW", @"DWORD GetEnvironmentVariable(
     LPCTSTR lpName,
     // address of environment variable name
     LPTSTR lpBuffer,
@@ -10233,17 +10233,17 @@ new Completion("GetEnvironmentVariableW", "call GetEnvironmentVariableW", @"DWOR
     // size of buffer, in characters
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileAttributesA", "call GetFileAttributesA", @"DWORD GetFileAttributes(
+new Completion("GetFileAttributesA", "GetFileAttributesA", @"DWORD GetFileAttributes(
     LPCTSTR lpFileName
     // address of the name of a file or directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileAttributesW", "call GetFileAttributesW", @"DWORD GetFileAttributes(
+new Completion("GetFileAttributesW", "GetFileAttributesW", @"DWORD GetFileAttributes(
     LPCTSTR lpFileName
     // address of the name of a file or directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileSecurityA", "call GetFileSecurityA", @"BOOL GetFileSecurity(
+new Completion("GetFileSecurityA", "GetFileSecurityA", @"BOOL GetFileSecurity(
     LPCTSTR lpFileName,
     // address of string for file name
     SECURITY_INFORMATION RequestedInformation,
@@ -10256,7 +10256,7 @@ new Completion("GetFileSecurityA", "call GetFileSecurityA", @"BOOL GetFileSecuri
     // address of required size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileSecurityW", "call GetFileSecurityW", @"BOOL GetFileSecurity(
+new Completion("GetFileSecurityW", "GetFileSecurityW", @"BOOL GetFileSecurity(
     LPCTSTR lpFileName,
     // address of string for file name
     SECURITY_INFORMATION RequestedInformation,
@@ -10269,7 +10269,7 @@ new Completion("GetFileSecurityW", "call GetFileSecurityW", @"BOOL GetFileSecuri
     // address of required size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileTitleA", "call GetFileTitleA", @"short GetFileTitle(
+new Completion("GetFileTitleA", "GetFileTitleA", @"short GetFileTitle(
     LPCTSTR lpszFile,
     // pointer to full path and filename for file
     LPTSTR lpszTitle,
@@ -10278,7 +10278,7 @@ new Completion("GetFileTitleA", "call GetFileTitleA", @"short GetFileTitle(
     // length of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFileTitleW", "call GetFileTitleW", @"short GetFileTitle(
+new Completion("GetFileTitleW", "GetFileTitleW", @"short GetFileTitle(
     LPCTSTR lpszFile,
     // pointer to full path and filename for file
     LPTSTR lpszTitle,
@@ -10287,7 +10287,7 @@ new Completion("GetFileTitleW", "call GetFileTitleW", @"short GetFileTitle(
     // length of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFormA", "call GetFormA", @"BOOL GetForm(
+new Completion("GetFormA", "GetFormA", @"BOOL GetForm(
     HANDLE hPrinter,
     // handle of printer
     LPTSTR pFormName,
@@ -10302,7 +10302,7 @@ new Completion("GetFormA", "call GetFormA", @"BOOL GetForm(
     // addr. of variable with count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFormW", "call GetFormW", @"BOOL GetForm(
+new Completion("GetFormW", "GetFormW", @"BOOL GetForm(
     HANDLE hPrinter,
     // handle of printer
     LPTSTR pFormName,
@@ -10317,7 +10317,7 @@ new Completion("GetFormW", "call GetFormW", @"BOOL GetForm(
     // addr. of variable with count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFullPathNameA", "call GetFullPathNameA", @"DWORD GetFullPathName(
+new Completion("GetFullPathNameA", "GetFullPathNameA", @"DWORD GetFullPathName(
     LPCTSTR lpFileName,
     // address of name of file to find path for
     DWORD nBufferLength,
@@ -10328,7 +10328,7 @@ new Completion("GetFullPathNameA", "call GetFullPathNameA", @"DWORD GetFullPathN
     // address of filename in path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetFullPathNameW", "call GetFullPathNameW", @"DWORD GetFullPathName(
+new Completion("GetFullPathNameW", "GetFullPathNameW", @"DWORD GetFullPathName(
     LPCTSTR lpFileName,
     // address of name of file to find path for
     DWORD nBufferLength,
@@ -10339,7 +10339,7 @@ new Completion("GetFullPathNameW", "call GetFullPathNameW", @"DWORD GetFullPathN
     // address of filename in path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetGlyphOutlineA", "call GetGlyphOutlineA", @"DWORD GetGlyphOutline(
+new Completion("GetGlyphOutlineA", "GetGlyphOutlineA", @"DWORD GetGlyphOutline(
     HDC hdc,
     // handle of device context
     UINT uChar,
@@ -10356,7 +10356,7 @@ new Completion("GetGlyphOutlineA", "call GetGlyphOutlineA", @"DWORD GetGlyphOutl
     // address of transformation matrix structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetGlyphOutlineW", "call GetGlyphOutlineW", @"DWORD GetGlyphOutline(
+new Completion("GetGlyphOutlineW", "GetGlyphOutlineW", @"DWORD GetGlyphOutline(
     HDC hdc,
     // handle of device context
     UINT uChar,
@@ -10373,7 +10373,7 @@ new Completion("GetGlyphOutlineW", "call GetGlyphOutlineW", @"DWORD GetGlyphOutl
     // address of transformation matrix structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetJobA", "call GetJobA", @"BOOL GetJob(
+new Completion("GetJobA", "GetJobA", @"BOOL GetJob(
     HANDLE hPrinter,
     // handle of printer
     DWORD JobId,
@@ -10388,7 +10388,7 @@ new Completion("GetJobA", "call GetJobA", @"BOOL GetJob(
     // address of value that contains count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetJobW", "call GetJobW", @"BOOL GetJob(
+new Completion("GetJobW", "GetJobW", @"BOOL GetJob(
     HANDLE hPrinter,
     // handle of printer
     DWORD JobId,
@@ -10403,7 +10403,7 @@ new Completion("GetJobW", "call GetJobW", @"BOOL GetJob(
     // address of value that contains count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKerningPairsA", "call GetKerningPairsA", @"DWORD GetKerningPairs(
+new Completion("GetKerningPairsA", "GetKerningPairsA", @"DWORD GetKerningPairs(
     HDC hdc,
     // handle of device context
     DWORD nNumPairs,
@@ -10412,7 +10412,7 @@ new Completion("GetKerningPairsA", "call GetKerningPairsA", @"DWORD GetKerningPa
     // address of kerning-pair array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKerningPairsW", "call GetKerningPairsW", @"DWORD GetKerningPairs(
+new Completion("GetKerningPairsW", "GetKerningPairsW", @"DWORD GetKerningPairs(
     HDC hdc,
     // handle of device context
     DWORD nNumPairs,
@@ -10421,17 +10421,17 @@ new Completion("GetKerningPairsW", "call GetKerningPairsW", @"DWORD GetKerningPa
     // address of kerning-pair array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyboardLayoutNameA", "call GetKeyboardLayoutNameA", @"BOOL GetKeyboardLayoutName(
+new Completion("GetKeyboardLayoutNameA", "GetKeyboardLayoutNameA", @"BOOL GetKeyboardLayoutName(
     LPTSTR pwszKLID
     // address of buffer for layout name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyboardLayoutNameW", "call GetKeyboardLayoutNameW", @"BOOL GetKeyboardLayoutName(
+new Completion("GetKeyboardLayoutNameW", "GetKeyboardLayoutNameW", @"BOOL GetKeyboardLayoutName(
     LPTSTR pwszKLID
     // address of buffer for layout name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyNameTextA", "call GetKeyNameTextA", @"int GetKeyNameText(
+new Completion("GetKeyNameTextA", "GetKeyNameTextA", @"int GetKeyNameText(
     LONG lParam,
     // second parameter of keyboard message
     LPTSTR lpString,
@@ -10440,7 +10440,7 @@ new Completion("GetKeyNameTextA", "call GetKeyNameTextA", @"int GetKeyNameText(
     // maximum length of key-name string length
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetKeyNameTextW", "call GetKeyNameTextW", @"int GetKeyNameText(
+new Completion("GetKeyNameTextW", "GetKeyNameTextW", @"int GetKeyNameText(
     LONG lParam,
     // second parameter of keyboard message
     LPTSTR lpString,
@@ -10449,7 +10449,7 @@ new Completion("GetKeyNameTextW", "call GetKeyNameTextW", @"int GetKeyNameText(
     // maximum length of key-name string length
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLocaleInfoA", "call GetLocaleInfoA", @"int GetLocaleInfo(
+new Completion("GetLocaleInfoA", "GetLocaleInfoA", @"int GetLocaleInfo(
     LCID Locale,
     // locale identifier
     LCTYPE LCType,
@@ -10460,7 +10460,7 @@ new Completion("GetLocaleInfoA", "call GetLocaleInfoA", @"int GetLocaleInfo(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLocaleInfoW", "call GetLocaleInfoW", @"int GetLocaleInfo(
+new Completion("GetLocaleInfoW", "GetLocaleInfoW", @"int GetLocaleInfo(
     LCID Locale,
     // locale identifier
     LCTYPE LCType,
@@ -10471,21 +10471,21 @@ new Completion("GetLocaleInfoW", "call GetLocaleInfoW", @"int GetLocaleInfo(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLogicalDriveStringsA", "call GetLogicalDriveStringsA", @"DWORD GetLogicalDriveStrings(
+new Completion("GetLogicalDriveStringsA", "GetLogicalDriveStringsA", @"DWORD GetLogicalDriveStrings(
     DWORD nBufferLength,
     // size of buffer
     LPTSTR lpBuffer
     // address of buffer for drive strings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetLogicalDriveStringsW", "call GetLogicalDriveStringsW", @"DWORD GetLogicalDriveStrings(
+new Completion("GetLogicalDriveStringsW", "GetLogicalDriveStringsW", @"DWORD GetLogicalDriveStrings(
     DWORD nBufferLength,
     // size of buffer
     LPTSTR lpBuffer
     // address of buffer for drive strings
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMessageA", "call GetMessageA", @"BOOL GetMessage(
+new Completion("GetMessageA", "GetMessageA", @"BOOL GetMessage(
     LPMSG lpMsg,
     // address of structure with message
     HWND hWnd,
@@ -10496,7 +10496,7 @@ new Completion("GetMessageA", "call GetMessageA", @"BOOL GetMessage(
     // last message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMessageW", "call GetMessageW", @"BOOL GetMessage(
+new Completion("GetMessageW", "GetMessageW", @"BOOL GetMessage(
     LPMSG lpMsg,
     // address of structure with message
     HWND hWnd,
@@ -10507,19 +10507,19 @@ new Completion("GetMessageW", "call GetMessageW", @"BOOL GetMessage(
     // last message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMetaFileA", "call GetMetaFileA", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetMetaFileW", "call GetMetaFileW", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetModuleHandleA", "call GetModuleHandleA", @"HMODULE GetModuleHandle(
+new Completion("GetMetaFileA", "GetMetaFileA", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetMetaFileW", "GetMetaFileW", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("GetModuleHandleA", "GetModuleHandleA", @"HMODULE GetModuleHandle(
     LPCTSTR lpModuleName
     // address of module name to return handle for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetModuleHandleW", "call GetModuleHandleW", @"HMODULE GetModuleHandle(
+new Completion("GetModuleHandleW", "GetModuleHandleW", @"HMODULE GetModuleHandle(
     LPCTSTR lpModuleName
     // address of module name to return handle for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNamedPipeHandleStateA", "call GetNamedPipeHandleStateA", @"BOOL GetNamedPipeHandleState(
+new Completion("GetNamedPipeHandleStateA", "GetNamedPipeHandleStateA", @"BOOL GetNamedPipeHandleState(
     HANDLE hNamedPipe,
     // handle of named pipe
     LPDWORD lpState,
@@ -10536,7 +10536,7 @@ new Completion("GetNamedPipeHandleStateA", "call GetNamedPipeHandleStateA", @"BO
     // size, in characters, of user name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNamedPipeHandleStateW", "call GetNamedPipeHandleStateW", @"BOOL GetNamedPipeHandleState(
+new Completion("GetNamedPipeHandleStateW", "GetNamedPipeHandleStateW", @"BOOL GetNamedPipeHandleState(
     HANDLE hNamedPipe,
     // handle of named pipe
     LPDWORD lpState,
@@ -10553,7 +10553,7 @@ new Completion("GetNamedPipeHandleStateW", "call GetNamedPipeHandleStateW", @"BO
     // size, in characters, of user name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNumberFormatA", "call GetNumberFormatA", @"int GetNumberFormat(
+new Completion("GetNumberFormatA", "GetNumberFormatA", @"int GetNumberFormat(
     LCID Locale,
     // locale for which number string is to be formatted
     DWORD dwFlags,
@@ -10568,7 +10568,7 @@ new Completion("GetNumberFormatA", "call GetNumberFormatA", @"int GetNumberForma
     // size of output buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetNumberFormatW", "call GetNumberFormatW", @"int GetNumberFormat(
+new Completion("GetNumberFormatW", "GetNumberFormatW", @"int GetNumberFormat(
     LCID Locale,
     // locale for which number string is to be formatted
     DWORD dwFlags,
@@ -10583,7 +10583,7 @@ new Completion("GetNumberFormatW", "call GetNumberFormatW", @"int GetNumberForma
     // size of output buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetObjectA", "call GetObjectA", @"int GetObject(
+new Completion("GetObjectA", "GetObjectA", @"int GetObject(
     HGDIOBJ hgdiobj,
     // handle to graphics object of interest
     int cbBuffer,
@@ -10592,7 +10592,7 @@ new Completion("GetObjectA", "call GetObjectA", @"int GetObject(
     // pointer to buffer for object information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetObjectW", "call GetObjectW", @"int GetObject(
+new Completion("GetObjectW", "GetObjectW", @"int GetObject(
     HGDIOBJ hgdiobj,
     // handle to graphics object of interest
     int cbBuffer,
@@ -10601,17 +10601,17 @@ new Completion("GetObjectW", "call GetObjectW", @"int GetObject(
     // pointer to buffer for object information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOpenFileNameA", "call GetOpenFileNameA", @"BOOL GetOpenFileName(
+new Completion("GetOpenFileNameA", "GetOpenFileNameA", @"BOOL GetOpenFileName(
     LPOPENFILENAME lpofn
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOpenFileNameW", "call GetOpenFileNameW", @"BOOL GetOpenFileName(
+new Completion("GetOpenFileNameW", "GetOpenFileNameW", @"BOOL GetOpenFileName(
     LPOPENFILENAME lpofn
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOutlineTextMetricsA", "call GetOutlineTextMetricsA", @"UINT GetOutlineTextMetrics(
+new Completion("GetOutlineTextMetricsA", "GetOutlineTextMetricsA", @"UINT GetOutlineTextMetrics(
     HDC hdc,
     // handle of device context
     UINT cbData,
@@ -10620,7 +10620,7 @@ new Completion("GetOutlineTextMetricsA", "call GetOutlineTextMetricsA", @"UINT G
     // address of metric data array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetOutlineTextMetricsW", "call GetOutlineTextMetricsW", @"UINT GetOutlineTextMetrics(
+new Completion("GetOutlineTextMetricsW", "GetOutlineTextMetricsW", @"UINT GetOutlineTextMetrics(
     HDC hdc,
     // handle of device context
     UINT cbData,
@@ -10629,7 +10629,7 @@ new Completion("GetOutlineTextMetricsW", "call GetOutlineTextMetricsW", @"UINT G
     // address of metric data array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterA", "call GetPrinterA", @"BOOL GetPrinter(
+new Completion("GetPrinterA", "GetPrinterA", @"BOOL GetPrinter(
     HANDLE hPrinter,
     // handle to printer of interest
     DWORD Level,
@@ -10642,7 +10642,7 @@ new Completion("GetPrinterA", "call GetPrinterA", @"BOOL GetPrinter(
     // pointer to variable with count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterW", "call GetPrinterW", @"BOOL GetPrinter(
+new Completion("GetPrinterW", "GetPrinterW", @"BOOL GetPrinter(
     HANDLE hPrinter,
     // handle to printer of interest
     DWORD Level,
@@ -10655,7 +10655,7 @@ new Completion("GetPrinterW", "call GetPrinterW", @"BOOL GetPrinter(
     // pointer to variable with count of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDataA", "call GetPrinterDataA", @"DWORD GetPrinterData(
+new Completion("GetPrinterDataA", "GetPrinterDataA", @"DWORD GetPrinterData(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pValueName,
@@ -10670,7 +10670,7 @@ new Completion("GetPrinterDataA", "call GetPrinterDataA", @"DWORD GetPrinterData
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDataW", "call GetPrinterDataW", @"DWORD GetPrinterData(
+new Completion("GetPrinterDataW", "GetPrinterDataW", @"DWORD GetPrinterData(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pValueName,
@@ -10685,7 +10685,7 @@ new Completion("GetPrinterDataW", "call GetPrinterDataW", @"DWORD GetPrinterData
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDriverA", "call GetPrinterDriverA", @"BOOL GetPrinterDriver(
+new Completion("GetPrinterDriverA", "GetPrinterDriverA", @"BOOL GetPrinterDriver(
     HANDLE hPrinter,
     // printer object
     LPTSTR pEnvironment,
@@ -10700,7 +10700,7 @@ new Completion("GetPrinterDriverA", "call GetPrinterDriverA", @"BOOL GetPrinterD
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDriverW", "call GetPrinterDriverW", @"BOOL GetPrinterDriver(
+new Completion("GetPrinterDriverW", "GetPrinterDriverW", @"BOOL GetPrinterDriver(
     HANDLE hPrinter,
     // printer object
     LPTSTR pEnvironment,
@@ -10715,7 +10715,7 @@ new Completion("GetPrinterDriverW", "call GetPrinterDriverW", @"BOOL GetPrinterD
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDriverDirectoryA", "call GetPrinterDriverDirectoryA", @"BOOL GetPrinterDriverDirectory(
+new Completion("GetPrinterDriverDirectoryA", "GetPrinterDriverDirectoryA", @"BOOL GetPrinterDriverDirectory(
     LPTSTR pName,
     // address of server name
     LPTSTR pEnvironment,
@@ -10730,7 +10730,7 @@ new Completion("GetPrinterDriverDirectoryA", "call GetPrinterDriverDirectoryA", 
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrinterDriverDirectoryW", "call GetPrinterDriverDirectoryW", @"BOOL GetPrinterDriverDirectory(
+new Completion("GetPrinterDriverDirectoryW", "GetPrinterDriverDirectoryW", @"BOOL GetPrinterDriverDirectory(
     LPTSTR pName,
     // address of server name
     LPTSTR pEnvironment,
@@ -10745,7 +10745,7 @@ new Completion("GetPrinterDriverDirectoryW", "call GetPrinterDriverDirectoryW", 
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrintProcessorDirectoryA", "call GetPrintProcessorDirectoryA", @"BOOL GetPrintProcessorDirectory(
+new Completion("GetPrintProcessorDirectoryA", "GetPrintProcessorDirectoryA", @"BOOL GetPrintProcessorDirectory(
     LPTSTR pName,
     // address of server name
     LPTSTR pEnvironment,
@@ -10760,7 +10760,7 @@ new Completion("GetPrintProcessorDirectoryA", "call GetPrintProcessorDirectoryA"
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrintProcessorDirectoryW", "call GetPrintProcessorDirectoryW", @"BOOL GetPrintProcessorDirectory(
+new Completion("GetPrintProcessorDirectoryW", "GetPrintProcessorDirectoryW", @"BOOL GetPrintProcessorDirectory(
     LPTSTR pName,
     // address of server name
     LPTSTR pEnvironment,
@@ -10775,7 +10775,7 @@ new Completion("GetPrintProcessorDirectoryW", "call GetPrintProcessorDirectoryW"
     // address of variable with number of bytes retrieved (or required)
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileIntA", "call GetPrivateProfileIntA", @"UINT GetPrivateProfileInt(
+new Completion("GetPrivateProfileIntA", "GetPrivateProfileIntA", @"UINT GetPrivateProfileInt(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10786,7 +10786,7 @@ new Completion("GetPrivateProfileIntA", "call GetPrivateProfileIntA", @"UINT Get
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileIntW", "call GetPrivateProfileIntW", @"UINT GetPrivateProfileInt(
+new Completion("GetPrivateProfileIntW", "GetPrivateProfileIntW", @"UINT GetPrivateProfileInt(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10797,7 +10797,7 @@ new Completion("GetPrivateProfileIntW", "call GetPrivateProfileIntW", @"UINT Get
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileSectionNamesA", "call GetPrivateProfileSectionNamesA", @"DWORD GetPrivateProfileSectionNames(
+new Completion("GetPrivateProfileSectionNamesA", "GetPrivateProfileSectionNamesA", @"DWORD GetPrivateProfileSectionNames(
     LPTSTR lpszReturnBuffer,
     // address of return buffer
     DWORD nSize,
@@ -10806,7 +10806,7 @@ new Completion("GetPrivateProfileSectionNamesA", "call GetPrivateProfileSectionN
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileSectionNamesW", "call GetPrivateProfileSectionNamesW", @"DWORD GetPrivateProfileSectionNames(
+new Completion("GetPrivateProfileSectionNamesW", "GetPrivateProfileSectionNamesW", @"DWORD GetPrivateProfileSectionNames(
     LPTSTR lpszReturnBuffer,
     // address of return buffer
     DWORD nSize,
@@ -10815,7 +10815,7 @@ new Completion("GetPrivateProfileSectionNamesW", "call GetPrivateProfileSectionN
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileStringA", "call GetPrivateProfileStringA", @"DWORD GetPrivateProfileString(
+new Completion("GetPrivateProfileStringA", "GetPrivateProfileStringA", @"DWORD GetPrivateProfileString(
     LPCTSTR lpAppName,
     // points to section name
     LPCTSTR lpKeyName,
@@ -10830,7 +10830,7 @@ new Completion("GetPrivateProfileStringA", "call GetPrivateProfileStringA", @"DW
     // points to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileStringW", "call GetPrivateProfileStringW", @"DWORD GetPrivateProfileString(
+new Completion("GetPrivateProfileStringW", "GetPrivateProfileStringW", @"DWORD GetPrivateProfileString(
     LPCTSTR lpAppName,
     // points to section name
     LPCTSTR lpKeyName,
@@ -10845,7 +10845,7 @@ new Completion("GetPrivateProfileStringW", "call GetPrivateProfileStringW", @"DW
     // points to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileStructA", "call GetPrivateProfileStructA", @"BOOL GetPrivateProfileStruct(
+new Completion("GetPrivateProfileStructA", "GetPrivateProfileStructA", @"BOOL GetPrivateProfileStruct(
     LPCTSTR lpszSection,
     // address of section name
     LPCTSTR lpszKey,
@@ -10858,7 +10858,7 @@ new Completion("GetPrivateProfileStructA", "call GetPrivateProfileStructA", @"BO
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPrivateProfileStructW", "call GetPrivateProfileStructW", @"BOOL GetPrivateProfileStruct(
+new Completion("GetPrivateProfileStructW", "GetPrivateProfileStructW", @"BOOL GetPrivateProfileStruct(
     LPCTSTR lpszSection,
     // address of section name
     LPCTSTR lpszKey,
@@ -10871,7 +10871,7 @@ new Completion("GetPrivateProfileStructW", "call GetPrivateProfileStructW", @"BO
     // address of initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProfileIntA", "call GetProfileIntA", @"UINT GetProfileInt(
+new Completion("GetProfileIntA", "GetProfileIntA", @"UINT GetProfileInt(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10880,7 +10880,7 @@ new Completion("GetProfileIntA", "call GetProfileIntA", @"UINT GetProfileInt(
     // default value if key name is not found
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProfileIntW", "call GetProfileIntW", @"UINT GetProfileInt(
+new Completion("GetProfileIntW", "GetProfileIntW", @"UINT GetProfileInt(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10889,7 +10889,7 @@ new Completion("GetProfileIntW", "call GetProfileIntW", @"UINT GetProfileInt(
     // default value if key name is not found
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProfileStringA", "call GetProfileStringA", @"DWORD GetProfileString(
+new Completion("GetProfileStringA", "GetProfileStringA", @"DWORD GetProfileString(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10902,7 +10902,7 @@ new Completion("GetProfileStringA", "call GetProfileStringA", @"DWORD GetProfile
     // size of destination buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetProfileStringW", "call GetProfileStringW", @"DWORD GetProfileString(
+new Completion("GetProfileStringW", "GetProfileStringW", @"DWORD GetProfileString(
     LPCTSTR lpAppName,
     // address of section name
     LPCTSTR lpKeyName,
@@ -10915,31 +10915,31 @@ new Completion("GetProfileStringW", "call GetProfileStringW", @"DWORD GetProfile
     // size of destination buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPropA", "call GetPropA", @"HANDLE GetProp(
+new Completion("GetPropA", "GetPropA", @"HANDLE GetProp(
     HWND hWnd,
     // handle of window
     LPCTSTR lpString
     // atom or address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetPropW", "call GetPropW", @"HANDLE GetProp(
+new Completion("GetPropW", "GetPropW", @"HANDLE GetProp(
     HWND hWnd,
     // handle of window
     LPCTSTR lpString
     // atom or address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSaveFileNameA", "call GetSaveFileNameA", @"BOOL GetSaveFileName(
+new Completion("GetSaveFileNameA", "GetSaveFileNameA", @"BOOL GetSaveFileName(
     LPOPENFILENAME lpofn
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSaveFileNameW", "call GetSaveFileNameW", @"BOOL GetSaveFileName(
+new Completion("GetSaveFileNameW", "GetSaveFileNameW", @"BOOL GetSaveFileName(
     LPOPENFILENAME lpofn
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetServiceDisplayNameA", "call GetServiceDisplayNameA", @"BOOL GetServiceDisplayName(
+new Completion("GetServiceDisplayNameA", "GetServiceDisplayNameA", @"BOOL GetServiceDisplayName(
     SC_HANDLE hSCManager,
     // handle to a service control manager database
     LPCTSTR lpServiceName,
@@ -10950,7 +10950,7 @@ new Completion("GetServiceDisplayNameA", "call GetServiceDisplayNameA", @"BOOL G
     // size of display name buffer and display name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetServiceDisplayNameW", "call GetServiceDisplayNameW", @"BOOL GetServiceDisplayName(
+new Completion("GetServiceDisplayNameW", "GetServiceDisplayNameW", @"BOOL GetServiceDisplayName(
     SC_HANDLE hSCManager,
     // handle to a service control manager database
     LPCTSTR lpServiceName,
@@ -10961,7 +10961,7 @@ new Completion("GetServiceDisplayNameW", "call GetServiceDisplayNameW", @"BOOL G
     // size of display name buffer and display name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetServiceKeyNameA", "call GetServiceKeyNameA", @"BOOL GetServiceKeyName(
+new Completion("GetServiceKeyNameA", "GetServiceKeyNameA", @"BOOL GetServiceKeyName(
     SC_HANDLE hSCManager,
     // handle to a service control manager database
     LPCTSTR lpDisplayName,
@@ -10972,7 +10972,7 @@ new Completion("GetServiceKeyNameA", "call GetServiceKeyNameA", @"BOOL GetServic
     // size of service name buffer and service name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetServiceKeyNameW", "call GetServiceKeyNameW", @"BOOL GetServiceKeyName(
+new Completion("GetServiceKeyNameW", "GetServiceKeyNameW", @"BOOL GetServiceKeyName(
     SC_HANDLE hSCManager,
     // handle to a service control manager database
     LPCTSTR lpDisplayName,
@@ -10983,7 +10983,7 @@ new Completion("GetServiceKeyNameW", "call GetServiceKeyNameW", @"BOOL GetServic
     // size of service name buffer and service name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetShortPathNameA", "call GetShortPathNameA", @"DWORD GetShortPathName(
+new Completion("GetShortPathNameA", "GetShortPathNameA", @"DWORD GetShortPathName(
     LPCTSTR lpszLongPath,
     // points to a null-terminated path string
     LPTSTR lpszShortPath,
@@ -10992,7 +10992,7 @@ new Completion("GetShortPathNameA", "call GetShortPathNameA", @"DWORD GetShortPa
     // specifies the size of the buffer pointed to by lpszShortPath
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetShortPathNameW", "call GetShortPathNameW", @"DWORD GetShortPathName(
+new Completion("GetShortPathNameW", "GetShortPathNameW", @"DWORD GetShortPathName(
     LPCTSTR lpszLongPath,
     // points to a null-terminated path string
     LPTSTR lpszShortPath,
@@ -11001,17 +11001,17 @@ new Completion("GetShortPathNameW", "call GetShortPathNameW", @"DWORD GetShortPa
     // specifies the size of the buffer pointed to by lpszShortPath
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStartupInfoA", "call GetStartupInfoA", @"VOID GetStartupInfo(
+new Completion("GetStartupInfoA", "GetStartupInfoA", @"VOID GetStartupInfo(
     LPSTARTUPINFO lpStartupInfo
     // address of STARTUPINFO structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStartupInfoW", "call GetStartupInfoW", @"VOID GetStartupInfo(
+new Completion("GetStartupInfoW", "GetStartupInfoW", @"VOID GetStartupInfo(
     LPSTARTUPINFO lpStartupInfo
     // address of STARTUPINFO structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStringTypeExA", "call GetStringTypeExA", @"BOOL GetStringTypeEx(
+new Completion("GetStringTypeExA", "GetStringTypeExA", @"BOOL GetStringTypeEx(
     LCID Locale,
     // locale identifer
     DWORD dwInfoType,
@@ -11024,7 +11024,7 @@ new Completion("GetStringTypeExA", "call GetStringTypeExA", @"BOOL GetStringType
     // address of buffer for output
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetStringTypeExW", "call GetStringTypeExW", @"BOOL GetStringTypeEx(
+new Completion("GetStringTypeExW", "GetStringTypeExW", @"BOOL GetStringTypeEx(
     LCID Locale,
     // locale identifer
     DWORD dwInfoType,
@@ -11037,21 +11037,21 @@ new Completion("GetStringTypeExW", "call GetStringTypeExW", @"BOOL GetStringType
     // address of buffer for output
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemDirectoryA", "call GetSystemDirectoryA", @"UINT GetSystemDirectory(
+new Completion("GetSystemDirectoryA", "GetSystemDirectoryA", @"UINT GetSystemDirectory(
     LPTSTR lpBuffer,
     // address of buffer for system directory
     UINT uSize
     // size of directory buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetSystemDirectoryW", "call GetSystemDirectoryW", @"UINT GetSystemDirectory(
+new Completion("GetSystemDirectoryW", "GetSystemDirectoryW", @"UINT GetSystemDirectory(
     LPTSTR lpBuffer,
     // address of buffer for system directory
     UINT uSize
     // size of directory buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTabbedTextExtentA", "call GetTabbedTextExtentA", @"DWORD GetTabbedTextExtent(
+new Completion("GetTabbedTextExtentA", "GetTabbedTextExtentA", @"DWORD GetTabbedTextExtent(
     HDC hDC,
     // handle of device context
     LPCTSTR lpString,
@@ -11064,7 +11064,7 @@ new Completion("GetTabbedTextExtentA", "call GetTabbedTextExtentA", @"DWORD GetT
     // address of array of tab positions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTabbedTextExtentW", "call GetTabbedTextExtentW", @"DWORD GetTabbedTextExtent(
+new Completion("GetTabbedTextExtentW", "GetTabbedTextExtentW", @"DWORD GetTabbedTextExtent(
     HDC hDC,
     // handle of device context
     LPCTSTR lpString,
@@ -11077,7 +11077,7 @@ new Completion("GetTabbedTextExtentW", "call GetTabbedTextExtentW", @"DWORD GetT
     // address of array of tab positions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTempFileNameA", "call GetTempFileNameA", @"UINT GetTempFileName(
+new Completion("GetTempFileNameA", "GetTempFileNameA", @"UINT GetTempFileName(
     LPCTSTR lpPathName,
     // address of directory name for temporary file
     LPCTSTR lpPrefixString,
@@ -11088,7 +11088,7 @@ new Completion("GetTempFileNameA", "call GetTempFileNameA", @"UINT GetTempFileNa
     // address of buffer that receives the new filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTempFileNameW", "call GetTempFileNameW", @"UINT GetTempFileName(
+new Completion("GetTempFileNameW", "GetTempFileNameW", @"UINT GetTempFileName(
     LPCTSTR lpPathName,
     // address of directory name for temporary file
     LPCTSTR lpPrefixString,
@@ -11099,21 +11099,21 @@ new Completion("GetTempFileNameW", "call GetTempFileNameW", @"UINT GetTempFileNa
     // address of buffer that receives the new filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTempPathA", "call GetTempPathA", @"DWORD GetTempPath(
+new Completion("GetTempPathA", "GetTempPathA", @"DWORD GetTempPath(
     DWORD nBufferLength,
     // size, in characters, of the buffer
     LPTSTR lpBuffer
     // address of buffer for temp. path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTempPathW", "call GetTempPathW", @"DWORD GetTempPath(
+new Completion("GetTempPathW", "GetTempPathW", @"DWORD GetTempPath(
     DWORD nBufferLength,
     // size, in characters, of the buffer
     LPTSTR lpBuffer
     // address of buffer for temp. path
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextExtentExPointA", "call GetTextExtentExPointA", @"BOOL GetTextExtentExPoint(
+new Completion("GetTextExtentExPointA", "GetTextExtentExPointA", @"BOOL GetTextExtentExPoint(
     HDC hdc,
     // handle of device context
     LPCTSTR lpszStr,
@@ -11130,7 +11130,7 @@ new Completion("GetTextExtentExPointA", "call GetTextExtentExPointA", @"BOOL Get
     // address of structure with string dimensions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextExtentExPointW", "call GetTextExtentExPointW", @"BOOL GetTextExtentExPoint(
+new Completion("GetTextExtentExPointW", "GetTextExtentExPointW", @"BOOL GetTextExtentExPoint(
     HDC hdc,
     // handle of device context
     LPCTSTR lpszStr,
@@ -11147,7 +11147,7 @@ new Completion("GetTextExtentExPointW", "call GetTextExtentExPointW", @"BOOL Get
     // address of structure with string dimensions
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextExtentPoint32A", "call GetTextExtentPoint32A", @"BOOL GetTextExtentPoint32(
+new Completion("GetTextExtentPoint32A", "GetTextExtentPoint32A", @"BOOL GetTextExtentPoint32(
     HDC hdc,
     // handle of device context
     LPCTSTR lpString,
@@ -11158,7 +11158,7 @@ new Completion("GetTextExtentPoint32A", "call GetTextExtentPoint32A", @"BOOL Get
     // address of structure for string size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextExtentPoint32W", "call GetTextExtentPoint32W", @"BOOL GetTextExtentPoint32(
+new Completion("GetTextExtentPoint32W", "GetTextExtentPoint32W", @"BOOL GetTextExtentPoint32(
     HDC hdc,
     // handle of device context
     LPCTSTR lpString,
@@ -11169,7 +11169,7 @@ new Completion("GetTextExtentPoint32W", "call GetTextExtentPoint32W", @"BOOL Get
     // address of structure for string size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextFaceA", "call GetTextFaceA", @"int GetTextFace(
+new Completion("GetTextFaceA", "GetTextFaceA", @"int GetTextFace(
     HDC hdc,
     // handle of device context
     int nCount,
@@ -11178,7 +11178,7 @@ new Completion("GetTextFaceA", "call GetTextFaceA", @"int GetTextFace(
     // address of buffer receiving typeface name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextFaceW", "call GetTextFaceW", @"int GetTextFace(
+new Completion("GetTextFaceW", "GetTextFaceW", @"int GetTextFace(
     HDC hdc,
     // handle of device context
     int nCount,
@@ -11187,21 +11187,21 @@ new Completion("GetTextFaceW", "call GetTextFaceW", @"int GetTextFace(
     // address of buffer receiving typeface name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextMetricsA", "call GetTextMetricsA", @"BOOL GetTextMetrics(
+new Completion("GetTextMetricsA", "GetTextMetricsA", @"BOOL GetTextMetrics(
     HDC hdc,
     // handle of device context
     LPTEXTMETRIC lptm
     // address of text metrics structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTextMetricsW", "call GetTextMetricsW", @"BOOL GetTextMetrics(
+new Completion("GetTextMetricsW", "GetTextMetricsW", @"BOOL GetTextMetrics(
     HDC hdc,
     // handle of device context
     LPTEXTMETRIC lptm
     // address of text metrics structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTimeFormatA", "call GetTimeFormatA", @"int GetTimeFormat(
+new Completion("GetTimeFormatA", "GetTimeFormatA", @"int GetTimeFormat(
     LCID Locale,
     // locale for which time is to be formatted
     DWORD dwFlags,
@@ -11216,7 +11216,7 @@ new Completion("GetTimeFormatA", "call GetTimeFormatA", @"int GetTimeFormat(
     // size, in bytes or characters, of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetTimeFormatW", "call GetTimeFormatW", @"int GetTimeFormat(
+new Completion("GetTimeFormatW", "GetTimeFormatW", @"int GetTimeFormat(
     LCID Locale,
     // locale for which time is to be formatted
     DWORD dwFlags,
@@ -11231,21 +11231,21 @@ new Completion("GetTimeFormatW", "call GetTimeFormatW", @"int GetTimeFormat(
     // size, in bytes or characters, of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserNameA", "call GetUserNameA", @"BOOL GetUserName(
+new Completion("GetUserNameA", "GetUserNameA", @"BOOL GetUserName(
     LPTSTR lpBuffer,
     // address of name buffer
     LPDWORD nSize
     // address of size of name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserNameW", "call GetUserNameW", @"BOOL GetUserName(
+new Completion("GetUserNameW", "GetUserNameW", @"BOOL GetUserName(
     LPTSTR lpBuffer,
     // address of name buffer
     LPDWORD nSize
     // address of size of name buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserObjectInformationA", "call GetUserObjectInformationA", @"BOOL GetUserObjectInformation(
+new Completion("GetUserObjectInformationA", "GetUserObjectInformationA", @"BOOL GetUserObjectInformation(
     HANDLE hObj,
     // handle of object to get information for
     int nIndex,
@@ -11258,7 +11258,7 @@ new Completion("GetUserObjectInformationA", "call GetUserObjectInformationA", @"
     // receives required size, in bytes, of pvInfo buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetUserObjectInformationW", "call GetUserObjectInformationW", @"BOOL GetUserObjectInformation(
+new Completion("GetUserObjectInformationW", "GetUserObjectInformationW", @"BOOL GetUserObjectInformation(
     HANDLE hObj,
     // handle of object to get information for
     int nIndex,
@@ -11271,17 +11271,17 @@ new Completion("GetUserObjectInformationW", "call GetUserObjectInformationW", @"
     // receives required size, in bytes, of pvInfo buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetVersionExA", "call GetVersionExA", @"BOOL GetVersionEx(
+new Completion("GetVersionExA", "GetVersionExA", @"BOOL GetVersionEx(
     LPOSVERSIONINFO lpVersionInformation
     // pointer to version information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetVersionExW", "call GetVersionExW", @"BOOL GetVersionEx(
+new Completion("GetVersionExW", "GetVersionExW", @"BOOL GetVersionEx(
     LPOSVERSIONINFO lpVersionInformation
     // pointer to version information structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetVolumeInformationA", "call GetVolumeInformationA", @"BOOL GetVolumeInformation(
+new Completion("GetVolumeInformationA", "GetVolumeInformationA", @"BOOL GetVolumeInformation(
     LPCTSTR lpRootPathName,
     // address of root directory of the file system
     LPTSTR lpVolumeNameBuffer,
@@ -11300,7 +11300,7 @@ new Completion("GetVolumeInformationA", "call GetVolumeInformationA", @"BOOL Get
     // length of lpFileSystemNameBuffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetVolumeInformationW", "call GetVolumeInformationW", @"BOOL GetVolumeInformation(
+new Completion("GetVolumeInformationW", "GetVolumeInformationW", @"BOOL GetVolumeInformation(
     LPCTSTR lpRootPathName,
     // address of root directory of the file system
     LPTSTR lpVolumeNameBuffer,
@@ -11319,35 +11319,35 @@ new Completion("GetVolumeInformationW", "call GetVolumeInformationW", @"BOOL Get
     // length of lpFileSystemNameBuffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowLongA", "call GetWindowLongA", @"LONG GetWindowLong(
+new Completion("GetWindowLongA", "GetWindowLongA", @"LONG GetWindowLong(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowLongW", "call GetWindowLongW", @"LONG GetWindowLong(
+new Completion("GetWindowLongW", "GetWindowLongW", @"LONG GetWindowLong(
     HWND hWnd,
     // handle of window
     int nIndex
     // offset of value to retrieve
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowsDirectoryA", "call GetWindowsDirectoryA", @"UINT GetWindowsDirectory(
+new Completion("GetWindowsDirectoryA", "GetWindowsDirectoryA", @"UINT GetWindowsDirectory(
     LPTSTR lpBuffer,
     // address of buffer for Windows directory
     UINT uSize
     // size of directory buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowsDirectoryW", "call GetWindowsDirectoryW", @"UINT GetWindowsDirectory(
+new Completion("GetWindowsDirectoryW", "GetWindowsDirectoryW", @"UINT GetWindowsDirectory(
     LPTSTR lpBuffer,
     // address of buffer for Windows directory
     UINT uSize
     // size of directory buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowTextA", "call GetWindowTextA", @"int GetWindowText(
+new Completion("GetWindowTextA", "GetWindowTextA", @"int GetWindowText(
     HWND hWnd,
     // handle of window or control with text
     LPTSTR lpString,
@@ -11356,7 +11356,7 @@ new Completion("GetWindowTextA", "call GetWindowTextA", @"int GetWindowText(
     // maximum number of characters to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowTextW", "call GetWindowTextW", @"int GetWindowText(
+new Completion("GetWindowTextW", "GetWindowTextW", @"int GetWindowText(
     HWND hWnd,
     // handle of window or control with text
     LPTSTR lpString,
@@ -11365,37 +11365,37 @@ new Completion("GetWindowTextW", "call GetWindowTextW", @"int GetWindowText(
     // maximum number of characters to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowTextLengthA", "call GetWindowTextLengthA", @"int GetWindowTextLength(
+new Completion("GetWindowTextLengthA", "GetWindowTextLengthA", @"int GetWindowTextLength(
     HWND hWnd
     // handle of window or control with text
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GetWindowTextLengthW", "call GetWindowTextLengthW", @"int GetWindowTextLength(
+new Completion("GetWindowTextLengthW", "GetWindowTextLengthW", @"int GetWindowTextLength(
     HWND hWnd
     // handle of window or control with text
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalAddAtomA", "call GlobalAddAtomA", @"ATOM GlobalAddAtom(
+new Completion("GlobalAddAtomA", "GlobalAddAtomA", @"ATOM GlobalAddAtom(
     LPCTSTR lpString
     // pointer to the string to add
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalAddAtomW", "call GlobalAddAtomW", @"ATOM GlobalAddAtom(
+new Completion("GlobalAddAtomW", "GlobalAddAtomW", @"ATOM GlobalAddAtom(
     LPCTSTR lpString
     // pointer to the string to add
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalFindAtomA", "call GlobalFindAtomA", @"ATOM GlobalFindAtom(
+new Completion("GlobalFindAtomA", "GlobalFindAtomA", @"ATOM GlobalFindAtom(
     LPCTSTR lpString
     // pointer to the string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalFindAtomW", "call GlobalFindAtomW", @"ATOM GlobalFindAtom(
+new Completion("GlobalFindAtomW", "GlobalFindAtomW", @"ATOM GlobalFindAtom(
     LPCTSTR lpString
     // pointer to the string to find
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalGetAtomNameA", "call GlobalGetAtomNameA", @"UINT GlobalGetAtomName(
+new Completion("GlobalGetAtomNameA", "GlobalGetAtomNameA", @"UINT GlobalGetAtomName(
     ATOM nAtom,
     // atom identifier
     LPTSTR lpBuffer,
@@ -11404,7 +11404,7 @@ new Completion("GlobalGetAtomNameA", "call GlobalGetAtomNameA", @"UINT GlobalGet
     // size of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GlobalGetAtomNameW", "call GlobalGetAtomNameW", @"UINT GlobalGetAtomName(
+new Completion("GlobalGetAtomNameW", "GlobalGetAtomNameW", @"UINT GlobalGetAtomName(
     ATOM nAtom,
     // atom identifier
     LPTSTR lpBuffer,
@@ -11413,7 +11413,7 @@ new Completion("GlobalGetAtomNameW", "call GlobalGetAtomNameW", @"UINT GlobalGet
     // size of the buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GrayStringA", "call GrayStringA", @"BOOL GrayString(
+new Completion("GrayStringA", "GrayStringA", @"BOOL GrayString(
     HDC hDC,
     // handle to the device context
     HBRUSH hBrush,
@@ -11434,7 +11434,7 @@ new Completion("GrayStringA", "call GrayStringA", @"BOOL GrayString(
     // height
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("GrayStringW", "call GrayStringW", @"BOOL GrayString(
+new Completion("GrayStringW", "GrayStringW", @"BOOL GrayString(
     HDC hDC,
     // handle to the device context
     HBRUSH hBrush,
@@ -11455,7 +11455,7 @@ new Completion("GrayStringW", "call GrayStringW", @"BOOL GrayString(
     // height
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitiateSystemShutdownA", "call InitiateSystemShutdownA", @"BOOL InitiateSystemShutdown(
+new Completion("InitiateSystemShutdownA", "InitiateSystemShutdownA", @"BOOL InitiateSystemShutdown(
     LPTSTR lpMachineName,
     // address of name of computer to shut down
     LPTSTR lpMessage,
@@ -11468,7 +11468,7 @@ new Completion("InitiateSystemShutdownA", "call InitiateSystemShutdownA", @"BOOL
     // reboot flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InitiateSystemShutdownW", "call InitiateSystemShutdownW", @"BOOL InitiateSystemShutdown(
+new Completion("InitiateSystemShutdownW", "InitiateSystemShutdownW", @"BOOL InitiateSystemShutdown(
     LPTSTR lpMachineName,
     // address of name of computer to shut down
     LPTSTR lpMessage,
@@ -11481,7 +11481,7 @@ new Completion("InitiateSystemShutdownW", "call InitiateSystemShutdownW", @"BOOL
     // reboot flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InsertMenuA", "call InsertMenuA", @"BOOL InsertMenu(
+new Completion("InsertMenuA", "InsertMenuA", @"BOOL InsertMenu(
     HMENU hMenu,
     // handle of menu
     UINT uPosition,
@@ -11494,7 +11494,7 @@ new Completion("InsertMenuA", "call InsertMenuA", @"BOOL InsertMenu(
     // menu item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("InsertMenuW", "call InsertMenuW", @"BOOL InsertMenu(
+new Completion("InsertMenuW", "InsertMenuW", @"BOOL InsertMenu(
     HMENU hMenu,
     // handle of menu
     UINT uPosition,
@@ -11507,75 +11507,75 @@ new Completion("InsertMenuW", "call InsertMenuW", @"BOOL InsertMenu(
     // menu item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadStringPtrA", "call IsBadStringPtrA", @"BOOL IsBadStringPtr(
+new Completion("IsBadStringPtrA", "IsBadStringPtrA", @"BOOL IsBadStringPtr(
     LPCTSTR lpsz,
     // address of string
     UINT ucchMax
     // maximum size of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsBadStringPtrW", "call IsBadStringPtrW", @"BOOL IsBadStringPtr(
+new Completion("IsBadStringPtrW", "IsBadStringPtrW", @"BOOL IsBadStringPtr(
     LPCTSTR lpsz,
     // address of string
     UINT ucchMax
     // maximum size of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharAlphaA", "call IsCharAlphaA", @"BOOL IsCharAlpha(
+new Completion("IsCharAlphaA", "IsCharAlphaA", @"BOOL IsCharAlpha(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharAlphaW", "call IsCharAlphaW", @"BOOL IsCharAlpha(
+new Completion("IsCharAlphaW", "IsCharAlphaW", @"BOOL IsCharAlpha(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharAlphaNumericA", "call IsCharAlphaNumericA", @"BOOL IsCharAlphaNumeric(
+new Completion("IsCharAlphaNumericA", "IsCharAlphaNumericA", @"BOOL IsCharAlphaNumeric(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharAlphaNumericW", "call IsCharAlphaNumericW", @"BOOL IsCharAlphaNumeric(
+new Completion("IsCharAlphaNumericW", "IsCharAlphaNumericW", @"BOOL IsCharAlphaNumeric(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharLowerA", "call IsCharLowerA", @"BOOL IsCharLower(
+new Completion("IsCharLowerA", "IsCharLowerA", @"BOOL IsCharLower(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharLowerW", "call IsCharLowerW", @"BOOL IsCharLower(
+new Completion("IsCharLowerW", "IsCharLowerW", @"BOOL IsCharLower(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharUpperA", "call IsCharUpperA", @"BOOL IsCharUpper(
+new Completion("IsCharUpperA", "IsCharUpperA", @"BOOL IsCharUpper(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsCharUpperW", "call IsCharUpperW", @"BOOL IsCharUpper(
+new Completion("IsCharUpperW", "IsCharUpperW", @"BOOL IsCharUpper(
     TCHAR ch
     // character to test
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDialogMessageA", "call IsDialogMessageA", @"BOOL IsDialogMessage(
+new Completion("IsDialogMessageA", "IsDialogMessageA", @"BOOL IsDialogMessage(
     HWND hDlg,
     // handle of dialog box
     LPMSG lpMsg
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("IsDialogMessageW", "call IsDialogMessageW", @"BOOL IsDialogMessage(
+new Completion("IsDialogMessageW", "IsDialogMessageW", @"BOOL IsDialogMessage(
     HWND hDlg,
     // handle of dialog box
     LPMSG lpMsg
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LCMapStringA", "call LCMapStringA", @"int LCMapString(
+new Completion("LCMapStringA", "LCMapStringA", @"int LCMapString(
     LCID Locale,
     // locale identifier
     DWORD dwMapFlags,
@@ -11590,7 +11590,7 @@ new Completion("LCMapStringA", "call LCMapStringA", @"int LCMapString(
     // size of destination buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LCMapStringW", "call LCMapStringW", @"int LCMapString(
+new Completion("LCMapStringW", "LCMapStringW", @"int LCMapString(
     LCID Locale,
     // locale identifier
     DWORD dwMapFlags,
@@ -11605,83 +11605,83 @@ new Completion("LCMapStringW", "call LCMapStringW", @"int LCMapString(
     // size of destination buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadAcceleratorsA", "call LoadAcceleratorsA", @"HACCEL LoadAccelerators(
+new Completion("LoadAcceleratorsA", "LoadAcceleratorsA", @"HACCEL LoadAccelerators(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpTableName
     // address of table-name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadAcceleratorsW", "call LoadAcceleratorsW", @"HACCEL LoadAccelerators(
+new Completion("LoadAcceleratorsW", "LoadAcceleratorsW", @"HACCEL LoadAccelerators(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpTableName
     // address of table-name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadBitmapA", "call LoadBitmapA", @"HBITMAP LoadBitmap(
+new Completion("LoadBitmapA", "LoadBitmapA", @"HBITMAP LoadBitmap(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpBitmapName
     // address of bitmap resource name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadBitmapW", "call LoadBitmapW", @"HBITMAP LoadBitmap(
+new Completion("LoadBitmapW", "LoadBitmapW", @"HBITMAP LoadBitmap(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpBitmapName
     // address of bitmap resource name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadCursorA", "call LoadCursorA", @"HCURSOR LoadCursor(
+new Completion("LoadCursorA", "LoadCursorA", @"HCURSOR LoadCursor(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpCursorName
     // name string or cursor resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadCursorW", "call LoadCursorW", @"HCURSOR LoadCursor(
+new Completion("LoadCursorW", "LoadCursorW", @"HCURSOR LoadCursor(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpCursorName
     // name string or cursor resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadCursorFromFileA", "call LoadCursorFromFileA", @"HCURSOR LoadCursorFromFile (
+new Completion("LoadCursorFromFileA", "LoadCursorFromFileA", @"HCURSOR LoadCursorFromFile (
     LPCTSTR lpFileName
     // pointer to name of cursor file, or system cursor identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadCursorFromFileW", "call LoadCursorFromFileW", @"HCURSOR LoadCursorFromFile (
+new Completion("LoadCursorFromFileW", "LoadCursorFromFileW", @"HCURSOR LoadCursorFromFile (
     LPCTSTR lpFileName
     // pointer to name of cursor file, or system cursor identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadIconA", "call LoadIconA", @"HICON LoadIcon(
+new Completion("LoadIconA", "LoadIconA", @"HICON LoadIcon(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpIconName
     // icon-name string or icon resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadIconW", "call LoadIconW", @"HICON LoadIcon(
+new Completion("LoadIconW", "LoadIconW", @"HICON LoadIcon(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpIconName
     // icon-name string or icon resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadLibraryA", "call LoadLibraryA", @"HINSTANCE LoadLibrary(
+new Completion("LoadLibraryA", "LoadLibraryA", @"HINSTANCE LoadLibrary(
     LPCTSTR lpLibFileName
     // address of filename of executable module
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadLibraryW", "call LoadLibraryW", @"HINSTANCE LoadLibrary(
+new Completion("LoadLibraryW", "LoadLibraryW", @"HINSTANCE LoadLibrary(
     LPCTSTR lpLibFileName
     // address of filename of executable module
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadLibraryExA", "call LoadLibraryExA", @"HINSTANCE LoadLibraryEx(
+new Completion("LoadLibraryExA", "LoadLibraryExA", @"HINSTANCE LoadLibraryEx(
     LPCTSTR lpLibFileName,
     // points to name of executable module
     HANDLE hFile,
@@ -11690,7 +11690,7 @@ new Completion("LoadLibraryExA", "call LoadLibraryExA", @"HINSTANCE LoadLibraryE
     // entry-point execution flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadLibraryExW", "call LoadLibraryExW", @"HINSTANCE LoadLibraryEx(
+new Completion("LoadLibraryExW", "LoadLibraryExW", @"HINSTANCE LoadLibraryEx(
     LPCTSTR lpLibFileName,
     // points to name of executable module
     HANDLE hFile,
@@ -11699,31 +11699,31 @@ new Completion("LoadLibraryExW", "call LoadLibraryExW", @"HINSTANCE LoadLibraryE
     // entry-point execution flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadMenuA", "call LoadMenuA", @"HMENU LoadMenu(
+new Completion("LoadMenuA", "LoadMenuA", @"HMENU LoadMenu(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpMenuName
     // menu name string or menu-resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadMenuW", "call LoadMenuW", @"HMENU LoadMenu(
+new Completion("LoadMenuW", "LoadMenuW", @"HMENU LoadMenu(
     HINSTANCE hInstance,
     // handle of application instance
     LPCTSTR lpMenuName
     // menu name string or menu-resource identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadMenuIndirectA", "call LoadMenuIndirectA", @"HMENU LoadMenuIndirect(
+new Completion("LoadMenuIndirectA", "LoadMenuIndirectA", @"HMENU LoadMenuIndirect(
     CONST MENUTEMPLATE *lpMenuTemplate
     // address of menu template
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadMenuIndirectW", "call LoadMenuIndirectW", @"HMENU LoadMenuIndirect(
+new Completion("LoadMenuIndirectW", "LoadMenuIndirectW", @"HMENU LoadMenuIndirect(
     CONST MENUTEMPLATE *lpMenuTemplate
     // address of menu template
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadStringA", "call LoadStringA", @"int LoadString(
+new Completion("LoadStringA", "LoadStringA", @"int LoadString(
     HINSTANCE hInstance,
     // handle of module containing string resource
     UINT uID,
@@ -11734,7 +11734,7 @@ new Completion("LoadStringA", "call LoadStringA", @"int LoadString(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LoadStringW", "call LoadStringW", @"int LoadString(
+new Completion("LoadStringW", "LoadStringW", @"int LoadString(
     HINSTANCE hInstance,
     // handle of module containing string resource
     UINT uID,
@@ -11745,7 +11745,7 @@ new Completion("LoadStringW", "call LoadStringW", @"int LoadString(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LogonUserA", "call LogonUserA", @"BOOL LogonUser(
+new Completion("LogonUserA", "LogonUserA", @"BOOL LogonUser(
     LPTSTR lpszUsername,
     // string that specifies the user name
     LPTSTR lpszDomain,
@@ -11760,7 +11760,7 @@ new Completion("LogonUserA", "call LogonUserA", @"BOOL LogonUser(
     // pointer to variable to receive token handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LogonUserW", "call LogonUserW", @"BOOL LogonUser(
+new Completion("LogonUserW", "LogonUserW", @"BOOL LogonUser(
     LPTSTR lpszUsername,
     // string that specifies the user name
     LPTSTR lpszDomain,
@@ -11775,7 +11775,7 @@ new Completion("LogonUserW", "call LogonUserW", @"BOOL LogonUser(
     // pointer to variable to receive token handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupAccountNameA", "call LookupAccountNameA", @"BOOL LookupAccountName(
+new Completion("LookupAccountNameA", "LookupAccountNameA", @"BOOL LookupAccountName(
     LPCTSTR lpSystemName,
     // address of string for system name
     LPCTSTR lpAccountName,
@@ -11792,7 +11792,7 @@ new Completion("LookupAccountNameA", "call LookupAccountNameA", @"BOOL LookupAcc
     // address of SID-type indicator
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupAccountNameW", "call LookupAccountNameW", @"BOOL LookupAccountName(
+new Completion("LookupAccountNameW", "LookupAccountNameW", @"BOOL LookupAccountName(
     LPCTSTR lpSystemName,
     // address of string for system name
     LPCTSTR lpAccountName,
@@ -11809,7 +11809,7 @@ new Completion("LookupAccountNameW", "call LookupAccountNameW", @"BOOL LookupAcc
     // address of SID-type indicator
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupAccountSidA", "call LookupAccountSidA", @"BOOL LookupAccountSid(
+new Completion("LookupAccountSidA", "LookupAccountSidA", @"BOOL LookupAccountSid(
     LPCTSTR lpSystemName,
     // address of string for system name
     PSID Sid,
@@ -11826,7 +11826,7 @@ new Completion("LookupAccountSidA", "call LookupAccountSidA", @"BOOL LookupAccou
     // address of structure for SID type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupAccountSidW", "call LookupAccountSidW", @"BOOL LookupAccountSid(
+new Completion("LookupAccountSidW", "LookupAccountSidW", @"BOOL LookupAccountSid(
     LPCTSTR lpSystemName,
     // address of string for system name
     PSID Sid,
@@ -11843,7 +11843,7 @@ new Completion("LookupAccountSidW", "call LookupAccountSidW", @"BOOL LookupAccou
     // address of structure for SID type
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeDisplayNameA", "call LookupPrivilegeDisplayNameA", @"BOOL LookupPrivilegeDisplayName(
+new Completion("LookupPrivilegeDisplayNameA", "LookupPrivilegeDisplayNameA", @"BOOL LookupPrivilegeDisplayName(
     LPCTSTR lpSystemName,
     // pointer to string specifying the system
     LPCTSTR lpName,
@@ -11856,7 +11856,7 @@ new Completion("LookupPrivilegeDisplayNameA", "call LookupPrivilegeDisplayNameA"
     // pointer to language identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeDisplayNameW", "call LookupPrivilegeDisplayNameW", @"BOOL LookupPrivilegeDisplayName(
+new Completion("LookupPrivilegeDisplayNameW", "LookupPrivilegeDisplayNameW", @"BOOL LookupPrivilegeDisplayName(
     LPCTSTR lpSystemName,
     // pointer to string specifying the system
     LPCTSTR lpName,
@@ -11869,7 +11869,7 @@ new Completion("LookupPrivilegeDisplayNameW", "call LookupPrivilegeDisplayNameW"
     // pointer to language identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeNameA", "call LookupPrivilegeNameA", @"BOOL LookupPrivilegeName(
+new Completion("LookupPrivilegeNameA", "LookupPrivilegeNameA", @"BOOL LookupPrivilegeName(
     LPCTSTR lpSystemName,
     // address of string specifying the system
     PLUID lpLuid,
@@ -11880,7 +11880,7 @@ new Completion("LookupPrivilegeNameA", "call LookupPrivilegeNameA", @"BOOL Looku
     // address of size of string for displayable name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeNameW", "call LookupPrivilegeNameW", @"BOOL LookupPrivilegeName(
+new Completion("LookupPrivilegeNameW", "LookupPrivilegeNameW", @"BOOL LookupPrivilegeName(
     LPCTSTR lpSystemName,
     // address of string specifying the system
     PLUID lpLuid,
@@ -11891,7 +11891,7 @@ new Completion("LookupPrivilegeNameW", "call LookupPrivilegeNameW", @"BOOL Looku
     // address of size of string for displayable name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeValueA", "call LookupPrivilegeValueA", @"BOOL LookupPrivilegeValue(
+new Completion("LookupPrivilegeValueA", "LookupPrivilegeValueA", @"BOOL LookupPrivilegeValue(
     LPCTSTR lpSystemName,
     // address of string specifying the system
     LPCTSTR lpName,
@@ -11900,7 +11900,7 @@ new Completion("LookupPrivilegeValueA", "call LookupPrivilegeValueA", @"BOOL Loo
     // address of locally unique identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("LookupPrivilegeValueW", "call LookupPrivilegeValueW", @"BOOL LookupPrivilegeValue(
+new Completion("LookupPrivilegeValueW", "LookupPrivilegeValueW", @"BOOL LookupPrivilegeValue(
     LPCTSTR lpSystemName,
     // address of string specifying the system
     LPCTSTR lpName,
@@ -11909,63 +11909,63 @@ new Completion("LookupPrivilegeValueW", "call LookupPrivilegeValueW", @"BOOL Loo
     // address of locally unique identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcatA", "call lstrcatA", @"LPTSTR lstrcat(
+new Completion("lstrcatA", "lstrcatA", @"LPTSTR lstrcat(
     LPTSTR lpString1,
     // address of buffer for concatenated strings
     LPCTSTR lpString2
     // address of string to add to string1
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcatW", "call lstrcatW", @"LPTSTR lstrcat(
+new Completion("lstrcatW", "lstrcatW", @"LPTSTR lstrcat(
     LPTSTR lpString1,
     // address of buffer for concatenated strings
     LPCTSTR lpString2
     // address of string to add to string1
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmpA", "call lstrcmpA", @"int lstrcmp(
+new Completion("lstrcmpA", "lstrcmpA", @"int lstrcmp(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmpW", "call lstrcmpW", @"int lstrcmp(
+new Completion("lstrcmpW", "lstrcmpW", @"int lstrcmp(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmpiA", "call lstrcmpiA", @"int lstrcmpi(
+new Completion("lstrcmpiA", "lstrcmpiA", @"int lstrcmpi(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcmpiW", "call lstrcmpiW", @"int lstrcmpi(
+new Completion("lstrcmpiW", "lstrcmpiW", @"int lstrcmpi(
     LPCTSTR lpString1,
     // address of first string
     LPCTSTR lpString2
     // address of second string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpyA", "call lstrcpyA", @"LPTSTR lstrcpy(
+new Completion("lstrcpyA", "lstrcpyA", @"LPTSTR lstrcpy(
     LPTSTR lpString1,
     // address of buffer
     LPCTSTR lpString2
     // address of string to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpyW", "call lstrcpyW", @"LPTSTR lstrcpy(
+new Completion("lstrcpyW", "lstrcpyW", @"LPTSTR lstrcpy(
     LPTSTR lpString1,
     // address of buffer
     LPCTSTR lpString2
     // address of string to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpynA", "call lstrcpynA", @"LPTSTR lstrcpyn(
+new Completion("lstrcpynA", "lstrcpynA", @"LPTSTR lstrcpyn(
     LPTSTR lpString1,
     // address of target buffer
     LPCTSTR lpString2,
@@ -11974,7 +11974,7 @@ new Completion("lstrcpynA", "call lstrcpynA", @"LPTSTR lstrcpyn(
     // number of bytes or characters to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrcpynW", "call lstrcpynW", @"LPTSTR lstrcpyn(
+new Completion("lstrcpynW", "lstrcpynW", @"LPTSTR lstrcpyn(
     LPTSTR lpString1,
     // address of target buffer
     LPCTSTR lpString2,
@@ -11983,31 +11983,31 @@ new Completion("lstrcpynW", "call lstrcpynW", @"LPTSTR lstrcpyn(
     // number of bytes or characters to copy
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrlenA", "call lstrlenA", @"int lstrlen(
+new Completion("lstrlenA", "lstrlenA", @"int lstrlen(
     LPCTSTR lpString
     // address of string to count
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("lstrlenW", "call lstrlenW", @"int lstrlen(
+new Completion("lstrlenW", "lstrlenW", @"int lstrlen(
     LPCTSTR lpString
     // address of string to count
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapVirtualKeyA", "call MapVirtualKeyA", @"UINT MapVirtualKey(
+new Completion("MapVirtualKeyA", "MapVirtualKeyA", @"UINT MapVirtualKey(
     UINT uCode,
     // virtual-key code or scan code
     UINT uMapType
     // translation to perform
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MapVirtualKeyW", "call MapVirtualKeyW", @"UINT MapVirtualKey(
+new Completion("MapVirtualKeyW", "MapVirtualKeyW", @"UINT MapVirtualKey(
     UINT uCode,
     // virtual-key code or scan code
     UINT uMapType
     // translation to perform
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MessageBoxA", "call MessageBoxA", @"int MessageBox(
+new Completion("MessageBoxA", "MessageBoxA", @"int MessageBox(
     HWND hWnd,
     // handle of owner window
     LPCTSTR lpText,
@@ -12018,7 +12018,7 @@ new Completion("MessageBoxA", "call MessageBoxA", @"int MessageBox(
     // style of message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MessageBoxW", "call MessageBoxW", @"int MessageBox(
+new Completion("MessageBoxW", "MessageBoxW", @"int MessageBox(
     HWND hWnd,
     // handle of owner window
     LPCTSTR lpText,
@@ -12029,7 +12029,7 @@ new Completion("MessageBoxW", "call MessageBoxW", @"int MessageBox(
     // style of message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MessageBoxExA", "call MessageBoxExA", @"int MessageBoxEx(
+new Completion("MessageBoxExA", "MessageBoxExA", @"int MessageBoxEx(
     HWND hWnd,
     // handle of owner window
     LPCTSTR lpText,
@@ -12042,7 +12042,7 @@ new Completion("MessageBoxExA", "call MessageBoxExA", @"int MessageBoxEx(
     // language identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MessageBoxExW", "call MessageBoxExW", @"int MessageBoxEx(
+new Completion("MessageBoxExW", "MessageBoxExW", @"int MessageBoxEx(
     HWND hWnd,
     // handle of owner window
     LPCTSTR lpText,
@@ -12055,7 +12055,7 @@ new Completion("MessageBoxExW", "call MessageBoxExW", @"int MessageBoxEx(
     // language identifier
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ModifyMenuA", "call ModifyMenuA", @"BOOL ModifyMenu(
+new Completion("ModifyMenuA", "ModifyMenuA", @"BOOL ModifyMenu(
     HMENU hMnu,
     // handle of menu
     UINT uPosition,
@@ -12068,7 +12068,7 @@ new Completion("ModifyMenuA", "call ModifyMenuA", @"BOOL ModifyMenu(
     // menu item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ModifyMenuW", "call ModifyMenuW", @"BOOL ModifyMenu(
+new Completion("ModifyMenuW", "ModifyMenuW", @"BOOL ModifyMenu(
     HMENU hMnu,
     // handle of menu
     UINT uPosition,
@@ -12081,21 +12081,21 @@ new Completion("ModifyMenuW", "call ModifyMenuW", @"BOOL ModifyMenu(
     // menu item content
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveFileA", "call MoveFileA", @"BOOL MoveFile(
+new Completion("MoveFileA", "MoveFileA", @"BOOL MoveFile(
     LPCTSTR lpExistingFileName,
     // address of name of the existing file
     LPCTSTR lpNewFileName
     // address of new name for the file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveFileW", "call MoveFileW", @"BOOL MoveFile(
+new Completion("MoveFileW", "MoveFileW", @"BOOL MoveFile(
     LPCTSTR lpExistingFileName,
     // address of name of the existing file
     LPCTSTR lpNewFileName
     // address of new name for the file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveFileExA", "call MoveFileExA", @"BOOL MoveFileEx(
+new Completion("MoveFileExA", "MoveFileExA", @"BOOL MoveFileEx(
     LPCTSTR lpExistingFileName,
     // address of name of the existing file
     LPCTSTR lpNewFileName,
@@ -12104,7 +12104,7 @@ new Completion("MoveFileExA", "call MoveFileExA", @"BOOL MoveFileEx(
     // flag to determine how to move file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("MoveFileExW", "call MoveFileExW", @"BOOL MoveFileEx(
+new Completion("MoveFileExW", "MoveFileExW", @"BOOL MoveFileEx(
     LPCTSTR lpExistingFileName,
     // address of name of the existing file
     LPCTSTR lpNewFileName,
@@ -12113,7 +12113,7 @@ new Completion("MoveFileExW", "call MoveFileExW", @"BOOL MoveFileEx(
     // flag to determine how to move file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectCloseAuditAlarmA", "call ObjectCloseAuditAlarmA", @"BOOL ObjectCloseAuditAlarm(
+new Completion("ObjectCloseAuditAlarmA", "ObjectCloseAuditAlarmA", @"BOOL ObjectCloseAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -12122,7 +12122,7 @@ new Completion("ObjectCloseAuditAlarmA", "call ObjectCloseAuditAlarmA", @"BOOL O
     // flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectCloseAuditAlarmW", "call ObjectCloseAuditAlarmW", @"BOOL ObjectCloseAuditAlarm(
+new Completion("ObjectCloseAuditAlarmW", "ObjectCloseAuditAlarmW", @"BOOL ObjectCloseAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -12131,7 +12131,7 @@ new Completion("ObjectCloseAuditAlarmW", "call ObjectCloseAuditAlarmW", @"BOOL O
     // flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectOpenAuditAlarmA", "call ObjectOpenAuditAlarmA", @"BOOL ObjectOpenAuditAlarm(
+new Completion("ObjectOpenAuditAlarmA", "ObjectOpenAuditAlarmA", @"BOOL ObjectOpenAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -12158,7 +12158,7 @@ new Completion("ObjectOpenAuditAlarmA", "call ObjectOpenAuditAlarmA", @"BOOL Obj
     // address of flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectOpenAuditAlarmW", "call ObjectOpenAuditAlarmW", @"BOOL ObjectOpenAuditAlarm(
+new Completion("ObjectOpenAuditAlarmW", "ObjectOpenAuditAlarmW", @"BOOL ObjectOpenAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPVOID HandleId,
@@ -12185,7 +12185,7 @@ new Completion("ObjectOpenAuditAlarmW", "call ObjectOpenAuditAlarmW", @"BOOL Obj
     // address of flag for audit generation
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectPrivilegeAuditAlarmA", "call ObjectPrivilegeAuditAlarmA", @"BOOL ObjectPrivilegeAuditAlarm(
+new Completion("ObjectPrivilegeAuditAlarmA", "ObjectPrivilegeAuditAlarmA", @"BOOL ObjectPrivilegeAuditAlarm(
     LPCTSTR SubsystemName,
     // pointer to string for subsystem name
     LPVOID HandleId,
@@ -12200,7 +12200,7 @@ new Completion("ObjectPrivilegeAuditAlarmA", "call ObjectPrivilegeAuditAlarmA", 
     // flag for results
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ObjectPrivilegeAuditAlarmW", "call ObjectPrivilegeAuditAlarmW", @"BOOL ObjectPrivilegeAuditAlarm(
+new Completion("ObjectPrivilegeAuditAlarmW", "ObjectPrivilegeAuditAlarmW", @"BOOL ObjectPrivilegeAuditAlarm(
     LPCTSTR SubsystemName,
     // pointer to string for subsystem name
     LPVOID HandleId,
@@ -12215,21 +12215,21 @@ new Completion("ObjectPrivilegeAuditAlarmW", "call ObjectPrivilegeAuditAlarmW", 
     // flag for results
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OemToCharA", "call OemToCharA", @"BOOL OemToChar(
+new Completion("OemToCharA", "OemToCharA", @"BOOL OemToChar(
     LPCSTR lpszSrc,
     // pointer to string to translate
     LPTSTR lpszDst
     // pointer to buffer for translated string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OemToCharW", "call OemToCharW", @"BOOL OemToChar(
+new Completion("OemToCharW", "OemToCharW", @"BOOL OemToChar(
     LPCSTR lpszSrc,
     // pointer to string to translate
     LPTSTR lpszDst
     // pointer to buffer for translated string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OemToCharBuffA", "call OemToCharBuffA", @"BOOL OemToCharBuff(
+new Completion("OemToCharBuffA", "OemToCharBuffA", @"BOOL OemToCharBuff(
     LPCSTR lpszSrc,
     // pointer to string to translate
     LPTSTR lpszDst,
@@ -12238,7 +12238,7 @@ new Completion("OemToCharBuffA", "call OemToCharBuffA", @"BOOL OemToCharBuff(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OemToCharBuffW", "call OemToCharBuffW", @"BOOL OemToCharBuff(
+new Completion("OemToCharBuffW", "OemToCharBuffW", @"BOOL OemToCharBuff(
     LPCSTR lpszSrc,
     // pointer to string to translate
     LPTSTR lpszDst,
@@ -12247,21 +12247,21 @@ new Completion("OemToCharBuffW", "call OemToCharBuffW", @"BOOL OemToCharBuff(
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenBackupEventLogA", "call OpenBackupEventLogA", @"HANDLE OpenBackupEventLog(
+new Completion("OpenBackupEventLogA", "OpenBackupEventLogA", @"HANDLE OpenBackupEventLog(
     LPCTSTR lpUNCServerName,
     // backup file server name
     LPCTSTR lpFileName
     // backup filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenBackupEventLogW", "call OpenBackupEventLogW", @"HANDLE OpenBackupEventLog(
+new Completion("OpenBackupEventLogW", "OpenBackupEventLogW", @"HANDLE OpenBackupEventLog(
     LPCTSTR lpUNCServerName,
     // backup file server name
     LPCTSTR lpFileName
     // backup filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenDesktopA", "call OpenDesktopA", @"HDESK OpenDesktop(
+new Completion("OpenDesktopA", "OpenDesktopA", @"HDESK OpenDesktop(
     LPTSTR lpszDesktop,
     // name of the desktop to open
     DWORD dwFlags,
@@ -12272,7 +12272,7 @@ new Completion("OpenDesktopA", "call OpenDesktopA", @"HDESK OpenDesktop(
     // specifies access of returned handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenDesktopW", "call OpenDesktopW", @"HDESK OpenDesktop(
+new Completion("OpenDesktopW", "OpenDesktopW", @"HDESK OpenDesktop(
     LPTSTR lpszDesktop,
     // name of the desktop to open
     DWORD dwFlags,
@@ -12283,7 +12283,7 @@ new Completion("OpenDesktopW", "call OpenDesktopW", @"HDESK OpenDesktop(
     // specifies access of returned handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenEventA", "call OpenEventA", @"HANDLE OpenEvent(
+new Completion("OpenEventA", "OpenEventA", @"HANDLE OpenEvent(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12292,7 +12292,7 @@ new Completion("OpenEventA", "call OpenEventA", @"HANDLE OpenEvent(
     // pointer to event-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenEventW", "call OpenEventW", @"HANDLE OpenEvent(
+new Completion("OpenEventW", "OpenEventW", @"HANDLE OpenEvent(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12301,21 +12301,21 @@ new Completion("OpenEventW", "call OpenEventW", @"HANDLE OpenEvent(
     // pointer to event-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenEventLogA", "call OpenEventLogA", @"HANDLE OpenEventLog(
+new Completion("OpenEventLogA", "OpenEventLogA", @"HANDLE OpenEventLog(
     LPCTSTR lpUNCServerName,
     // pointer to server name
     LPCTSTR lpSourceName
     // pointer to source name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenEventLogW", "call OpenEventLogW", @"HANDLE OpenEventLog(
+new Completion("OpenEventLogW", "OpenEventLogW", @"HANDLE OpenEventLog(
     LPCTSTR lpUNCServerName,
     // pointer to server name
     LPCTSTR lpSourceName
     // pointer to source name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenFileMappingA", "call OpenFileMappingA", @"HANDLE OpenFileMapping(
+new Completion("OpenFileMappingA", "OpenFileMappingA", @"HANDLE OpenFileMapping(
     DWORD dwDesiredAccess,
     // access mode
     BOOL bInheritHandle,
@@ -12324,7 +12324,7 @@ new Completion("OpenFileMappingA", "call OpenFileMappingA", @"HANDLE OpenFileMap
     // pointer to name of file-mapping object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenFileMappingW", "call OpenFileMappingW", @"HANDLE OpenFileMapping(
+new Completion("OpenFileMappingW", "OpenFileMappingW", @"HANDLE OpenFileMapping(
     DWORD dwDesiredAccess,
     // access mode
     BOOL bInheritHandle,
@@ -12333,7 +12333,7 @@ new Completion("OpenFileMappingW", "call OpenFileMappingW", @"HANDLE OpenFileMap
     // pointer to name of file-mapping object
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenMutexA", "call OpenMutexA", @"HANDLE OpenMutex(
+new Completion("OpenMutexA", "OpenMutexA", @"HANDLE OpenMutex(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12342,7 +12342,7 @@ new Completion("OpenMutexA", "call OpenMutexA", @"HANDLE OpenMutex(
     // pointer to mutex-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenMutexW", "call OpenMutexW", @"HANDLE OpenMutex(
+new Completion("OpenMutexW", "OpenMutexW", @"HANDLE OpenMutex(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12351,7 +12351,7 @@ new Completion("OpenMutexW", "call OpenMutexW", @"HANDLE OpenMutex(
     // pointer to mutex-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenPrinterA", "call OpenPrinterA", @"BOOL OpenPrinter(
+new Completion("OpenPrinterA", "OpenPrinterA", @"BOOL OpenPrinter(
     LPTSTR pPrinterName,
     // pointer to printer or server name
     LPHANDLE phPrinter,
@@ -12360,7 +12360,7 @@ new Completion("OpenPrinterA", "call OpenPrinterA", @"BOOL OpenPrinter(
     // pointer to printer defaults structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenPrinterW", "call OpenPrinterW", @"BOOL OpenPrinter(
+new Completion("OpenPrinterW", "OpenPrinterW", @"BOOL OpenPrinter(
     LPTSTR pPrinterName,
     // pointer to printer or server name
     LPHANDLE phPrinter,
@@ -12369,7 +12369,7 @@ new Completion("OpenPrinterW", "call OpenPrinterW", @"BOOL OpenPrinter(
     // pointer to printer defaults structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenSCManagerA", "call OpenSCManagerA", @"SC_HANDLE OpenSCManager(
+new Completion("OpenSCManagerA", "OpenSCManagerA", @"SC_HANDLE OpenSCManager(
     LPCTSTR lpMachineName,
     // pointer to machine name string
     LPCTSTR lpDatabaseName,
@@ -12378,7 +12378,7 @@ new Completion("OpenSCManagerA", "call OpenSCManagerA", @"SC_HANDLE OpenSCManage
     // type of access
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenSCManagerW", "call OpenSCManagerW", @"SC_HANDLE OpenSCManager(
+new Completion("OpenSCManagerW", "OpenSCManagerW", @"SC_HANDLE OpenSCManager(
     LPCTSTR lpMachineName,
     // pointer to machine name string
     LPCTSTR lpDatabaseName,
@@ -12387,7 +12387,7 @@ new Completion("OpenSCManagerW", "call OpenSCManagerW", @"SC_HANDLE OpenSCManage
     // type of access
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenSemaphoreA", "call OpenSemaphoreA", @"HANDLE OpenSemaphore(
+new Completion("OpenSemaphoreA", "OpenSemaphoreA", @"HANDLE OpenSemaphore(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12396,7 +12396,7 @@ new Completion("OpenSemaphoreA", "call OpenSemaphoreA", @"HANDLE OpenSemaphore(
     // pointer to semaphore-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenSemaphoreW", "call OpenSemaphoreW", @"HANDLE OpenSemaphore(
+new Completion("OpenSemaphoreW", "OpenSemaphoreW", @"HANDLE OpenSemaphore(
     DWORD dwDesiredAccess,
     // access flag
     BOOL bInheritHandle,
@@ -12405,7 +12405,7 @@ new Completion("OpenSemaphoreW", "call OpenSemaphoreW", @"HANDLE OpenSemaphore(
     // pointer to semaphore-object name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenServiceA", "call OpenServiceA", @"SC_HANDLE OpenService(
+new Completion("OpenServiceA", "OpenServiceA", @"SC_HANDLE OpenService(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     LPCTSTR lpServiceName,
@@ -12414,7 +12414,7 @@ new Completion("OpenServiceA", "call OpenServiceA", @"SC_HANDLE OpenService(
     // type of access to service
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenServiceW", "call OpenServiceW", @"SC_HANDLE OpenService(
+new Completion("OpenServiceW", "OpenServiceW", @"SC_HANDLE OpenService(
     SC_HANDLE hSCManager,
     // handle to service control manager database
     LPCTSTR lpServiceName,
@@ -12423,7 +12423,7 @@ new Completion("OpenServiceW", "call OpenServiceW", @"SC_HANDLE OpenService(
     // type of access to service
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenWindowStationA", "call OpenWindowStationA", @"HWINSTA OpenWindowStation(
+new Completion("OpenWindowStationA", "OpenWindowStationA", @"HWINSTA OpenWindowStation(
     LPTSTR lpszWinSta,
     // name of the window station to open
     BOOL fInherit,
@@ -12432,7 +12432,7 @@ new Completion("OpenWindowStationA", "call OpenWindowStationA", @"HWINSTA OpenWi
     // specifies access of returned handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OpenWindowStationW", "call OpenWindowStationW", @"HWINSTA OpenWindowStation(
+new Completion("OpenWindowStationW", "OpenWindowStationW", @"HWINSTA OpenWindowStation(
     LPTSTR lpszWinSta,
     // name of the window station to open
     BOOL fInherit,
@@ -12441,17 +12441,17 @@ new Completion("OpenWindowStationW", "call OpenWindowStationW", @"HWINSTA OpenWi
     // specifies access of returned handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OutputDebugStringA", "call OutputDebugStringA", @"VOID OutputDebugString(
+new Completion("OutputDebugStringA", "OutputDebugStringA", @"VOID OutputDebugString(
     LPCTSTR lpOutputString
     // pointer to string to be displayed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("OutputDebugStringW", "call OutputDebugStringW", @"VOID OutputDebugString(
+new Completion("OutputDebugStringW", "OutputDebugStringW", @"VOID OutputDebugString(
     LPCTSTR lpOutputString
     // pointer to string to be displayed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PeekConsoleInputA", "call PeekConsoleInputA", @"BOOL PeekConsoleInput(
+new Completion("PeekConsoleInputA", "PeekConsoleInputA", @"BOOL PeekConsoleInput(
     HANDLE hConsoleInput,
     // handle to a console input buffer
     PINPUT_RECORD lpBuffer,
@@ -12462,7 +12462,7 @@ new Completion("PeekConsoleInputA", "call PeekConsoleInputA", @"BOOL PeekConsole
     // pointer to number of records read
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PeekConsoleInputW", "call PeekConsoleInputW", @"BOOL PeekConsoleInput(
+new Completion("PeekConsoleInputW", "PeekConsoleInputW", @"BOOL PeekConsoleInput(
     HANDLE hConsoleInput,
     // handle to a console input buffer
     PINPUT_RECORD lpBuffer,
@@ -12473,7 +12473,7 @@ new Completion("PeekConsoleInputW", "call PeekConsoleInputW", @"BOOL PeekConsole
     // pointer to number of records read
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PeekMessageA", "call PeekMessageA", @"BOOL PeekMessage(
+new Completion("PeekMessageA", "PeekMessageA", @"BOOL PeekMessage(
     LPMSG lpMsg,
     // pointer to structure for message
     HWND hWnd,
@@ -12486,7 +12486,7 @@ new Completion("PeekMessageA", "call PeekMessageA", @"BOOL PeekMessage(
     // removal flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PeekMessageW", "call PeekMessageW", @"BOOL PeekMessage(
+new Completion("PeekMessageW", "PeekMessageW", @"BOOL PeekMessage(
     LPMSG lpMsg,
     // pointer to structure for message
     HWND hWnd,
@@ -12499,7 +12499,7 @@ new Completion("PeekMessageW", "call PeekMessageW", @"BOOL PeekMessage(
     // removal flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyTextOutA", "call PolyTextOutA", @"BOOL PolyTextOut(
+new Completion("PolyTextOutA", "PolyTextOutA", @"BOOL PolyTextOut(
     HDC hdc,
     // handle of device context
     CONST POLYTEXT *pptxt,
@@ -12508,7 +12508,7 @@ new Completion("PolyTextOutA", "call PolyTextOutA", @"BOOL PolyTextOut(
     // number of structures in array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PolyTextOutW", "call PolyTextOutW", @"BOOL PolyTextOut(
+new Completion("PolyTextOutW", "PolyTextOutW", @"BOOL PolyTextOut(
     HDC hdc,
     // handle of device context
     CONST POLYTEXT *pptxt,
@@ -12517,7 +12517,7 @@ new Completion("PolyTextOutW", "call PolyTextOutW", @"BOOL PolyTextOut(
     // number of structures in array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostMessageA", "call PostMessageA", @"BOOL PostMessage(
+new Completion("PostMessageA", "PostMessageA", @"BOOL PostMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -12528,7 +12528,7 @@ new Completion("PostMessageA", "call PostMessageA", @"BOOL PostMessage(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostMessageW", "call PostMessageW", @"BOOL PostMessage(
+new Completion("PostMessageW", "PostMessageW", @"BOOL PostMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -12539,7 +12539,7 @@ new Completion("PostMessageW", "call PostMessageW", @"BOOL PostMessage(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostThreadMessageA", "call PostThreadMessageA", @"BOOL PostThreadMessage(
+new Completion("PostThreadMessageA", "PostThreadMessageA", @"BOOL PostThreadMessage(
     DWORD idThread,
     // thread identifier
     UINT Msg,
@@ -12550,7 +12550,7 @@ new Completion("PostThreadMessageA", "call PostThreadMessageA", @"BOOL PostThrea
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PostThreadMessageW", "call PostThreadMessageW", @"BOOL PostThreadMessage(
+new Completion("PostThreadMessageW", "PostThreadMessageW", @"BOOL PostThreadMessage(
     DWORD idThread,
     // thread identifier
     UINT Msg,
@@ -12561,17 +12561,17 @@ new Completion("PostThreadMessageW", "call PostThreadMessageW", @"BOOL PostThrea
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrintDlgA", "call PrintDlgA", @"BOOL PrintDlg(
+new Completion("PrintDlgA", "PrintDlgA", @"BOOL PrintDlg(
     LPPRINTDLG lppd
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrintDlgW", "call PrintDlgW", @"BOOL PrintDlg(
+new Completion("PrintDlgW", "PrintDlgW", @"BOOL PrintDlg(
     LPPRINTDLG lppd
     // address of structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrinterMessageBoxA", "call PrinterMessageBoxA", @"HPRINTER PrinterMessageBox (
+new Completion("PrinterMessageBoxA", "PrinterMessageBoxA", @"HPRINTER PrinterMessageBox (
     HANDLE hPrinter,
     // handle of printer
     DWORD Error,
@@ -12586,7 +12586,7 @@ new Completion("PrinterMessageBoxA", "call PrinterMessageBoxA", @"HPRINTER Print
     // style of message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrinterMessageBoxW", "call PrinterMessageBoxW", @"HPRINTER PrinterMessageBox (
+new Completion("PrinterMessageBoxW", "PrinterMessageBoxW", @"HPRINTER PrinterMessageBox (
     HANDLE hPrinter,
     // handle of printer
     DWORD Error,
@@ -12601,7 +12601,7 @@ new Completion("PrinterMessageBoxW", "call PrinterMessageBoxW", @"HPRINTER Print
     // style of message box
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrivilegedServiceAuditAlarmA", "call PrivilegedServiceAuditAlarmA", @"BOOL PrivilegedServiceAuditAlarm(
+new Completion("PrivilegedServiceAuditAlarmA", "PrivilegedServiceAuditAlarmA", @"BOOL PrivilegedServiceAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPCTSTR ServiceName,
@@ -12614,7 +12614,7 @@ new Completion("PrivilegedServiceAuditAlarmA", "call PrivilegedServiceAuditAlarm
     // flag for granted access rights
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("PrivilegedServiceAuditAlarmW", "call PrivilegedServiceAuditAlarmW", @"BOOL PrivilegedServiceAuditAlarm(
+new Completion("PrivilegedServiceAuditAlarmW", "PrivilegedServiceAuditAlarmW", @"BOOL PrivilegedServiceAuditAlarm(
     LPCTSTR SubsystemName,
     // address of string for subsystem name
     LPCTSTR ServiceName,
@@ -12627,7 +12627,7 @@ new Completion("PrivilegedServiceAuditAlarmW", "call PrivilegedServiceAuditAlarm
     // flag for granted access rights
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryDosDeviceA", "call QueryDosDeviceA", @"DWORD QueryDosDevice(
+new Completion("QueryDosDeviceA", "QueryDosDeviceA", @"DWORD QueryDosDevice(
     LPCTSTR lpDeviceName,
     // address of MS-DOS device name string
     LPTSTR lpTargetPath,
@@ -12636,7 +12636,7 @@ new Completion("QueryDosDeviceA", "call QueryDosDeviceA", @"DWORD QueryDosDevice
     // maximum storage capacity of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryDosDeviceW", "call QueryDosDeviceW", @"DWORD QueryDosDevice(
+new Completion("QueryDosDeviceW", "QueryDosDeviceW", @"DWORD QueryDosDevice(
     LPCTSTR lpDeviceName,
     // address of MS-DOS device name string
     LPTSTR lpTargetPath,
@@ -12645,7 +12645,7 @@ new Completion("QueryDosDeviceW", "call QueryDosDeviceW", @"DWORD QueryDosDevice
     // maximum storage capacity of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceConfigA", "call QueryServiceConfigA", @"BOOL QueryServiceConfig(
+new Completion("QueryServiceConfigA", "QueryServiceConfigA", @"BOOL QueryServiceConfig(
     SC_HANDLE hService,
     // handle of service
     LPQUERY_SERVICE_CONFIG lpServiceConfig,
@@ -12656,7 +12656,7 @@ new Completion("QueryServiceConfigA", "call QueryServiceConfigA", @"BOOL QuerySe
     // address of variable for bytes needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceConfigW", "call QueryServiceConfigW", @"BOOL QueryServiceConfig(
+new Completion("QueryServiceConfigW", "QueryServiceConfigW", @"BOOL QueryServiceConfig(
     SC_HANDLE hService,
     // handle of service
     LPQUERY_SERVICE_CONFIG lpServiceConfig,
@@ -12667,7 +12667,7 @@ new Completion("QueryServiceConfigW", "call QueryServiceConfigW", @"BOOL QuerySe
     // address of variable for bytes needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceLockStatusA", "call QueryServiceLockStatusA", @"BOOL QueryServiceLockStatus(
+new Completion("QueryServiceLockStatusA", "QueryServiceLockStatusA", @"BOOL QueryServiceLockStatus(
     SC_HANDLE hSCManager,
     // handle of svc. ctrl. mgr. database
     LPQUERY_SERVICE_LOCK_STATUS lpLockStatus,
@@ -12678,7 +12678,7 @@ new Completion("QueryServiceLockStatusA", "call QueryServiceLockStatusA", @"BOOL
     // address of variable for bytes needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("QueryServiceLockStatusW", "call QueryServiceLockStatusW", @"BOOL QueryServiceLockStatus(
+new Completion("QueryServiceLockStatusW", "QueryServiceLockStatusW", @"BOOL QueryServiceLockStatus(
     SC_HANDLE hSCManager,
     // handle of svc. ctrl. mgr. database
     LPQUERY_SERVICE_LOCK_STATUS lpLockStatus,
@@ -12689,7 +12689,7 @@ new Completion("QueryServiceLockStatusW", "call QueryServiceLockStatusW", @"BOOL
     // address of variable for bytes needed
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleA", "call ReadConsoleA", @"BOOL ReadConsole(
+new Completion("ReadConsoleA", "ReadConsoleA", @"BOOL ReadConsole(
     HANDLE hConsoleInput,
     // handle of a console input buffer
     LPVOID lpBuffer,
@@ -12702,7 +12702,7 @@ new Completion("ReadConsoleA", "call ReadConsoleA", @"BOOL ReadConsole(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleW", "call ReadConsoleW", @"BOOL ReadConsole(
+new Completion("ReadConsoleW", "ReadConsoleW", @"BOOL ReadConsole(
     HANDLE hConsoleInput,
     // handle of a console input buffer
     LPVOID lpBuffer,
@@ -12715,7 +12715,7 @@ new Completion("ReadConsoleW", "call ReadConsoleW", @"BOOL ReadConsole(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleInputA", "call ReadConsoleInputA", @"BOOL ReadConsoleInput(
+new Completion("ReadConsoleInputA", "ReadConsoleInputA", @"BOOL ReadConsoleInput(
     HANDLE hConsoleInput,
     // handle of a console input buffer
     PINPUT_RECORD lpBuffer,
@@ -12726,7 +12726,7 @@ new Completion("ReadConsoleInputA", "call ReadConsoleInputA", @"BOOL ReadConsole
     // address of number of records read
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleInputW", "call ReadConsoleInputW", @"BOOL ReadConsoleInput(
+new Completion("ReadConsoleInputW", "ReadConsoleInputW", @"BOOL ReadConsoleInput(
     HANDLE hConsoleInput,
     // handle of a console input buffer
     PINPUT_RECORD lpBuffer,
@@ -12737,7 +12737,7 @@ new Completion("ReadConsoleInputW", "call ReadConsoleInputW", @"BOOL ReadConsole
     // address of number of records read
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleOutputA", "call ReadConsoleOutputA", @"BOOL ReadConsoleOutput(
+new Completion("ReadConsoleOutputA", "ReadConsoleOutputA", @"BOOL ReadConsoleOutput(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     PCHAR_INFO lpBuffer,
@@ -12750,7 +12750,7 @@ new Completion("ReadConsoleOutputA", "call ReadConsoleOutputA", @"BOOL ReadConso
     // address of rectangle to read from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleOutputW", "call ReadConsoleOutputW", @"BOOL ReadConsoleOutput(
+new Completion("ReadConsoleOutputW", "ReadConsoleOutputW", @"BOOL ReadConsoleOutput(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     PCHAR_INFO lpBuffer,
@@ -12763,7 +12763,7 @@ new Completion("ReadConsoleOutputW", "call ReadConsoleOutputW", @"BOOL ReadConso
     // address of rectangle to read from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleOutputCharacterA", "call ReadConsoleOutputCharacterA", @"BOOL ReadConsoleOutputCharacter(
+new Completion("ReadConsoleOutputCharacterA", "ReadConsoleOutputCharacterA", @"BOOL ReadConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     LPTSTR lpCharacter,
@@ -12776,7 +12776,7 @@ new Completion("ReadConsoleOutputCharacterA", "call ReadConsoleOutputCharacterA"
     // address of number of cells read from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadConsoleOutputCharacterW", "call ReadConsoleOutputCharacterW", @"BOOL ReadConsoleOutputCharacter(
+new Completion("ReadConsoleOutputCharacterW", "ReadConsoleOutputCharacterW", @"BOOL ReadConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     LPTSTR lpCharacter,
@@ -12789,7 +12789,7 @@ new Completion("ReadConsoleOutputCharacterW", "call ReadConsoleOutputCharacterW"
     // address of number of cells read from
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadEventLogA", "call ReadEventLogA", @"BOOL ReadEventLog(
+new Completion("ReadEventLogA", "ReadEventLogA", @"BOOL ReadEventLog(
     HANDLE hEventLog,
     // handle of event log
     DWORD dwReadFlags,
@@ -12806,7 +12806,7 @@ new Completion("ReadEventLogA", "call ReadEventLogA", @"BOOL ReadEventLog(
     // number of bytes required for next record
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReadEventLogW", "call ReadEventLogW", @"BOOL ReadEventLog(
+new Completion("ReadEventLogW", "ReadEventLogW", @"BOOL ReadEventLog(
     HANDLE hEventLog,
     // handle of event log
     DWORD dwReadFlags,
@@ -12823,7 +12823,7 @@ new Completion("ReadEventLogW", "call ReadEventLogW", @"BOOL ReadEventLog(
     // number of bytes required for next record
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegConnectRegistryA", "call RegConnectRegistryA", @"LONG RegConnectRegistry(
+new Completion("RegConnectRegistryA", "RegConnectRegistryA", @"LONG RegConnectRegistry(
     LPTSTR lpMachineName,
     // address of name of remote computer
     HKEY hKey,
@@ -12832,7 +12832,7 @@ new Completion("RegConnectRegistryA", "call RegConnectRegistryA", @"LONG RegConn
     // address of buffer for remote registry handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegConnectRegistryW", "call RegConnectRegistryW", @"LONG RegConnectRegistry(
+new Completion("RegConnectRegistryW", "RegConnectRegistryW", @"LONG RegConnectRegistry(
     LPTSTR lpMachineName,
     // address of name of remote computer
     HKEY hKey,
@@ -12841,7 +12841,7 @@ new Completion("RegConnectRegistryW", "call RegConnectRegistryW", @"LONG RegConn
     // address of buffer for remote registry handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegCreateKeyA", "call RegCreateKeyA", @"LONG RegCreateKey(
+new Completion("RegCreateKeyA", "RegCreateKeyA", @"LONG RegCreateKey(
     HKEY hKey,
     // handle of an open key
     LPCTSTR lpSubKey,
@@ -12850,7 +12850,7 @@ new Completion("RegCreateKeyA", "call RegCreateKeyA", @"LONG RegCreateKey(
     // address of buffer for opened handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegCreateKeyW", "call RegCreateKeyW", @"LONG RegCreateKey(
+new Completion("RegCreateKeyW", "RegCreateKeyW", @"LONG RegCreateKey(
     HKEY hKey,
     // handle of an open key
     LPCTSTR lpSubKey,
@@ -12859,7 +12859,7 @@ new Completion("RegCreateKeyW", "call RegCreateKeyW", @"LONG RegCreateKey(
     // address of buffer for opened handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegCreateKeyExA", "call RegCreateKeyExA", @"LONG RegCreateKeyEx(
+new Completion("RegCreateKeyExA", "RegCreateKeyExA", @"LONG RegCreateKeyEx(
     HKEY hKey,
     // handle of an open key
     LPCTSTR lpSubKey,
@@ -12880,7 +12880,7 @@ new Completion("RegCreateKeyExA", "call RegCreateKeyExA", @"LONG RegCreateKeyEx(
     // address of disposition value buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegCreateKeyExW", "call RegCreateKeyExW", @"LONG RegCreateKeyEx(
+new Completion("RegCreateKeyExW", "RegCreateKeyExW", @"LONG RegCreateKeyEx(
     HKEY hKey,
     // handle of an open key
     LPCTSTR lpSubKey,
@@ -12901,21 +12901,21 @@ new Completion("RegCreateKeyExW", "call RegCreateKeyExW", @"LONG RegCreateKeyEx(
     // address of disposition value buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegDeleteValueA", "call RegDeleteValueA", @"LONG RegDeleteValue(
+new Completion("RegDeleteValueA", "RegDeleteValueA", @"LONG RegDeleteValue(
     HKEY hKey,
     // handle of key
     LPCTSTR lpValueName
     // address of value name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegDeleteValueW", "call RegDeleteValueW", @"LONG RegDeleteValue(
+new Completion("RegDeleteValueW", "RegDeleteValueW", @"LONG RegDeleteValue(
     HKEY hKey,
     // handle of key
     LPCTSTR lpValueName
     // address of value name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumKeyA", "call RegEnumKeyA", @"LONG RegEnumKey(
+new Completion("RegEnumKeyA", "RegEnumKeyA", @"LONG RegEnumKey(
     HKEY hKey,
     // handle of key to query
     DWORD dwIndex,
@@ -12926,7 +12926,7 @@ new Completion("RegEnumKeyA", "call RegEnumKeyA", @"LONG RegEnumKey(
     // size of subkey buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumKeyW", "call RegEnumKeyW", @"LONG RegEnumKey(
+new Completion("RegEnumKeyW", "RegEnumKeyW", @"LONG RegEnumKey(
     HKEY hKey,
     // handle of key to query
     DWORD dwIndex,
@@ -12937,7 +12937,7 @@ new Completion("RegEnumKeyW", "call RegEnumKeyW", @"LONG RegEnumKey(
     // size of subkey buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumKeyExA", "call RegEnumKeyExA", @"LONG RegEnumKeyEx(
+new Completion("RegEnumKeyExA", "RegEnumKeyExA", @"LONG RegEnumKeyEx(
     HKEY hKey,
     // handle of key to enumerate
     DWORD dwIndex,
@@ -12956,7 +12956,7 @@ new Completion("RegEnumKeyExA", "call RegEnumKeyExA", @"LONG RegEnumKeyEx(
     // address for time key last written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumKeyExW", "call RegEnumKeyExW", @"LONG RegEnumKeyEx(
+new Completion("RegEnumKeyExW", "RegEnumKeyExW", @"LONG RegEnumKeyEx(
     HKEY hKey,
     // handle of key to enumerate
     DWORD dwIndex,
@@ -12975,7 +12975,7 @@ new Completion("RegEnumKeyExW", "call RegEnumKeyExW", @"LONG RegEnumKeyEx(
     // address for time key last written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumValueA", "call RegEnumValueA", @"LONG RegEnumValue(
+new Completion("RegEnumValueA", "RegEnumValueA", @"LONG RegEnumValue(
     HKEY hKey,
     // handle of key to query
     DWORD dwIndex,
@@ -12994,7 +12994,7 @@ new Completion("RegEnumValueA", "call RegEnumValueA", @"LONG RegEnumValue(
     // address for size of data buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegEnumValueW", "call RegEnumValueW", @"LONG RegEnumValue(
+new Completion("RegEnumValueW", "RegEnumValueW", @"LONG RegEnumValue(
     HKEY hKey,
     // handle of key to query
     DWORD dwIndex,
@@ -13013,65 +13013,65 @@ new Completion("RegEnumValueW", "call RegEnumValueW", @"LONG RegEnumValue(
     // address for size of data buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterClassA", "call RegisterClassA", @"ATOM RegisterClass(
+new Completion("RegisterClassA", "RegisterClassA", @"ATOM RegisterClass(
     CONST WNDCLASS *lpWndClass
     // address of structure with class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterClassW", "call RegisterClassW", @"ATOM RegisterClass(
+new Completion("RegisterClassW", "RegisterClassW", @"ATOM RegisterClass(
     CONST WNDCLASS *lpWndClass
     // address of structure with class data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterClipboardFormatA", "call RegisterClipboardFormatA", @"UINT RegisterClipboardFormat(
+new Completion("RegisterClipboardFormatA", "RegisterClipboardFormatA", @"UINT RegisterClipboardFormat(
     LPCTSTR lpszFormat
     // address of name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterClipboardFormatW", "call RegisterClipboardFormatW", @"UINT RegisterClipboardFormat(
+new Completion("RegisterClipboardFormatW", "RegisterClipboardFormatW", @"UINT RegisterClipboardFormat(
     LPCTSTR lpszFormat
     // address of name string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterEventSourceA", "call RegisterEventSourceA", @"HANDLE RegisterEventSource(
+new Completion("RegisterEventSourceA", "RegisterEventSourceA", @"HANDLE RegisterEventSource(
     LPCTSTR lpUNCServerName,
     // server name for source
     LPCTSTR lpSourceName
     // source name for registered handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterEventSourceW", "call RegisterEventSourceW", @"HANDLE RegisterEventSource(
+new Completion("RegisterEventSourceW", "RegisterEventSourceW", @"HANDLE RegisterEventSource(
     LPCTSTR lpUNCServerName,
     // server name for source
     LPCTSTR lpSourceName
     // source name for registered handle
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterServiceCtrlHandlerA", "call RegisterServiceCtrlHandlerA", @"SERVICE_STATUS_HANDLE RegisterServiceCtrlHandler(
+new Completion("RegisterServiceCtrlHandlerA", "RegisterServiceCtrlHandlerA", @"SERVICE_STATUS_HANDLE RegisterServiceCtrlHandler(
     LPCTSTR lpServiceName,
     // address of name of service
     LPHANDLER_FUNCTION lpHandlerProc
     // address of handler function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterServiceCtrlHandlerW", "call RegisterServiceCtrlHandlerW", @"SERVICE_STATUS_HANDLE RegisterServiceCtrlHandler(
+new Completion("RegisterServiceCtrlHandlerW", "RegisterServiceCtrlHandlerW", @"SERVICE_STATUS_HANDLE RegisterServiceCtrlHandler(
     LPCTSTR lpServiceName,
     // address of name of service
     LPHANDLER_FUNCTION lpHandlerProc
     // address of handler function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterWindowMessageA", "call RegisterWindowMessageA", @"UINT RegisterWindowMessage(
+new Completion("RegisterWindowMessageA", "RegisterWindowMessageA", @"UINT RegisterWindowMessage(
     LPCTSTR lpString
     // address of message string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegisterWindowMessageW", "call RegisterWindowMessageW", @"UINT RegisterWindowMessage(
+new Completion("RegisterWindowMessageW", "RegisterWindowMessageW", @"UINT RegisterWindowMessage(
     LPCTSTR lpString
     // address of message string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegLoadKeyA", "call RegLoadKeyA", @"LONG RegLoadKey(
+new Completion("RegLoadKeyA", "RegLoadKeyA", @"LONG RegLoadKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13080,7 +13080,7 @@ new Completion("RegLoadKeyA", "call RegLoadKeyA", @"LONG RegLoadKey(
     // address of filename for registry information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegLoadKeyW", "call RegLoadKeyW", @"LONG RegLoadKey(
+new Completion("RegLoadKeyW", "RegLoadKeyW", @"LONG RegLoadKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13089,7 +13089,7 @@ new Completion("RegLoadKeyW", "call RegLoadKeyW", @"LONG RegLoadKey(
     // address of filename for registry information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegOpenKeyA", "call RegOpenKeyA", @"LONG RegOpenKey(
+new Completion("RegOpenKeyA", "RegOpenKeyA", @"LONG RegOpenKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13098,7 +13098,7 @@ new Completion("RegOpenKeyA", "call RegOpenKeyA", @"LONG RegOpenKey(
     // address of handle of open key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegOpenKeyW", "call RegOpenKeyW", @"LONG RegOpenKey(
+new Completion("RegOpenKeyW", "RegOpenKeyW", @"LONG RegOpenKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13107,7 +13107,7 @@ new Completion("RegOpenKeyW", "call RegOpenKeyW", @"LONG RegOpenKey(
     // address of handle of open key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegOpenKeyExA", "call RegOpenKeyExA", @"LONG RegOpenKeyEx(
+new Completion("RegOpenKeyExA", "RegOpenKeyExA", @"LONG RegOpenKeyEx(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13120,7 +13120,7 @@ new Completion("RegOpenKeyExA", "call RegOpenKeyExA", @"LONG RegOpenKeyEx(
     // address of handle of open key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegOpenKeyExW", "call RegOpenKeyExW", @"LONG RegOpenKeyEx(
+new Completion("RegOpenKeyExW", "RegOpenKeyExW", @"LONG RegOpenKeyEx(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13133,7 +13133,7 @@ new Completion("RegOpenKeyExW", "call RegOpenKeyExW", @"LONG RegOpenKeyEx(
     // address of handle of open key
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryInfoKeyA", "call RegQueryInfoKeyA", @"LONG RegQueryInfoKey (
+new Completion("RegQueryInfoKeyA", "RegQueryInfoKeyA", @"LONG RegQueryInfoKey (
     HKEY hKey,
     // handle of key to query
     LPTSTR lpClass,
@@ -13160,7 +13160,7 @@ new Completion("RegQueryInfoKeyA", "call RegQueryInfoKeyA", @"LONG RegQueryInfoK
     // address of buffer for last write time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryInfoKeyW", "call RegQueryInfoKeyW", @"LONG RegQueryInfoKey (
+new Completion("RegQueryInfoKeyW", "RegQueryInfoKeyW", @"LONG RegQueryInfoKey (
     HKEY hKey,
     // handle of key to query
     LPTSTR lpClass,
@@ -13187,7 +13187,7 @@ new Completion("RegQueryInfoKeyW", "call RegQueryInfoKeyW", @"LONG RegQueryInfoK
     // address of buffer for last write time
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryMultipleValuesA", "call RegQueryMultipleValuesA", @"LONG RegQueryMultipleValues(
+new Completion("RegQueryMultipleValuesA", "RegQueryMultipleValuesA", @"LONG RegQueryMultipleValues(
     HKEY hKey,
     // handle of key to query
     PVALENT val_list,
@@ -13200,7 +13200,7 @@ new Completion("RegQueryMultipleValuesA", "call RegQueryMultipleValuesA", @"LONG
     // address of size of value buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryMultipleValuesW", "call RegQueryMultipleValuesW", @"LONG RegQueryMultipleValues(
+new Completion("RegQueryMultipleValuesW", "RegQueryMultipleValuesW", @"LONG RegQueryMultipleValues(
     HKEY hKey,
     // handle of key to query
     PVALENT val_list,
@@ -13213,7 +13213,7 @@ new Completion("RegQueryMultipleValuesW", "call RegQueryMultipleValuesW", @"LONG
     // address of size of value buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryValueA", "call RegQueryValueA", @"LONG RegQueryValue(
+new Completion("RegQueryValueA", "RegQueryValueA", @"LONG RegQueryValue(
     HKEY hKey,
     // handle of key to query
     LPCTSTR lpSubKey,
@@ -13224,7 +13224,7 @@ new Completion("RegQueryValueA", "call RegQueryValueA", @"LONG RegQueryValue(
     // address of buffer for size of returned string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryValueW", "call RegQueryValueW", @"LONG RegQueryValue(
+new Completion("RegQueryValueW", "RegQueryValueW", @"LONG RegQueryValue(
     HKEY hKey,
     // handle of key to query
     LPCTSTR lpSubKey,
@@ -13235,7 +13235,7 @@ new Completion("RegQueryValueW", "call RegQueryValueW", @"LONG RegQueryValue(
     // address of buffer for size of returned string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryValueExA", "call RegQueryValueExA", @"LONG RegQueryValueEx(
+new Completion("RegQueryValueExA", "RegQueryValueExA", @"LONG RegQueryValueEx(
     HKEY hKey,
     // handle of key to query
     LPTSTR lpValueName,
@@ -13250,7 +13250,7 @@ new Completion("RegQueryValueExA", "call RegQueryValueExA", @"LONG RegQueryValue
     // address of data buffer size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegQueryValueExW", "call RegQueryValueExW", @"LONG RegQueryValueEx(
+new Completion("RegQueryValueExW", "RegQueryValueExW", @"LONG RegQueryValueEx(
     HKEY hKey,
     // handle of key to query
     LPTSTR lpValueName,
@@ -13265,7 +13265,7 @@ new Completion("RegQueryValueExW", "call RegQueryValueExW", @"LONG RegQueryValue
     // address of data buffer size
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegReplaceKeyA", "call RegReplaceKeyA", @"LONG RegReplaceKey(
+new Completion("RegReplaceKeyA", "RegReplaceKeyA", @"LONG RegReplaceKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13276,7 +13276,7 @@ new Completion("RegReplaceKeyA", "call RegReplaceKeyA", @"LONG RegReplaceKey(
     // address of filename for backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegReplaceKeyW", "call RegReplaceKeyW", @"LONG RegReplaceKey(
+new Completion("RegReplaceKeyW", "RegReplaceKeyW", @"LONG RegReplaceKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey,
@@ -13287,7 +13287,7 @@ new Completion("RegReplaceKeyW", "call RegReplaceKeyW", @"LONG RegReplaceKey(
     // address of filename for backup file
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegRestoreKeyA", "call RegRestoreKeyA", @"LONG RegRestoreKey(
+new Completion("RegRestoreKeyA", "RegRestoreKeyA", @"LONG RegRestoreKey(
     HKEY hKey,
     // handle of key where restore begins
     LPCTSTR lpFile,
@@ -13296,7 +13296,7 @@ new Completion("RegRestoreKeyA", "call RegRestoreKeyA", @"LONG RegRestoreKey(
     // optional flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegRestoreKeyW", "call RegRestoreKeyW", @"LONG RegRestoreKey(
+new Completion("RegRestoreKeyW", "RegRestoreKeyW", @"LONG RegRestoreKey(
     HKEY hKey,
     // handle of key where restore begins
     LPCTSTR lpFile,
@@ -13305,7 +13305,7 @@ new Completion("RegRestoreKeyW", "call RegRestoreKeyW", @"LONG RegRestoreKey(
     // optional flags
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSaveKeyA", "call RegSaveKeyA", @"LONG RegSaveKey(
+new Completion("RegSaveKeyA", "RegSaveKeyA", @"LONG RegSaveKey(
     HKEY hKey,
     // handle of key where save begins
     LPCTSTR lpFile,
@@ -13314,7 +13314,7 @@ new Completion("RegSaveKeyA", "call RegSaveKeyA", @"LONG RegSaveKey(
     // address of security structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSaveKeyW", "call RegSaveKeyW", @"LONG RegSaveKey(
+new Completion("RegSaveKeyW", "RegSaveKeyW", @"LONG RegSaveKey(
     HKEY hKey,
     // handle of key where save begins
     LPCTSTR lpFile,
@@ -13323,7 +13323,7 @@ new Completion("RegSaveKeyW", "call RegSaveKeyW", @"LONG RegSaveKey(
     // address of security structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSetValueA", "call RegSetValueA", @"LONG RegSetValue(
+new Completion("RegSetValueA", "RegSetValueA", @"LONG RegSetValue(
     HKEY hKey,
     // handle of key to set value for
     LPCTSTR lpSubKey,
@@ -13336,7 +13336,7 @@ new Completion("RegSetValueA", "call RegSetValueA", @"LONG RegSetValue(
     // size of value data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSetValueW", "call RegSetValueW", @"LONG RegSetValue(
+new Completion("RegSetValueW", "RegSetValueW", @"LONG RegSetValue(
     HKEY hKey,
     // handle of key to set value for
     LPCTSTR lpSubKey,
@@ -13349,7 +13349,7 @@ new Completion("RegSetValueW", "call RegSetValueW", @"LONG RegSetValue(
     // size of value data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSetValueExA", "call RegSetValueExA", @"LONG RegSetValueEx(
+new Completion("RegSetValueExA", "RegSetValueExA", @"LONG RegSetValueEx(
     HKEY hKey,
     // handle of key to set value for
     LPCTSTR lpValueName,
@@ -13364,7 +13364,7 @@ new Completion("RegSetValueExA", "call RegSetValueExA", @"LONG RegSetValueEx(
     // size of value data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegSetValueExW", "call RegSetValueExW", @"LONG RegSetValueEx(
+new Completion("RegSetValueExW", "RegSetValueExW", @"LONG RegSetValueEx(
     HKEY hKey,
     // handle of key to set value for
     LPCTSTR lpValueName,
@@ -13379,65 +13379,65 @@ new Completion("RegSetValueExW", "call RegSetValueExW", @"LONG RegSetValueEx(
     // size of value data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegUnLoadKeyA", "call RegUnLoadKeyA", @"LONG RegUnLoadKey(
+new Completion("RegUnLoadKeyA", "RegUnLoadKeyA", @"LONG RegUnLoadKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey
     // address of name of subkey to unload
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RegUnLoadKeyW", "call RegUnLoadKeyW", @"LONG RegUnLoadKey(
+new Completion("RegUnLoadKeyW", "RegUnLoadKeyW", @"LONG RegUnLoadKey(
     HKEY hKey,
     // handle of open key
     LPCTSTR lpSubKey
     // address of name of subkey to unload
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemoveDirectoryA", "call RemoveDirectoryA", @"BOOL RemoveDirectory(
+new Completion("RemoveDirectoryA", "RemoveDirectoryA", @"BOOL RemoveDirectory(
     LPCTSTR lpPathName
     // address of directory to remove
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemoveDirectoryW", "call RemoveDirectoryW", @"BOOL RemoveDirectory(
+new Completion("RemoveDirectoryW", "RemoveDirectoryW", @"BOOL RemoveDirectory(
     LPCTSTR lpPathName
     // address of directory to remove
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemoveFontResourceA", "call RemoveFontResourceA", @"BOOL RemoveFontResource(
+new Completion("RemoveFontResourceA", "RemoveFontResourceA", @"BOOL RemoveFontResource(
     LPCTSTR lpFileName
     // address of font-resource filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemoveFontResourceW", "call RemoveFontResourceW", @"BOOL RemoveFontResource(
+new Completion("RemoveFontResourceW", "RemoveFontResourceW", @"BOOL RemoveFontResource(
     LPCTSTR lpFileName
     // address of font-resource filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemovePropA", "call RemovePropA", @"HANDLE RemoveProp(
+new Completion("RemovePropA", "RemovePropA", @"HANDLE RemoveProp(
     HWND hWnd,
     // handle to window
     LPCTSTR lpString
     // atom or address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("RemovePropW", "call RemovePropW", @"HANDLE RemoveProp(
+new Completion("RemovePropW", "RemovePropW", @"HANDLE RemoveProp(
     HWND hWnd,
     // handle to window
     LPCTSTR lpString
     // atom or address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReplaceTextA", "call ReplaceTextA", @"HWND ReplaceText(
+new Completion("ReplaceTextA", "ReplaceTextA", @"HWND ReplaceText(
     LPFINDREPLACE lpfr
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReplaceTextW", "call ReplaceTextW", @"HWND ReplaceText(
+new Completion("ReplaceTextW", "ReplaceTextW", @"HWND ReplaceText(
     LPFINDREPLACE lpfr
     // pointer to structure with initialization data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReportEventA", "call ReportEventA", @"BOOL ReportEvent(
+new Completion("ReportEventA", "ReportEventA", @"BOOL ReportEvent(
     HANDLE hEventLog,
     // handle returned by RegisterEventSource
     WORD wType,
@@ -13458,7 +13458,7 @@ new Completion("ReportEventA", "call ReportEventA", @"BOOL ReportEvent(
     // address of binary data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ReportEventW", "call ReportEventW", @"BOOL ReportEvent(
+new Completion("ReportEventW", "ReportEventW", @"BOOL ReportEvent(
     HANDLE hEventLog,
     // handle returned by RegisterEventSource
     WORD wType,
@@ -13479,35 +13479,35 @@ new Completion("ReportEventW", "call ReportEventW", @"BOOL ReportEvent(
     // address of binary data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResetDCA", "call ResetDCA", @"HDC ResetDC(
+new Completion("ResetDCA", "ResetDCA", @"HDC ResetDC(
     HDC hdc,
     // handle of device context
     CONST DEVMODE *lpInitData
     // address of structure with device context information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResetDCW", "call ResetDCW", @"HDC ResetDC(
+new Completion("ResetDCW", "ResetDCW", @"HDC ResetDC(
     HDC hdc,
     // handle of device context
     CONST DEVMODE *lpInitData
     // address of structure with device context information
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResetPrinterA", "call ResetPrinterA", @"BOOL ResetPrinter (
+new Completion("ResetPrinterA", "ResetPrinterA", @"BOOL ResetPrinter (
     HANDLE hPrinter,
     // printer handle
     LPPRINTER_DEFAULTS pDefault
     // address of printer defaults structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ResetPrinterW", "call ResetPrinterW", @"BOOL ResetPrinter (
+new Completion("ResetPrinterW", "ResetPrinterW", @"BOOL ResetPrinter (
     HANDLE hPrinter,
     // printer handle
     LPPRINTER_DEFAULTS pDefault
     // address of printer defaults structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScrollConsoleScreenBufferA", "call ScrollConsoleScreenBufferA", @"BOOL ScrollConsoleScreenBuffer(
+new Completion("ScrollConsoleScreenBufferA", "ScrollConsoleScreenBufferA", @"BOOL ScrollConsoleScreenBuffer(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     CONST SMALL_RECT *lpScrollRectangle,
@@ -13520,7 +13520,7 @@ new Completion("ScrollConsoleScreenBufferA", "call ScrollConsoleScreenBufferA", 
     // address of fill character and color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ScrollConsoleScreenBufferW", "call ScrollConsoleScreenBufferW", @"BOOL ScrollConsoleScreenBuffer(
+new Completion("ScrollConsoleScreenBufferW", "ScrollConsoleScreenBufferW", @"BOOL ScrollConsoleScreenBuffer(
     HANDLE hConsoleOutput,
     // handle of a console screen buffer
     CONST SMALL_RECT *lpScrollRectangle,
@@ -13533,7 +13533,7 @@ new Completion("ScrollConsoleScreenBufferW", "call ScrollConsoleScreenBufferW", 
     // address of fill character and color
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SearchPathA", "call SearchPathA", @"DWORD SearchPath(
+new Completion("SearchPathA", "SearchPathA", @"DWORD SearchPath(
     LPCTSTR lpPath,
     // address of search path
     LPCTSTR lpFileName,
@@ -13548,7 +13548,7 @@ new Completion("SearchPathA", "call SearchPathA", @"DWORD SearchPath(
     // address of pointer to file component
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SearchPathW", "call SearchPathW", @"DWORD SearchPath(
+new Completion("SearchPathW", "SearchPathW", @"DWORD SearchPath(
     LPCTSTR lpPath,
     // address of search path
     LPCTSTR lpFileName,
@@ -13563,7 +13563,7 @@ new Completion("SearchPathW", "call SearchPathW", @"DWORD SearchPath(
     // address of pointer to file component
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendDlgItemMessageA", "call SendDlgItemMessageA", @"LONG SendDlgItemMessage(
+new Completion("SendDlgItemMessageA", "SendDlgItemMessageA", @"LONG SendDlgItemMessage(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -13576,7 +13576,7 @@ new Completion("SendDlgItemMessageA", "call SendDlgItemMessageA", @"LONG SendDlg
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendDlgItemMessageW", "call SendDlgItemMessageW", @"LONG SendDlgItemMessage(
+new Completion("SendDlgItemMessageW", "SendDlgItemMessageW", @"LONG SendDlgItemMessage(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -13589,7 +13589,7 @@ new Completion("SendDlgItemMessageW", "call SendDlgItemMessageW", @"LONG SendDlg
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageA", "call SendMessageA", @"LRESULT SendMessage(
+new Completion("SendMessageA", "SendMessageA", @"LRESULT SendMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13600,7 +13600,7 @@ new Completion("SendMessageA", "call SendMessageA", @"LRESULT SendMessage(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageW", "call SendMessageW", @"LRESULT SendMessage(
+new Completion("SendMessageW", "SendMessageW", @"LRESULT SendMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13611,7 +13611,7 @@ new Completion("SendMessageW", "call SendMessageW", @"LRESULT SendMessage(
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageCallbackA", "call SendMessageCallbackA", @"BOOL SendMessageCallback(
+new Completion("SendMessageCallbackA", "SendMessageCallbackA", @"BOOL SendMessageCallback(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13626,7 +13626,7 @@ new Completion("SendMessageCallbackA", "call SendMessageCallbackA", @"BOOL SendM
     // value to pass to callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageCallbackW", "call SendMessageCallbackW", @"BOOL SendMessageCallback(
+new Completion("SendMessageCallbackW", "SendMessageCallbackW", @"BOOL SendMessageCallback(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13641,7 +13641,7 @@ new Completion("SendMessageCallbackW", "call SendMessageCallbackW", @"BOOL SendM
     // value to pass to callback function
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageTimeoutA", "call SendMessageTimeoutA", @"LRESULT SendMessageTimeout(
+new Completion("SendMessageTimeoutA", "SendMessageTimeoutA", @"LRESULT SendMessageTimeout(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13658,7 +13658,7 @@ new Completion("SendMessageTimeoutA", "call SendMessageTimeoutA", @"LRESULT Send
     // return value for synchronous call
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendMessageTimeoutW", "call SendMessageTimeoutW", @"LRESULT SendMessageTimeout(
+new Completion("SendMessageTimeoutW", "SendMessageTimeoutW", @"LRESULT SendMessageTimeout(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13675,7 +13675,7 @@ new Completion("SendMessageTimeoutW", "call SendMessageTimeoutW", @"LRESULT Send
     // return value for synchronous call
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendNotifyMessageA", "call SendNotifyMessageA", @"BOOL SendNotifyMessage(
+new Completion("SendNotifyMessageA", "SendNotifyMessageA", @"BOOL SendNotifyMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13686,7 +13686,7 @@ new Completion("SendNotifyMessageA", "call SendNotifyMessageA", @"BOOL SendNotif
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SendNotifyMessageW", "call SendNotifyMessageW", @"BOOL SendNotifyMessage(
+new Completion("SendNotifyMessageW", "SendNotifyMessageW", @"BOOL SendNotifyMessage(
     HWND hWnd,
     // handle of destination window
     UINT Msg,
@@ -13697,7 +13697,7 @@ new Completion("SendNotifyMessageW", "call SendNotifyMessageW", @"BOOL SendNotif
     // second message parameter
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetClassLongA", "call SetClassLongA", @"DWORD SetClassLong(
+new Completion("SetClassLongA", "SetClassLongA", @"DWORD SetClassLong(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -13706,7 +13706,7 @@ new Completion("SetClassLongA", "call SetClassLongA", @"DWORD SetClassLong(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetClassLongW", "call SetClassLongW", @"DWORD SetClassLong(
+new Completion("SetClassLongW", "SetClassLongW", @"DWORD SetClassLong(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -13715,37 +13715,37 @@ new Completion("SetClassLongW", "call SetClassLongW", @"DWORD SetClassLong(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetComputerNameA", "call SetComputerNameA", @"BOOL SetComputerName(
+new Completion("SetComputerNameA", "SetComputerNameA", @"BOOL SetComputerName(
     LPCTSTR lpComputerName
     // address of new computer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetComputerNameW", "call SetComputerNameW", @"BOOL SetComputerName(
+new Completion("SetComputerNameW", "SetComputerNameW", @"BOOL SetComputerName(
     LPCTSTR lpComputerName
     // address of new computer name
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleTitleA", "call SetConsoleTitleA", @"BOOL SetConsoleTitle(
+new Completion("SetConsoleTitleA", "SetConsoleTitleA", @"BOOL SetConsoleTitle(
     LPCTSTR lpConsoleTitle
     // address of new title
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetConsoleTitleW", "call SetConsoleTitleW", @"BOOL SetConsoleTitle(
+new Completion("SetConsoleTitleW", "SetConsoleTitleW", @"BOOL SetConsoleTitle(
     LPCTSTR lpConsoleTitle
     // address of new title
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCurrentDirectoryA", "call SetCurrentDirectoryA", @"BOOL SetCurrentDirectory(
+new Completion("SetCurrentDirectoryA", "SetCurrentDirectoryA", @"BOOL SetCurrentDirectory(
     LPCTSTR lpPathName
     // address of name of new current directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetCurrentDirectoryW", "call SetCurrentDirectoryW", @"BOOL SetCurrentDirectory(
+new Completion("SetCurrentDirectoryW", "SetCurrentDirectoryW", @"BOOL SetCurrentDirectory(
     LPCTSTR lpPathName
     // address of name of new current directory
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDlgItemTextA", "call SetDlgItemTextA", @"BOOL SetDlgItemText(
+new Completion("SetDlgItemTextA", "SetDlgItemTextA", @"BOOL SetDlgItemText(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -13754,7 +13754,7 @@ new Completion("SetDlgItemTextA", "call SetDlgItemTextA", @"BOOL SetDlgItemText(
     // text to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetDlgItemTextW", "call SetDlgItemTextW", @"BOOL SetDlgItemText(
+new Completion("SetDlgItemTextW", "SetDlgItemTextW", @"BOOL SetDlgItemText(
     HWND hDlg,
     // handle of dialog box
     int nIDDlgItem,
@@ -13763,35 +13763,35 @@ new Completion("SetDlgItemTextW", "call SetDlgItemTextW", @"BOOL SetDlgItemText(
     // text to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetEnvironmentVariableA", "call SetEnvironmentVariableA", @"BOOL SetEnvironmentVariable(
+new Completion("SetEnvironmentVariableA", "SetEnvironmentVariableA", @"BOOL SetEnvironmentVariable(
     LPCTSTR lpName,
     // address of environment variable name
     LPCTSTR lpValue
     // address of new value for variable
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetEnvironmentVariableW", "call SetEnvironmentVariableW", @"BOOL SetEnvironmentVariable(
+new Completion("SetEnvironmentVariableW", "SetEnvironmentVariableW", @"BOOL SetEnvironmentVariable(
     LPCTSTR lpName,
     // address of environment variable name
     LPCTSTR lpValue
     // address of new value for variable
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFileAttributesA", "call SetFileAttributesA", @"BOOL SetFileAttributes(
+new Completion("SetFileAttributesA", "SetFileAttributesA", @"BOOL SetFileAttributes(
     LPCTSTR lpFileName,
     // address of filename
     DWORD dwFileAttributes
     // address of attributes to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFileAttributesW", "call SetFileAttributesW", @"BOOL SetFileAttributes(
+new Completion("SetFileAttributesW", "SetFileAttributesW", @"BOOL SetFileAttributes(
     LPCTSTR lpFileName,
     // address of filename
     DWORD dwFileAttributes
     // address of attributes to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFileSecurityA", "call SetFileSecurityA", @"BOOL SetFileSecurity(
+new Completion("SetFileSecurityA", "SetFileSecurityA", @"BOOL SetFileSecurity(
     LPCTSTR lpFileName,
     // address of string for filename
     SECURITY_INFORMATION SecurityInformation,
@@ -13800,7 +13800,7 @@ new Completion("SetFileSecurityA", "call SetFileSecurityA", @"BOOL SetFileSecuri
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFileSecurityW", "call SetFileSecurityW", @"BOOL SetFileSecurity(
+new Completion("SetFileSecurityW", "SetFileSecurityW", @"BOOL SetFileSecurity(
     LPCTSTR lpFileName,
     // address of string for filename
     SECURITY_INFORMATION SecurityInformation,
@@ -13809,7 +13809,7 @@ new Completion("SetFileSecurityW", "call SetFileSecurityW", @"BOOL SetFileSecuri
     // address of security descriptor
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFormA", "call SetFormA", @"BOOL SetForm(
+new Completion("SetFormA", "SetFormA", @"BOOL SetForm(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pFormName,
@@ -13820,7 +13820,7 @@ new Completion("SetFormA", "call SetFormA", @"BOOL SetForm(
     // address of structure array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetFormW", "call SetFormW", @"BOOL SetForm(
+new Completion("SetFormW", "SetFormW", @"BOOL SetForm(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pFormName,
@@ -13831,7 +13831,7 @@ new Completion("SetFormW", "call SetFormW", @"BOOL SetForm(
     // address of structure array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetLocaleInfoA", "call SetLocaleInfoA", @"BOOL SetLocaleInfo(
+new Completion("SetLocaleInfoA", "SetLocaleInfoA", @"BOOL SetLocaleInfo(
     LCID Locale,
     // locale identifier
     LCTYPE LCType,
@@ -13840,7 +13840,7 @@ new Completion("SetLocaleInfoA", "call SetLocaleInfoA", @"BOOL SetLocaleInfo(
     // pointer to information to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetLocaleInfoW", "call SetLocaleInfoW", @"BOOL SetLocaleInfo(
+new Completion("SetLocaleInfoW", "SetLocaleInfoW", @"BOOL SetLocaleInfo(
     LCID Locale,
     // locale identifier
     LCTYPE LCType,
@@ -13849,7 +13849,7 @@ new Completion("SetLocaleInfoW", "call SetLocaleInfoW", @"BOOL SetLocaleInfo(
     // pointer to information to set
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPrinterA", "call SetPrinterA", @"BOOL SetPrinter(
+new Completion("SetPrinterA", "SetPrinterA", @"BOOL SetPrinter(
     HANDLE hPrinter,
     // handle of printer object
     DWORD Level,
@@ -13860,7 +13860,7 @@ new Completion("SetPrinterA", "call SetPrinterA", @"BOOL SetPrinter(
     // printer-state command
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPrinterW", "call SetPrinterW", @"BOOL SetPrinter(
+new Completion("SetPrinterW", "SetPrinterW", @"BOOL SetPrinter(
     HANDLE hPrinter,
     // handle of printer object
     DWORD Level,
@@ -13871,7 +13871,7 @@ new Completion("SetPrinterW", "call SetPrinterW", @"BOOL SetPrinter(
     // printer-state command
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPrinterDataA", "call SetPrinterDataA", @"DWORD SetPrinterData(
+new Completion("SetPrinterDataA", "SetPrinterDataA", @"DWORD SetPrinterData(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pValueName,
@@ -13884,7 +13884,7 @@ new Completion("SetPrinterDataA", "call SetPrinterDataA", @"DWORD SetPrinterData
     // size, in bytes, of array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPrinterDataW", "call SetPrinterDataW", @"DWORD SetPrinterData(
+new Completion("SetPrinterDataW", "SetPrinterDataW", @"DWORD SetPrinterData(
     HANDLE hPrinter,
     // handle of printer object
     LPTSTR pValueName,
@@ -13897,7 +13897,7 @@ new Completion("SetPrinterDataW", "call SetPrinterDataW", @"DWORD SetPrinterData
     // size, in bytes, of array
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPropA", "call SetPropA", @"BOOL SetProp(
+new Completion("SetPropA", "SetPropA", @"BOOL SetProp(
     HWND hWnd,
     // handle of window
     LPCTSTR lpString,
@@ -13906,7 +13906,7 @@ new Completion("SetPropA", "call SetPropA", @"BOOL SetProp(
     // handle of data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetPropW", "call SetPropW", @"BOOL SetProp(
+new Completion("SetPropW", "SetPropW", @"BOOL SetProp(
     HWND hWnd,
     // handle of window
     LPCTSTR lpString,
@@ -13915,7 +13915,7 @@ new Completion("SetPropW", "call SetPropW", @"BOOL SetProp(
     // handle of data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetUserObjectInformationA", "call SetUserObjectInformationA", @"BOOL SetUserObjectInformation(
+new Completion("SetUserObjectInformationA", "SetUserObjectInformationA", @"BOOL SetUserObjectInformation(
     HANDLE hObj,
     // handle of the object for which to set information
     int nIndex,
@@ -13926,7 +13926,7 @@ new Completion("SetUserObjectInformationA", "call SetUserObjectInformationA", @"
     // size, in bytes, of pvInfo buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetUserObjectInformationW", "call SetUserObjectInformationW", @"BOOL SetUserObjectInformation(
+new Completion("SetUserObjectInformationW", "SetUserObjectInformationW", @"BOOL SetUserObjectInformation(
     HANDLE hObj,
     // handle of the object for which to set information
     int nIndex,
@@ -13937,21 +13937,21 @@ new Completion("SetUserObjectInformationW", "call SetUserObjectInformationW", @"
     // size, in bytes, of pvInfo buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetVolumeLabelA", "call SetVolumeLabelA", @"BOOL SetVolumeLabel(
+new Completion("SetVolumeLabelA", "SetVolumeLabelA", @"BOOL SetVolumeLabel(
     LPCTSTR lpRootPathName,
     // address of name of root directory for volume
     LPCTSTR lpVolumeName
     // name for the volume
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetVolumeLabelW", "call SetVolumeLabelW", @"BOOL SetVolumeLabel(
+new Completion("SetVolumeLabelW", "SetVolumeLabelW", @"BOOL SetVolumeLabel(
     LPCTSTR lpRootPathName,
     // address of name of root directory for volume
     LPCTSTR lpVolumeName
     // name for the volume
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowLongA", "call SetWindowLongA", @"LONG SetWindowLong(
+new Completion("SetWindowLongA", "SetWindowLongA", @"LONG SetWindowLong(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -13960,7 +13960,7 @@ new Completion("SetWindowLongA", "call SetWindowLongA", @"LONG SetWindowLong(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowLongW", "call SetWindowLongW", @"LONG SetWindowLong(
+new Completion("SetWindowLongW", "SetWindowLongW", @"LONG SetWindowLong(
     HWND hWnd,
     // handle of window
     int nIndex,
@@ -13969,9 +13969,9 @@ new Completion("SetWindowLongW", "call SetWindowLongW", @"LONG SetWindowLong(
     // new value
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowsHookA", "call SetWindowsHookA", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowsHookW", "call SetWindowsHookW", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowsHookExA", "call SetWindowsHookExA", @"HHOOK SetWindowsHookEx(
+new Completion("SetWindowsHookA", "SetWindowsHookA", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("SetWindowsHookW", "SetWindowsHookW", @"", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
+new Completion("SetWindowsHookExA", "SetWindowsHookExA", @"HHOOK SetWindowsHookEx(
     int idHook,
     // type of hook to install
     HOOKPROC lpfn,
@@ -13982,7 +13982,7 @@ new Completion("SetWindowsHookExA", "call SetWindowsHookExA", @"HHOOK SetWindows
     // identity of thread to install hook for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowsHookExW", "call SetWindowsHookExW", @"HHOOK SetWindowsHookEx(
+new Completion("SetWindowsHookExW", "SetWindowsHookExW", @"HHOOK SetWindowsHookEx(
     int idHook,
     // type of hook to install
     HOOKPROC lpfn,
@@ -13993,21 +13993,21 @@ new Completion("SetWindowsHookExW", "call SetWindowsHookExW", @"HHOOK SetWindows
     // identity of thread to install hook for
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowTextA", "call SetWindowTextA", @"BOOL SetWindowText(
+new Completion("SetWindowTextA", "SetWindowTextA", @"BOOL SetWindowText(
     HWND hWnd,
     // handle of window or control
     LPCTSTR lpString
     // address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SetWindowTextW", "call SetWindowTextW", @"BOOL SetWindowText(
+new Completion("SetWindowTextW", "SetWindowTextW", @"BOOL SetWindowText(
     HWND hWnd,
     // handle of window or control
     LPCTSTR lpString
     // address of string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShellAboutA", "call ShellAboutA", @"int ShellAbout (
+new Completion("ShellAboutA", "ShellAboutA", @"int ShellAbout (
     HWND hWnd,
     // handle of parent window
     LPCTSTR szApp,
@@ -14018,7 +14018,7 @@ new Completion("ShellAboutA", "call ShellAboutA", @"int ShellAbout (
     // icon to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShellAboutW", "call ShellAboutW", @"int ShellAbout (
+new Completion("ShellAboutW", "ShellAboutW", @"int ShellAbout (
     HWND hWnd,
     // handle of parent window
     LPCTSTR szApp,
@@ -14029,7 +14029,7 @@ new Completion("ShellAboutW", "call ShellAboutW", @"int ShellAbout (
     // icon to display
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShellExecuteA", "call ShellExecuteA", @"HINSTANCE ShellExecute(
+new Completion("ShellExecuteA", "ShellExecuteA", @"HINSTANCE ShellExecute(
     HWND hwnd,
     // handle to parent window
     LPCTSTR lpOperation,
@@ -14044,7 +14044,7 @@ new Completion("ShellExecuteA", "call ShellExecuteA", @"HINSTANCE ShellExecute(
     // whether file is shown when opened
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("ShellExecuteW", "call ShellExecuteW", @"HINSTANCE ShellExecute(
+new Completion("ShellExecuteW", "ShellExecuteW", @"HINSTANCE ShellExecute(
     HWND hwnd,
     // handle to parent window
     LPCTSTR lpOperation,
@@ -14059,21 +14059,21 @@ new Completion("ShellExecuteW", "call ShellExecuteW", @"HINSTANCE ShellExecute(
     // whether file is shown when opened
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartDocA", "call StartDocA", @"int StartDoc(
+new Completion("StartDocA", "StartDocA", @"int StartDoc(
     HDC hdc,
     // handle of device context
     CONST DOCINFO *lpdi
     // address of structure with file names
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartDocW", "call StartDocW", @"int StartDoc(
+new Completion("StartDocW", "StartDocW", @"int StartDoc(
     HDC hdc,
     // handle of device context
     CONST DOCINFO *lpdi
     // address of structure with file names
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartDocPrinterA", "call StartDocPrinterA", @"DWORD StartDocPrinter(
+new Completion("StartDocPrinterA", "StartDocPrinterA", @"DWORD StartDocPrinter(
     HANDLE hPrinter,
     // handle of printer object
     DWORD Level,
@@ -14082,7 +14082,7 @@ new Completion("StartDocPrinterA", "call StartDocPrinterA", @"DWORD StartDocPrin
     // address of structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartDocPrinterW", "call StartDocPrinterW", @"DWORD StartDocPrinter(
+new Completion("StartDocPrinterW", "StartDocPrinterW", @"DWORD StartDocPrinter(
     HANDLE hPrinter,
     // handle of printer object
     DWORD Level,
@@ -14091,7 +14091,7 @@ new Completion("StartDocPrinterW", "call StartDocPrinterW", @"DWORD StartDocPrin
     // address of structure
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartServiceA", "call StartServiceA", @"BOOL StartService(
+new Completion("StartServiceA", "StartServiceA", @"BOOL StartService(
     SC_HANDLE hService,
     // handle of service
     DWORD dwNumServiceArgs,
@@ -14100,7 +14100,7 @@ new Completion("StartServiceA", "call StartServiceA", @"BOOL StartService(
     // address of array of argument string pointers
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartServiceW", "call StartServiceW", @"BOOL StartService(
+new Completion("StartServiceW", "StartServiceW", @"BOOL StartService(
     SC_HANDLE hService,
     // handle of service
     DWORD dwNumServiceArgs,
@@ -14109,17 +14109,17 @@ new Completion("StartServiceW", "call StartServiceW", @"BOOL StartService(
     // address of array of argument string pointers
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartServiceCtrlDispatcherA", "call StartServiceCtrlDispatcherA", @"BOOL StartServiceCtrlDispatcher(
+new Completion("StartServiceCtrlDispatcherA", "StartServiceCtrlDispatcherA", @"BOOL StartServiceCtrlDispatcher(
     LPSERVICE_TABLE_ENTRY lpServiceStartTable
     // address of service table
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("StartServiceCtrlDispatcherW", "call StartServiceCtrlDispatcherW", @"BOOL StartServiceCtrlDispatcher(
+new Completion("StartServiceCtrlDispatcherW", "StartServiceCtrlDispatcherW", @"BOOL StartServiceCtrlDispatcher(
     LPSERVICE_TABLE_ENTRY lpServiceStartTable
     // address of service table
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SystemParametersInfoA", "call SystemParametersInfoA", @"BOOL SystemParametersInfo(
+new Completion("SystemParametersInfoA", "SystemParametersInfoA", @"BOOL SystemParametersInfo(
     UINT uiAction,
     // system parameter to query or set
     UINT uiParam,
@@ -14130,7 +14130,7 @@ new Completion("SystemParametersInfoA", "call SystemParametersInfoA", @"BOOL Sys
     // user profile update flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("SystemParametersInfoW", "call SystemParametersInfoW", @"BOOL SystemParametersInfo(
+new Completion("SystemParametersInfoW", "SystemParametersInfoW", @"BOOL SystemParametersInfo(
     UINT uiAction,
     // system parameter to query or set
     UINT uiParam,
@@ -14141,7 +14141,7 @@ new Completion("SystemParametersInfoW", "call SystemParametersInfoW", @"BOOL Sys
     // user profile update flag
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TabbedTextOutA", "call TabbedTextOutA", @"LONG TabbedTextOut(
+new Completion("TabbedTextOutA", "TabbedTextOutA", @"LONG TabbedTextOut(
     HDC hDC,
     // handle of device context
     int X,
@@ -14160,7 +14160,7 @@ new Completion("TabbedTextOutA", "call TabbedTextOutA", @"LONG TabbedTextOut(
     // x-coordinate for tab expansion
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TabbedTextOutW", "call TabbedTextOutW", @"LONG TabbedTextOut(
+new Completion("TabbedTextOutW", "TabbedTextOutW", @"LONG TabbedTextOut(
     HDC hDC,
     // handle of device context
     int X,
@@ -14179,7 +14179,7 @@ new Completion("TabbedTextOutW", "call TabbedTextOutW", @"LONG TabbedTextOut(
     // x-coordinate for tab expansion
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TextOutA", "call TextOutA", @"BOOL TextOut(
+new Completion("TextOutA", "TextOutA", @"BOOL TextOut(
     HDC hdc,
     // handle of device context
     int nXStart,
@@ -14192,7 +14192,7 @@ new Completion("TextOutA", "call TextOutA", @"BOOL TextOut(
     // number of characters in string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TextOutW", "call TextOutW", @"BOOL TextOut(
+new Completion("TextOutW", "TextOutW", @"BOOL TextOut(
     HDC hdc,
     // handle of device context
     int nXStart,
@@ -14205,7 +14205,7 @@ new Completion("TextOutW", "call TextOutW", @"BOOL TextOut(
     // number of characters in string
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TranslateAcceleratorA", "call TranslateAcceleratorA", @"int TranslateAccelerator(
+new Completion("TranslateAcceleratorA", "TranslateAcceleratorA", @"int TranslateAccelerator(
     HWND hWnd,
     // handle of destination window
     HACCEL hAccTable,
@@ -14214,7 +14214,7 @@ new Completion("TranslateAcceleratorA", "call TranslateAcceleratorA", @"int Tran
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("TranslateAcceleratorW", "call TranslateAcceleratorW", @"int TranslateAccelerator(
+new Completion("TranslateAcceleratorW", "TranslateAcceleratorW", @"int TranslateAccelerator(
     HWND hWnd,
     // handle of destination window
     HACCEL hAccTable,
@@ -14223,21 +14223,21 @@ new Completion("TranslateAcceleratorW", "call TranslateAcceleratorW", @"int Tran
     // address of structure with message
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnregisterClassA", "call UnregisterClassA", @"BOOL UnregisterClass(
+new Completion("UnregisterClassA", "UnregisterClassA", @"BOOL UnregisterClass(
     LPCTSTR lpClassName,
     // address of class name string
     HINSTANCE hInstance
     // handle of application instance
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UnregisterClassW", "call UnregisterClassW", @"BOOL UnregisterClass(
+new Completion("UnregisterClassW", "UnregisterClassW", @"BOOL UnregisterClass(
     LPCTSTR lpClassName,
     // address of class name string
     HINSTANCE hInstance
     // handle of application instance
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UpdateResourceA", "call UpdateResourceA", @"BOOL UpdateResource(
+new Completion("UpdateResourceA", "UpdateResourceA", @"BOOL UpdateResource(
     HANDLE hUpdate,
     // update-file handle
     LPCTSTR lpType,
@@ -14252,7 +14252,7 @@ new Completion("UpdateResourceA", "call UpdateResourceA", @"BOOL UpdateResource(
     // length of resource data, in bytes
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("UpdateResourceW", "call UpdateResourceW", @"BOOL UpdateResource(
+new Completion("UpdateResourceW", "UpdateResourceW", @"BOOL UpdateResource(
     HANDLE hUpdate,
     // update-file handle
     LPCTSTR lpType,
@@ -14267,7 +14267,7 @@ new Completion("UpdateResourceW", "call UpdateResourceW", @"BOOL UpdateResource(
     // length of resource data, in bytes
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VerLanguageNameA", "call VerLanguageNameA", @"DWORD VerLanguageName(
+new Completion("VerLanguageNameA", "VerLanguageNameA", @"DWORD VerLanguageName(
     DWORD wLang,
     // Microsoft language identifier
     LPTSTR szLang,
@@ -14276,7 +14276,7 @@ new Completion("VerLanguageNameA", "call VerLanguageNameA", @"DWORD VerLanguageN
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VerLanguageNameW", "call VerLanguageNameW", @"DWORD VerLanguageName(
+new Completion("VerLanguageNameW", "VerLanguageNameW", @"DWORD VerLanguageName(
     DWORD wLang,
     // Microsoft language identifier
     LPTSTR szLang,
@@ -14285,31 +14285,31 @@ new Completion("VerLanguageNameW", "call VerLanguageNameW", @"DWORD VerLanguageN
     // size of buffer
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VkKeyScanA", "call VkKeyScanA", @"SHORT VkKeyScan(
+new Completion("VkKeyScanA", "VkKeyScanA", @"SHORT VkKeyScan(
     TCHAR ch
     // character to translate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("VkKeyScanW", "call VkKeyScanW", @"SHORT VkKeyScan(
+new Completion("VkKeyScanW", "VkKeyScanW", @"SHORT VkKeyScan(
     TCHAR ch
     // character to translate
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitNamedPipeA", "call WaitNamedPipeA", @"BOOL WaitNamedPipe(
+new Completion("WaitNamedPipeA", "WaitNamedPipeA", @"BOOL WaitNamedPipe(
     LPCTSTR lpNamedPipeName,
     // address of name of pipe to wait for
     DWORD nTimeOut
     // time-out interval, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WaitNamedPipeW", "call WaitNamedPipeW", @"BOOL WaitNamedPipe(
+new Completion("WaitNamedPipeW", "WaitNamedPipeW", @"BOOL WaitNamedPipe(
     LPCTSTR lpNamedPipeName,
     // address of name of pipe to wait for
     DWORD nTimeOut
     // time-out interval, in milliseconds
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WinHelpA", "call WinHelpA", @"BOOL WinHelp(
+new Completion("WinHelpA", "WinHelpA", @"BOOL WinHelp(
     HWND hWndMain,
     // handle of window requesting Help
     LPCTSTR lpszHelp,
@@ -14320,7 +14320,7 @@ new Completion("WinHelpA", "call WinHelpA", @"BOOL WinHelp(
     // additional data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WinHelpW", "call WinHelpW", @"BOOL WinHelp(
+new Completion("WinHelpW", "WinHelpW", @"BOOL WinHelp(
     HWND hWndMain,
     // handle of window requesting Help
     LPCTSTR lpszHelp,
@@ -14331,7 +14331,7 @@ new Completion("WinHelpW", "call WinHelpW", @"BOOL WinHelp(
     // additional data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleA", "call WriteConsoleA", @"BOOL WriteConsole(
+new Completion("WriteConsoleA", "WriteConsoleA", @"BOOL WriteConsole(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     CONST VOID *lpBuffer,
@@ -14344,7 +14344,7 @@ new Completion("WriteConsoleA", "call WriteConsoleA", @"BOOL WriteConsole(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleW", "call WriteConsoleW", @"BOOL WriteConsole(
+new Completion("WriteConsoleW", "WriteConsoleW", @"BOOL WriteConsole(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     CONST VOID *lpBuffer,
@@ -14357,7 +14357,7 @@ new Completion("WriteConsoleW", "call WriteConsoleW", @"BOOL WriteConsole(
     // reserved
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleInputA", "call WriteConsoleInputA", @"BOOL WriteConsoleInput(
+new Completion("WriteConsoleInputA", "WriteConsoleInputA", @"BOOL WriteConsoleInput(
     HANDLE hConsoleInput,
     // handle to a console input buffer
     CONST INPUT_RECORD *lpBuffer,
@@ -14368,7 +14368,7 @@ new Completion("WriteConsoleInputA", "call WriteConsoleInputA", @"BOOL WriteCons
     // pointer to number of records written
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleInputW", "call WriteConsoleInputW", @"BOOL WriteConsoleInput(
+new Completion("WriteConsoleInputW", "WriteConsoleInputW", @"BOOL WriteConsoleInput(
     HANDLE hConsoleInput,
     // handle to a console input buffer
     CONST INPUT_RECORD *lpBuffer,
@@ -14379,7 +14379,7 @@ new Completion("WriteConsoleInputW", "call WriteConsoleInputW", @"BOOL WriteCons
     // pointer to number of records written
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleOutputA", "call WriteConsoleOutputA", @"BOOL WriteConsoleOutput(
+new Completion("WriteConsoleOutputA", "WriteConsoleOutputA", @"BOOL WriteConsoleOutput(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     CONST CHAR_INFO *lpBuffer,
@@ -14392,7 +14392,7 @@ new Completion("WriteConsoleOutputA", "call WriteConsoleOutputA", @"BOOL WriteCo
     // pointer to rectangle to write to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleOutputW", "call WriteConsoleOutputW", @"BOOL WriteConsoleOutput(
+new Completion("WriteConsoleOutputW", "WriteConsoleOutputW", @"BOOL WriteConsoleOutput(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     CONST CHAR_INFO *lpBuffer,
@@ -14405,7 +14405,7 @@ new Completion("WriteConsoleOutputW", "call WriteConsoleOutputW", @"BOOL WriteCo
     // pointer to rectangle to write to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleOutputCharacterA", "call WriteConsoleOutputCharacterA", @"BOOL WriteConsoleOutputCharacter(
+new Completion("WriteConsoleOutputCharacterA", "WriteConsoleOutputCharacterA", @"BOOL WriteConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     LPCTSTR lpCharacter,
@@ -14418,7 +14418,7 @@ new Completion("WriteConsoleOutputCharacterA", "call WriteConsoleOutputCharacter
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteConsoleOutputCharacterW", "call WriteConsoleOutputCharacterW", @"BOOL WriteConsoleOutputCharacter(
+new Completion("WriteConsoleOutputCharacterW", "WriteConsoleOutputCharacterW", @"BOOL WriteConsoleOutputCharacter(
     HANDLE hConsoleOutput,
     // handle to a console screen buffer
     LPCTSTR lpCharacter,
@@ -14431,7 +14431,7 @@ new Completion("WriteConsoleOutputCharacterW", "call WriteConsoleOutputCharacter
     // pointer to number of cells written to
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileSectionA", "call WritePrivateProfileSectionA", @"BOOL WritePrivateProfileSection(
+new Completion("WritePrivateProfileSectionA", "WritePrivateProfileSectionA", @"BOOL WritePrivateProfileSection(
     LPCTSTR lpAppName,
     // pointer to string with section name
     LPCTSTR lpString,
@@ -14440,7 +14440,7 @@ new Completion("WritePrivateProfileSectionA", "call WritePrivateProfileSectionA"
     // pointer to string with filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileSectionW", "call WritePrivateProfileSectionW", @"BOOL WritePrivateProfileSection(
+new Completion("WritePrivateProfileSectionW", "WritePrivateProfileSectionW", @"BOOL WritePrivateProfileSection(
     LPCTSTR lpAppName,
     // pointer to string with section name
     LPCTSTR lpString,
@@ -14449,7 +14449,7 @@ new Completion("WritePrivateProfileSectionW", "call WritePrivateProfileSectionW"
     // pointer to string with filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileStringA", "call WritePrivateProfileStringA", @"BOOL WritePrivateProfileString(
+new Completion("WritePrivateProfileStringA", "WritePrivateProfileStringA", @"BOOL WritePrivateProfileString(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpKeyName,
@@ -14460,7 +14460,7 @@ new Completion("WritePrivateProfileStringA", "call WritePrivateProfileStringA", 
     // pointer to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileStringW", "call WritePrivateProfileStringW", @"BOOL WritePrivateProfileString(
+new Completion("WritePrivateProfileStringW", "WritePrivateProfileStringW", @"BOOL WritePrivateProfileString(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpKeyName,
@@ -14471,7 +14471,7 @@ new Completion("WritePrivateProfileStringW", "call WritePrivateProfileStringW", 
     // pointer to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileStructA", "call WritePrivateProfileStructA", @"BOOL WritePrivateProfileStruct(
+new Completion("WritePrivateProfileStructA", "WritePrivateProfileStructA", @"BOOL WritePrivateProfileStruct(
     LPCTSTR lpszSection,
     // pointer to section name
     LPCTSTR lpszKey,
@@ -14484,7 +14484,7 @@ new Completion("WritePrivateProfileStructA", "call WritePrivateProfileStructA", 
     // pointer to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WritePrivateProfileStructW", "call WritePrivateProfileStructW", @"BOOL WritePrivateProfileStruct(
+new Completion("WritePrivateProfileStructW", "WritePrivateProfileStructW", @"BOOL WritePrivateProfileStruct(
     LPCTSTR lpszSection,
     // pointer to section name
     LPCTSTR lpszKey,
@@ -14497,21 +14497,21 @@ new Completion("WritePrivateProfileStructW", "call WritePrivateProfileStructW", 
     // pointer to initialization filename
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteProfileSectionA", "call WriteProfileSectionA", @"BOOL WriteProfileSection(
+new Completion("WriteProfileSectionA", "WriteProfileSectionA", @"BOOL WriteProfileSection(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpString
     // pointer to buffer with data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteProfileSectionW", "call WriteProfileSectionW", @"BOOL WriteProfileSection(
+new Completion("WriteProfileSectionW", "WriteProfileSectionW", @"BOOL WriteProfileSection(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpString
     // pointer to buffer with data
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteProfileStringA", "call WriteProfileStringA", @"BOOL WriteProfileString(
+new Completion("WriteProfileStringA", "WriteProfileStringA", @"BOOL WriteProfileString(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpKeyName,
@@ -14520,7 +14520,7 @@ new Completion("WriteProfileStringA", "call WriteProfileStringA", @"BOOL WritePr
     // pointer to string to write
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("WriteProfileStringW", "call WriteProfileStringW", @"BOOL WriteProfileString(
+new Completion("WriteProfileStringW", "WriteProfileStringW", @"BOOL WriteProfileString(
     LPCTSTR lpAppName,
     // pointer to section name
     LPCTSTR lpKeyName,
@@ -14529,7 +14529,7 @@ new Completion("WriteProfileStringW", "call WriteProfileStringW", @"BOOL WritePr
     // pointer to string to write
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("wsprintfA", "call wsprintfA", @"int wsprintf(
+new Completion("wsprintfA", "wsprintfA", @"int wsprintf(
     LPTSTR lpOut,
     // pointer to buffer for output
     LPCTSTR lpFmt,
@@ -14538,7 +14538,7 @@ new Completion("wsprintfA", "call wsprintfA", @"int wsprintf(
     // optional arguments
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("wsprintfW", "call wsprintfW", @"int wsprintf(
+new Completion("wsprintfW", "wsprintfW", @"int wsprintf(
     LPTSTR lpOut,
     // pointer to buffer for output
     LPCTSTR lpFmt,
@@ -14547,7 +14547,7 @@ new Completion("wsprintfW", "call wsprintfW", @"int wsprintf(
     // optional arguments
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("wvsprintfA", "call wvsprintfA", @"int wvsprintf(
+new Completion("wvsprintfA", "wvsprintfA", @"int wvsprintf(
     LPTSTR lpOutput,
     // pointer to buffer for output
     LPCTSTR lpFormat,
@@ -14556,7 +14556,7 @@ new Completion("wvsprintfA", "call wvsprintfA", @"int wvsprintf(
     // variable argument list of format-control arguments
 );    
 ", CodeCompletion.GetItemIcon(CompletionItemType.WinAPI), null),
-new Completion("wvsprintfW", "call wvsprintfW", @"int wvsprintf(
+new Completion("wvsprintfW", "wvsprintfW", @"int wvsprintf(
     LPTSTR lpOutput,
     // pointer to buffer for output
     LPCTSTR lpFormat,
