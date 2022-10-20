@@ -30,19 +30,15 @@ namespace ChASM
                 {
                     var text = classification.Span.GetText().ToLower();
 
-                    foreach (var api in Globalz.WinAPIs.Items)
-                    {
-                        var indexAPI = text.IndexOf(api.ToLower());
-                        var indexCall = text.IndexOf("call");
-                        var indexQuote = text.IndexOf("\"");
-                        var indexApostrophe = text.IndexOf("\'");
+                    var indexCall = text.IndexOf("call");
+                    var indexQuote = text.IndexOf("\"");
+                    var indexApostrophe = text.IndexOf("\'");
 
-                        if (indexAPI != -1 && indexCall != -1 && indexQuote == -1 && indexApostrophe == -1)
-                        {
-                            yield return new TagSpan<ChASMTag>(
-                                new SnapshotSpan(classification.Span.Start + indexAPI, api.Length),
-                                new ChASMTag());
-                        }
+                    if (indexCall != -1 && indexQuote == -1 && indexApostrophe == -1)
+                    {
+                        yield return new TagSpan<ChASMTag>(
+                            new SnapshotSpan(classification.Span.Start + indexCall, "call".Length),
+                            new ChASMTag());
                     }
                 }
             }

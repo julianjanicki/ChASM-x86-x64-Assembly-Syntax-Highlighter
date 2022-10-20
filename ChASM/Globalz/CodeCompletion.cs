@@ -34,7 +34,7 @@ namespace ChASM
             }
             else
             {
-                return null;
+                return CreateBitmap(Properties.Resources.arrow1.GetHbitmap());
             }
         }
 
@@ -53,6 +53,7 @@ namespace ChASM
         Register,
         Mnemonic,
         WinAPI,
-        CodeSample
+        CodeSample,
+        Misc
     }
 }
