@@ -60,6 +60,7 @@ namespace ChASM
                     session),
                 new HashSet<Completion>()
                 {
+                    new Completion("sizeof", "sizeof", "sizeof", CodeCompletion.GetItemIcon(CompletionItemType.Misc), null),
                     new Completion("extrn", "extrn", "extrn", CodeCompletion.GetItemIcon(CompletionItemType.Misc), null),
                     new Completion("proc", "proc", "proc", CodeCompletion.GetItemIcon(CompletionItemType.Misc), null),
                     new Completion("endp", "endp", "endp", CodeCompletion.GetItemIcon(CompletionItemType.Misc), null),
