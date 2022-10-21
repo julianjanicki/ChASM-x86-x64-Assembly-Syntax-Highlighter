@@ -21,5 +21,10 @@ namespace ChASM
         [FileExtension(".asm")]
         [ContentType("masm")]
         internal static FileExtensionToContentTypeDefinition hiddenFileExtensionDefinition = null;
+
+        [Export]
+        [FileExtension(".inc")]
+        [ContentType("masm")]
+        internal static FileExtensionToContentTypeDefinition hiddenFileExtensionDefinition2 = null;
     }
 }

@@ -80,6 +80,8 @@ namespace ChASM.TextAdornments
                 charIndexEnd = i;
             }
 
+            currentText = " " + currentText + " ";
+
             var textBlock = Utils.CreateTextBlock(TextBlockType.TextString, currentText);
 
             if (charIndex == charIndexEnd && charIndexEnd < line.End)
@@ -100,6 +102,8 @@ namespace ChASM.TextAdornments
                 currentComment += view.TextSnapshot[i];
                 charIndexEnd = i;
             }
+
+            currentComment = " " + currentComment + " ";
 
             var textBlock = Utils.CreateTextBlock(TextBlockType.Comment, currentComment);
 
