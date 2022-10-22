@@ -34,21 +34,21 @@ The idea of ChASM extension is to provide basic syntax coloring for x86/x64 Asse
 💥 Highlight System Calls (SYSCALL)
 💥 Signature Help for Mnemonics
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/001.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/001.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/002.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/002.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/003.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/003.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/004.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/004.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/005.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/005.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/006.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/006.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/007.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/007.png)
 
-![image](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/008.png)
+![ChASM by Dawid Farbaniec](https://github.com/ethicalblue/ChASM-x86-x64-Assembly-Syntax-Highlighter/blob/main/images/008.png)
 
 
 # Download ChASM from Visual Studio Marketplace
